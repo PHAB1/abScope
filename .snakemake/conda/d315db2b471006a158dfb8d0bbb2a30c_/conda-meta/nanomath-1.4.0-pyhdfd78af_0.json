@@ -1,0 +1,162 @@
+{
+  "build": "pyhdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "deprecated",
+    "numpy >1.8",
+    "pandas",
+    "python >=3"
+  ],
+  "extracted_package_dir": "/home/pbarros/anaconda3/pkgs/nanomath-1.4.0-pyhdfd78af_0",
+  "files": [
+    "LICENSE",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/LICENSE",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/METADATA",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/RECORD",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/WHEEL",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/nanomath-1.4.0.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/nanomath/__init__.py",
+    "lib/python3.10/site-packages/nanomath/nanomath.py",
+    "lib/python3.10/site-packages/nanomath/test_nanomath.py",
+    "lib/python3.10/site-packages/nanomath/version.py",
+    "lib/python3.10/site-packages/nanomath/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/nanomath/__pycache__/nanomath.cpython-310.pyc",
+    "lib/python3.10/site-packages/nanomath/__pycache__/test_nanomath.cpython-310.pyc",
+    "lib/python3.10/site-packages/nanomath/__pycache__/version.cpython-310.pyc"
+  ],
+  "fn": "nanomath-1.4.0-pyhdfd78af_0.tar.bz2",
+  "license": "GPL-3.0-or-later",
+  "link": {
+    "source": "/home/pbarros/anaconda3/pkgs/nanomath-1.4.0-pyhdfd78af_0",
+    "type": 1
+  },
+  "md5": "eca01f1952e40db1538678f3436878a1",
+  "name": "nanomath",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/pbarros/anaconda3/pkgs/nanomath-1.4.0-pyhdfd78af_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "LICENSE",
+        "path_type": "hardlink",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "sha256_in_prefix": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "size_in_bytes": 35147
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "sha256_in_prefix": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "size_in_bytes": 35147
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "15d75d12f95eb0ac3e018cdd7573046e76d3176ffc8fc3d01b903dc4dd580d34",
+        "sha256_in_prefix": "15d75d12f95eb0ac3e018cdd7573046e76d3176ffc8fc3d01b903dc4dd580d34",
+        "size_in_bytes": 2614
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "69f20046bb5d31856b6c27cf94eedbcaf87f513dbf0ba7c6ff0e6361c862b02d",
+        "sha256_in_prefix": "69f20046bb5d31856b6c27cf94eedbcaf87f513dbf0ba7c6ff0e6361c862b02d",
+        "size_in_bytes": 1257
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+        "sha256_in_prefix": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "e29bf5b680c179cb84913f385431a41b1703cf22701e22540cd8696476a316db",
+        "sha256_in_prefix": "e29bf5b680c179cb84913f385431a41b1703cf22701e22540cd8696476a316db",
+        "size_in_bytes": 82
+      },
+      {
+        "_path": "site-packages/nanomath-1.4.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0b805ba14251b8416350d185e953970df6cd79fb3164304506ecf584c566ab38",
+        "sha256_in_prefix": "0b805ba14251b8416350d185e953970df6cd79fb3164304506ecf584c566ab38",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/nanomath/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a98267cef5ba8841ce7e621f691979ec5e5fed0646f6fb7411dfab1c7158692e",
+        "sha256_in_prefix": "a98267cef5ba8841ce7e621f691979ec5e5fed0646f6fb7411dfab1c7158692e",
+        "size_in_bytes": 57
+      },
+      {
+        "_path": "site-packages/nanomath/nanomath.py",
+        "path_type": "hardlink",
+        "sha256": "e0d3b31a8fa113f6294b966a606540e4487f9888db1778260de626813dd18f74",
+        "sha256_in_prefix": "e0d3b31a8fa113f6294b966a606540e4487f9888db1778260de626813dd18f74",
+        "size_in_bytes": 11727
+      },
+      {
+        "_path": "site-packages/nanomath/test_nanomath.py",
+        "path_type": "hardlink",
+        "sha256": "65a9f8a14df0091ec7065607141dae96815f941d7060315d789e5853b4c94c64",
+        "sha256_in_prefix": "65a9f8a14df0091ec7065607141dae96815f941d7060315d789e5853b4c94c64",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "site-packages/nanomath/version.py",
+        "path_type": "hardlink",
+        "sha256": "f148686045c7b3539a8bb056fc4c419aec169d123ec8c1bfbb57d0017322cc74",
+        "sha256_in_prefix": "f148686045c7b3539a8bb056fc4c419aec169d123ec8c1bfbb57d0017322cc74",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "lib/python3.10/site-packages/nanomath/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/nanomath/__pycache__/nanomath.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/nanomath/__pycache__/test_nanomath.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/nanomath/__pycache__/version.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4f447e015cab48ee425d5a391a77409388695563d44f6467e3558c1f76c06b1d",
+  "size": 29751,
+  "subdir": "noarch",
+  "timestamp": 1718396573000,
+  "url": "https://conda.anaconda.org/bioconda/noarch/nanomath-1.4.0-pyhdfd78af_0.tar.bz2",
+  "version": "1.4.0"
+}

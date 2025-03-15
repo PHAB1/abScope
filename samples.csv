@@ -1,0 +1,3 @@
+file,samples,paired,group
+test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R1_001.fastq,Amostra1,1,R0
+test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R2_001.fastq,Amostra1,2,R0

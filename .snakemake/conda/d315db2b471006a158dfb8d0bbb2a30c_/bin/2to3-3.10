@@ -1,0 +1,5 @@
+#!/home/pbarros/Trabalhos/abScope/.snakemake/conda/d315db2b471006a158dfb8d0bbb2a30c_/bin/python3.10
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))

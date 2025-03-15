@@ -1,0 +1,11 @@
+prefix=/home/pbarros/Trabalhos/abScope/.snakemake/conda/bb32403619068753fd5413302e5f51b4_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libisal
+Description: Library for storage systems
+Version: 2.30.0
+Libs: -L${libdir} -lisal
+Libs.private:
+Cflags: -I${includedir}

@@ -1,0 +1,43 @@
+Executando fastp para Amostra1...
+Read1 before filtering:
+total reads: 1000
+total bases: 250576
+Q20 bases: 234638(93.6395%)
+Q30 bases: 227123(90.6404%)
+
+Read2 before filtering:
+total reads: 1000
+total bases: 250015
+Q20 bases: 208347(83.3338%)
+Q30 bases: 191186(76.4698%)
+
+Merged and filtered:
+total reads: 860
+total bases: 343582
+Q20 bases: 325252(94.665%)
+Q30 bases: 317575(92.4306%)
+
+Filtering result:
+reads passed filter: 1940
+reads failed due to low quality: 60
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 289
+bases corrected by overlap analysis: 719
+
+Duplication rate: 0%
+
+Insert size peak (evaluated by paired-end reads): 387
+
+Read pairs merged: 860
+% of original read pairs: 86%
+% in reads after filtering: 100%
+
+
+JSON report: quality_trimmed/Amostra1.json
+HTML report: quality_trimmed/Amostra1.html
+
+fastp -i test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R1_001.fastq -I test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R2_001.fastq --merge --merged_out quality_trimmed/Amostra1_merged.fastq -q 15 --out1 quality_trimmed/Amostra1_NoOverlap_R1.fastq --out2 quality_trimmed/Amostra1_NoOverlap_R2.fastq --unpaired1 quality_trimmed/Amostra1_R2_lowQual.fastq --unpaired2 quality_trimmed/Amostra1_R1_lowQual.fastq --html quality_trimmed/Amostra1.html --json quality_trimmed/Amostra1.json 
+fastp v0.23.2, time used: 0 seconds

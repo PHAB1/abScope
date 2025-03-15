@@ -1,0 +1,4 @@
+sequencing: illumina  # or "nanopore"
+input: "samples.csv"
+
+## fastp config ##

@@ -1,0 +1,53 @@
+host: pbarros-System-Product-Name
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment envs/nanopore_preProcess.yaml...
+Downloading and installing remote packages.
+Environment for /home/pbarros/Trabalhos/abScope/envs/nanopore_preProcess.yaml created (location: .snakemake/conda/d315db2b471006a158dfb8d0bbb2a30c_)
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+quality_trimming        1
+total                   2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Mar 14 05:25:40 2025]
+localrule quality_trimming:
+    input: samples.csv
+    output: quality_trimmed
+    log: logs/log_trimming.txt
+    jobid: 1
+    reason: Missing output files: quality_trimmed; Software environment definition has changed since last execution
+    resources: tmpdir=/tmp
+
+Activating conda environment: .snakemake/conda/d315db2b471006a158dfb8d0bbb2a30c_
+RuleException:
+CalledProcessError in file /home/pbarros/Trabalhos/abScope/Snakefile, line 32:
+Command 'source /home/pbarros/anaconda3/bin/activate '/home/pbarros/Trabalhos/abScope/.snakemake/conda/d315db2b471006a158dfb8d0bbb2a30c_'; set -euo pipefail;  
+        bash scripts/preProcess/preProcess_nanopore.bash samples.csv quality_trimmed >> logs/log_trimming.txt 2>&1' returned non-zero exit status 2.
+[Fri Mar 14 05:25:41 2025]
+Error in rule quality_trimming:
+    jobid: 1
+    input: samples.csv
+    output: quality_trimmed
+    log: logs/log_trimming.txt (check log file(s) for error details)
+    conda-env: /home/pbarros/Trabalhos/abScope/.snakemake/conda/d315db2b471006a158dfb8d0bbb2a30c_
+    shell:
+        
+        bash scripts/preProcess/preProcess_nanopore.bash samples.csv quality_trimmed >> logs/log_trimming.txt 2>&1
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job quality_trimming since they might be corrupted:
+quality_trimmed
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-03-14T052510.428374.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

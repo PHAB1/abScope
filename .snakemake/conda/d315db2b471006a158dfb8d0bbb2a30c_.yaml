@@ -1,0 +1,9 @@
+name: nanopore_preProcessing
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - nanofilt
+  - samtools
