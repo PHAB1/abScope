@@ -1,7 +1,0 @@
-name: nanopore_preProcessing
-channels:
-  - bioconda
-  - conda-forge
-dependencies:
-  - nanofilt
-  - samtools

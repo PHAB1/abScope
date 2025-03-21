@@ -7,7 +7,6 @@ import numpy as np
 import shutil
 import time
 import os
-import re
 import argparse
 
 from Bio import SeqIO
@@ -16,9 +15,10 @@ parser = argparse.ArgumentParser(description="Process fasta file.")
 parser.add_argument('file', type=str, help="The path to the file to be processed")
 args = parser.parse_args()
 
+ig_db_path = "references/database/human/ig_db"
 input_fasta = args.file
 threads = 12
-output_dir = "igCicle"
+output_dir = "results/igCicle/%s"%input_fasta.split("/")[-1].split(".")[0]
 
 positionsAb_end = ["cdr2_end", 
                     "fwr3_end", 
@@ -44,14 +44,14 @@ while count_ab < 3:
     # Run igBlastn
     print("Runing igblast")
     subprocess.run(["igblastn", 
-        "-germline_db_J", "ig_db/IGHLKJ_edit.fasta", 
-        "-germline_db_V", "ig_db/IGHLKV_edit.fasta", 
-        "-germline_db_D", "ig_db/IGHD_edit.fasta",
+        "-germline_db_J", "%s/IGHLKJ_edit.fasta"%ig_db_path, 
+        "-germline_db_V", "%s/IGHLKV_edit.fasta"%ig_db_path, 
+        "-germline_db_D", "%s/IGHD_edit.fasta"%ig_db_path,
         "-domain_system", "kabat",
         "-query", "%s"%input_fasta, 
         "-outfmt", "19", # outfmt 19 for default table 
         "-show_translation", 
-        "-auxiliary_data", "ig_db/human_gl.aux", 
+        "-auxiliary_data", "%s/human_gl.aux"%ig_db_path, 
         "-out", "%s/%s_igCicle.tsv"%(output_dir,count_ab),
         "-num_threads", "%s"%threads
         ])
