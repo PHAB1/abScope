@@ -49,10 +49,10 @@ python scripts/igCicle.py barcode06_Filtered_renamed.fasta
 
 # VH and VL igCicle files
 # VH
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VH_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VH_seqs.tsv -domain_system kabat
+igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VH_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VH_seqs.tsv -domain_system kabat # nao to vendo necessidade
 
 # VL
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VL_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VL_seqs.tsv -domain_system kabat
+igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VL_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VL_seqs.tsv -domain_system kabat # nao to vendo necessidade
 
 # vsearch VH
 #vsearch --cluster_fast ../../nanopore/minIONLinear_Data/barcode06_VL_quality-pass.fasta --id 0.9 --centroids quality-passbarcode06_VL_quality_vsearch.fasta --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout quality-passbarcode06_VL_quality_consensus.fasta
@@ -67,7 +67,7 @@ python scripts/createCDR3Clusters.py "barcode06" "VH"
 medaka_consensus -i igCicle/VH_seqs.fasta -d barcode06_processed.fasta -o medaka_cicle2_VH -f -x -g -t 8
 
 # igblastn on final consensus file
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query barcode06_processed.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out barcode06_procesed_VH.tsv -domain_system kabat
+igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query barcode06_processed.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out barcode06_procesed_VH.tsv -domain_system kabat 
 
 # vsearch VL
 vsearch --cluster_size igCicle/VL_seqs.fasta --id 0.75 --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout barcode06_vsearch_consensus.fasta

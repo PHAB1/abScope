@@ -1,6 +1,5 @@
 import subprocess
 import pandas as pd
-from Bio.SeqIO import FastaIO
 from Bio import SeqIO
 from Bio.Seq import Seq
 import numpy as np
@@ -13,12 +12,16 @@ from Bio import SeqIO
 
 parser = argparse.ArgumentParser(description="Process fasta file.")
 parser.add_argument('file', type=str, help="The path to the file to be processed")
+parser.add_argument('output', type=str, help="The path to the file to be processed")
+parser.add_argument('--seq_type',default="I",choices=["I","N"], type=str, help="Type of sequencing: (S) Second or (T) Third generation")
 args = parser.parse_args()
 
 ig_db_path = "references/database/human/ig_db"
 input_fasta = args.file
-threads = 12
-output_dir = "results/igCicle/%s"%input_fasta.split("/")[-1].split(".")[0]
+output = args.output
+seq_type = args.seq_type
+threads = 1
+output_dir = "%s/%s"%(output,input_fasta.split("/")[-1].split(".")[0])
 
 positionsAb_end = ["cdr2_end", 
                     "fwr3_end", 

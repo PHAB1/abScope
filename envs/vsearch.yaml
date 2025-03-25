@@ -1,0 +1,6 @@
+name: preProcessing
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - vsearch
