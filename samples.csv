@@ -1,3 +1,7 @@
-file,samples,paired,group
-test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R1_001.fastq,Amostra1,1,R0
-test_sample/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R2_001.fastq,Amostra1,2,R0
+file,samples,paired,group,generation,ch_type
+test_sample/carmela/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R1_001.fastq,Amostra1_illu,1,R0,second,VH
+test_sample/carmela/Amostra1_L001-ds.02543b3c5d4a40ce81247b69a211d38d/Amostra1_S1_L001_R2_001.fastq,Amostra1_illu,2,R0,second,VH
+test_sample/carmela/Amostra4_L001-ds.680d172f283341ad86225eb2e64339ef/Amostra4_S4_L001_R1_001.fastq,Amostra1_illu,1,R0,second,VL
+test_sample/carmela/Amostra4_L001-ds.680d172f283341ad86225eb2e64339ef/Amostra4_S4_L001_R2_001.fastq,Amostra1_illu,2,R0,second,VL
+test_sample/nano_zik_comp/barcode09.fastq,Amostra_nano_b09,,R0,third,
+test_sample/nano_zik_comp/barcode11.fastq,Amostra_nano_b11,,R3,third,

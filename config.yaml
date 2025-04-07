@@ -1,4 +1,5 @@
-sequencing: illumina  # or "nanopore"
 input: "samples.csv"
-
+output: "results"
 ## fastp config ##
+
+## Nanofilt config ##
