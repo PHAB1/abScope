@@ -1,0 +1,14 @@
+name: medaka
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - vsearch
+  - medaka
+  - samtools
+  - python=3.10
+  - pandas
+  - numpy
+  - biopython
+  - concurrentloghandler

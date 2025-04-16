@@ -12,16 +12,17 @@ from Bio import SeqIO
 
 parser = argparse.ArgumentParser(description="Process fasta file.")
 parser.add_argument('file', type=str, help="The path to the file to be processed")
-parser.add_argument('output', type=str, help="The path to the file to be processed")
-parser.add_argument('--seq_type',default="I",choices=["I","N"], type=str, help="Type of sequencing: (S) Second or (T) Third generation")
+parser.add_argument('output_vh', type=str, help="The path to the vh output file")
+parser.add_argument('output_vl', type=str, help="The path to the vh output file")
 args = parser.parse_args()
 
 ig_db_path = "references/database/human/ig_db"
 input_fasta = args.file
-output = args.output
-seq_type = args.seq_type
+output_vh = args.output_vh
+output_vl = args.output_vl
 threads = 1
-output_dir = "%s/%s"%(output,input_fasta.split("/")[-1].split(".")[0])
+#output_dir = "%s/%s"%(output,input_fasta.split("/")[-1].split(".")[0])
+output_dir = "%s"%("/".join(output_vh.split("/")[0:-1]))
 
 positionsAb_end = ["cdr2_end", 
                     "fwr3_end", 
@@ -37,8 +38,8 @@ except FileExistsError:
     os.makedirs(output_dir)
 
 # Separate VH and VK sequences
-vh_file = open("%s/VH_seqs.fasta"%output_dir,"w")
-vl_file = open("%s/VL_seqs.fasta"%output_dir,"w")
+vh_file = open(output_vh,"w")
+vl_file = open(output_vl,"w")
 
 start_time = time.time()
 count_ab = 1

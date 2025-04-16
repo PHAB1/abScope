@@ -6,29 +6,23 @@ import glob
 configfile: "config.yaml"
 
 # Directories
-<<<<<<< HEAD
 OUTPUT_DIR="results"
-IGCICLE_DIR="results/igCicle"
+IGCICLE_DIR="results/igcicle"
 CLUSTERING_DIR="results/clustering"
+CLUSTERING_RAW=f"{CLUSTERING_DIR}/raw"
+CLUSTERING_CDR=f"{CLUSTERING_DIR}/cdr"
 LOG_DIR="logs"
-=======
-FASTA_DIR = "quality_trimmed"
-IGCICLE_DIR = "results/igCicle"
-CLUSTERING_DIR = "results/clustering"
-LOG_DIR = "logs"
-
-# Coleta todos os arquivos .fasta no diretório
-FASTA_FILES = glob_wildcards(os.path.join(FASTA_DIR, "{sample}.fasta")).sample
->>>>>>> 154e883a95c4fb7a3db782670acfcde579c6ab53
 
 # Define script and Conda environment based on sequencing type
 pre_process_illumina_script = "scripts/preProcess/preProcess_illumina.bash"
 pre_process_nano_script = "scripts/preProcess/preProcess_nanopore.bash"
+igcicle_script = "scripts/preProcess/igCicle.py"
+#cdrCluster_script = "scripts/preProcess/createCDR3Clusters.py"
+map_clusters = "scripts/preProcess/mapClusters.py"
 pre_process_env = "envs/preProcess.yaml"
 igblast_env = "envs/igblast.yaml"
 vsearch_env = "envs/vsearch.yaml"
-<<<<<<< HEAD
-cdr_clustering_env = "envs/cdrClusters.yaml"
+medaka_env = "envs/medaka.yaml"
 
 # get the list of columns from the input file
 SAMPLES_DF=pd.read_csv(config["input"], sep=",")
@@ -40,89 +34,87 @@ ch_types=SAMPLES_DF['ch_type'].tolist()
 
 rule all:
     input:
-        [f"{OUTPUT_DIR}/quality_trimmed/{sample}/{ch_type}/teste.fasta" for sample, ch_type in zip(samples, ch_types)]
-        #IGCICLE_DIR
-        #expand(f"{CLUSTERING_DIR}/{{sample}}/VH_clusters.uc", sample=samples),
-        #expand(f"{CLUSTERING_DIR}/{{sample}}/VL_clusters.uc", sample=samples)
-=======
+        [f"{OUTPUT_DIR}/quality_trimmed/{sample}/{ch_type}/qc.fasta" for sample, ch_type in zip(samples, ch_types)],
+        [f"{IGCICLE_DIR}/{sample}/{ch_type}/VH_seqs.fasta" for sample, ch_type in zip(samples, ch_types)], # IGCICLE VH
+        [f"{IGCICLE_DIR}/{sample}/{ch_type}/VL_seqs.fasta" for sample, ch_type in zip(samples, ch_types)],  # IGCICLE VL
+        [f"{IGCICLE_DIR}/{sample}/{ch_type}/1_igCicle.tsv" for sample, ch_type in zip(samples, ch_types)], # IGCICLE 1
+        [f"{IGCICLE_DIR}/{sample}/{ch_type}/2_igCicle.tsv" for sample, ch_type in zip(samples, ch_types)],  # IGCICLE 2
+        [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VH_clusters.uc" for sample, ch_type in zip(samples, ch_types)], # VH clustering
+        [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VL_clusters.uc" for sample, ch_type in zip(samples, ch_types)],  # VL clustering
+        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vh.txt" for sample, ch_type in zip(samples, ch_types)], # cdr3 mapping
+        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vl.txt" for sample, ch_type in zip(samples, ch_types)] # cdr3 mapping
+        #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VH_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)], # cdr3 re-clustering + consensus
+        #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VL_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)] # cdr3 re-clustering + consensus
 
-rule all:
-    input:
-        "results/quality_trimmed",
-        IGCICLE_DIR,
-        CLUSTERING_DIR
->>>>>>> 154e883a95c4fb7a3db782670acfcde579c6ab53
-
-rule quality_trimming:
+rule qualityTrimming:
     conda:
         pre_process_env
     input:
-        lambda wildcards: sample_info[wildcards.sample]["file"]
+        file_1=lambda wildcards: sample_info[wildcards.sample]["file_1"]
     output:
-        f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/teste.fasta"
+        fq=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/qc.fastq",
+        fa=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/qc.fasta"
+    params:
+        file_2=lambda wildcards: sample_info[wildcards.sample]["file_2"],
+        generation=lambda wildcards: sample_info[wildcards.sample]["generation"]
+    log:
+        f"{LOG_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/trimming.log"
     shell:
         """
-        # second generation ## Agora é necessário passar as variáveis novamente, arrume os arquivos correspondentes --##
-        bash scripts/preProcess/preProcess_illumina.bash \ 
-            {input} {output} >> {log} 2>&1
+        # second generation 
+        if [[ {params.generation} == "second" ]]; then
+            {pre_process_illumina_script} {input.file_1} {params.file_2} {output.fq} >> {log} 2>&1
 
         # third generation
-        bash scripts/preProcess/preProcess_nanopore.bash \
-            {input} {output} >> {log} 2>&1        
+        else
+            NanoFilt {input.file_1} -q 8 -l 2800 > {output.fq}
+        fi
+
+        # rename the fasta file
+        TEMP_FASTA=$(mktemp)
+        RENAMED_FASTA="{output.fa}"
+        awk 'NR%4==1 {{printf(">%s\\n", substr($0, 2)); next}} NR%4==2 {{print}}' {output.fq} > "$TEMP_FASTA"
+
+        if [[ {config[rename_reads]} == "True" ]]; then
+            python scripts/preProcess/fasta_rename_id.py "$TEMP_FASTA" "{output.fa}"
+        else
+            mv "$TEMP_FASTA" "{output.fa}"
+        fi
         """
 
-# inativo em um momento    
+# run IgCicle (multiple igblastn cicles)
 rule igAnnotate:
     conda:
         igblast_env
     input:
-        fastas="results/quality_trimmed"
+        f"results/quality_trimmed/{{sample}}/{{ch_type}}/qc.fasta"
     output:
-<<<<<<< HEAD
-=======
-        directory("results/quality_trimmed")
+        vh=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VH_seqs.fasta",
+        vl=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VL_seqs.fasta",
+        igcicle1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
+        igcicle2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
+    params:
+        generation=lambda wildcards: sample_info[wildcards.sample]["generation"]
     log:
-        f"{LOG_DIR}/log_trimming.txt"
+        f"{LOG_DIR}/igcicle/{{sample}}/{{ch_type}}/igCicle.log"
     shell:
         """
-        # illumina pre process
-        bash {pre_process_illumina_script} {input.samples} {output} >> {log} 2>&1
-
-        # nanopore pre process
-        bash {pre_process_nano_script} {input.samples} {output} >> {log} 2>&1
-        """
-
-rule igAnnotate:
-    conda:
-        igblast_env
-    input:
-        fastas="results/quality_trimmed"
-    output:
->>>>>>> 154e883a95c4fb7a3db782670acfcde579c6ab53
-        directory(IGCICLE_DIR)
-    log:
-        f"{LOG_DIR}/log_igBlast.txt"
-    shell:
-        """
-        for fasta in {input.fastas}/*.fasta; do
-            python scripts/preProcess/igCicle.py "$fasta" {output} >> {log} 2>&1
-        done
+        python3 {igcicle_script} {input} {output.vh} {output.vl} >> {log} 2>&1
         """
 
 rule rawClustering:
     conda:
-        vsearch_env
+        medaka_env
     input:
-<<<<<<< HEAD
-        vh=f"{IGCICLE_DIR}/{{sample}}/VH_seqs.fasta",
-        vl=f"{IGCICLE_DIR}/{{sample}}/VL_seqs.fasta"
+        vh=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VH_seqs.fasta",
+        vl=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VL_seqs.fasta"
     output:
-        vh_uc=f"{CLUSTERING_DIR}/{{sample}}/VH_clusters.uc",
-        vl_uc=f"{CLUSTERING_DIR}/{{sample}}/VL_clusters.uc",
-        vh_cons=f"{CLUSTERING_DIR}/{{sample}}/VH_consensus.fasta",
-        vl_cons=f"{CLUSTERING_DIR}/{{sample}}/VL_consensus.fasta"
+        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
+        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
+        vh_cons=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
+        vl_cons=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta"
     log:
-        f"{LOG_DIR}/clustering_{{sample}}.txt"
+        f"{LOG_DIR}/clustering/raw/{{sample}}/{{ch_type}}/clustering.log"
     shell:
         """
         vsearch --cluster_fast {input.vh} --id 0.75 --uc {output.vh_uc} \
@@ -130,37 +122,65 @@ rule rawClustering:
         
         vsearch --cluster_fast {input.vl} --id 0.75 --uc {output.vl_uc} \
             --target_cov 0.9 --minqt 0.9 --consout {output.vl_cons}
-=======
-        samples=IGCICLE_DIR
+        """
+
+rule mapClusters:
+    conda:
+        medaka_env
+    input:
+        vh_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
+        vl_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta",
+        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
+        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
+        igcicle_1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
+        igcicle_2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
     output:
-        directory(CLUSTERING_DIR)
+        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/done_vh.txt",
+        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/done_vl.txt"
     log:
-        f"{LOG_DIR}/log_clustering.txt"
+        f"{LOG_DIR}/clustering/cdr/{{sample}}/{{ch_type}}/clustering.log"
     shell:
         """
-        run_vsearch() {{
-            local input_file="$1"
-            local output_dir="$2"
-            local chain="$3"
+        # process VH
+        python3 {map_clusters} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
+            {input.igcicle_2} VH {output.vh} 
 
-            vsearch \
-                --cluster_fast "$input_file" \
-                --id 0.75 \
-                --uc "$output_dir/${{chain}}_clusters.uc" \
-                --target_cov 0.9 \
-                --minqt 0.9 \
-                --consout "$output_dir/${{chain}}_consensus.fasta" 
-        }}
+        # process VL
+        python3 {map_clusters} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
+            {input.igcicle_2} VL {output.vl} 
 
-        for dir in {input.samples}/*/; do
-            basedir=$(basename "$dir")
-
-
-            # Executando para VH e VL
-            mkdir -p "{output}/${{basedir}}"
-            run_vsearch "${{dir}}VH_seqs.fasta" "{output}/${{basedir}}" VH
-            run_vsearch "${{dir}}VL_seqs.fasta" "{output}/${{basedir}}" VL
-            
-        done
->>>>>>> 154e883a95c4fb7a3db782670acfcde579c6ab53
+        touch {output.vh}
+        touch {output.vl}
         """
+
+rule cdrClustering:
+    conda:
+        vsearch_env
+    input:
+        
+
+#rule cdrClustering:
+#    conda:
+#        medaka_env
+#    input:
+#        vh_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
+#        vl_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta",
+#       vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
+#       vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
+#        igcicle_1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
+#        igcicle_2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
+#    output:
+#        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/VH_final_consensus.fasta",
+#        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/VL_final_consensus.fasta"
+#    log:
+#        f"{LOG_DIR}/clustering/cdr/{{sample}}/{{ch_type}}/clustering.log"
+#    shell:
+#        """
+#        # process VH
+#        python3 {cdrCluster_script} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
+#            {input.igcicle_2} VH {output.vh} 
+#
+#        # process VL
+#        python3 {cdrCluster_script} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
+#            {input.igcicle_2} VL {output.vl} 
+#        """
