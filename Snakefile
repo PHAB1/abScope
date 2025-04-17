@@ -42,7 +42,9 @@ rule all:
         [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VH_clusters.uc" for sample, ch_type in zip(samples, ch_types)], # VH clustering
         [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VL_clusters.uc" for sample, ch_type in zip(samples, ch_types)],  # VL clustering
         [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vh.txt" for sample, ch_type in zip(samples, ch_types)], # cdr3 mapping
-        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vl.txt" for sample, ch_type in zip(samples, ch_types)] # cdr3 mapping
+        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vl.txt" for sample, ch_type in zip(samples, ch_types)], # cdr3 mapping
+        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/new_clusters/new_cdr3_clusters/done_vh.txt" )], # cdr3 VH clustering
+        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/new_clusters/new_cdr3_clusters/done_vl.txt" )] # cdr3 VL clustering
         #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VH_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)], # cdr3 re-clustering + consensus
         #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VL_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)] # cdr3 re-clustering + consensus
 
@@ -118,10 +120,10 @@ rule rawClustering:
     shell:
         """
         vsearch --cluster_fast {input.vh} --id 0.75 --uc {output.vh_uc} \
-            --target_cov 0.9 --minqt 0.9 --consout {output.vh_cons}
+            --target_cov 0.9 --minqt 0.9 --consout {output.vh_cons} >> {log} 2>&1
         
         vsearch --cluster_fast {input.vl} --id 0.75 --uc {output.vl_uc} \
-            --target_cov 0.9 --minqt 0.9 --consout {output.vl_cons}
+            --target_cov 0.9 --minqt 0.9 --consout {output.vl_cons} >> {log} 2>&1
         """
 
 rule mapClusters:
@@ -143,11 +145,11 @@ rule mapClusters:
         """
         # process VH
         python3 {map_clusters} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
-            {input.igcicle_2} VH {output.vh} 
+            {input.igcicle_2} VH {output.vh} >> {log} 2>&1 
 
         # process VL
         python3 {map_clusters} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
-            {input.igcicle_2} VL {output.vl} 
+            {input.igcicle_2} VL {output.vl} >> {log} 2>&1
 
         touch {output.vh}
         touch {output.vl}
@@ -157,6 +159,19 @@ rule cdrClustering:
     conda:
         vsearch_env
     input:
+        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/{id1}.fasta",
+        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/{id2}.fasta"
+    output:
+        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/new_clusters/new_cdr3_clusters/done_vh.txt"
+        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}new_clusters/new_cdr3_clusters/done_vl.txt"
+    shell:
+        """
+        # process VH
+        vsearch --cluster_fast {input.vh} --id 0.85 --target_cov 0.9 --minseqlength 6 --uc %s.uc --consout *.fasta
+
+        # process VL
+        vsearch --cluster_fast {input.vl} --id 0.85 --target_cov 0.9 --minseqlength 6 --uc %s.uc --consout *.fasta
+	"""
         
 
 #rule cdrClustering:
