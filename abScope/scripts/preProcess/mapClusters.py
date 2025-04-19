@@ -3,6 +3,7 @@ import os
 import shutil
 from Bio import SeqIO
 import argparse
+import json
 
 # Argument Parser 
 parser = argparse.ArgumentParser(description="Process a file based in the barcode string.")
@@ -96,3 +97,42 @@ for clus_id in filtered_clusters[8]:
         cluster_seq_id["seq"].append(rec["sequence_id"])
 
     output_cdrs_file.close()
+
+filename = "%s/cluster_seq_id.json" % (output_cdr3_clusters_dir)
+
+# Ensure the output directory exists
+os.makedirs(output_cdr3_clusters_dir, exist_ok=True)
+
+existing_data = {} # Default to an empty dictionary
+
+# Try to load existing data from the JSON file
+try:
+    # Open file for reading ('r') with utf-8 encoding
+    with open(filename, 'r', encoding='utf-8') as f:
+        existing_data = json.load(f)
+        # Basic check: ensure loaded data is a dictionary
+        if not isinstance(existing_data, dict):
+            print(f"Warning: File '{filename}' did not contain a dictionary. Overwriting.")
+            existing_data = {}
+except FileNotFoundError:
+    # File doesn't exist yet, fine to proceed with empty existing_data
+    print(f"File '{filename}' not found. Creating a new one.")
+    pass
+except json.JSONDecodeError:
+    # File exists but contains invalid JSON
+    print(f"Warning: Error decoding JSON from '{filename}'. Overwriting.")
+    existing_data = {} # Reset to empty
+
+# Update the existing data with the new data from cluster_seq_id
+# Existing keys will be updated, new keys will be added.
+existing_data.update(cluster_seq_id)
+
+# Write the combined data back to the file (overwriting the original)
+try:
+    # Open the file for writing ('w')
+    with open(filename, 'w', encoding='utf-8') as f:
+        # Use ensure_ascii=False for direct non-ASCII char support
+        json.dump(existing_data, f, indent=4, ensure_ascii=False)
+    print(f"Data successfully updated in '{filename}'")
+except IOError as e:
+    print(f"Error writing to file '{filename}': {e}")

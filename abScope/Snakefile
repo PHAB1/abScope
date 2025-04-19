@@ -125,7 +125,7 @@ rule rawClustering:
 
 rule mapClusters:
     conda:
-        medaka_env
+        vsearch_env
     input:
         vh_fa=f"{CLUSTERING_RAW}/{{sample}}/VH_consensus.fasta",
         vl_fa=f"{CLUSTERING_RAW}/{{sample}}/VL_consensus.fasta",
@@ -134,21 +134,22 @@ rule mapClusters:
         igcicle_1=f"{IGCICLE_DIR}/{{sample}}/1_igCicle.tsv",
         igcicle_2=f"{IGCICLE_DIR}/{{sample}}/2_igCicle.tsv"
     output:
-        f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt"
+        done=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt",
+        json=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/cluster_seq_id.json" 
     log:
-        f"{LOG_DIR}/clustering/cdr/{{sample}}/clustering.log"
+        f"{LOG_DIR}/clustering/cdr/{{sample}}/cdr3_clusters/clustering.log"
     shell:
         """
         # process VH
         python3 {map_clusters} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
-            {input.igcicle_2} VH {output} >> {log} 2>&1 
+            {input.igcicle_2} VH {output.done} >> {log} 2>&1 
 
         # process VL
         python3 {map_clusters} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
-            {input.igcicle_2} VL {output} >> {log} 2>&1
+            {input.igcicle_2} VL {output.done} >> {log} 2>&1
 
-        output_dir=$(dirname {output})
-        ls $output_dir/*.fasta > {output}
+        output_dir=$(dirname {output.done})
+        ls $output_dir/*.fasta > {output.done}
         """
 
 rule cdrClustering:
@@ -157,7 +158,7 @@ rule cdrClustering:
     input:
         file_list=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt",
     output:
-        done=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/done.txt"
+        done=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/done.txt",
     log:
         f"{LOG_DIR}/clustering/cdr/{{sample}}/new_clusters/new_cdr3_clusters/cdr_clustering.log"
     shell:
