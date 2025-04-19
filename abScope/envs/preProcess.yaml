@@ -1,0 +1,8 @@
+name: preProcessing
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - nanofilt
+  - samtools
+  - fastp
