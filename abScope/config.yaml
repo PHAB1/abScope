@@ -1,8 +1,0 @@
-input: "samples.csv"
-output: "results"
-## fastp config ##
-
-## Nanofilt config ##
-
-## Aditional config ##
-rename_reads: true

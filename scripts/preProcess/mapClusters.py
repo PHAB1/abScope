@@ -1,13 +1,10 @@
 import pandas as pd
-import numpy as np
 import os
 import shutil
-import glob
-import subprocess
-import time
 from Bio import SeqIO
 import argparse
-import concurrent.futures
+import json
+import subprocess
 
 # Argument Parser 
 parser = argparse.ArgumentParser(description="Process a file based in the barcode string.")
@@ -48,6 +45,7 @@ igblast2 = pd.read_csv(args.igcicle2,sep="\t", low_memory=False)
 
 igblast = pd.concat([igblast1, igblast2], axis=0)
 igblast = igblast.drop_duplicates(subset=['sequence_id', 'locus'], keep='first') # remove duplicates with same region VH or VL
+igblast.to_csv('%s/igAll.csv'%os.path.dirname(args.igcicle1), index=False)
 
 if chain_type == "VH":
     igblast = igblast[igblast['locus']=='IGH']
@@ -101,3 +99,47 @@ for clus_id in filtered_clusters[8]:
         cluster_seq_id["seq"].append(rec["sequence_id"])
 
     output_cdrs_file.close()
+
+filename = "%s/cluster_seq_id.json" %(output_cdr3_clusters_dir)
+
+# Ensure the output directory exists
+os.makedirs(output_cdr3_clusters_dir, exist_ok=True)
+
+existing_data = {} # Default to an empty dictionary
+
+# Try to load existing data from the JSON file
+try:
+    # Open file for reading ('r') with utf-8 encoding
+    with open(filename, 'r', encoding='utf-8') as f:
+        existing_data = json.load(f)
+        # Basic check: ensure loaded data is a dictionary
+        if not isinstance(existing_data, dict):
+            print(f"Warning: File '{filename}' did not contain a dictionary. Overwriting.")
+            existing_data = {}
+except FileNotFoundError:
+    # File doesn't exist yet, fine to proceed with empty existing_data
+    print(f"File '{filename}' not found. Creating a new one.")
+    pass
+except json.JSONDecodeError:
+    # File exists but contains invalid JSON
+    print(f"Warning: Error decoding JSON from '{filename}'. Overwriting.")
+    existing_data = {} # Reset to empty
+
+# Update the existing data with the new data from cluster_seq_id
+# Existing keys will be updated, new keys will be added.
+for key, value in cluster_seq_id.items():
+    if key in existing_data:
+        existing_data[key].extend(value)
+    else:
+        existing_data[key] = value
+
+# Write the combined data back to the file (overwriting the original)
+try:
+    # Open the file for writing ('w')
+    with open(filename, 'w', encoding='utf-8') as f:
+        # Use ensure_ascii=False for direct non-ASCII char support
+        json.dump(existing_data, f, indent=4, ensure_ascii=False)
+    print(f"Data successfully updated in '{filename}'")
+except IOError as e:
+    print(f"Error writing to file '{filename}': {e}")
+

@@ -17,8 +17,12 @@ LOG_DIR="logs"
 pre_process_illumina_script = "scripts/preProcess/preProcess_illumina.bash"
 pre_process_nano_script = "scripts/preProcess/preProcess_nanopore.bash"
 igcicle_script = "scripts/preProcess/igCicle.py"
-#cdrCluster_script = "scripts/preProcess/createCDR3Clusters.py"
-map_clusters = "scripts/preProcess/mapClusters.py"
+clusterCdr3_script = "scripts/preProcess/cluster_cdr3.bash"
+reGroupCdrCluster_script = "scripts/preProcess/reGroupCdrCluster.py"
+map_clusters_script = "scripts/preProcess/mapClusters.py"
+polish_script = "scripts/preProcess/polish.py"
+
+# envs
 pre_process_env = "envs/preProcess.yaml"
 igblast_env = "envs/igblast.yaml"
 vsearch_env = "envs/vsearch.yaml"
@@ -34,19 +38,19 @@ ch_types=SAMPLES_DF['ch_type'].tolist()
 
 rule all:
     input:
-        [f"{OUTPUT_DIR}/quality_trimmed/{sample}/{ch_type}/qc.fasta" for sample, ch_type in zip(samples, ch_types)],
-        [f"{IGCICLE_DIR}/{sample}/{ch_type}/VH_seqs.fasta" for sample, ch_type in zip(samples, ch_types)], # IGCICLE VH
-        [f"{IGCICLE_DIR}/{sample}/{ch_type}/VL_seqs.fasta" for sample, ch_type in zip(samples, ch_types)],  # IGCICLE VL
-        [f"{IGCICLE_DIR}/{sample}/{ch_type}/1_igCicle.tsv" for sample, ch_type in zip(samples, ch_types)], # IGCICLE 1
-        [f"{IGCICLE_DIR}/{sample}/{ch_type}/2_igCicle.tsv" for sample, ch_type in zip(samples, ch_types)],  # IGCICLE 2
-        [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VH_clusters.uc" for sample, ch_type in zip(samples, ch_types)], # VH clustering
-        [f"{CLUSTERING_RAW}/{sample}/{ch_type}/VL_clusters.uc" for sample, ch_type in zip(samples, ch_types)],  # VL clustering
-        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vh.txt" for sample, ch_type in zip(samples, ch_types)], # cdr3 mapping
-        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/cdr3_clusters/done_vl.txt" for sample, ch_type in zip(samples, ch_types)], # cdr3 mapping
-        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/new_clusters/new_cdr3_clusters/done_vh.txt" )], # cdr3 VH clustering
-        [f"{CLUSTERING_CDR}/{sample}/{ch_type}/new_clusters/new_cdr3_clusters/done_vl.txt" )] # cdr3 VL clustering
-        #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VH_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)], # cdr3 re-clustering + consensus
-        #[f"{CLUSTERING_CDR}/{sample}/{ch_type}/VL_final_consensus.fasta" for sample, ch_type in zip(samples, ch_types)] # cdr3 re-clustering + consensus
+        expand(f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/qc.fasta", sample=samples), # quality trimmed
+        expand(f"{IGCICLE_DIR}/{{sample}}/VH_seqs.fasta", sample=samples), # IGCICLE VH
+        expand(f"{IGCICLE_DIR}/{{sample}}/VL_seqs.fasta", sample=samples),  # IGCICLE VL
+        expand(f"{IGCICLE_DIR}/{{sample}}/1_igCicle.tsv", sample=samples), # IGCICLE 1
+        expand(f"{IGCICLE_DIR}/{{sample}}/2_igCicle.tsv", sample=samples),  # IGCICLE 2
+        expand(f"{CLUSTERING_RAW}/{{sample}}/VH_clusters.uc", sample=samples), # VH clustering
+        expand(f"{CLUSTERING_RAW}/{{sample}}/VL_clusters.uc", sample=samples),  # VL clustering
+        expand(f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt", sample=samples), # cdr3 mapping
+        expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/done.txt", sample=samples), # cdr3 clustering
+        expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters", sample=samples), # pre Medaka 
+        expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt", sample=samples), # pre Medaka done file
+        expand(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus", sample=samples),
+        expand(f"{CLUSTERING_CDR}/{{sample}}/cdr3_consensus.fasta", sample=samples)
 
 rule qualityTrimming:
     conda:
@@ -54,13 +58,13 @@ rule qualityTrimming:
     input:
         file_1=lambda wildcards: sample_info[wildcards.sample]["file_1"]
     output:
-        fq=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/qc.fastq",
-        fa=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/qc.fasta"
+        fq=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/qc.fastq",
+        fa=f"{OUTPUT_DIR}/quality_trimmed/{{sample}}/qc.fasta"
     params:
         file_2=lambda wildcards: sample_info[wildcards.sample]["file_2"],
         generation=lambda wildcards: sample_info[wildcards.sample]["generation"]
     log:
-        f"{LOG_DIR}/quality_trimmed/{{sample}}/{{ch_type}}/trimming.log"
+        f"{LOG_DIR}/quality_trimmed/{{sample}}/trimming.log"
     shell:
         """
         # second generation 
@@ -69,7 +73,7 @@ rule qualityTrimming:
 
         # third generation
         else
-            NanoFilt {input.file_1} -q 8 -l 2800 > {output.fq}
+            NanoFilt {input.file_1} -q 8 -l 2500 > {output.fq}
         fi
 
         # rename the fasta file
@@ -89,16 +93,16 @@ rule igAnnotate:
     conda:
         igblast_env
     input:
-        f"results/quality_trimmed/{{sample}}/{{ch_type}}/qc.fasta"
+        f"results/quality_trimmed/{{sample}}/qc.fasta"
     output:
-        vh=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VH_seqs.fasta",
-        vl=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VL_seqs.fasta",
-        igcicle1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
-        igcicle2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
+        vh=f"{IGCICLE_DIR}/{{sample}}/VH_seqs.fasta",
+        vl=f"{IGCICLE_DIR}/{{sample}}/VL_seqs.fasta",
+        igcicle1=f"{IGCICLE_DIR}/{{sample}}/1_igCicle.tsv",
+        igcicle2=f"{IGCICLE_DIR}/{{sample}}/2_igCicle.tsv"
     params:
         generation=lambda wildcards: sample_info[wildcards.sample]["generation"]
     log:
-        f"{LOG_DIR}/igcicle/{{sample}}/{{ch_type}}/igCicle.log"
+        f"{LOG_DIR}/igcicle/{{sample}}/igCicle.log"
     shell:
         """
         python3 {igcicle_script} {input} {output.vh} {output.vl} >> {log} 2>&1
@@ -108,15 +112,15 @@ rule rawClustering:
     conda:
         medaka_env
     input:
-        vh=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VH_seqs.fasta",
-        vl=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/VL_seqs.fasta"
+        vh=f"{IGCICLE_DIR}/{{sample}}/VH_seqs.fasta",
+        vl=f"{IGCICLE_DIR}/{{sample}}/VL_seqs.fasta"
     output:
-        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
-        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
-        vh_cons=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
-        vl_cons=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta"
+        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/VH_clusters.uc",
+        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/VL_clusters.uc",
+        vh_cons=f"{CLUSTERING_RAW}/{{sample}}/VH_consensus.fasta",
+        vl_cons=f"{CLUSTERING_RAW}/{{sample}}/VL_consensus.fasta"
     log:
-        f"{LOG_DIR}/clustering/raw/{{sample}}/{{ch_type}}/clustering.log"
+        f"{LOG_DIR}/clustering/raw/{{sample}}/clustering.log"
     shell:
         """
         vsearch --cluster_fast {input.vh} --id 0.75 --uc {output.vh_uc} \
@@ -128,74 +132,88 @@ rule rawClustering:
 
 rule mapClusters:
     conda:
-        medaka_env
+        vsearch_env
     input:
-        vh_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
-        vl_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta",
-        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
-        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
-        igcicle_1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
-        igcicle_2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
+        vh_fa=f"{CLUSTERING_RAW}/{{sample}}/VH_consensus.fasta",
+        vl_fa=f"{CLUSTERING_RAW}/{{sample}}/VL_consensus.fasta",
+        vh_uc=f"{CLUSTERING_RAW}/{{sample}}/VH_clusters.uc",
+        vl_uc=f"{CLUSTERING_RAW}/{{sample}}/VL_clusters.uc",
+        igcicle_1=f"{IGCICLE_DIR}/{{sample}}/1_igCicle.tsv",
+        igcicle_2=f"{IGCICLE_DIR}/{{sample}}/2_igCicle.tsv"
     output:
-        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/done_vh.txt",
-        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/done_vl.txt"
+        done=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt",
+        json=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/cluster_seq_id.json", 
+        igall=f"{IGCICLE_DIR}/{{sample}}/igAll.csv",
+        consensus=directory(f"{CLUSTERING_CDR}/{{sample}}/clusters_consensus")
     log:
-        f"{LOG_DIR}/clustering/cdr/{{sample}}/{{ch_type}}/clustering.log"
+        f"{LOG_DIR}/clustering/cdr/{{sample}}/cdr3_clusters/clustering.log"
     shell:
         """
         # process VH
-        python3 {map_clusters} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
-            {input.igcicle_2} VH {output.vh} >> {log} 2>&1 
+        python3 {map_clusters_script} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
+            {input.igcicle_2} VH {output.done} >> {log} 2>&1 
 
         # process VL
-        python3 {map_clusters} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
-            {input.igcicle_2} VL {output.vl} >> {log} 2>&1
+        python3 {map_clusters_script} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
+            {input.igcicle_2} VL {output.done} >> {log} 2>&1
 
-        touch {output.vh}
-        touch {output.vl}
+        output_dir=$(dirname {output.done})
+        ls $output_dir/*.fasta > {output.done}
         """
 
 rule cdrClustering:
     conda:
         vsearch_env
     input:
-        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/{id1}.fasta",
-        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/cdr3_clusters/{id2}.fasta"
+        file_list=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/done.txt",
     output:
-        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/new_clusters/new_cdr3_clusters/done_vh.txt"
-        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}new_clusters/new_cdr3_clusters/done_vl.txt"
+        done=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/done.txt",
+    log:
+        f"{LOG_DIR}/clustering/cdr/{{sample}}/new_clusters/new_cdr3_clusters/cdr_clustering.log"
     shell:
         """
-        # process VH
-        vsearch --cluster_fast {input.vh} --id 0.85 --target_cov 0.9 --minseqlength 6 --uc %s.uc --consout *.fasta
+        {clusterCdr3_script} {input.file_list} {output.done} >> {log} 2>&1
+        """
 
-        # process VL
-        vsearch --cluster_fast {input.vl} --id 0.85 --target_cov 0.9 --minseqlength 6 --uc %s.uc --consout *.fasta
+# prepare medaka files (clusters) to polish with Medaka
+rule prePolish:
+    conda:
+        vsearch_env
+    input:
+        json=f"{CLUSTERING_CDR}/{{sample}}/cdr3_clusters/cluster_seq_id.json",
+        new_clust_list=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/done.txt",
+        igall=f"{IGCICLE_DIR}/{{sample}}/igAll.csv"
+    output:
+        nfc=directory(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters"),
+        done=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt",
+        json_out=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/cluster_seq_id.json"
+    log:
+        f"{LOG_DIR}/clustering/cdr/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/cd3_clusterization.log"
+    shell:
+        """
+        # VH type 
+        python3 {reGroupCdrCluster_script} -j {input.json} -l {input.new_clust_list} -i {input.igall} -c VH -nfc {output.nfc} -jo {output.json_out} >> {log} 2>&1
+         
+        # VL type 
+        python3 {reGroupCdrCluster_script} -j {input.json} -l {input.new_clust_list} -i {input.igall} -c VL -nfc {output.nfc} -jo {output.json_out} >> {log} 2>&1
+
+        # create the done file
+        output_dir=$(dirname {output.done})
+        ls $output_dir/*.fasta >> {output.done}
+        """
+
+# run medaka on selected groups
+rule Polish:
+    conda:
+        medaka_env
+    input:
+        CLUSTERS_CONSENSUS_DIR=f"{CLUSTERING_CDR}/{{sample}}/clusters_consensus", 
+        NEWS_FINAL_CLUSTERS=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt",
+        json=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/cluster_seq_id.json" # estou aq
+    output:
+        MEDAKA_OUTPUT_DIR=directory(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus"),
+        FINAL_CONSENSUS=f"{CLUSTERING_CDR}/{{sample}}/cdr3_consensus.fasta"
+    shell:
+        """
+	python3 {polish_script} {input.CLUSTERS_CONSENSUS_DIR} {input.NEWS_FINAL_CLUSTERS} {input.json} 2 {output.FINAL_CONSENSUS} {output.MEDAKA_OUTPUT_DIR}
 	"""
-        
-
-#rule cdrClustering:
-#    conda:
-#        medaka_env
-#    input:
-#        vh_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_consensus.fasta",
-#        vl_fa=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_consensus.fasta",
-#       vh_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VH_clusters.uc",
-#       vl_uc=f"{CLUSTERING_RAW}/{{sample}}/{{ch_type}}/VL_clusters.uc",
-#        igcicle_1=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/1_igCicle.tsv",
-#        igcicle_2=f"{IGCICLE_DIR}/{{sample}}/{{ch_type}}/2_igCicle.tsv"
-#    output:
-#        vh=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/VH_final_consensus.fasta",
-#        vl=f"{CLUSTERING_CDR}/{{sample}}/{{ch_type}}/VL_final_consensus.fasta"
-#    log:
-#        f"{LOG_DIR}/clustering/cdr/{{sample}}/{{ch_type}}/clustering.log"
-#    shell:
-#        """
-#        # process VH
-#        python3 {cdrCluster_script} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
-#            {input.igcicle_2} VH {output.vh} 
-#
-#        # process VL
-#        python3 {cdrCluster_script} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
-#            {input.igcicle_2} VL {output.vl} 
-#        """

@@ -1,9 +1,9 @@
 cluster_seq_id = pd.DataFrame(cluster_seq_id)
 
 # vsearch CDR3 clusterization
-for file in glob.glob("%s/*.fasta"%output_cdr3_clusters_dir):
-    output_file_name = file.split("/")[-1].split(".")[0]
-    subprocess.run(["vsearch", "--cluster_fast", "%s"%file, "--id", str(cdr3_ident), "--target_cov", "0.9","--minseqlength", "6", "--uc", "%s.uc"%output_file_name, "--consout", "%s.fasta"%output_file_name ],cwd=news_clusters_cdr3_dir)
+#for file in glob.glob("%s/*.fasta"%output_cdr3_clusters_dir):
+#    output_file_name = file.split("/")[-1].split(".")[0]
+#    subprocess.run(["vsearch", "--cluster_fast", "%s"%file, "--id", str(cdr3_ident), "--target_cov", "0.9","--minseqlength", "6", "--uc", "%s.uc"%output_file_name, "--consout", "%s.fasta"%output_file_name ],cwd=news_clusters_cdr3_dir)
 
 time.sleep(1)
 dict_new_cluster_id = {
@@ -54,6 +54,7 @@ df_new_cluster_id = pd.merge(cluster_seq_id,df_new_cluster_id, left_on='seq', ri
 df_new_cluster_id.to_csv("%s/meta_%s.csv"%(output_dir,args.chain_type), index=False)
 #cluster_seq_id cluster, seq
 
+##--- Until here --- Next part from here ---## 
 # Medaka consensus
 medaka_output = "%s/medaka_consensus"%output_dir
 try:

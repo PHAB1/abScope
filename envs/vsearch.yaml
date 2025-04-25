@@ -4,3 +4,9 @@ channels:
   - conda-forge
 dependencies:
   - vsearch
+  - samtools
+  - python=3.10
+  - pandas
+  - numpy
+  - biopython
+  - concurrentloghandler

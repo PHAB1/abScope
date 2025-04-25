@@ -12,3 +12,5 @@ dependencies:
   - numpy
   - biopython
   - concurrentloghandler
+  - parallel
+  - jq
