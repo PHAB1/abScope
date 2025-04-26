@@ -5,12 +5,16 @@ import glob
 # Load configuration
 configfile: "config.yaml"
 
-# Directories
+# Output Directories
 OUTPUT_DIR="results"
 IGCICLE_DIR="results/igcicle"
 CLUSTERING_DIR="results/clustering"
 CLUSTERING_RAW=f"{CLUSTERING_DIR}/raw"
 CLUSTERING_CDR=f"{CLUSTERING_DIR}/cdr"
+CONSENSUS_DIR=f"results/consensus"
+ANNOTATION_DIR=f"results/annotation"
+
+# log Directory
 LOG_DIR="logs"
 
 # Define script and Conda environment based on sequencing type
@@ -50,7 +54,8 @@ rule all:
         expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters", sample=samples), # pre Medaka 
         expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt", sample=samples), # pre Medaka done file
         expand(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus", sample=samples),
-        expand(f"{CLUSTERING_CDR}/{{sample}}/cdr3_consensus.fasta", sample=samples)
+        expand(f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta", sample=samples),
+        expand(f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv", sample=samples)
 
 rule qualityTrimming:
     conda:
@@ -209,11 +214,30 @@ rule Polish:
     input:
         CLUSTERS_CONSENSUS_DIR=f"{CLUSTERING_CDR}/{{sample}}/clusters_consensus", 
         NEWS_FINAL_CLUSTERS=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt",
-        json=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/cluster_seq_id.json" # estou aq
+        json=f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/cluster_seq_id.json"
     output:
         MEDAKA_OUTPUT_DIR=directory(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus"),
-        FINAL_CONSENSUS=f"{CLUSTERING_CDR}/{{sample}}/cdr3_consensus.fasta"
+        FINAL_CONSENSUS=f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta"
     shell:
         """
-	python3 {polish_script} {input.CLUSTERS_CONSENSUS_DIR} {input.NEWS_FINAL_CLUSTERS} {input.json} 2 {output.FINAL_CONSENSUS} {output.MEDAKA_OUTPUT_DIR}
-	"""
+	    python3 {polish_script} {input.CLUSTERS_CONSENSUS_DIR} {input.NEWS_FINAL_CLUSTERS} {input.json} 2 {output.FINAL_CONSENSUS} {output.MEDAKA_OUTPUT_DIR}
+	    """
+
+# Medaka Final cicle --| colocar depois 
+
+# Annotate the consensus sequences with igblast
+rule igAnnotateConsensus:
+    conda:
+        igblast_env
+    input:
+        consensus=f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta",
+    output:
+        f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv"
+    shell:
+        """
+        igblastn -germline_db_J references/database/human/ig_db/IGHLKJ_edit.fasta -germline_db_V references/database/human/ig_db/IGHLKV_edit.fasta -germline_db_D references/database/human/ig_db/IGHD_edit.fasta \
+         -query {input.consensus} -outfmt 19 \
+         -show_translation -auxiliary_data references/database/human/ig_db/human_gl.aux \
+         -num_threads 8 -out {output} \
+         -domain_system kabat
+        """ 

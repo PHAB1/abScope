@@ -53,7 +53,12 @@ except FileExistsError:
 # Medaka paralelization
 def process_file(file):
     seq_id = file.split(".")[0].split("/")[-1].split("_")[0]
-    cluster_id = cluster_seq_id[cluster_seq_id["seq"] == seq_id].iloc[0]["cluster"]
+
+    try:
+        cluster_id = cluster_seq_id[cluster_seq_id["seq"] == seq_id].iloc[0]["cluster"]
+    except IndexError:
+        return f">{seq_id}|DUPCOUNT=0\n\n"
+
     cluster_id = cluster_id.split("_")[0]
 
     subprocess.run(
@@ -90,15 +95,16 @@ def process_file(file):
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
-    try: #|--- VL sobrescrevendo VH, encontrar pontos e pensar em solução! ---|#
-        records = list(
-            SeqIO.parse(f"{medaka_output}/{seq_id}/consensus.fasta", "fasta")
-        )
+    records = list(
+        SeqIO.parse(f"{medaka_output}/{seq_id}/consensus.fasta", "fasta")
+    )
 
+    try:
         medaka_cons_seq = records[0].seq
-        return f">{seq_id}|DUPCOUNT={dup_count}\n{medaka_cons_seq}\n"
-    except FileNotFoundError:
-        pass
+    except IndexError as e:
+        return f">{seq_id}|DUPCOUNT={dup_count}\n\n"
+    
+    return f">{seq_id}|DUPCOUNT={dup_count}\n{medaka_cons_seq}\n"
 
 
 with concurrent.futures.ProcessPoolExecutor(max_workers=6) as executor:
@@ -109,5 +115,6 @@ with concurrent.futures.ProcessPoolExecutor(max_workers=6) as executor:
 for result in results:
     if result:
         final_consensus.write(result)
+        
 
 final_consensus.close()
