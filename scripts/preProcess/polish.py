@@ -77,7 +77,8 @@ def process_file(file):
     )
 
     try:
-        dup_count = len(SeqIO.to_dict(SeqIO.parse(file, "fasta")))
+        #dup_count = len(SeqIO.to_dict(SeqIO.parse(file, "fasta")))
+        dup_count = sum(1 for record in SeqIO.parse(file, "fasta") if "_1" not in record.id)
     except ValueError as e:
         print(e)
         return None

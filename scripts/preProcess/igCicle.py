@@ -21,15 +21,12 @@ input_fasta = args.file
 output_vh = args.output_vh
 output_vl = args.output_vl
 threads = 1
-#output_dir = "%s/%s"%(output,input_fasta.split("/")[-1].split(".")[0])
 output_dir = "%s"%("/".join(output_vh.split("/")[0:-1]))
 
 positionsAb_end = ["cdr2_end", 
                     "fwr3_end", 
                     "cdr3_end",
                     "fwr4_end"]
-
-#positionsAb_end = ["fwr4_end"] 
 
 try:
     os.makedirs(output_dir)
@@ -61,7 +58,7 @@ while count_ab < 3:
         ])
     print("End of igblast: %s sec"%(time.time()-start_time))
 
-    cicleAnnot = pd.read_csv("%s/%s_igCicle.tsv"%(output_dir,count_ab), delimiter='\t')
+    cicleAnnot = pd.read_csv("%s/%s_igCicle.tsv"%(output_dir,count_ab), delimiter='\t', low_memory=False)
 
     try:
         meta_Annot_table = pd.merge(meta_Annot_table, cicleAnnot, on='sequence_id', how='outer')
@@ -82,12 +79,21 @@ while count_ab < 3:
         
         Annot_seq_start_pos = Annot_seq["fwr1_start"]
         Annot_seq_end_pos = Annot_seq_end_pos.max().max()
+        Annot_v_pos_start = Annot_seq["v_alignment_start"]
+        Annot_v_pos_end = Annot_seq["v_alignment_end"]
 
         rec.seq = Seq("".join(str(Annot_seq.iloc[0]["sequence"]).split("-"))) # "germline_alignment"? , but "sequence" normaly
 
-        if (not np.isnan(Annot_seq_end_pos)) and not Annot_seq_start_pos.isna().any():
-            start = int(Annot_seq_start_pos.iloc[0])
-            end = int(Annot_seq_end_pos)
+        if ((not np.isnan(Annot_seq_end_pos)) and not Annot_seq_start_pos.isna().any()) or not (Annot_v_pos_end).isna().any():
+            if (not np.isnan(Annot_seq_end_pos)) and (not Annot_seq_start_pos.isna().any()):
+                start = int(Annot_seq_start_pos.iloc[0])
+                end = int(Annot_seq_end_pos)
+                ch_type = Annot_seq.iloc[0]["locus"]
+            else: # for the v_call only found case
+                start = int(Annot_v_pos_start.iloc[0])
+                end = int(Annot_v_pos_end.iloc[0])
+                ch_type = Annot_seq.iloc[0]["v_call"][0:3]
+
             seq_copy = Seq(str(rec.seq))
             
             # Write Rec To Atual cicle - Fasta Passed sequences
@@ -97,10 +103,11 @@ while count_ab < 3:
             rec.seq = seq_copy
             seq_to_new_cicle.write(">%s\n%s\n"%(rec.id,rec.seq[:int(start)] + rec.seq[int(end):]))
 
+            rec.id = "%s-%s"%(rec.id,ch_type)
             # Separate VH from VK
-            if Annot_seq.iloc[0]["locus"] == "IGH":
+            if ch_type == "IGH":
                 vh_file.write(">%s\n%s\n"%(rec.id, rec.seq[int(start)-0:int(end)+180]))
-            else:
+            elif ch_type == "IGK":
                 vl_file.write(">%s\n%s\n"%(rec.id, rec.seq[int(start)-0:int(end)+180]))
 
             # annotated meta only for passed sequences
@@ -144,21 +151,30 @@ meta_Annot_table = meta_Annot_table[filtered_meta_cols[0]]
 meta_Annot_table['j_call_x'] = meta_Annot_table['j_call_x'].str.split('*').str[0]
 meta_Annot_table['v_call_x'] = meta_Annot_table['v_call_x'].str.split('*').str[0]
 # cicle 2
-meta_Annot_table['j_call_y'] = meta_Annot_table['j_call_y'].str.split('*').str[0]
-meta_Annot_table['v_call_y'] = meta_Annot_table['v_call_y'].str.split('*').str[0]
+cicle2 = 1
+try:
+    meta_Annot_table['j_call_y'] = meta_Annot_table['j_call_y'].str.split('*').str[0]
+    meta_Annot_table['v_call_y'] = meta_Annot_table['v_call_y'].str.split('*').str[0]
+except:
+    print("cicle 2 without sequences to process")
+    cicle2 = 0
 
 ## Create meta file ##
 meta_Annot_table["ig_c1"] = (meta_Annot_table["locus_x"] + "_" +
                             meta_Annot_table["j_call_x"] + "_" +
                             meta_Annot_table["v_call_x"]
                             )
+if cicle2:
+    meta_Annot_table["ig_c2"] = (meta_Annot_table["locus_y"] + "_" +
+                                meta_Annot_table["j_call_y"] + "_" +
+                                meta_Annot_table["v_call_y"]
+                                )
+    
+if cicle2:
+    meta_Annot_table = meta_Annot_table[["sequence_id", "ig_c1", "ig_c2"]]
+else:
+    meta_Annot_table = meta_Annot_table[["sequence_id", "ig_c1"]]
 
-meta_Annot_table["ig_c2"] = (meta_Annot_table["locus_y"] + "_" +
-                            meta_Annot_table["j_call_y"] + "_" +
-                            meta_Annot_table["v_call_y"]
-                            )
-
-meta_Annot_table = meta_Annot_table[["sequence_id", "ig_c1", "ig_c2"]]
 meta_Annot_table.to_csv("%s/meta.tsv"%output_dir,sep="\t",index=False)
 
 print("Total time: %s"%(time.time()-start_time))

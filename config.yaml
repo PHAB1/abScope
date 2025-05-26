@@ -1,8 +1,8 @@
-input: "samples.csv"
+input: "samples2.csv"
 output: "results"
 ## fastp config ##
 
 ## Nanofilt config ##
 
 ## Aditional config ##
-rename_reads: true
+rename_reads: True

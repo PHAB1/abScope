@@ -12,7 +12,7 @@ parser.add_argument('-o','--output_dir',required=True, help='Output directory pa
 # Parse arguments
 args = parser.parse_args()
 
-airr_files = glob.glob("%s/*clone-pass.tsv"%args.input_dir)
+airr_files = glob.glob("%s/*_clone-pass.tsv"%args.input_dir)
 
 add_columns = {
     'sequence_id':[],
@@ -24,7 +24,8 @@ add_columns = {
 }
 
 for airr in airr_files:
-    subject_id = airr.split("/")[-1].split("_atleast-2_clone-pass.tsv")[0]
+    #subject_id = airr.split("/")[-1].split("_atleast-2_clone-pass.tsv")[0]
+    subject_id = airr.split("/")[-1].split("_clone-pass.tsv")[0]
     sample_id = subject_id
     airr = pd.read_csv(airr, sep="\t", low_memory=False)
     for clone in airr.iloc:
@@ -51,7 +52,6 @@ for airr in airr_files:
     except:
         merged_airr = airr
 
-
 for key, value in add_columns.items():
     print(f"Length of {key}: {len(value)}")
 
@@ -61,5 +61,4 @@ final_airr = pd.concat([merged_airr, add_columns], axis=1)
 
 print("Table size: %s x %s"%(final_airr.shape[0], final_airr.shape[1]))
 final_airr = final_airr.rename(columns={'DUPCOUNT':'duplicate_count','CPRIMER':'cprimer'})
-#final_airr = final_airr.rename(columns={'DUPCOUNT':'duplicate_count','CPRIMER':'cprimer'})
 final_airr.to_csv("all_phage_airr.tsv", sep='\t', index=False)

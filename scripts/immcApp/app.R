@@ -39,20 +39,20 @@ data_summary <- function(data, varname, groupnames){
   #print(data_sum)
   data_sum <- data %>% 
     group_by(subject_id, gene) %>%
-    summarize(sd=sd(seq_freq, na.rm = TRUE), se=std.error(seq_freq, na.rm=TRUE), seq_freq=mean(seq_freq, na.rm = TRUE) )
+    summarize(sd=sd(copy_freq, na.rm = TRUE), se=std.error(copy_freq, na.rm=TRUE), copy_freq=mean(copy_freq, na.rm = TRUE) )
 
-  #data_sum <- rename(data_sum, c("mean" = "seq_freq"))
+  #data_sum <- rename(data_sum, c("mean" = "copy_freq"))
   return(data_sum)
 }
 
 # colnames
 #used_cols <- c("locus", "v_call","c_call","d_call","j_call", "fwr1","cdr1","fwr2","cdr2","fwr3","cdr3","fwr4","v_score","v_identity","duplicate_count","clone_id","subject_id","cprimer","seq_len","sample_id","clone_size_count","clone_size_freq")
-used_cols <- c("junction_aa","locus", "v_call","c_call","d_call","j_call","duplicate_count","clone_id","subject_id","cprimer","seq_len","sample_id","clone_size_count","clone_size_freq")
+used_cols <- c("junction_aa","locus", "v_call","j_call","duplicate_count","clone_id","subject_id","seq_len","sample_id","clone_size_count","clone_size_freq")
 
 # Functions
 df2stat <- function(df, colSamples, colValues, colType, controlPattern, TratPattern, colSubType=FALSE) {
   df <- select(df, colSamples, colValues, colType)
-  df$seq_freq <- df$seq_freq*10000
+  df$copy_freq <- df$copy_freq*10000
   df <- df %>% 
     spread(key=colSamples, value=colValues) %>%
     mutate_all(~ifelse(is.na(.), 1, .))
@@ -599,17 +599,22 @@ server <- function(input, output, session) {
       }
       )
     }
+
+    # check if columns cprimers and c_call are presents
+    if (!('cprimer' %in% names(df))) {
+        df$cprimer <- NA  # Create 'cprimer' column and fill with NA
+    }
+
+    if (!('c_call' %in% names(df))) {
+        df$cprimer <- NA  # Create 'c_call' column and fill with NA
+    }
+
     df <- df %>%
-      filter(!is.na(d_call), !is.na(c_call), !is.na(v_call), !is.na(j_call), !is.na(junction_length)) %>%
+      filter(!is.na(v_call), !is.na(j_call), !is.na(junction_length)) %>%
       mutate(v_call = sub(",.*","",v_call)) %>%
-      mutate(d_call = sub(",.*","",d_call)) %>%
       mutate(j_call = sub(",.*","",j_call)) %>%
-      mutate(c_call = sub(",.*","",c_call)) %>%
       mutate(v_call = sub("\\*.*","",v_call)) %>%   
-      mutate(d_call = sub("\\*.*","",d_call)) %>%
       mutate(j_call = sub("\\*.*","",j_call)) %>%
-      mutate(c_call = sub("\\*.*","",c_call)) %>%
-      mutate(cprimer = sub("_.*","",cprimer)) %>%
       mutate(across(c(duplicate_count, seq_len, clone_size_count, clone_size_freq), as.numeric))
 
     # Calcular o número de amostras baseado no maior grupo
@@ -686,8 +691,8 @@ server <- function(input, output, session) {
 
       # PCA samples plot
       df <- df %>%
-        select(sample_id, c_call, j_call, d_call, v_call) %>% 
-        mutate(cjdv_call = paste0(c_call, j_call, d_call, v_call)) %>% 
+        select(sample_id, j_call, v_call) %>% 
+        mutate(cjdv_call = paste0(j_call, v_call)) %>% 
         select(sample_id, cjdv_call) %>% 
         table(.) %>% 
         as.data.frame(.) %>% 
@@ -718,8 +723,8 @@ server <- function(input, output, session) {
 
     # PCA samples plot
     df <- df %>%
-      select(sample_id, c_call, j_call, d_call, v_call) %>% 
-      mutate(cjdv_call = paste0(c_call, j_call, d_call, v_call)) %>% 
+      select(sample_id, j_call, v_call) %>% 
+      mutate(cjdv_call = paste0(j_call, v_call)) %>% 
       select(sample_id, cjdv_call) %>% 
       table(.) %>% 
       as.data.frame(.) %>% 
@@ -982,12 +987,7 @@ server <- function(input, output, session) {
 
     # combinatory analysis for C-V-D-J calls -> n!/(n-p)!p! = 4!/(4-2)!2! = 6 -> VD, VJ, VC, DJ, DC, JC
     combinatory_list <- list(
-      list("c_call","v_call"),
-      list("c_call","d_call"),
-      list("c_call","j_call"),
-      list("j_call","d_call"),
       list("j_call","v_call"),
-      list("d_call","v_call")  
     )
 
     finalSt_df <- NULL
@@ -999,7 +999,7 @@ server <- function(input, output, session) {
       col_down <- unlist(combinatory_list[[i]][2])
       subset_vdj <- countGenes(df,gene=col_up, groups=c("sample_id",col_down),copy="duplicate_count", mode="gene")
   
-      teste <- df2stat(subset_vdj, "sample_id", "seq_freq", "gene", controlSamples, tratSamples, col_down)
+      teste <- df2stat(subset_vdj, "sample_id", "copy_freq", "gene", controlSamples, tratSamples, col_down)
 
       colnames(teste)[1] <- "upStream"
       colnames(teste)[4] <- "downStream"
@@ -1029,8 +1029,8 @@ server <- function(input, output, session) {
     tratSamples <- unique(filter(df, subject_id==input$trat)$sample_id)
     controlSamples <- unique(filter(df, subject_id==input$ctrl)$sample_id)
 
-    family_gene <- countGenes(df, gene=input$CVDJ_type, groups=c("sample_id"), mode=input$modeFG)
-    finalSt_df <- df2stat(family_gene, "sample_id", "seq_freq", "gene", controlSamples, tratSamples)
+    family_gene <- countGenes(df, gene=input$CVDJ_type, groups=c("sample_id"), mode=input$modeFG,copy="duplicate_count")
+    finalSt_df <- df2stat(family_gene, "sample_id", "copy_freq", "gene", controlSamples, tratSamples)
 
     finalSt_df
   }))
@@ -1072,10 +1072,10 @@ server <- function(input, output, session) {
     
     if(input$plotBy_usage=="sample_id") {
     	# Assign sorted levels and subset to all IGHV in subject_id/ sample_id
-    	df <- countGenes(df, gene=input$CVDJ_type_usage, groups=input$plotBy_usage, mode=input$modeFG_usage)
+    	df <- countGenes(df, gene=input$CVDJ_type_usage, groups=input$plotBy_usage, mode=input$modeFG_usage,copy="duplicate_count")
 
-    	df$seq_freq <- df$seq_freq*100
-    	vdjBarplot_g1 <<- ggplot(df, aes_string(x = "gene", y = "seq_freq", fill = input$plotBy_usage)) +
+    	df$copy_freq <- df$copy_freq*100
+    	vdjBarplot_g1 <<- ggplot(df, aes_string(x = "gene", y = "copy_freq", fill = input$plotBy_usage)) +
       	  theme_bw() +
       	  ggtitle("IGH-V-D-J Usage") +
       	  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
@@ -1089,20 +1089,20 @@ server <- function(input, output, session) {
     }
 
     else {
-    	df <- countGenes(df, gene=input$CVDJ_type_usage, groups=c("sample_id", "subject_id"), mode=input$modeFG_usage)
+    	df <- countGenes(df, gene=input$CVDJ_type_usage, groups=c("sample_id", "subject_id"), mode=input$modeFG_usage,copy="duplicate_count")
         
-      df <- data_summary(df, varname="seq_freq", 
+      df <- data_summary(df, varname="copy_freq", 
                         groupnames=c("subject_id","gene"))
 
 
-      df$seq_freq <- df$seq_freq*100
+      df$copy_freq <- df$copy_freq*100
       df$sd <- df$sd*100
       df$se <- df$se*100
           df$subject_id=as.factor(df$subject_id)
-      vdjBarplot_g1 <<- ggplot(df, aes(x=gene, y=seq_freq, fill = subject_id)) + 
+      vdjBarplot_g1 <<- ggplot(df, aes(x=gene, y=copy_freq, fill = subject_id)) + 
         geom_bar(stat="identity", color="black",
             position=position_dodge()) +
-        geom_errorbar(aes(ymin=seq_freq, ymax=seq_freq+se), width=.2,
+        geom_errorbar(aes(ymin=copy_freq, ymax=copy_freq+se), width=.2,
             position=position_dodge(.9)) + 
         theme_bw() +
                     ggtitle("IGH-V-D-J Usage") +
@@ -1139,20 +1139,16 @@ server <- function(input, output, session) {
     df <- df()[ df()$subject_id %in% input$subjects & df()$sample_id %in% input$samples & !(df()$junction_aa %in% selected_junctions), ]
 
     for(i in selected_cvdj) {
-      if(any(grepl(i, df$c_call))) {
-        df <- subset(df, grepl(i, c_call))
-      } else if(any(grepl(i, df$v_call))) {
+      if(any(grepl(i, df$v_call))) {
         df <- subset(df, grepl(i, v_call))
-      } else if(any(grepl(i, df$d_call))) {
-        df <- subset(df, grepl(i, d_call))
       } else if(any(grepl(i, df$j_call))) {
         df <- subset(df, grepl(i, j_call))
       }
     }
 
     #df_count <- countGenes(df, gene="v_call", groups="subject_id", mode="gene")
-    gene_count <- countGenes(df, gene = input$CVDJ_type_usage, groups = input$plotBy_usage, mode = input$modeFG_usage)
-    gene_count$seq_freq <- gene_count$seq_freq*100
+    gene_count <- countGenes(df, gene = input$CVDJ_type_usage, groups = input$plotBy_usage, mode = input$modeFG_usage,copy="duplicate_count")
+    gene_count$copy_freq <- gene_count$copy_freq*100
 
     # Assign sorted levels and subset to downstream
     #gene_count <- gene %>%
@@ -1161,7 +1157,7 @@ server <- function(input, output, session) {
 
     # Plot V gene usage in the IGHV4 family by sample
     if(length(selected_cvdj) != 0) {
-      vdjSpecBarplot_plot <<- ggplot(gene_count, aes_string(x = "gene", y = "seq_freq", fill = input$plotBy_usage)) +
+      vdjSpecBarplot_plot <<- ggplot(gene_count, aes_string(x = "gene", y = "copy_freq", fill = input$plotBy_usage)) +
         theme_bw() +
         ggtitle(paste0("Filtered by ",selected_cvdj)) +
         theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
@@ -1183,14 +1179,14 @@ server <- function(input, output, session) {
     db_props <- aminoAcidProperties(df, seq="junction", trim=TRUE, label="cdr3")
     
     pros_rm <- db_props %>% 
-	        count(subject_id,sample_id,c_call) %>%
+	        count(subject_id,sample_id) %>%
 	        group_by(sample_id) %>%
 		mutate(c_freq = n/sum(n)) %>%
 		ungroup() %>%
 		filter(c_freq > as.numeric(input$min_group_perCent/100))
 	            
     pros_rm <- arrange(pros_rm, c_freq)
-    db_props <- semi_join(db_props, pros_rm, by=c("sample_id", "c_call"))
+    db_props <- semi_join(db_props, pros_rm, by=c("sample_id"))
     print(pros_rm)
 
     # The full set of properties are calculated by default
@@ -1251,7 +1247,7 @@ server <- function(input, output, session) {
     selected_junctions <- trimws(selected_junctions)
 
     df <- df()[ df()$subject_id %in% input$subjects & df()$sample_id %in% input$samples & !(df()$junction_aa %in% selected_junctions), ] %>%
-	    group_by(sample_id, v_call, d_call, j_call, junction_aa) %>%
+	    group_by(sample_id, v_call, j_call, junction_aa) %>%
 	    summarise(dup_count = sum(duplicate_count)) %>%
 	    ungroup() %>%
 	    arrange(desc(dup_count)) %>%

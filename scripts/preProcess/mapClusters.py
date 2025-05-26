@@ -44,6 +44,8 @@ igblast1 = pd.read_csv(args.igcicle1,sep="\t", low_memory=False)
 igblast2 = pd.read_csv(args.igcicle2,sep="\t", low_memory=False)
 
 igblast = pd.concat([igblast1, igblast2], axis=0)
+igblast['sequence_id'] = igblast['sequence_id'].astype(str) + '-' + igblast['locus'].astype(str)
+
 igblast = igblast.drop_duplicates(subset=['sequence_id', 'locus'], keep='first') # remove duplicates with same region VH or VL
 igblast.to_csv('%s/igAll.csv'%os.path.dirname(args.igcicle1), index=False)
 

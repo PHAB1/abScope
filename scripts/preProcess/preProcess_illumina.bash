@@ -14,8 +14,7 @@ json="$OUTPUT_DIR/fp.json"
 if [[ -z "$file_2" || "$file_2" == "nan" ]]; then
     lowqual="$OUTPUT_DIR/samplowQual.fastq"
 
-    fastp -i "$file1" -q 15 --out1 "$OUTPUT" \
-            --unpaired1 "$lowqual" \
+    fastp -i "$file_1" -q 15 -o "$OUTPUT" \
             --html "$html" --json "$json"
 
 # case paired end

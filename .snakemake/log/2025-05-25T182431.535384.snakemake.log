@@ -1,0 +1,10 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: glicina
+Building DAG of jobs...
+MissingInputException in rule qualityTrimming in file "/home/glicina/pbarros/abScope/Snakefile", line 60:
+Missing input files for rule qualityTrimming:
+    output: results/quality_trimmed/vh_illu_error01/qc.fastq, results/quality_trimmed/vh_illu_error01/qc.fasta
+    wildcards: sample=vh_illu_error01
+    affected files:
+        /home/glicina/pbarros/abScope/scripts/simulateVDJ/samples/illumina/error/1/VH_illu_treat_error01.fastq

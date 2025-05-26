@@ -3,6 +3,7 @@ from Bio import SeqIO
 import numpy as np
 import random as rd
 import subprocess
+import string
 import shutil
 import time
 import sys
@@ -96,22 +97,35 @@ def AID_like(nuc2mute,nucs):
         nucs.remove(nuc2mute)
         return rd.choice(nucs)
     else:
-        return "Y"
+        return "N"
 
 # function to alter sequences in acordance with error or mutation
 # fragmentos serão passados no caso de região especifico
 def mutate(sequence,e=0,n_mut=0): 
+
     try:
         indices = list(range(len(sequence)))
     except TypeError:
         return("")
+
+    sequence_list = list(sequence)
+
     if e > 0:
         randomIndex = rd.sample(indices, round(len(sequence) * e))
     elif n_mut > 0:
         randomIndex = rd.sample(indices, n_mut)
+
     for i in randomIndex:
-        sequence = sequence[:(i-1)] + AID_like(nuc2mute=sequence[i-1],nucs=["A","T","C","G"]) + sequence[i:]
+        #sequence = sequence[:(i-1)] + AID_like(nuc2mute=sequence[i-1],nucs=["A","T","C","G"]) + sequence[i:]
+        nuc_original = sequence_list[i]
+        nuc_mutated = AID_like(nuc2mute=nuc_original, nucs=["A", "T", "C", "G"])
+        sequence_list[i] = nuc_mutated
+    
+    sequence = "".join(sequence_list)
     return(sequence)
+
+def generate_key(size=4, chars=string.ascii_letters + string.digits): # gerar chave aleatoria para o id
+    return ''.join(rd.choice(chars) for _ in range(size))
 
 def mutBunch(ctrl_airr, lib_airr, replicates, clones, f_error_list, f_mut_list, n_mut_list, region="sequence"):
     #--> generalized <--#
@@ -119,16 +133,16 @@ def mutBunch(ctrl_airr, lib_airr, replicates, clones, f_error_list, f_mut_list, 
     for e in f_error_list:
         for c in range(clones):
             error_rec=ctrl_airr.copy()
-            error_rec["original_sequence"] = ctrl_airr["sequence"] # get original sequence
+            error_rec["original_sequence"] = ctrl_airr["sequence"].copy() # get original sequence
             recWerror_seq=[mutate(ctrl_airr.iloc[i][region],e=e) for i in range(len(ctrl_airr))]
-            error_rec[region]=recWerror_seq
+            error_rec[region]=recWerror_seq.copy()
             error_rec["sequence_id"]=["%s|error=%s|clone=%s"%(id,e,c) for id in error_rec["sequence_id"]]
             lib_airr = pd.concat([lib_airr,error_rec], ignore_index=True)
 
     # Mutation
     for n_mut in n_mut_list: # para cada n mutantes presentes na seq
         mut_rec=ctrl_airr.copy()
-        mut_rec["original_sequence"] = ctrl_airr["sequence"] # get original sequence
+        mut_rec["original_sequence"] = ctrl_airr["sequence"].copy() # get original sequence
         ctrl_sequences = [ctrl_airr.iloc[i][region] for i in range(len(ctrl_airr))] # para cada airr row captura sequencia
         recWmut_seq=[mutate(seq,e=0,n_mut=n_mut) for seq in ctrl_sequences] # mutate each sequence 
         mut_rec[region]=recWmut_seq
@@ -170,6 +184,7 @@ def gen_lib(df,ch_types,replicates,clones,f_error_list,f_mut_list,n_mut_list,ig_
             lib_airr["sequence_id"] = lib_airr["sequence_id"].astype(str) + "|region=" + region
             lib_airr["sequence"] = lib_airr['fwr1'].astype(str) + lib_airr['cdr1'].astype(str) + lib_airr['fwr2'].astype(str) + lib_airr['cdr2'].astype(str) + lib_airr['fwr3'].astype(str) + lib_airr['cdr3'].astype(str) + lib_airr['fwr4'].astype(str)
         lib_airr_list.append(lib_airr)
+
     
     lib_airr = pd.concat(lib_airr_list, ignore_index=True)
 
@@ -270,8 +285,8 @@ def main():
     ig_db_path = sys.argv[1]
 
     # Lib generation parmeters
-    replicates = 10 # number of V-D-J recombinations
-    clones = 5 # number of clones for replicate (each replicate is V-D-J recombination, each clone is related to an error or mutation condition in their respective list)
+    replicates = 600 # number of V-D-J recombinations
+    clones = 30 # number of clones for replicate (each replicate is V-D-J recombination, each clone is related to an error or mutation condition in their respective list)
     f_error_list = [0.01,0.05,0.1,0.15,0.2]
     f_mut_list = [0.01,0.05,0.1,0.15,0.2]
     n_mut_list = [1,2,3,4,5]
@@ -310,8 +325,8 @@ def main():
     generate_sample(lib_expanded_airr, pattern="error=", out_dir="samples/illumina/error")
 
     # nanopore #
-    generate_sample(lib_expanded_airr, pattern="mut=", out_dir="samples/nano/mut", illumina=False)
     generate_sample(lib_expanded_airr, pattern="error=", out_dir="samples/nano/error", illumina=False)
+    generate_sample(lib_expanded_airr, pattern="mut=", out_dir="samples/nano/mut", illumina=False)
 
 
 if __name__ == "__main__":
