@@ -5,7 +5,6 @@
 ## Core Features
 * **Immune Repertoire Processing**: Analyzes diversity, clonal expansion, and VDJ gene usage from B-cell data.
 * **Long-Read Error Correction**: Includes a dedicated module to correct high-error rate sequences from technologies like Oxford Nanopore, producing high-quality consensus sequences.
-* **VH/VL Pair Recovery**: Identifies and pairs heavy (VH) and light (VL) chains from scFv fragments sequenced with long reads.
 * **Interactive Analysis**: An R/Shiny app for visual exploration and filtering of the processed repertoire data.
 
 ## Prerequisites
