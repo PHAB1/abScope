@@ -3,9 +3,8 @@
 `abScope` is a Snakemake-based computational pipeline for processing and analyzing antibody repertoire and phage display library data. It is designed to handle both short-read (e.g., Illumina) and long-read (e.g., Nanopore) sequencing data.
 
 ## Core Features
-* **Immune Repertoire Processing**: Analyzes diversity, clonal expansion, and VDJ gene usage from B-cell data.
+* **Immune Repertoire Processing**: Analyzes diversity, clonal expansion, and VDJ gene usage from B-cell data using an R/Shiny app for visual exploration and filtering of the processed repertoire data.
 * **Long-Read Error Correction**: Includes a dedicated module to correct high-error rate sequences from technologies like Oxford Nanopore, producing high-quality consensus sequences.
-* **Interactive Analysis**: An R/Shiny app for visual exploration and filtering of the processed repertoire data.
 
 ## Prerequisites
 1.  **Snakemake**: To execute the pipeline.
