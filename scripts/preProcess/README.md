@@ -39,7 +39,7 @@ file_1,file_2,samples,group,generation,ch_type
 
 ### 2. Configure and Run the Pipeline
 
-**Configuration**: Edit the `config.yaml` file to point to your `samples.csv` and adjust other analysis parameters.
+**Configuration**: Edit the `config.yaml` file to point to your `samples.csv`.
 
 **Execution**: From the project's main directory, run the following command. The pipeline will use Conda to create isolated software environments for each step, ensuring reproducibility.
 ```bash
