@@ -26,7 +26,7 @@ The main input is a CSV file that specifies the location and metadata for each s
 * **`samples`**: A unique name/identifier for the sample.
 * **`group`**: The experimental group (e.g., `R0`, `R3`, `vaccinated`).
 * **`generation`**: Sequencing technology. Use `second` for short-reads or `third` for long-reads.
-* **`ch_type`**: The antibody chain type being analyzed (e.g., `VH`, `VL`).
+* **`ch_type`**: if short reads, the antibody chain type being analyzed (e.g., `VH`, `VL`).
 
 **Example `samples.csv`:**
 ```csv
