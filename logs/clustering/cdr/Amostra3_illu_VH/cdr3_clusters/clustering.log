@@ -1,0 +1,29 @@
+First file Clusterized Ordened By clusters lenght: 
+       0   1     2  3  4  5  6  7                                         8  9
+20202  C  93  3419  *  *  *  *  *  3a4af89f-cda1-4ae7-9890-8f7a7e334402-IGH  *
+20110  C   1  2938  *  *  *  *  *  d250e1bb-9c0e-41fe-8abb-e1b1104bbf83-IGH  *
+20178  C  69  2014  *  *  *  *  *  39be5795-9f56-4186-b07f-8f509c3f18fb-IGH  *
+20135  C  26  1391  *  *  *  *  *  05309363-e10a-4618-a200-39c34073a6a3-IGH  *
+20172  C  63  1136  *  *  *  *  *  602692a5-cd34-41eb-a50b-429c4d7b5ff8-IGH  *
+...   ..  ..   ... .. .. .. .. ..                                       ... ..
+20190  C  81     6  *  *  *  *  *  7d0e39d2-e310-463c-9e03-c2ea45a7ce8a-IGH  *
+20187  C  78     6  *  *  *  *  *  b74a8638-6bc9-48a8-8166-da7f3806b1eb-IGH  *
+20164  C  55     5  *  *  *  *  *  d96fe821-6260-44cc-be78-45b53dbe46ff-IGH  *
+20161  C  52     5  *  *  *  *  *  6f86ce32-605f-4fd0-b957-b9db3de9f995-IGH  *
+20208  C  99     5  *  *  *  *  *  928ab286-5e50-419b-b770-b920dd4c4b17-IGH  *
+
+[62 rows x 10 columns]
+File 'results/clustering/cdr/Amostra3_illu_VH/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/Amostra3_illu_VH/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+342  C   4  88  *  *  *  *  *  97c088c2-357c-4485-a7f0-5aaa034c68a7-IGK  *
+344  C   6  83  *  *  *  *  *  90261f83-1b17-492b-a71e-b4655a0c8ef5-IGK  *
+339  C   1  57  *  *  *  *  *  bbff2aa6-6ff0-499c-a285-910b277147c6-IGK  *
+362  C  24  24  *  *  *  *  *  19007bde-b807-4b6e-8f15-a6677810c672-IGK  *
+343  C   5  17  *  *  *  *  *  178ac144-abc7-4f8f-a74f-be817920960a-IGK  *
+366  C  28  16  *  *  *  *  *  eb9a78d0-565b-441b-976e-8fe11005692d-IGK  *
+350  C  12   9  *  *  *  *  *  0b042b1d-3665-4958-897f-76069b6e61a8-IGK  *
+338  C   0   8  *  *  *  *  *  bfe19ccd-432e-4e0f-9fd1-3826a394bd4c-IGK  *
+341  C   3   5  *  *  *  *  *  5ad9afcb-27cc-4b7f-8ce2-dc070a8c7a6c-IGK  *
+Data successfully updated in 'results/clustering/cdr/Amostra3_illu_VH/cdr3_clusters/cluster_seq_id.json'

@@ -1,0 +1,52 @@
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3005  C  30  199  *  *  *  *  *  7bb2d7f3-b9a8-4505-b4b0-89b18871bbae-IGH  *
+2982  C   7  195  *  *  *  *  *  00b71928-b0eb-489c-8fa5-359a9cb02e4f-IGH  *
+2992  C  17  195  *  *  *  *  *  001e877a-4830-4c74-b64e-dcc9d6b45fa7-IGH  *
+3001  C  26  190  *  *  *  *  *  4f7ba7ac-c66b-485e-af7c-ef3a9d717d62-IGH  *
+2977  C   2  187  *  *  *  *  *  0ecc1d96-ca3a-4759-8775-356fe7fddeea-IGH  *
+2987  C  12  161  *  *  *  *  *  01c7cd9a-8762-4b96-bfc6-5491205555ac-IGH  *
+3007  C  32  155  *  *  *  *  *  15d1cd62-c5d1-4155-ae62-b632c1100c80-IGH  *
+2975  C   0  147  *  *  *  *  *  12907077-8eb6-41d9-9d45-21b28ebc4743-IGH  *
+2976  C   1  146  *  *  *  *  *  016854ae-f86d-4301-a16d-72dbf1827fdf-IGH  *
+2985  C  10  118  *  *  *  *  *  007b2c12-224c-468f-a938-fa25bc22a3ae-IGH  *
+3010  C  35  100  *  *  *  *  *  0c3c8d7a-919d-414c-8f65-89c6fec69d06-IGH  *
+2990  C  15  100  *  *  *  *  *  01fbd07d-48ea-4698-8036-9524f7ac02a7-IGH  *
+2983  C   8  100  *  *  *  *  *  4208db49-e82b-4b19-aa90-d567cba8354d-IGH  *
+2979  C   4  100  *  *  *  *  *  0644dcb8-85b8-4c5e-b1c4-14f4338f1057-IGH  *
+2978  C   3   99  *  *  *  *  *  0554a636-46b7-4080-8a4b-bcd7d12482f5-IGH  *
+2988  C  13   95  *  *  *  *  *  004b7297-ee4c-41fa-b6f3-66ccbfe7cc5f-IGH  *
+2993  C  18   95  *  *  *  *  *  02ba364d-b9fc-4d93-90e4-b02a9fffba84-IGH  *
+3003  C  28   92  *  *  *  *  *  71fa5022-94c4-4105-ae0c-6d1777920d9e-IGH  *
+2986  C  11   91  *  *  *  *  *  0032a343-4120-4a0b-8aa5-d00c45d6953f-IGH  *
+3008  C  33   88  *  *  *  *  *  70631eb2-74f1-490c-97ea-2b43deeeec15-IGH  *
+2981  C   6   75  *  *  *  *  *  02a10e75-f05d-488b-b58d-acb88cbc5877-IGH  *
+2991  C  16   53  *  *  *  *  *  13bbae7d-1019-4d0b-8460-29865d95c1d9-IGH  *
+2984  C   9   48  *  *  *  *  *  891c9825-dd79-4916-9674-dbc6540162bc-IGH  *
+2999  C  24   46  *  *  *  *  *  270ee23b-c9da-49be-a758-eb7dcf21c0e4-IGH  *
+2994  C  19   18  *  *  *  *  *  0b638f33-e962-47c3-8491-5004ec6b4d5e-IGH  *
+2996  C  21   12  *  *  *  *  *  3968e909-1e2b-4cba-a053-e6ac317074b7-IGH  *
+2995  C  20   12  *  *  *  *  *  0c559d4a-5ff4-435f-8cd1-b04dc4fc546d-IGH  *
+2980  C   5   10  *  *  *  *  *  118f9037-285c-42e9-a205-06b47126c584-IGH  *
+3009  C  34   10  *  *  *  *  *  31d50c9d-2882-4a61-a6b2-51c17b8d550c-IGH  *
+2998  C  23    9  *  *  *  *  *  0049811d-f666-4ab4-bb62-11f39826e684-IGH  *
+2989  C  14    8  *  *  *  *  *  d016bda6-d827-493c-b417-18588fab8f80-IGH  *
+3006  C  31    7  *  *  *  *  *  0351262b-e08b-4bb5-ba71-598f7d00d37b-IGH  *
+3002  C  27    5  *  *  *  *  *  71d1379d-08f4-499d-8df8-23855652e5c5-IGH  *
+3004  C  29    5  *  *  *  *  *  27832935-aa05-4d84-9a73-1459e94a1dde-IGH  *
+File 'results/clustering/cdr/nano_error05/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/nano_error05/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3036  C  11  960  *  *  *  *  *  0032a343-4120-4a0b-8aa5-d00c45d6953f-IGK  *
+3035  C  10  500  *  *  *  *  *  02a10e75-f05d-488b-b58d-acb88cbc5877-IGK  *
+3037  C  12  440  *  *  *  *  *  00571511-00d5-4399-bf07-51e854a64342-IGK  *
+3033  C   8  300  *  *  *  *  *  01585f23-f482-4d5f-8e4a-3a551f9e0231-IGK  *
+3038  C  13  200  *  *  *  *  *  01f77e98-b637-414f-85b8-bc00048668a6-IGK  *
+3034  C   9  198  *  *  *  *  *  04d28720-1a02-49b6-be0a-46d768c16807-IGK  *
+3031  C   6  193  *  *  *  *  *  00b80db1-473f-49df-b802-39e603af38f6-IGK  *
+3032  C   7  109  *  *  *  *  *  00229308-2ee6-4b87-9209-68267fb1ff3e-IGK  *
+3039  C  14  100  *  *  *  *  *  0ecc1d96-ca3a-4759-8775-356fe7fddeea-IGK  *
+3027  C   2   10  *  *  *  *  *  2b2b1d01-6642-4e87-992f-d428392a5f58-IGK  *
+3029  C   4    6  *  *  *  *  *  6ded9987-b2f1-4a0a-a3d8-d5cd106d7746-IGK  *
+Data successfully updated in 'results/clustering/cdr/nano_error05/cdr3_clusters/cluster_seq_id.json'

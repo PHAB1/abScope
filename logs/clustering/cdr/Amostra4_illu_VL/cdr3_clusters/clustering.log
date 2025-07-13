@@ -1,0 +1,27 @@
+First file Clusterized Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+135  C   2  37  *  *  *  *  *  0f1ff1e8-3dde-40b9-9b00-6af3727da174-IGH  *
+134  C   1  24  *  *  *  *  *  86c3f73f-dfd7-4bd4-893b-5db4e5dd68fa-IGH  *
+143  C  10  20  *  *  *  *  *  7a7a61c9-7988-4152-b09d-562e86aea486-IGH  *
+136  C   3  14  *  *  *  *  *  2fda01cf-e009-46e0-b213-08cea3c31624-IGH  *
+139  C   6   9  *  *  *  *  *  59a7adb5-3740-46c6-936a-2a44dbddfd16-IGH  *
+133  C   0   8  *  *  *  *  *  9aefd72c-7d5c-4adc-abc7-fcb568bde679-IGH  *
+140  C   7   6  *  *  *  *  *  df657dbd-ab6f-42b4-81f3-905c0d3b8fa5-IGH  *
+File 'results/clustering/cdr/Amostra4_illu_VL/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/Amostra4_illu_VL/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+        0    1      2  3  ...  6  7                                         8  9
+105048  C   11  37327  *  ...  *  *  c6a22504-cec5-4846-a00e-b7afea170a1a-IGK  *
+105038  C    1  23690  *  ...  *  *  9866408d-20d2-47d1-ba1b-5a8d1ee2d5d0-IGK  *
+105046  C    9   9760  *  ...  *  *  5bb693e4-304b-4fe6-9010-07fd2fc9562c-IGK  *
+105043  C    6   7294  *  ...  *  *  b733af83-63f9-4c6e-ae25-b61bc576e6d7-IGK  *
+105050  C   13   5296  *  ...  *  *  45718b3a-fc3b-415c-bbc8-eb2a20593836-IGK  *
+...    ..  ...    ... ..  ... .. ..                                       ... ..
+105296  C  259      5  *  ...  *  *  30e452db-90ef-4469-9863-a8931e7c884d-IGK  *
+105333  C  296      5  *  ...  *  *  ff961676-369a-40f5-9e67-f2192b34051a-IGK  *
+105315  C  278      5  *  ...  *  *  94b74d4d-d39c-4520-8d56-1594526e4760-IGK  *
+105365  C  328      5  *  ...  *  *  b6aa7a52-ec8d-4161-9cd0-13902a35904b-IGK  *
+105364  C  327      5  *  ...  *  *  855c8a1c-acef-4b15-a64e-f83c9e893c62-IGK  *
+
+[180 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/Amostra4_illu_VL/cdr3_clusters/cluster_seq_id.json'

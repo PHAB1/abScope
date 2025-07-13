@@ -1,0 +1,28 @@
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/r3_pellet_zikv/VH_seqs.fasta 100%
+7835398 nt in 20424 seqs, min 158, max 698, avg 384
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 7398 Size min 1, max 589, avg 2.8
+Singletons: 5670, 27.8% of seqs, 76.6% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/r3_pellet_zikv/VL_seqs.fasta 100%
+10231765 nt in 34365 seqs, min 119, max 535, avg 298
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 5666 Size min 1, max 4308, avg 6.1
+Singletons: 3895, 11.3% of seqs, 68.7% of clusters
+Multiple alignments 100%

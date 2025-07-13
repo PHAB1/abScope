@@ -1,0 +1,22 @@
+Starting Cicle 1
+Runing igblast
+End of igblast: 961.0993740558624 sec
+Starting Cicle Annotation
+Eding Cicle annotation
+End of Cicle 1: 1132.5036206245422 sec
+Starting Cicle 2
+Runing igblast
+Traceback (most recent call last):
+  File "scripts/preProcess/igCicle.py", line 47, in <module>
+    subprocess.run(["igblastn", 
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/subprocess.py", line 495, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/subprocess.py", line 1020, in communicate
+    self.wait()
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/subprocess.py", line 1822, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/subprocess.py", line 1780, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

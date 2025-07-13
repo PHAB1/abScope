@@ -1,0 +1,13 @@
+First file Clusterized Ordened By clusters lenght: 
+      0  1    2  3  4  5  6  7                                         8  9
+3005  C  5  814  *  *  *  *  *  008c77e7-5086-4c74-b233-7669cccdeecd-IGK  *
+3007  C  7  586  *  *  *  *  *  01978f46-d73f-4159-8843-5af378648536-IGK  *
+3004  C  4  500  *  *  *  *  *  027bcb0e-a2c8-4538-b3f3-574f4bbb9e72-IGK  *
+3002  C  2  300  *  *  *  *  *  01288f94-9b53-4e40-a7b2-3d959f092bb4-IGK  *
+3006  C  6  200  *  *  *  *  *  003a9bc5-ca32-4360-9b73-0e160cc78d39-IGK  *
+3003  C  3  200  *  *  *  *  *  028fedb4-c3d2-44dc-a80e-b30638228d90-IGK  *
+3000  C  0  192  *  *  *  *  *  05d375ad-d407-4b61-ab11-dc7433875bca-IGK  *
+3001  C  1  108  *  *  *  *  *  002ce330-99b0-4b56-9da7-0bc9c0618094-IGK  *
+3008  C  8  100  *  *  *  *  *  0887fa6d-9af0-493c-81a2-0960c4041fd4-IGK  *
+File 'results/clustering/cdr/vl_illu_error05/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/vl_illu_error05/cdr3_clusters/cluster_seq_id.json'

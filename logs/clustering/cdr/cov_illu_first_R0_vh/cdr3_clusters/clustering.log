@@ -1,0 +1,28 @@
+First file Clusterized Ordened By clusters lenght: 
+       0    1     2  3  4  5  6  7                                         8  9
+37825  C   14  2106  *  *  *  *  *  d8971ff5-1ce3-48e9-a1fd-b3282d5ae727-IGH  *
+37975  C  164  1969  *  *  *  *  *  53358d6d-10fe-4eb9-b335-326dc31d34e0-IGH  *
+37872  C   61  1546  *  *  *  *  *  517d3bd0-151b-422d-b296-ebc5123019c6-IGH  *
+37817  C    6  1152  *  *  *  *  *  11088b5f-8fab-44b5-a9df-3ab2a0d2cb5d-IGH  *
+38209  C  398   836  *  *  *  *  *  c91b46da-e53a-40bd-8bfa-d9f05f5a102d-IGH  *
+...   ..  ...   ... .. .. .. .. ..                                       ... ..
+38065  C  254     5  *  *  *  *  *  710b464a-68b2-4cb6-ad00-1d7ae8bce7b9-IGH  *
+38064  C  253     5  *  *  *  *  *  6ee17f55-df39-4422-831b-b04cb32f0753-IGH  *
+38708  C  897     5  *  *  *  *  *  27ffc435-97a0-4a56-bc54-e66866abdf83-IGH  *
+38045  C  234     5  *  *  *  *  *  e21f47c6-b32b-400d-99a7-6b438be43387-IGH  *
+38724  C  913     5  *  *  *  *  *  dd7351fb-218f-4f8d-afa5-93b83a9ad8a1-IGH  *
+
+[616 rows x 10 columns]
+File 'results/clustering/cdr/cov_illu_first_R0_vh/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/cov_illu_first_R0_vh/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+       0  1      2  3  4  5  6  7                                         8  9
+28036  C  6  14781  *  *  *  *  *  2b752b38-406f-40d2-999b-765a12dedec5-IGK  *
+28037  C  7  11966  *  *  *  *  *  0c7dfbd4-79ee-4e16-b307-89b3a7881305-IGK  *
+28034  C  4   1199  *  *  *  *  *  14d92d81-c2ac-4c33-89cb-8d526659dc8b-IGK  *
+28035  C  5     38  *  *  *  *  *  cc731582-a844-4fe5-9792-be12f16487f0-IGK  *
+28038  C  8     26  *  *  *  *  *  65d70b39-b1f5-44cf-bc16-8de5985c0e53-IGK  *
+28033  C  3      8  *  *  *  *  *  f2811868-61b5-4d74-9acd-a9bae61f4046-IGK  *
+28032  C  2      6  *  *  *  *  *  9d61b91b-357b-4e77-ab23-e51091840455-IGK  *
+28031  C  1      5  *  *  *  *  *  a715eae8-cac2-4823-ac18-0bc7a986e66a-IGK  *
+Data successfully updated in 'results/clustering/cdr/cov_illu_first_R0_vh/cdr3_clusters/cluster_seq_id.json'

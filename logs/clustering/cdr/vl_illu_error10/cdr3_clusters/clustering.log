@@ -1,0 +1,28 @@
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3018  C  18  254  *  *  *  *  *  02692f8b-7397-4a09-8b25-cac157d0b928-IGK  *
+3003  C   3  200  *  *  *  *  *  026bb520-c60d-4703-bc3c-6ebe910ec5c0-IGK  *
+3014  C  14  200  *  *  *  *  *  006a6fee-47a7-499a-b564-e18f2178d71b-IGK  *
+3013  C  13  200  *  *  *  *  *  0058c2db-fb98-4f70-b11b-e99552c950ef-IGK  *
+3002  C   2  176  *  *  *  *  *  00fa08f0-b725-4ebb-8561-74549dbea0e3-IGK  *
+3021  C  21  133  *  *  *  *  *  125c7e6c-811d-477b-8b7c-c43bddb3de17-IGK  *
+3004  C   4  124  *  *  *  *  *  09232361-0b28-4b4d-a735-70f914531fe0-IGK  *
+3010  C  10  121  *  *  *  *  *  01175410-1fd0-4be4-add1-5676f36caaa7-IGK  *
+3015  C  15  119  *  *  *  *  *  00c413da-82a6-4348-8f14-d8c468cb7abb-IGK  *
+3012  C  12  109  *  *  *  *  *  02a2d913-c080-4128-b86d-e0518347a15d-IGK  *
+3007  C   7  101  *  *  *  *  *  0a1e3a04-2b17-4614-82e7-509b2f3e7205-IGK  *
+3009  C   9  101  *  *  *  *  *  005eb16c-2ea2-4829-a5a8-98818052eaa8-IGK  *
+3006  C   6  100  *  *  *  *  *  00a5bf1e-b050-4f65-bc10-dce42659d06b-IGK  *
+3005  C   5  100  *  *  *  *  *  0c5b13be-8362-4c78-ada0-bf1e78845415-IGK  *
+3001  C   1  100  *  *  *  *  *  0297f5d6-721b-4520-bb6b-1411df37c679-IGK  *
+3000  C   0  100  *  *  *  *  *  0364ff95-b6f4-4575-9a8e-c00b9965f1e9-IGK  *
+3019  C  19  100  *  *  *  *  *  0326e1f1-56b0-457d-9699-8591334a9a57-IGK  *
+3008  C   8  100  *  *  *  *  *  001f78d5-971b-4758-9941-51920045a718-IGK  *
+3017  C  17  100  *  *  *  *  *  0208fcad-53e1-4933-83bc-a1daf1c518ce-IGK  *
+3016  C  16  100  *  *  *  *  *  010ad82b-4d52-42c9-bc1c-ed0fea6e6b0f-IGK  *
+3023  C  23  100  *  *  *  *  *  0778cf42-3bfe-4648-b11d-48306beb6938-IGK  *
+3011  C  11   99  *  *  *  *  *  0179ef7c-a20d-418f-ab5c-975d1b2b1109-IGK  *
+3020  C  20   99  *  *  *  *  *  0b157c0b-5ff1-4f6d-ac5b-34bed8c7840e-IGK  *
+3022  C  22   64  *  *  *  *  *  6c1bcace-a23c-4744-a659-fce21166cea3-IGK  *
+File 'results/clustering/cdr/vl_illu_error10/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/vl_illu_error10/cdr3_clusters/cluster_seq_id.json'

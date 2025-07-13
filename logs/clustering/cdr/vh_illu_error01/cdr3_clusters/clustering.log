@@ -1,0 +1,16 @@
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3001  C   1  700  *  *  *  *  *  017fbcc9-6d62-4675-a355-a2f28d43c2fc-IGH  *
+3002  C   2  401  *  *  *  *  *  04204ff2-124e-47cf-9e69-2e42c9b631d2-IGH  *
+3000  C   0  399  *  *  *  *  *  01a68c5e-68a2-4c48-b1ee-d47aecfb3a92-IGH  *
+3007  C   7  300  *  *  *  *  *  02df7498-539f-4235-9af1-0379403c98f3-IGH  *
+3008  C   8  247  *  *  *  *  *  06f82926-b73f-4b8b-857f-3b9651d61b70-IGH  *
+3003  C   3  200  *  *  *  *  *  00ec03ad-56bd-441a-b6fb-f7b9fea899f8-IGH  *
+3009  C   9  199  *  *  *  *  *  00960c4a-9e1f-4829-9efe-73bb85b8afd3-IGH  *
+3006  C   6  154  *  *  *  *  *  05b83c9d-e552-44a2-948d-3870f5edc5e9-IGH  *
+3004  C   4  100  *  *  *  *  *  03033e4e-bef9-445c-a509-df4cc596b8e6-IGH  *
+3005  C   5  100  *  *  *  *  *  01dc1b0e-91dc-4e0f-8988-4b4c78dd593c-IGH  *
+3010  C  10  100  *  *  *  *  *  071df10a-1d34-4447-aa6b-656d62682707-IGH  *
+3011  C  11  100  *  *  *  *  *  034e7706-66ce-432d-be28-7e3b49a02755-IGH  *
+File 'results/clustering/cdr/vh_illu_error01/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/vh_illu_error01/cdr3_clusters/cluster_seq_id.json'

@@ -1,0 +1,28 @@
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/nano_error01/VH_seqs.fasta 100%
+1501656 nt in 2999 seqs, min 369, max 577, avg 501
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 16 Size min 19, max 496, avg 187.4
+Singletons: 0, 0.0% of seqs, 0.0% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/nano_error01/VL_seqs.fasta 100%
+984374 nt in 3001 seqs, min 306, max 466, avg 328
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 6 Size min 1, max 1399, avg 500.2
+Singletons: 1, 0.0% of seqs, 16.7% of clusters
+Multiple alignments 100%

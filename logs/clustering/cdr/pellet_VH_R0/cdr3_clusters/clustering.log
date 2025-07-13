@@ -1,0 +1,29 @@
+First file Clusterized Ordened By clusters lenght: 
+       0     1      2  3  ...  6  7                                         8  9
+95590  C  2670  20810  *  ...  *  *  01ef23bf-cb2d-4d49-ab63-57d5e45f00c9-IGH  *
+95591  C  2671  10877  *  ...  *  *  7610e3d6-295f-4cf6-a89f-da1833dae0ae-IGH  *
+95572  C  2652   7441  *  ...  *  *  09e6c000-84b9-43be-90c7-85edf43301f2-IGH  *
+95581  C  2661   2578  *  ...  *  *  71f9024c-342e-4d82-a372-0a28e784ddd0-IGH  *
+92933  C    13   1945  *  ...  *  *  59d92c1b-29a1-4b30-a4d1-2863b1f64307-IGH  *
+...   ..   ...    ... ..  ... .. ..                                       ... ..
+93216  C   296      5  *  ...  *  *  9b7ed974-8dc0-4719-9970-f0d0d747de5f-IGH  *
+95337  C  2417      5  *  ...  *  *  135fff29-59ed-44a5-a0ac-155704735e8b-IGH  *
+95336  C  2416      5  *  ...  *  *  135fff29-59ed-44a5-a0ac-155704735e8b-IGH  *
+95575  C  2655      5  *  ...  *  *  e45928e6-896d-44fc-803d-e18672e717d0-IGH  *
+95615  C  2695      5  *  ...  *  *  eb8de46f-480c-4b8a-a467-807e74467379-IGH  *
+
+[836 rows x 10 columns]
+File 'results/clustering/cdr/pellet_VH_R0/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/pellet_VH_R0/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+1067  C  26  785  *  *  *  *  *  b35798e5-5e52-486b-8de5-d46ad80d68ca-IGK  *
+1081  C  40   92  *  *  *  *  *  0a7efe06-013a-4fa2-9ea2-8c8f12a50e1d-IGK  *
+1071  C  30   43  *  *  *  *  *  5784660e-08d9-441c-9a95-417d97221894-IGK  *
+1073  C  32   21  *  *  *  *  *  0d079d2f-dbba-4227-b645-ff573943b943-IGK  *
+1045  C   4   18  *  *  *  *  *  4086e41d-b4e1-4a94-b6ee-db255ceb315d-IGK  *
+1061  C  20   15  *  *  *  *  *  82a54ed0-78c6-4944-8383-9839bb529708-IGK  *
+1042  C   1    7  *  *  *  *  *  b4165c9f-be3f-4bc4-957b-2e88d3531e83-IGK  *
+1058  C  17    7  *  *  *  *  *  738fd5aa-4a11-487a-944d-eba1fa02f372-IGK  *
+1069  C  28    5  *  *  *  *  *  ce20bccf-bd3f-4144-853f-194c1ec764a7-IGK  *
+Data successfully updated in 'results/clustering/cdr/pellet_VH_R0/cdr3_clusters/cluster_seq_id.json'

@@ -1,0 +1,266 @@
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/088970b0-46a7-4d8e-98b9-478229ff77cc-IGH.fasta 100%
+4508 nt in 98 seqs, min 46, max 46, avg 46
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 3 Size min 1, max 96, avg 32.7
+Singletons: 2, 2.0% of seqs, 66.7% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/045a9d0a-824a-46c2-8261-7ae67af51aa3-IGH.fasta 100%
+4200 nt in 100 seqs, min 42, max 42, avg 42
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 13 Size min 1, max 86, avg 7.7
+Singletons: 11, 11.0% of seqs, 84.6% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0382af04-4529-4a5e-b7f2-fb694e8fe173-IGH.fasta 100%
+13300 nt in 300 seqs, min 34, max 50, avg 44
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 47 Size min 1, max 84, avg 6.4
+Singletons: 30, 10.0% of seqs, 63.8% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/017f6229-0925-4e1c-aa6a-d284cfa13fcc-IGH.fasta 100%
+4200 nt in 100 seqs, min 42, max 42, avg 42
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20 Size min 1, max 57, avg 5.0
+Singletons: 8, 8.0% of seqs, 40.0% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/052c21bb-63bd-485a-9724-d378b942ed52-IGH.fasta 100%
+4000 nt in 100 seqs, min 40, max 40, avg 40
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 20 Size min 1, max 28, avg 5.0
+Singletons: 7, 7.0% of seqs, 35.0% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/040c63b7-2190-48d9-879b-8748be74a8be-IGH.fasta 100%
+5600 nt in 100 seqs, min 56, max 56, avg 56
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 3 Size min 1, max 98, avg 33.3
+Singletons: 2, 2.0% of seqs, 66.7% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/03e14c23-d326-4ffa-a3b9-efa77e96237f-IGH.fasta 100%
+3800 nt in 100 seqs, min 38, max 38, avg 38
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 22 Size min 1, max 36, avg 4.5
+Singletons: 12, 12.0% of seqs, 54.5% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/02b3639f-7a58-4c73-a4ac-d09fbba15b29-IGH.fasta 100%
+4600 nt in 100 seqs, min 46, max 46, avg 46
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 25 Size min 1, max 31, avg 4.0
+Singletons: 12, 12.0% of seqs, 48.0% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/026f2f1d-2d76-41f3-98e6-92fd7ece3730-IGH.fasta 100%
+12761 nt in 201 seqs, min 53, max 74, avg 63
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 32 Size min 1, max 66, avg 6.3
+Singletons: 14, 7.0% of seqs, 43.8% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/00c16e23-3e6f-44c3-ba7e-671d176d0276-IGH.fasta 100%
+11100 nt in 200 seqs, min 54, max 57, avg 56
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 31 Size min 1, max 44, avg 6.5
+Singletons: 12, 6.0% of seqs, 38.7% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/00706856-0fd5-459c-9582-eab93392cfa4-IGH.fasta 100%
+10794 nt in 215 seqs, min 46, max 54, avg 50
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 34 Size min 1, max 92, avg 6.3
+Singletons: 15, 7.0% of seqs, 44.1% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0208b116-adf9-471b-9669-9b4bf2c68e1e-IGH.fasta 100%
+5700 nt in 100 seqs, min 57, max 57, avg 57
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 4 Size min 1, max 97, avg 25.0
+Singletons: 3, 3.0% of seqs, 75.0% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0652927f-9c9c-4ec6-900c-d83efd014af1-IGH.fasta 100%
+7600 nt in 100 seqs, min 76, max 76, avg 76
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 15 Size min 1, max 45, avg 6.7
+Singletons: 8, 8.0% of seqs, 53.3% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/00cb4b2f-b190-4edf-a8cc-3fde18225e11-IGH.fasta 100%
+3600 nt in 100 seqs, min 36, max 36, avg 36
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 27 Size min 1, max 31, avg 3.7
+Singletons: 15, 15.0% of seqs, 55.6% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/00a6029d-b777-427f-a33b-778feffbdcd7-IGH.fasta 100%
+12000 nt in 200 seqs, min 53, max 67, avg 60
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 16 Size min 1, max 83, avg 12.5
+Singletons: 7, 3.5% of seqs, 43.8% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0773197e-9559-4007-989f-002f6c3e5cdd-IGH.fasta 100%
+10900 nt in 200 seqs, min 42, max 67, avg 54
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 35 Size min 1, max 74, avg 5.7
+Singletons: 19, 9.5% of seqs, 54.3% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/028f2d1a-ffa9-4ae7-b474-23000df09ea3-IGH.fasta 100%
+6800 nt in 100 seqs, min 68, max 68, avg 68
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 6 Size min 1, max 86, avg 16.7
+Singletons: 2, 2.0% of seqs, 33.3% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0108f1af-5d7f-4f3d-ba5e-1ccfa44bac72-IGH.fasta 100%
+16598 nt in 287 seqs, min 45, max 74, avg 58
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 32 Size min 1, max 97, avg 9.0
+Singletons: 10, 3.5% of seqs, 31.2% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/clustering/cdr/vh_illu_error05/cdr3_clusters/0add60ee-9d4d-41cd-bbe4-89d56d3c5872-IGH.fasta 100%
+15539 nt in 299 seqs, min 40, max 61, avg 52
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 42 Size min 1, max 75, avg 7.1
+Singletons: 21, 7.0% of seqs, 50.0% of clusters
+Multiple alignments 100%

@@ -1,0 +1,21 @@
+FASTA-Reader: Ignoring invalid residues at position(s): On line 1806254: 24
+Starting Cicle 1
+Runing igblast
+End of igblast: 24992.93111038208 sec
+Starting Cicle Annotation
+Traceback (most recent call last):
+  File "scripts/preProcess/igCicle.py", line 77, in <module>
+    Annot_seq = (cicleAnnot[cicleAnnot["sequence_id"] == "%s"%(rec.id)]) # add id plus cicle in header
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/ops/common.py", line 81, in new_method
+    return method(self, other)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/arraylike.py", line 40, in __eq__
+    return self._cmp_method(other, operator.eq)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/series.py", line 6098, in _cmp_method
+    return self._construct_result(res_values, name=res_name)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/series.py", line 3105, in _construct_result
+    out = self._constructor(result, index=self.index, dtype=dtype)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/series.py", line 519, in __init__
+    self._set_axis(0, index)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/generic.py", line 731, in _set_axis
+    self._clear_item_cache()
+KeyboardInterrupt

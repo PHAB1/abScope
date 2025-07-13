@@ -12,7 +12,7 @@ output_dir=$(dirname "${output}")
 
 while IFS= read -r path; do
     filename=$(basename "${path}" ".fasta")
-    vsearch --cluster_fast "${path}" --id 0.9 --target_cov 0.9 --minseqlength 6 --threads "${threads}" \
+    vsearch --cluster_fast "${path}" --id 0.87 --target_cov 0.9 --minseqlength 6 --threads "${threads}" \
         --uc "${output_dir}/${filename}.uc" --consout "${output_dir}/${filename}.fasta"
     ls "${output_dir}/${filename}.fasta" >> "${output}"
 done < "${paths}"

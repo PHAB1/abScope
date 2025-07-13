@@ -1,0 +1,1006 @@
+Clusters Ordened By clusters lenght: 
+       0    1      2  3  ...  6  7                                         8  9
+26523  C  333  15448  *  ...  *  *  200300ba-3123-4a96-a560-13075c855063-IGH  *
+26234  C   44   2463  *  ...  *  *  a3f892e6-ba4b-49f8-af5c-dfdda8588d56-IGH  *
+26466  C  276   2206  *  ...  *  *  48079dd0-70c2-4892-b063-43086679d7eb-IGH  *
+26354  C  164   1248  *  ...  *  *  002b872f-fc16-4aea-86ab-37ba7c6ebdc1-IGH  *
+26428  C  238    890  *  ...  *  *  215dc9b3-4219-43d6-ac4d-f982f354bccf-IGH  *
+...   ..  ...    ... ..  ... .. ..                                       ... ..
+26636  C  446      4  *  ...  *  *  83fb5ca7-44bc-4a88-9198-73b2d3ab9ef5-IGH  *
+26672  C  482      4  *  ...  *  *  aba4b487-95cf-4ac4-ad1a-af2f2b0150bc-IGH  *
+26645  C  455      4  *  ...  *  *  8f050cd8-f4cf-49e7-877c-620b7910cd2f-IGH  *
+26676  C  486      4  *  ...  *  *  b1129791-b59d-484f-b3cc-ef8ee466d28e-IGH  *
+26689  C  499      4  *  ...  *  *  c406aa84-ae1d-4eb4-9a25-6bd8b732e264-IGH  *
+
+[95 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+2731  C  109  980  *  *  *  *  *  05eb5657-c0da-47e0-976d-5de2e62b58d2-IGH  *
+2622  C    0  583  *  *  *  *  *  01738542-4bc6-4fbe-967d-c92e89ca8b39-IGH  *
+2689  C   67  224  *  *  *  *  *  8d699550-9620-4115-abce-c6f56c8b7ce3-IGH  *
+2644  C   22  129  *  *  *  *  *  015d9046-cd53-4f64-b34a-3b00cd4112b1-IGH  *
+2665  C   43  113  *  *  *  *  *  0871eb5a-5ffd-4ae6-8078-15fb3c37b401-IGH  *
+2729  C  107   82  *  *  *  *  *  034ff521-6a29-4167-a626-e31ea98f6e54-IGH  *
+2636  C   14   61  *  *  *  *  *  04b95ada-eb7d-4e84-8965-ef6bccf68afd-IGH  *
+2724  C  102   39  *  *  *  *  *  0013bddc-2c37-42d5-a9d7-cef715a0a8d3-IGH  *
+2714  C   92   35  *  *  *  *  *  03f8901e-be83-4e1e-8670-aff8504a24d4-IGH  *
+2715  C   93   27  *  *  *  *  *  04e5eaf1-178f-439d-b8b8-6118c2dde3c8-IGH  *
+2691  C   69   22  *  *  *  *  *  045fffb1-19c1-498f-945f-dc8520f84629-IGH  *
+2645  C   23   18  *  *  *  *  *  05583d4e-49eb-417b-8ca1-37a9a58816fc-IGH  *
+2728  C  106   18  *  *  *  *  *  02f78fb7-ada3-4626-9c36-906f25f25453-IGH  *
+2624  C    2   16  *  *  *  *  *  1992395d-031f-44f5-9142-978611e7a2d2-IGH  *
+2735  C  113   16  *  *  *  *  *  09dae263-3e51-4cc2-8f07-c32ede7ca339-IGH  *
+2678  C   56   11  *  *  *  *  *  07708eec-ce73-4115-8896-63db0a956953-IGH  *
+2742  C  120   10  *  *  *  *  *  1add7ecf-f681-4887-b5ea-5e338eca8a75-IGH  *
+2748  C  126    9  *  *  *  *  *  249a03b6-dece-41ae-9190-5775aff230d9-IGH  *
+2730  C  108    8  *  *  *  *  *  04e7810f-5680-476a-aafd-14294736370c-IGH  *
+2667  C   45    8  *  *  *  *  *  288493f7-54f5-46d2-b727-b182ff42bb13-IGH  *
+2717  C   95    8  *  *  *  *  *  2057975b-120e-4618-87bf-871280f20bf2-IGH  *
+2690  C   68    4  *  *  *  *  *  032f7c17-d711-499c-91e9-29baa443089e-IGH  *
+2725  C  103    4  *  *  *  *  *  006529c2-f7d5-433d-8d0d-cb54ac0c204a-IGH  *
+2740  C  118    4  *  *  *  *  *  15f0b674-abaa-4e34-b994-b02becc390a9-IGH  *
+2741  C  119    4  *  *  *  *  *  16e7564e-dcc7-49c3-a959-18f37f21fd64-IGH  *
+2743  C  121    4  *  *  *  *  *  1b149d4c-88e6-471a-80ee-7550b9234c1d-IGH  *
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+83  C  15  36  *  *  *  *  *  02acab25-4711-43d5-af12-145f4dcb7082-IGK  *
+73  C   5  11  *  *  *  *  *  0ae94741-e238-4125-a187-883296e0ee3d-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+461  C   34  85  *  *  *  *  *  0d55e01c-8586-49a7-a3d8-b6a6cb57f80a-IGH  *
+570  C  143  24  *  *  *  *  *  0300a749-bf5b-49b1-8425-d341e8b7ef84-IGH  *
+442  C   15   7  *  *  *  *  *  037bcf4e-d98d-49b3-96d2-9702f72fd55a-IGH  *
+641  C  214   6  *  *  *  *  *  1e110076-7101-44d1-9171-3c20d9e984b9-IGH  *
+617  C  190   5  *  *  *  *  *  0f4799af-4816-4dbc-8cf7-3734be7105ed-IGH  *
+445  C   18   5  *  *  *  *  *  2c02448e-0315-408d-bdd5-bb670fabf778-IGH  *
+540  C  113   5  *  *  *  *  *  15518acb-54d3-4e01-8c18-b19779b37c2f-IGH  *
+471  C   44   4  *  *  *  *  *  3fd668ac-13d8-4b7e-b7cc-90fd5ec6d4bc-IGH  *
+569  C  142   4  *  *  *  *  *  34a46532-345c-4145-be65-26ea4e188b40-IGH  *
+510  C   83   4  *  *  *  *  *  2dd7aaf3-2f7e-45bf-b99c-dc3892841502-IGH  *
+599  C  172   4  *  *  *  *  *  09e247d6-d0a7-4515-a08e-dabc6da494db-IGH  *
+619  C  192   4  *  *  *  *  *  2d1a1783-63b7-4744-bafb-25e4590234f0-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  3  4  *  *  *  *  *  105c109d-3699-4412-8aa7-8dd8085a8924-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+15  C  1  6  *  *  *  *  *  504f8295-8dc8-4739-9da4-1dd24b8c231a-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+28  C  6  13  *  *  *  *  *  10af4941-e225-44b0-9ab6-11aba5dc20b8-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+287  C  15  200  *  *  *  *  *  01165b4c-33cd-4133-816a-5a538e063d74-IGH  *
+295  C  23    5  *  *  *  *  *  3e0c17d6-0247-484a-af19-7f33e357dd62-IGH  *
+293  C  21    4  *  *  *  *  *  21f2f74f-2f89-492d-bea4-5475fb36fdc2-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+49  C  0  26  *  *  *  *  *  259ed164-6752-48b0-9691-3b72556c6aee-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+383  C  88  88  *  *  *  *  *  09c8c04d-5c98-46f3-9778-d9f77de9f262-IGH  *
+370  C  75  38  *  *  *  *  *  008d76b3-5218-43de-a59c-86a6e1a475e8-IGH  *
+306  C  11  16  *  *  *  *  *  2d257ff9-bed1-4564-9487-4c0af8ee9f6a-IGH  *
+342  C  47  12  *  *  *  *  *  02d61109-c441-4c84-9c09-4c9b5362c051-IGH  *
+358  C  63   8  *  *  *  *  *  2ff2ec33-fac0-4750-a93c-c01f8a96a3b1-IGH  *
+374  C  79   8  *  *  *  *  *  25ec3f34-ce62-42ea-b5da-bc1dc2398587-IGH  *
+307  C  12   7  *  *  *  *  *  38828d8a-8bf1-49d9-b134-fd947843ef18-IGH  *
+345  C  50   6  *  *  *  *  *  374ab241-602d-44bf-b11f-70bba5bd17b6-IGH  *
+359  C  64   5  *  *  *  *  *  4af2f393-b4a0-4b73-9bb9-f4d70ff5db8c-IGH  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+482  C  0  452  *  *  *  *  *  10c085eb-003e-46db-a77b-11d949a0c2fd-IGH  *
+490  C  8   18  *  *  *  *  *  10ed9e8b-dae2-46af-82df-0c6e4ef66331-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+54  C  0  51  *  *  *  *  *  09d753f6-d9e7-4557-9426-91353a24b0f0-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+88  C  2  66  *  *  *  *  *  062851fc-f779-4c2f-b979-23162b0fed3e-IGH  *
+90  C  4   4  *  *  *  *  *  4d87f01a-879b-491d-907e-2ae65022c5bd-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+475  C  88  116  *  *  *  *  *  36c257fc-8191-4b59-b92d-3157147b5552-IGH  *
+449  C  62   33  *  *  *  *  *  036a7653-2263-453c-be43-e00fb123734e-IGH  *
+418  C  31   31  *  *  *  *  *  02a75af4-639a-486b-8620-b1ddb6b38903-IGH  *
+470  C  83   31  *  *  *  *  *  00addf1e-fd7e-4188-b16d-107bb9089c60-IGH  *
+472  C  85   19  *  *  *  *  *  024c191c-686d-4009-ad16-b47c5f290d48-IGH  *
+394  C   7   18  *  *  *  *  *  00fceb28-b433-49fb-a16f-29bbb7f8fe25-IGH  *
+461  C  74    7  *  *  *  *  *  0688e181-aee3-4339-9454-27926ecaf274-IGH  *
+417  C  30    5  *  *  *  *  *  0021e163-39e9-4ba0-ad8e-8977d18b40f3-IGH  *
+422  C  35    4  *  *  *  *  *  1635576b-00e3-4c93-a7b3-87ce67f8ea88-IGH  *
+451  C  64    4  *  *  *  *  *  2c0b3544-1d36-4e13-8e89-2067c9b79b61-IGH  *
+435  C  48    4  *  *  *  *  *  2a24a15e-0085-4fb7-8bd2-2ab6dd0012f9-IGH  *
+441  C  54    4  *  *  *  *  *  08a92ccd-9bfc-4256-85f4-ee0d5383b4d7-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+58  C  9  14  *  *  *  *  *  11455953-2af7-4441-af75-480ee704811e-IGH  *
+49  C  0  13  *  *  *  *  *  51f744fc-3e1e-4a83-9ac6-c466455c7b46-IGH  *
+53  C  4   6  *  *  *  *  *  2738582c-01e8-4945-a601-44805f5d583b-IGH  *
+57  C  8   5  *  *  *  *  *  0a2bbe1f-9391-48e6-b0c7-580809cbfcb5-IGH  *
+52  C  3   4  *  *  *  *  *  19f64739-90db-4780-a9d9-a0f1abcceb1f-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+4948  C    0  4424  *  *  *  *  *  0002e5e5-eebf-442c-8208-ed3efab26d19-IGH  *
+5033  C   85   103  *  *  *  *  *  005d02f9-653a-4c14-a356-769fa60c57ab-IGH  *
+5066  C  118    59  *  *  *  *  *  035be2ac-86d7-48b7-8cec-14c3021973d4-IGH  *
+5023  C   75    45  *  *  *  *  *  0077e574-4821-4462-a494-ae1fcf25095c-IGH  *
+5068  C  120    38  *  *  *  *  *  1b04ebac-20bb-48ec-9ced-2aed21454d9b-IGH  *
+5003  C   55    37  *  *  *  *  *  07662546-a344-4ba4-9c78-22b66f3e2c29-IGH  *
+5053  C  105    30  *  *  *  *  *  0b884b33-c407-4d81-bee7-237e62140f74-IGH  *
+5054  C  106    20  *  *  *  *  *  10461c30-bda3-48f0-b45b-d77cd3fa1c8a-IGH  *
+5032  C   84    14  *  *  *  *  *  0035a6cc-ac6c-4d68-bba0-cd7ffddc9b58-IGH  *
+5000  C   52    13  *  *  *  *  *  1fc87e76-6a41-4344-9d49-1fbfa2ae1a67-IGH  *
+5008  C   60     5  *  *  *  *  *  3ab9877b-fc46-4dfd-9d40-ea703405b907-IGH  *
+4991  C   43     5  *  *  *  *  *  02d796c7-45c5-429e-98ce-cc7d2e515eae-IGH  *
+4953  C    5     4  *  *  *  *  *  10d720df-db72-4e14-a661-e6d477517422-IGH  *
+5002  C   54     4  *  *  *  *  *  049e5dd3-c7c9-46bd-90e7-bb77e86d249a-IGH  *
+5019  C   71     4  *  *  *  *  *  9753f8fa-4194-45c9-962e-474e894219d3-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+79  C  5  27  *  *  *  *  *  0471254b-fc1c-4abc-817b-d69fdf53aeae-IGK  *
+77  C  3   9  *  *  *  *  *  2b39a7ad-80d8-4f0f-8467-3d87fe30c790-IGK  *
+83  C  9   4  *  *  *  *  *  2ca0cf61-1943-4123-8175-8cc36677c5ec-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+4103  C   18  3428  *  *  *  *  *  00357c2d-8f78-4035-b6ad-70b4308e04a1-IGH  *
+4207  C  122   215  *  *  *  *  *  044202d2-93cf-417c-9030-e37cb0c01429-IGH  *
+4086  C    1    42  *  *  *  *  *  40f3eac7-fa39-4aa3-97ba-6ed6c7bde0a5-IGH  *
+4101  C   16    30  *  *  *  *  *  001891b9-5d8e-4a2c-982c-d3e8dc675ea3-IGH  *
+4120  C   35    25  *  *  *  *  *  19f0b57f-cfe3-4c29-a8ec-813ee3691961-IGH  *
+4107  C   22    22  *  *  *  *  *  0586f4a2-d910-4ee7-b657-65e4af46b57e-IGH  *
+4100  C   15    16  *  *  *  *  *  03da4c00-8703-4dff-83f5-630b12231ccc-IGH  *
+4119  C   34    15  *  *  *  *  *  155c140f-d9b9-498e-9694-338c58ff8011-IGH  *
+4208  C  123    15  *  *  *  *  *  0a909160-9aed-4faf-a9e6-ca8f1aae8cca-IGH  *
+4121  C   36    12  *  *  *  *  *  1aece4bb-dd63-4ccc-adae-4f30b7261246-IGH  *
+4138  C   53    11  *  *  *  *  *  43323811-7ad4-4b78-a5fb-ab0cae0dbc4a-IGH  *
+4148  C   63    10  *  *  *  *  *  5c8369f2-073d-406e-8c48-41fb0c9d09ea-IGH  *
+4164  C   79    10  *  *  *  *  *  817be434-cbe9-4215-9897-324b3c32bcef-IGH  *
+4098  C   13     9  *  *  *  *  *  16d7d929-c397-47b9-bd54-616dcfb823d4-IGH  *
+4117  C   32     8  *  *  *  *  *  14740a44-9f13-43cf-9387-0625af20146b-IGH  *
+4147  C   62     7  *  *  *  *  *  5781b528-3f13-4d1f-9ba1-8ca5068b14dd-IGH  *
+4163  C   78     7  *  *  *  *  *  80f226ef-0832-4df8-88a6-e5f5dabb9ebe-IGH  *
+4142  C   57     7  *  *  *  *  *  4d5c68a3-491a-448e-81e4-7fb66a9f3054-IGH  *
+4092  C    7     6  *  *  *  *  *  15f3854c-ba81-4976-9d3f-4d00d34864da-IGH  *
+4145  C   60     6  *  *  *  *  *  55e50258-5d78-4dfb-963b-921c566761ce-IGH  *
+4150  C   65     5  *  *  *  *  *  5fca4b87-f3c2-4cbe-829d-d8fce4147bfa-IGH  *
+4144  C   59     5  *  *  *  *  *  51ece30d-72d8-4624-be20-9b443ff44db3-IGH  *
+4154  C   69     5  *  *  *  *  *  6956eab1-2ed7-403c-916c-4d33de69cb99-IGH  *
+4090  C    5     4  *  *  *  *  *  0523914a-c5af-4cd3-8e41-8c839736fe67-IGH  *
+4109  C   24     4  *  *  *  *  *  086a09b8-1ff3-4451-b88b-3cf994c69e43-IGH  *
+4134  C   49     4  *  *  *  *  *  3d31f31c-9dd6-4b68-a7ce-9235cb3c94eb-IGH  *
+4161  C   76     4  *  *  *  *  *  7873015d-e5dc-4c8d-b633-ba2a5f497471-IGH  *
+4152  C   67     4  *  *  *  *  *  64abf164-8d8d-4b42-a0d9-9fb1a961a2ea-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+109  C  36  8  *  *  *  *  *  0c88f48b-c829-49bf-bec9-c3514d8a09c6-IGH  *
+76   C   3  6  *  *  *  *  *  1757a107-3664-4d0c-9589-54cc54e2d58b-IGH  *
+79   C   6  4  *  *  *  *  *  0619ba6b-cbca-42c4-86c7-cc4b735c0fe7-IGH  *
+84   C  11  4  *  *  *  *  *  0ee76e08-e2da-4b99-9bea-736523b56403-IGH  *
+86   C  13  4  *  *  *  *  *  389e9f4e-847a-4d1b-b5b7-dd1e3a3c5457-IGH  *
+99   C  26  4  *  *  *  *  *  042010cb-33cd-49ee-bb6b-2cdcc03043ff-IGH  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+127  C  0  119  *  *  *  *  *  00029f4f-7355-4a7e-bd50-2c771a97db2c-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+26  C  1  9  *  *  *  *  *  054f753f-e35f-4853-8a39-cdb729af8f0a-IGK  *
+28  C  3  9  *  *  *  *  *  27429b72-651e-4c7f-ab3d-b3cddb36e385-IGK  *
+Clusters Ordened By clusters lenght: 
+      0  1     2  3  4  5  6  7                                         8  9
+1107  C  0  1105  *  *  *  *  *  0020c59f-acc3-40ce-96c1-40edaae654cc-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+30  C  6  15  *  *  *  *  *  244187fa-80e0-4713-b7f3-aea6d4937dd5-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+84  C  20  28  *  *  *  *  *  052475b3-7052-40ee-8445-9395fea38c7d-IGH  *
+76  C  12  13  *  *  *  *  *  0913a443-23f3-45ec-abab-faee79d3f130-IGH  *
+64  C   0   4  *  *  *  *  *  96aaafbc-59f3-4dc4-aa7c-2463b85e8e01-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+279  C  33  73  *  *  *  *  *  0229d6ae-c936-47cb-9f2d-2e0b426ea18c-IGH  *
+246  C   0  51  *  *  *  *  *  0431b968-95a2-4f49-8457-dfb0634ce7e4-IGH  *
+253  C   7  14  *  *  *  *  *  121c48f5-1864-4f94-b183-74aa350dc716-IGH  *
+266  C  20   9  *  *  *  *  *  126c9b44-08e8-4763-b4c2-d006b114cd04-IGH  *
+268  C  22   8  *  *  *  *  *  4491298f-52d4-473b-b777-db5f95532810-IGH  *
+288  C  42   8  *  *  *  *  *  410337f4-32a4-4d48-b8cc-6cb1435b0837-IGH  *
+289  C  43   8  *  *  *  *  *  43e6ee52-8db0-40da-9f60-aedacb07089c-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+20  C  0  9  *  *  *  *  *  2bd8e0b8-0e0c-4536-92aa-52c435ca9cab-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+136  C  32  19  *  *  *  *  *  241faa70-2afe-4a4e-b1e8-a0c9c9a76d2f-IGH  *
+104  C   0  15  *  *  *  *  *  32e13b74-5aa2-47ed-b510-9237649f37f2-IGH  *
+112  C   8   9  *  *  *  *  *  63c8cf77-60db-4b7b-af68-c2ff167b234d-IGH  *
+134  C  30   7  *  *  *  *  *  1fab1fa2-4c26-4fe3-8552-24081a84b983-IGH  *
+105  C   1   4  *  *  *  *  *  324d1396-20b0-4e7e-ad4c-f2d1b4de8a1d-IGH  *
+117  C  13   4  *  *  *  *  *  2c4af8dd-9fde-4b4e-8206-9e4ae9a0daa8-IGH  *
+Clusters Ordened By clusters lenght: 
+       0    1      2  3  ...  6  7                                         8  9
+20642  C   59  17932  *  ...  *  *  0004d2a5-511a-4cc4-be0b-a7c69f4249b6-IGH  *
+20596  C   13    241  *  ...  *  *  0091ac4f-23a4-4736-89f0-445fdd5e2b36-IGH  *
+20660  C   77    240  *  ...  *  *  02fe3510-c4e5-4835-8ed4-1083573e2b97-IGH  *
+20598  C   15    179  *  ...  *  *  03ddeee5-977c-46e5-809b-017f17b5503b-IGH  *
+20597  C   14    145  *  ...  *  *  02692bd3-a313-4e52-a8b3-6b1ae89dac1a-IGH  *
+...   ..  ...    ... ..  ... .. ..                                       ... ..
+20759  C  176      4  *  ...  *  *  2792ad5e-bde1-41bb-b831-80b994dc196c-IGH  *
+20802  C  219      4  *  ...  *  *  3f22606a-a663-4ad8-abe1-1cae8747f25f-IGH  *
+20781  C  198      4  *  ...  *  *  333ffb2f-8833-4e1b-aa01-24bf133051e0-IGH  *
+20852  C  269      4  *  ...  *  *  58dd9098-b271-4512-b887-76fedf6e0d9c-IGH  *
+20838  C  255      4  *  ...  *  *  540d4e51-8683-4900-8128-fa29ab855c50-IGH  *
+
+[65 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  0  4  *  *  *  *  *  485a7af3-e327-4ecf-8255-ee106c57edbe-IGK  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+178  C  0  161  *  *  *  *  *  0609e8d5-8327-4f1c-a8d8-9563e1e7c7e9-IGH  *
+179  C  1    4  *  *  *  *  *  6cd845e0-78cf-4060-b282-f90b80b1f822-IGH  *
+Clusters Ordened By clusters lenght: 
+      0   1     2  3  4  5  6  7                                         8  9
+2138  C  10  1779  *  *  *  *  *  00546bda-73c0-494f-a86c-7f50e09f7dbd-IGH  *
+2141  C  13    80  *  *  *  *  *  0dfbc1f6-569f-4bc3-998f-739a5eb3f36a-IGH  *
+2198  C  70    38  *  *  *  *  *  00dd1e0b-71f7-4a5a-a56b-9d1f8345775e-IGH  *
+2137  C   9    31  *  *  *  *  *  93bca0b5-b0c3-4998-8452-8bb5cb604091-IGH  *
+2151  C  23    29  *  *  *  *  *  3a4b0383-07f2-43b3-8d32-1a776a5c9489-IGH  *
+2140  C  12    20  *  *  *  *  *  0d45c8d3-da9f-4988-a16a-9aded00cd7cd-IGH  *
+2129  C   1    12  *  *  *  *  *  649e27ab-b29e-45d0-9029-faee70201b41-IGH  *
+2179  C  51     9  *  *  *  *  *  14448208-91ac-4dc0-8c53-c3f6a6eed6af-IGH  *
+2150  C  22     7  *  *  *  *  *  2feaffb9-1d71-4348-b554-7948afd2a730-IGH  *
+2163  C  35     6  *  *  *  *  *  a2feef97-ddd9-4be9-9f07-ac737fdb37f5-IGH  *
+2147  C  19     6  *  *  *  *  *  2586e815-51f4-4cd9-ab13-81781121bd5a-IGH  *
+2143  C  15     6  *  *  *  *  *  10c0dd2d-bb57-45d5-bdfe-5b8bee0b7ef8-IGH  *
+2139  C  11     6  *  *  *  *  *  0b386766-bc44-42c1-b184-291270f25128-IGH  *
+2144  C  16     5  *  *  *  *  *  11eac7ef-a039-496b-b000-7fa3688e821c-IGH  *
+2142  C  14     5  *  *  *  *  *  0f61b06d-e06d-4038-85e1-bd5a882302d5-IGH  *
+2149  C  21     4  *  *  *  *  *  2ebcced0-b8e5-4b99-8bfc-487030049552-IGH  *
+2167  C  39     4  *  *  *  *  *  c63f000e-5a3d-48a1-acbc-4fbd55f76c35-IGH  *
+Clusters Ordened By clusters lenght: 
+     0    1    2  3  4  5  6  7                                         8  9
+675  C   71  329  *  *  *  *  *  01248872-a257-4621-abab-e43ebcb2b22d-IGH  *
+735  C  131   42  *  *  *  *  *  026cd597-dda4-4464-97f3-832be5621337-IGH  *
+633  C   29   12  *  *  *  *  *  1a3ff0a7-beb3-46c6-be74-53056a6a0406-IGH  *
+724  C  120    9  *  *  *  *  *  02fb3805-1b9f-40c0-808a-2dc5b9bdc935-IGH  *
+630  C   26    8  *  *  *  *  *  0ab18dd8-beb9-4a34-9b8f-e1959bc7f9e6-IGH  *
+651  C   47    7  *  *  *  *  *  530a70fc-53f3-43c1-a655-b3cc456835e2-IGH  *
+699  C   95    6  *  *  *  *  *  02f99ef7-f98f-46e4-a732-23b28118509e-IGH  *
+607  C    3    5  *  *  *  *  *  0cda1e87-be64-471b-a5e0-42b819f9d9e6-IGH  *
+701  C   97    4  *  *  *  *  *  0b36ce8c-8e68-4344-8f8e-562284b79ecc-IGH  *
+680  C   76    4  *  *  *  *  *  0f2ec720-beb7-4d65-a7a6-a5838c6341cb-IGH  *
+731  C  127    4  *  *  *  *  *  7039ceb1-61da-4e5b-ae56-296d7dcb98fb-IGH  *
+736  C  132    4  *  *  *  *  *  0dcf78b8-e072-4f41-b851-7ba06d846792-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+35  C  8  4  *  *  *  *  *  0859fdb7-f542-4171-b43f-d24c412eb3f4-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+55  C   9  4  *  *  *  *  *  00b82ae2-9352-4cb7-b8a5-735f97a14c27-IGH  *
+57  C  11  4  *  *  *  *  *  6086b8f2-08cc-4dec-80b2-8c433f379d7b-IGH  *
+64  C  18  4  *  *  *  *  *  5ef0a551-f414-43e9-b0c6-503d574c51d8-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+532  C   1  439  *  *  *  *  *  02b70b92-9116-4a55-bcbf-85df5dc94cd2-IGH  *
+535  C   4    9  *  *  *  *  *  0a939872-5ec0-470a-8d8a-b54cee9e6227-IGH  *
+546  C  15    8  *  *  *  *  *  1e895620-62c0-484f-bb9f-e469abb410fc-IGH  *
+569  C  38    6  *  *  *  *  *  710a26d6-8738-4ea5-bc7c-dbd4c5a7c392-IGH  *
+533  C   2    5  *  *  *  *  *  02f68056-d030-461c-90ad-4c5bb2f66570-IGH  *
+558  C  27    5  *  *  *  *  *  48571ee7-91dc-4460-bf8b-56c5c80c2eef-IGH  *
+537  C   6    4  *  *  *  *  *  0d32e5ca-4fe1-425d-97fb-b848007e373e-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+7  C  0  7  *  *  *  *  *  15263f09-89c3-405d-871e-e219a9881511-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  0  7  *  *  *  *  *  15263f09-89c3-405d-871e-e219a9881511-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1465  C   29  760  *  *  *  *  *  02bd4d8f-10aa-4d32-9d2b-1a106f59c435-IGH  *
+1557  C  121  142  *  *  *  *  *  000e8076-6713-4bd4-ad88-cfb2b8310b7a-IGH  *
+1486  C   50   47  *  *  *  *  *  09e00522-d353-4d37-879b-a84c7cf7a46d-IGH  *
+1464  C   28   45  *  *  *  *  *  00226f85-b708-4363-bc20-85a7a7b9f585-IGH  *
+1511  C   75   45  *  *  *  *  *  12887efc-6cb3-49ac-86c5-ce1fe906b8f6-IGH  *
+1484  C   48   34  *  *  *  *  *  0033a339-a6ba-4baf-8761-d4d8644c4784-IGH  *
+1441  C    5   32  *  *  *  *  *  01825b95-82b3-4a8f-8f2f-2dc132e1b6d5-IGH  *
+1463  C   27   28  *  *  *  *  *  00210fd9-a13a-4ada-adb5-ea6e1c1ee564-IGH  *
+1467  C   31   23  *  *  *  *  *  12c259e9-4b81-47e0-b501-dfa2487ca761-IGH  *
+1514  C   78   21  *  *  *  *  *  00fb3c14-2ccd-4f6d-a776-4ff53c1ee07d-IGH  *
+1540  C  104   13  *  *  *  *  *  06052e38-3a83-472d-b6ff-9477c76a6530-IGH  *
+1452  C   16   12  *  *  *  *  *  30b0817a-8fb5-4e95-89d9-ec139dce4edc-IGH  *
+1544  C  108   11  *  *  *  *  *  1efa0ce9-435c-4e30-94ba-ae8e18291c09-IGH  *
+1543  C  107    9  *  *  *  *  *  1850bdc8-3baf-4642-b142-bc389d29f0f6-IGH  *
+1488  C   52    9  *  *  *  *  *  0c265c64-8cd1-43ae-95b5-e9295ff8afe8-IGH  *
+1459  C   23    9  *  *  *  *  *  8edea352-407c-4c81-9e3b-1bb75a61e8dd-IGH  *
+1559  C  123    8  *  *  *  *  *  07796066-71c9-4e11-9e86-645bd41c499d-IGH  *
+1516  C   80    7  *  *  *  *  *  0f22d64e-22fa-4b02-8244-a46b5cce69a9-IGH  *
+1542  C  106    7  *  *  *  *  *  0df88709-d0e0-45a9-a2fe-49c1688f4c95-IGH  *
+1538  C  102    6  *  *  *  *  *  0218adc3-228e-4123-a74b-c409dd553055-IGH  *
+1495  C   59    6  *  *  *  *  *  690385c3-efc8-4cfb-838e-569b21657b26-IGH  *
+1517  C   81    5  *  *  *  *  *  10a32f64-d25a-4b5e-9b9d-f3eb1515e1b2-IGH  *
+1539  C  103    5  *  *  *  *  *  0353ad56-f984-4cfe-8f57-eda77c19b882-IGH  *
+1478  C   42    4  *  *  *  *  *  a5f1f200-73b5-4015-b306-e940c8d501b7-IGH  *
+1454  C   18    4  *  *  *  *  *  1d1443dc-d9ac-4f49-8a94-079fbf2983c9-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+6787  C  126  2617  *  *  *  *  *  0056248a-076b-4c35-983b-030c36e9c1cf-IGH  *
+6715  C   54  2475  *  *  *  *  *  000bce23-ef09-4a54-a906-6c224f117e1c-IGH  *
+6899  C  238   699  *  *  *  *  *  00113d77-2fcb-4d66-9782-55504584952e-IGH  *
+6789  C  128   116  *  *  *  *  *  01614b10-3be8-4338-8ff7-dccf7c7223a0-IGH  *
+6661  C    0    92  *  *  *  *  *  02017de8-a236-49cb-a1ae-aab132030429-IGH  *
+6791  C  130    32  *  *  *  *  *  05b38c75-2e2b-49f8-8c22-fa34385c385d-IGH  *
+6796  C  135    31  *  *  *  *  *  0b5c7622-cad3-40af-a116-057ce7170643-IGH  *
+6897  C  236    26  *  *  *  *  *  d656b2cf-7dda-4d29-85ba-d3d52704b8c7-IGH  *
+6702  C   41    17  *  *  *  *  *  1c82bdbd-f802-41ff-8d0e-386034a4652a-IGH  *
+6900  C  239    16  *  *  *  *  *  00efe2c3-81c3-4c8e-9348-38c2fe0454f5-IGH  *
+6679  C   18    16  *  *  *  *  *  07b0ec40-7de3-4e70-9ada-e2112d311824-IGH  *
+6798  C  137    15  *  *  *  *  *  0d2ce3c0-eae1-4623-a3ce-e19dfe8a8362-IGH  *
+6800  C  139    14  *  *  *  *  *  1094316e-060f-464a-ae1e-adcaeb02ed48-IGH  *
+6802  C  141    11  *  *  *  *  *  18917e32-000f-4d1e-aa0b-6b4f5114c06a-IGH  *
+6834  C  173    10  *  *  *  *  *  62b08887-a73b-4450-b4e4-fd5a67ccc6cd-IGH  *
+6680  C   19     9  *  *  *  *  *  17c9d310-385e-4652-84ab-bf5df3c4e20d-IGH  *
+6801  C  140     8  *  *  *  *  *  12d523c6-a450-4e4f-91e3-74974536ca3b-IGH  *
+6797  C  136     7  *  *  *  *  *  0b684c31-66a5-431b-a759-d7e81cc52db3-IGH  *
+6786  C  125     7  *  *  *  *  *  0013e458-6750-40cc-835d-0703392f00ed-IGH  *
+6821  C  160     7  *  *  *  *  *  43f04570-a8ab-49b1-a9e4-910deab3a5e0-IGH  *
+6906  C  245     7  *  *  *  *  *  087737f2-aa72-47ac-a2ff-2e8a39fd6928-IGH  *
+6829  C  168     6  *  *  *  *  *  56f40537-cf1a-41c6-8ec0-4f54766afd13-IGH  *
+6675  C   14     6  *  *  *  *  *  28ef52e2-e5d1-4f59-8da3-ac2bb03b892d-IGH  *
+6805  C  144     6  *  *  *  *  *  1a0c400c-f66b-486b-a376-02b2155d78f7-IGH  *
+6808  C  147     6  *  *  *  *  *  21b770e2-6586-4295-8c69-f4600291d15b-IGH  *
+6736  C   75     5  *  *  *  *  *  46862af7-06e7-4528-89f9-2a47b73f78aa-IGH  *
+6826  C  165     5  *  *  *  *  *  504e7ad8-bb79-4492-87f9-99cb1d02527e-IGH  *
+6803  C  142     5  *  *  *  *  *  19e8e3af-a077-485d-b929-fdff7ffa931e-IGH  *
+6851  C  190     5  *  *  *  *  *  85367f5e-f0ea-492f-9357-5294879d32ea-IGH  *
+6725  C   64     5  *  *  *  *  *  2e616ff4-627c-4b72-a03f-44f0a24e9430-IGH  *
+6663  C    2     4  *  *  *  *  *  3ca31179-4d6c-431a-a932-8e339afdccbd-IGH  *
+6691  C   30     4  *  *  *  *  *  38b27e1e-3eaf-45ec-90e7-aeb2492177e0-IGH  *
+6682  C   21     4  *  *  *  *  *  4c1d0058-83ff-44d7-b497-5f327450a458-IGH  *
+6795  C  134     4  *  *  *  *  *  09fc3fe0-1af6-4f0d-9673-a4f9ec22150d-IGH  *
+6729  C   68     4  *  *  *  *  *  379918c4-5baa-4071-9380-ec44fde6e7cf-IGH  *
+6810  C  149     4  *  *  *  *  *  24e52103-6a7c-4c3c-8b30-5ac5f2518719-IGH  *
+6804  C  143     4  *  *  *  *  *  19f3e0c7-06ba-4ed3-9419-65f072531eda-IGH  *
+6917  C  256     4  *  *  *  *  *  1d2a3c20-dbe2-43a8-ad38-d2f857e215aa-IGH  *
+6922  C  261     4  *  *  *  *  *  2bc1aa90-047a-424e-bf73-d990bcc5385f-IGH  *
+Clusters Ordened By clusters lenght: 
+      0   1     2  3  4  5  6  7                                         8  9
+1805  C   0  1708  *  *  *  *  *  00a84185-9287-438a-922e-5d61127a753e-IGH  *
+1811  C   6    44  *  *  *  *  *  152c066a-2f54-4365-b650-f5f868c2dfb2-IGH  *
+1843  C  38     8  *  *  *  *  *  0a068efb-f452-4d11-9715-7b7d988310b0-IGH  *
+1813  C   8     4  *  *  *  *  *  3d1fcd96-65e5-40e9-b04d-ffb54f0bc846-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+65  C  15  13  *  *  *  *  *  05209684-c868-4c4d-82f4-21053f5ebf54-IGH  *
+56  C   6   5  *  *  *  *  *  3cb848f7-1262-4aca-97b7-21cb1409a35d-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+2602  C   25  1759  *  *  *  *  *  831ae3ba-4e71-47c5-8ec9-6a3b613d0be9-IGH  *
+2704  C  127   329  *  *  *  *  *  00a57156-ee03-4a7d-8d63-6aa8ec846406-IGH  *
+2607  C   30    44  *  *  *  *  *  061701b9-b267-48dd-a440-094968f164f5-IGH  *
+2617  C   40    42  *  *  *  *  *  1528f5d3-7240-47e9-9622-f97639b84415-IGH  *
+2577  C    0    35  *  *  *  *  *  125b2204-bf50-4f6a-b01f-60114ee0cda6-IGH  *
+2604  C   27    35  *  *  *  *  *  00a151da-1bfe-4c8d-bab0-3dd9f58f1a8d-IGH  *
+2593  C   16    30  *  *  *  *  *  00e2a0b4-ed27-4e84-a9ee-825addfd96d5-IGH  *
+2643  C   66    20  *  *  *  *  *  4550695c-bc77-44ea-82a9-e67cf7c04403-IGH  *
+2629  C   52    15  *  *  *  *  *  29a29f9e-2bc4-4bc9-8b9e-334666111d3e-IGH  *
+2635  C   58    12  *  *  *  *  *  35194b3c-e620-40fa-b3cc-dce129b3c0d3-IGH  *
+2620  C   43    12  *  *  *  *  *  1f04f006-8ae1-4bdb-81dd-44b6b3cda0b3-IGH  *
+2712  C  135    10  *  *  *  *  *  3e2eda9f-0728-4c24-9614-e2b5d87987af-IGH  *
+2610  C   33     9  *  *  *  *  *  09996170-821c-483d-b4ea-1eb8dd84b8c4-IGH  *
+2664  C   87     8  *  *  *  *  *  90ec7076-56b1-4ee3-b9f0-f8ccbf4fb51f-IGH  *
+2584  C    7     8  *  *  *  *  *  2de786f3-5fa9-4735-bdd1-eb6688477f65-IGH  *
+2605  C   28     8  *  *  *  *  *  00f87185-7df2-4a77-905d-642cd09d8e70-IGH  *
+2685  C  108     7  *  *  *  *  *  cba2307f-c152-4b67-9ee7-f02080f08382-IGH  *
+2589  C   12     6  *  *  *  *  *  27d9d622-ed1f-4c0e-9788-47644bbccedb-IGH  *
+2710  C  133     6  *  *  *  *  *  3aad1a54-b5c8-472c-837a-454636c8f101-IGH  *
+2622  C   45     5  *  *  *  *  *  22086334-e7f1-46db-8738-86e4db36b7f9-IGH  *
+2641  C   64     5  *  *  *  *  *  40260c45-c088-4020-9d85-76903c0e75f1-IGH  *
+2627  C   50     4  *  *  *  *  *  25b19b5f-2c9e-4ce7-95eb-f78a87269379-IGH  *
+2633  C   56     4  *  *  *  *  *  318fddac-4131-4214-bcec-4d4f0685e347-IGH  *
+2655  C   78     4  *  *  *  *  *  61382813-c82f-4c6e-93bb-7e311ed04f30-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+51  C  16  7  *  *  *  *  *  06402671-f339-45dc-b85f-7071f64f1222-IGH  *
+Clusters Ordened By clusters lenght: 
+     0    1    2  3  4  5  6  7                                         8  9
+693  C   57  346  *  *  *  *  *  00566f07-bae8-4f60-a920-7e42658b1cf2-IGH  *
+720  C   84   70  *  *  *  *  *  009134cf-a605-4da9-8879-b114e3eb77ae-IGH  *
+665  C   29   30  *  *  *  *  *  006446af-492c-4817-a3c8-3a33d024e5a4-IGH  *
+755  C  119   15  *  *  *  *  *  16821ee8-ff9e-486d-aa84-2b940f297dea-IGH  *
+646  C   10   11  *  *  *  *  *  11fb96fe-2cf9-4889-9dc3-6f2f4aa1cc8e-IGH  *
+667  C   31    5  *  *  *  *  *  083e8d33-b012-48ea-a234-6e025a9fa972-IGH  *
+678  C   42    4  *  *  *  *  *  4db3ced8-bac3-4870-8d56-4b4d59bcd880-IGH  *
+721  C   85    4  *  *  *  *  *  0608fa69-7c81-47ee-bb7c-985fd7c5ec81-IGH  *
+725  C   89    4  *  *  *  *  *  10df267a-9678-418c-be14-ffb3a5c056ce-IGH  *
+727  C   91    4  *  *  *  *  *  267f5b8b-7f4a-42a3-aedc-53031d9a1b02-IGH  *
+744  C  108    4  *  *  *  *  *  3f715eae-99e3-4aa2-97dd-b9adc8154621-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1395  C   12  852  *  *  *  *  *  00374ec4-2350-4688-ba72-52ee2c2f861c-IGH  *
+1394  C   11  329  *  *  *  *  *  001f6cfe-c56b-48e4-962c-155bc938d691-IGH  *
+1383  C    0   29  *  *  *  *  *  23302f69-c133-4e4d-8495-ea57f9afb46d-IGH  *
+1385  C    2   19  *  *  *  *  *  6e7d22e0-93e3-4306-8b76-df52b19f9cfe-IGH  *
+1412  C   29    6  *  *  *  *  *  1dbaee59-a5e9-4c39-ba47-ef9aad482760-IGH  *
+1429  C   46    6  *  *  *  *  *  3deca867-0f34-4d50-928e-3a149b0d344f-IGH  *
+1419  C   36    5  *  *  *  *  *  2af2100e-98af-4ce0-88fc-a5ba5565ec38-IGH  *
+1405  C   22    5  *  *  *  *  *  0f223c31-80fe-43b5-a385-e49dbb2e4983-IGH  *
+1401  C   18    5  *  *  *  *  *  088b5e9c-5a2e-47c8-9330-f5c182be5d9c-IGH  *
+1384  C    1    4  *  *  *  *  *  2c580665-d96b-4789-b26e-20e1e272b523-IGH  *
+1413  C   30    4  *  *  *  *  *  1fba2f5c-b1f1-4b56-980a-863c8b5a3622-IGH  *
+1442  C   59    4  *  *  *  *  *  67de5288-a8eb-46b9-8982-da48a54fc053-IGH  *
+1486  C  103    4  *  *  *  *  *  26dc95eb-e101-4c33-94cb-c579c05956c5-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+312  C   8  244  *  *  *  *  *  01521b54-8e7e-43ca-bc05-a33256e637a8-IGH  *
+310  C   6    9  *  *  *  *  *  3e3524cb-c96f-4894-a615-3502b8cb707c-IGH  *
+307  C   3    6  *  *  *  *  *  244b4d82-f4c3-400b-b9fd-26b6b6676229-IGH  *
+318  C  14    4  *  *  *  *  *  213511b8-544c-41cf-b087-8c1b7da03549-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+13  C  2  8  *  *  *  *  *  001bf009-e8cc-4d52-b3c1-1c741d282e7d-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+633  C   2  400  *  *  *  *  *  00b1738d-aab7-42d5-b673-ad51579f82a0-IGH  *
+632  C   1   73  *  *  *  *  *  0081614a-0c15-4282-92f7-9447277e8e56-IGH  *
+639  C   8   24  *  *  *  *  *  084399e7-2b5e-4fdb-a5f1-b4303068fac8-IGH  *
+638  C   7   12  *  *  *  *  *  06a534ec-c518-45bb-9ed4-6446103aadf1-IGH  *
+657  C  26   10  *  *  *  *  *  341a2b06-1ca6-4ae5-b606-e91e249cc3fc-IGH  *
+656  C  25    7  *  *  *  *  *  334f0d4d-2479-47eb-b907-9f287631f8ab-IGH  *
+640  C   9    5  *  *  *  *  *  08a9ca6a-0731-46dd-8f8b-eb4abc0f723c-IGH  *
+655  C  24    5  *  *  *  *  *  3323a270-8d51-47f3-a781-6b09658adac0-IGH  *
+691  C  60    4  *  *  *  *  *  ac08650a-0c47-4359-b7ce-3182eff82b70-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  2  4  *  *  *  *  *  61988d4d-f16c-425d-881a-523368c80fdd-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+       0    1      2  3  ...  6  7                                         8  9
+26523  C  333  15448  *  ...  *  *  200300ba-3123-4a96-a560-13075c855063-IGH  *
+26234  C   44   2463  *  ...  *  *  a3f892e6-ba4b-49f8-af5c-dfdda8588d56-IGH  *
+26466  C  276   2206  *  ...  *  *  48079dd0-70c2-4892-b063-43086679d7eb-IGH  *
+26354  C  164   1248  *  ...  *  *  002b872f-fc16-4aea-86ab-37ba7c6ebdc1-IGH  *
+26428  C  238    890  *  ...  *  *  215dc9b3-4219-43d6-ac4d-f982f354bccf-IGH  *
+...   ..  ...    ... ..  ... .. ..                                       ... ..
+26636  C  446      4  *  ...  *  *  83fb5ca7-44bc-4a88-9198-73b2d3ab9ef5-IGH  *
+26672  C  482      4  *  ...  *  *  aba4b487-95cf-4ac4-ad1a-af2f2b0150bc-IGH  *
+26645  C  455      4  *  ...  *  *  8f050cd8-f4cf-49e7-877c-620b7910cd2f-IGH  *
+26676  C  486      4  *  ...  *  *  b1129791-b59d-484f-b3cc-ef8ee466d28e-IGH  *
+26689  C  499      4  *  ...  *  *  c406aa84-ae1d-4eb4-9a25-6bd8b732e264-IGH  *
+
+[95 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+2731  C  109  980  *  *  *  *  *  05eb5657-c0da-47e0-976d-5de2e62b58d2-IGH  *
+2622  C    0  583  *  *  *  *  *  01738542-4bc6-4fbe-967d-c92e89ca8b39-IGH  *
+2689  C   67  224  *  *  *  *  *  8d699550-9620-4115-abce-c6f56c8b7ce3-IGH  *
+2644  C   22  129  *  *  *  *  *  015d9046-cd53-4f64-b34a-3b00cd4112b1-IGH  *
+2665  C   43  113  *  *  *  *  *  0871eb5a-5ffd-4ae6-8078-15fb3c37b401-IGH  *
+2729  C  107   82  *  *  *  *  *  034ff521-6a29-4167-a626-e31ea98f6e54-IGH  *
+2636  C   14   61  *  *  *  *  *  04b95ada-eb7d-4e84-8965-ef6bccf68afd-IGH  *
+2724  C  102   39  *  *  *  *  *  0013bddc-2c37-42d5-a9d7-cef715a0a8d3-IGH  *
+2714  C   92   35  *  *  *  *  *  03f8901e-be83-4e1e-8670-aff8504a24d4-IGH  *
+2715  C   93   27  *  *  *  *  *  04e5eaf1-178f-439d-b8b8-6118c2dde3c8-IGH  *
+2691  C   69   22  *  *  *  *  *  045fffb1-19c1-498f-945f-dc8520f84629-IGH  *
+2645  C   23   18  *  *  *  *  *  05583d4e-49eb-417b-8ca1-37a9a58816fc-IGH  *
+2728  C  106   18  *  *  *  *  *  02f78fb7-ada3-4626-9c36-906f25f25453-IGH  *
+2624  C    2   16  *  *  *  *  *  1992395d-031f-44f5-9142-978611e7a2d2-IGH  *
+2735  C  113   16  *  *  *  *  *  09dae263-3e51-4cc2-8f07-c32ede7ca339-IGH  *
+2678  C   56   11  *  *  *  *  *  07708eec-ce73-4115-8896-63db0a956953-IGH  *
+2742  C  120   10  *  *  *  *  *  1add7ecf-f681-4887-b5ea-5e338eca8a75-IGH  *
+2748  C  126    9  *  *  *  *  *  249a03b6-dece-41ae-9190-5775aff230d9-IGH  *
+2730  C  108    8  *  *  *  *  *  04e7810f-5680-476a-aafd-14294736370c-IGH  *
+2667  C   45    8  *  *  *  *  *  288493f7-54f5-46d2-b727-b182ff42bb13-IGH  *
+2717  C   95    8  *  *  *  *  *  2057975b-120e-4618-87bf-871280f20bf2-IGH  *
+2690  C   68    4  *  *  *  *  *  032f7c17-d711-499c-91e9-29baa443089e-IGH  *
+2725  C  103    4  *  *  *  *  *  006529c2-f7d5-433d-8d0d-cb54ac0c204a-IGH  *
+2740  C  118    4  *  *  *  *  *  15f0b674-abaa-4e34-b994-b02becc390a9-IGH  *
+2741  C  119    4  *  *  *  *  *  16e7564e-dcc7-49c3-a959-18f37f21fd64-IGH  *
+2743  C  121    4  *  *  *  *  *  1b149d4c-88e6-471a-80ee-7550b9234c1d-IGH  *
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+83  C  15  36  *  *  *  *  *  02acab25-4711-43d5-af12-145f4dcb7082-IGK  *
+73  C   5  11  *  *  *  *  *  0ae94741-e238-4125-a187-883296e0ee3d-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+461  C   34  85  *  *  *  *  *  0d55e01c-8586-49a7-a3d8-b6a6cb57f80a-IGH  *
+570  C  143  24  *  *  *  *  *  0300a749-bf5b-49b1-8425-d341e8b7ef84-IGH  *
+442  C   15   7  *  *  *  *  *  037bcf4e-d98d-49b3-96d2-9702f72fd55a-IGH  *
+641  C  214   6  *  *  *  *  *  1e110076-7101-44d1-9171-3c20d9e984b9-IGH  *
+617  C  190   5  *  *  *  *  *  0f4799af-4816-4dbc-8cf7-3734be7105ed-IGH  *
+445  C   18   5  *  *  *  *  *  2c02448e-0315-408d-bdd5-bb670fabf778-IGH  *
+540  C  113   5  *  *  *  *  *  15518acb-54d3-4e01-8c18-b19779b37c2f-IGH  *
+471  C   44   4  *  *  *  *  *  3fd668ac-13d8-4b7e-b7cc-90fd5ec6d4bc-IGH  *
+569  C  142   4  *  *  *  *  *  34a46532-345c-4145-be65-26ea4e188b40-IGH  *
+510  C   83   4  *  *  *  *  *  2dd7aaf3-2f7e-45bf-b99c-dc3892841502-IGH  *
+599  C  172   4  *  *  *  *  *  09e247d6-d0a7-4515-a08e-dabc6da494db-IGH  *
+619  C  192   4  *  *  *  *  *  2d1a1783-63b7-4744-bafb-25e4590234f0-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  3  4  *  *  *  *  *  105c109d-3699-4412-8aa7-8dd8085a8924-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+15  C  1  6  *  *  *  *  *  504f8295-8dc8-4739-9da4-1dd24b8c231a-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+28  C  6  13  *  *  *  *  *  10af4941-e225-44b0-9ab6-11aba5dc20b8-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+287  C  15  200  *  *  *  *  *  01165b4c-33cd-4133-816a-5a538e063d74-IGH  *
+295  C  23    5  *  *  *  *  *  3e0c17d6-0247-484a-af19-7f33e357dd62-IGH  *
+293  C  21    4  *  *  *  *  *  21f2f74f-2f89-492d-bea4-5475fb36fdc2-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+49  C  0  26  *  *  *  *  *  259ed164-6752-48b0-9691-3b72556c6aee-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+383  C  88  88  *  *  *  *  *  09c8c04d-5c98-46f3-9778-d9f77de9f262-IGH  *
+370  C  75  38  *  *  *  *  *  008d76b3-5218-43de-a59c-86a6e1a475e8-IGH  *
+306  C  11  16  *  *  *  *  *  2d257ff9-bed1-4564-9487-4c0af8ee9f6a-IGH  *
+342  C  47  12  *  *  *  *  *  02d61109-c441-4c84-9c09-4c9b5362c051-IGH  *
+358  C  63   8  *  *  *  *  *  2ff2ec33-fac0-4750-a93c-c01f8a96a3b1-IGH  *
+374  C  79   8  *  *  *  *  *  25ec3f34-ce62-42ea-b5da-bc1dc2398587-IGH  *
+307  C  12   7  *  *  *  *  *  38828d8a-8bf1-49d9-b134-fd947843ef18-IGH  *
+345  C  50   6  *  *  *  *  *  374ab241-602d-44bf-b11f-70bba5bd17b6-IGH  *
+359  C  64   5  *  *  *  *  *  4af2f393-b4a0-4b73-9bb9-f4d70ff5db8c-IGH  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+482  C  0  452  *  *  *  *  *  10c085eb-003e-46db-a77b-11d949a0c2fd-IGH  *
+490  C  8   18  *  *  *  *  *  10ed9e8b-dae2-46af-82df-0c6e4ef66331-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+54  C  0  51  *  *  *  *  *  09d753f6-d9e7-4557-9426-91353a24b0f0-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+88  C  2  66  *  *  *  *  *  062851fc-f779-4c2f-b979-23162b0fed3e-IGH  *
+90  C  4   4  *  *  *  *  *  4d87f01a-879b-491d-907e-2ae65022c5bd-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+475  C  88  116  *  *  *  *  *  36c257fc-8191-4b59-b92d-3157147b5552-IGH  *
+449  C  62   33  *  *  *  *  *  036a7653-2263-453c-be43-e00fb123734e-IGH  *
+418  C  31   31  *  *  *  *  *  02a75af4-639a-486b-8620-b1ddb6b38903-IGH  *
+470  C  83   31  *  *  *  *  *  00addf1e-fd7e-4188-b16d-107bb9089c60-IGH  *
+472  C  85   19  *  *  *  *  *  024c191c-686d-4009-ad16-b47c5f290d48-IGH  *
+394  C   7   18  *  *  *  *  *  00fceb28-b433-49fb-a16f-29bbb7f8fe25-IGH  *
+461  C  74    7  *  *  *  *  *  0688e181-aee3-4339-9454-27926ecaf274-IGH  *
+417  C  30    5  *  *  *  *  *  0021e163-39e9-4ba0-ad8e-8977d18b40f3-IGH  *
+422  C  35    4  *  *  *  *  *  1635576b-00e3-4c93-a7b3-87ce67f8ea88-IGH  *
+451  C  64    4  *  *  *  *  *  2c0b3544-1d36-4e13-8e89-2067c9b79b61-IGH  *
+435  C  48    4  *  *  *  *  *  2a24a15e-0085-4fb7-8bd2-2ab6dd0012f9-IGH  *
+441  C  54    4  *  *  *  *  *  08a92ccd-9bfc-4256-85f4-ee0d5383b4d7-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+58  C  9  14  *  *  *  *  *  11455953-2af7-4441-af75-480ee704811e-IGH  *
+49  C  0  13  *  *  *  *  *  51f744fc-3e1e-4a83-9ac6-c466455c7b46-IGH  *
+53  C  4   6  *  *  *  *  *  2738582c-01e8-4945-a601-44805f5d583b-IGH  *
+57  C  8   5  *  *  *  *  *  0a2bbe1f-9391-48e6-b0c7-580809cbfcb5-IGH  *
+52  C  3   4  *  *  *  *  *  19f64739-90db-4780-a9d9-a0f1abcceb1f-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+4948  C    0  4424  *  *  *  *  *  0002e5e5-eebf-442c-8208-ed3efab26d19-IGH  *
+5033  C   85   103  *  *  *  *  *  005d02f9-653a-4c14-a356-769fa60c57ab-IGH  *
+5066  C  118    59  *  *  *  *  *  035be2ac-86d7-48b7-8cec-14c3021973d4-IGH  *
+5023  C   75    45  *  *  *  *  *  0077e574-4821-4462-a494-ae1fcf25095c-IGH  *
+5068  C  120    38  *  *  *  *  *  1b04ebac-20bb-48ec-9ced-2aed21454d9b-IGH  *
+5003  C   55    37  *  *  *  *  *  07662546-a344-4ba4-9c78-22b66f3e2c29-IGH  *
+5053  C  105    30  *  *  *  *  *  0b884b33-c407-4d81-bee7-237e62140f74-IGH  *
+5054  C  106    20  *  *  *  *  *  10461c30-bda3-48f0-b45b-d77cd3fa1c8a-IGH  *
+5032  C   84    14  *  *  *  *  *  0035a6cc-ac6c-4d68-bba0-cd7ffddc9b58-IGH  *
+5000  C   52    13  *  *  *  *  *  1fc87e76-6a41-4344-9d49-1fbfa2ae1a67-IGH  *
+5008  C   60     5  *  *  *  *  *  3ab9877b-fc46-4dfd-9d40-ea703405b907-IGH  *
+4991  C   43     5  *  *  *  *  *  02d796c7-45c5-429e-98ce-cc7d2e515eae-IGH  *
+4953  C    5     4  *  *  *  *  *  10d720df-db72-4e14-a661-e6d477517422-IGH  *
+5002  C   54     4  *  *  *  *  *  049e5dd3-c7c9-46bd-90e7-bb77e86d249a-IGH  *
+5019  C   71     4  *  *  *  *  *  9753f8fa-4194-45c9-962e-474e894219d3-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+79  C  5  27  *  *  *  *  *  0471254b-fc1c-4abc-817b-d69fdf53aeae-IGK  *
+77  C  3   9  *  *  *  *  *  2b39a7ad-80d8-4f0f-8467-3d87fe30c790-IGK  *
+83  C  9   4  *  *  *  *  *  2ca0cf61-1943-4123-8175-8cc36677c5ec-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+4103  C   18  3428  *  *  *  *  *  00357c2d-8f78-4035-b6ad-70b4308e04a1-IGH  *
+4207  C  122   215  *  *  *  *  *  044202d2-93cf-417c-9030-e37cb0c01429-IGH  *
+4086  C    1    42  *  *  *  *  *  40f3eac7-fa39-4aa3-97ba-6ed6c7bde0a5-IGH  *
+4101  C   16    30  *  *  *  *  *  001891b9-5d8e-4a2c-982c-d3e8dc675ea3-IGH  *
+4120  C   35    25  *  *  *  *  *  19f0b57f-cfe3-4c29-a8ec-813ee3691961-IGH  *
+4107  C   22    22  *  *  *  *  *  0586f4a2-d910-4ee7-b657-65e4af46b57e-IGH  *
+4100  C   15    16  *  *  *  *  *  03da4c00-8703-4dff-83f5-630b12231ccc-IGH  *
+4119  C   34    15  *  *  *  *  *  155c140f-d9b9-498e-9694-338c58ff8011-IGH  *
+4208  C  123    15  *  *  *  *  *  0a909160-9aed-4faf-a9e6-ca8f1aae8cca-IGH  *
+4121  C   36    12  *  *  *  *  *  1aece4bb-dd63-4ccc-adae-4f30b7261246-IGH  *
+4138  C   53    11  *  *  *  *  *  43323811-7ad4-4b78-a5fb-ab0cae0dbc4a-IGH  *
+4148  C   63    10  *  *  *  *  *  5c8369f2-073d-406e-8c48-41fb0c9d09ea-IGH  *
+4164  C   79    10  *  *  *  *  *  817be434-cbe9-4215-9897-324b3c32bcef-IGH  *
+4098  C   13     9  *  *  *  *  *  16d7d929-c397-47b9-bd54-616dcfb823d4-IGH  *
+4117  C   32     8  *  *  *  *  *  14740a44-9f13-43cf-9387-0625af20146b-IGH  *
+4147  C   62     7  *  *  *  *  *  5781b528-3f13-4d1f-9ba1-8ca5068b14dd-IGH  *
+4163  C   78     7  *  *  *  *  *  80f226ef-0832-4df8-88a6-e5f5dabb9ebe-IGH  *
+4142  C   57     7  *  *  *  *  *  4d5c68a3-491a-448e-81e4-7fb66a9f3054-IGH  *
+4092  C    7     6  *  *  *  *  *  15f3854c-ba81-4976-9d3f-4d00d34864da-IGH  *
+4145  C   60     6  *  *  *  *  *  55e50258-5d78-4dfb-963b-921c566761ce-IGH  *
+4150  C   65     5  *  *  *  *  *  5fca4b87-f3c2-4cbe-829d-d8fce4147bfa-IGH  *
+4144  C   59     5  *  *  *  *  *  51ece30d-72d8-4624-be20-9b443ff44db3-IGH  *
+4154  C   69     5  *  *  *  *  *  6956eab1-2ed7-403c-916c-4d33de69cb99-IGH  *
+4090  C    5     4  *  *  *  *  *  0523914a-c5af-4cd3-8e41-8c839736fe67-IGH  *
+4109  C   24     4  *  *  *  *  *  086a09b8-1ff3-4451-b88b-3cf994c69e43-IGH  *
+4134  C   49     4  *  *  *  *  *  3d31f31c-9dd6-4b68-a7ce-9235cb3c94eb-IGH  *
+4161  C   76     4  *  *  *  *  *  7873015d-e5dc-4c8d-b633-ba2a5f497471-IGH  *
+4152  C   67     4  *  *  *  *  *  64abf164-8d8d-4b42-a0d9-9fb1a961a2ea-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+109  C  36  8  *  *  *  *  *  0c88f48b-c829-49bf-bec9-c3514d8a09c6-IGH  *
+76   C   3  6  *  *  *  *  *  1757a107-3664-4d0c-9589-54cc54e2d58b-IGH  *
+79   C   6  4  *  *  *  *  *  0619ba6b-cbca-42c4-86c7-cc4b735c0fe7-IGH  *
+84   C  11  4  *  *  *  *  *  0ee76e08-e2da-4b99-9bea-736523b56403-IGH  *
+86   C  13  4  *  *  *  *  *  389e9f4e-847a-4d1b-b5b7-dd1e3a3c5457-IGH  *
+99   C  26  4  *  *  *  *  *  042010cb-33cd-49ee-bb6b-2cdcc03043ff-IGH  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+127  C  0  119  *  *  *  *  *  00029f4f-7355-4a7e-bd50-2c771a97db2c-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+26  C  1  9  *  *  *  *  *  054f753f-e35f-4853-8a39-cdb729af8f0a-IGK  *
+28  C  3  9  *  *  *  *  *  27429b72-651e-4c7f-ab3d-b3cddb36e385-IGK  *
+Clusters Ordened By clusters lenght: 
+      0  1     2  3  4  5  6  7                                         8  9
+1107  C  0  1105  *  *  *  *  *  0020c59f-acc3-40ce-96c1-40edaae654cc-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+30  C  6  15  *  *  *  *  *  244187fa-80e0-4713-b7f3-aea6d4937dd5-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+84  C  20  28  *  *  *  *  *  052475b3-7052-40ee-8445-9395fea38c7d-IGH  *
+76  C  12  13  *  *  *  *  *  0913a443-23f3-45ec-abab-faee79d3f130-IGH  *
+64  C   0   4  *  *  *  *  *  96aaafbc-59f3-4dc4-aa7c-2463b85e8e01-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+279  C  33  73  *  *  *  *  *  0229d6ae-c936-47cb-9f2d-2e0b426ea18c-IGH  *
+246  C   0  51  *  *  *  *  *  0431b968-95a2-4f49-8457-dfb0634ce7e4-IGH  *
+253  C   7  14  *  *  *  *  *  121c48f5-1864-4f94-b183-74aa350dc716-IGH  *
+266  C  20   9  *  *  *  *  *  126c9b44-08e8-4763-b4c2-d006b114cd04-IGH  *
+268  C  22   8  *  *  *  *  *  4491298f-52d4-473b-b777-db5f95532810-IGH  *
+288  C  42   8  *  *  *  *  *  410337f4-32a4-4d48-b8cc-6cb1435b0837-IGH  *
+289  C  43   8  *  *  *  *  *  43e6ee52-8db0-40da-9f60-aedacb07089c-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+20  C  0  9  *  *  *  *  *  2bd8e0b8-0e0c-4536-92aa-52c435ca9cab-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+136  C  32  19  *  *  *  *  *  241faa70-2afe-4a4e-b1e8-a0c9c9a76d2f-IGH  *
+104  C   0  15  *  *  *  *  *  32e13b74-5aa2-47ed-b510-9237649f37f2-IGH  *
+112  C   8   9  *  *  *  *  *  63c8cf77-60db-4b7b-af68-c2ff167b234d-IGH  *
+134  C  30   7  *  *  *  *  *  1fab1fa2-4c26-4fe3-8552-24081a84b983-IGH  *
+105  C   1   4  *  *  *  *  *  324d1396-20b0-4e7e-ad4c-f2d1b4de8a1d-IGH  *
+117  C  13   4  *  *  *  *  *  2c4af8dd-9fde-4b4e-8206-9e4ae9a0daa8-IGH  *
+Clusters Ordened By clusters lenght: 
+       0    1      2  3  ...  6  7                                         8  9
+20642  C   59  17932  *  ...  *  *  0004d2a5-511a-4cc4-be0b-a7c69f4249b6-IGH  *
+20596  C   13    241  *  ...  *  *  0091ac4f-23a4-4736-89f0-445fdd5e2b36-IGH  *
+20660  C   77    240  *  ...  *  *  02fe3510-c4e5-4835-8ed4-1083573e2b97-IGH  *
+20598  C   15    179  *  ...  *  *  03ddeee5-977c-46e5-809b-017f17b5503b-IGH  *
+20597  C   14    145  *  ...  *  *  02692bd3-a313-4e52-a8b3-6b1ae89dac1a-IGH  *
+...   ..  ...    ... ..  ... .. ..                                       ... ..
+20759  C  176      4  *  ...  *  *  2792ad5e-bde1-41bb-b831-80b994dc196c-IGH  *
+20802  C  219      4  *  ...  *  *  3f22606a-a663-4ad8-abe1-1cae8747f25f-IGH  *
+20781  C  198      4  *  ...  *  *  333ffb2f-8833-4e1b-aa01-24bf133051e0-IGH  *
+20852  C  269      4  *  ...  *  *  58dd9098-b271-4512-b887-76fedf6e0d9c-IGH  *
+20838  C  255      4  *  ...  *  *  540d4e51-8683-4900-8128-fa29ab855c50-IGH  *
+
+[65 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  0  4  *  *  *  *  *  485a7af3-e327-4ecf-8255-ee106c57edbe-IGK  *
+Clusters Ordened By clusters lenght: 
+     0  1    2  3  4  5  6  7                                         8  9
+178  C  0  161  *  *  *  *  *  0609e8d5-8327-4f1c-a8d8-9563e1e7c7e9-IGH  *
+179  C  1    4  *  *  *  *  *  6cd845e0-78cf-4060-b282-f90b80b1f822-IGH  *
+Clusters Ordened By clusters lenght: 
+      0   1     2  3  4  5  6  7                                         8  9
+2138  C  10  1779  *  *  *  *  *  00546bda-73c0-494f-a86c-7f50e09f7dbd-IGH  *
+2141  C  13    80  *  *  *  *  *  0dfbc1f6-569f-4bc3-998f-739a5eb3f36a-IGH  *
+2198  C  70    38  *  *  *  *  *  00dd1e0b-71f7-4a5a-a56b-9d1f8345775e-IGH  *
+2137  C   9    31  *  *  *  *  *  93bca0b5-b0c3-4998-8452-8bb5cb604091-IGH  *
+2151  C  23    29  *  *  *  *  *  3a4b0383-07f2-43b3-8d32-1a776a5c9489-IGH  *
+2140  C  12    20  *  *  *  *  *  0d45c8d3-da9f-4988-a16a-9aded00cd7cd-IGH  *
+2129  C   1    12  *  *  *  *  *  649e27ab-b29e-45d0-9029-faee70201b41-IGH  *
+2179  C  51     9  *  *  *  *  *  14448208-91ac-4dc0-8c53-c3f6a6eed6af-IGH  *
+2150  C  22     7  *  *  *  *  *  2feaffb9-1d71-4348-b554-7948afd2a730-IGH  *
+2163  C  35     6  *  *  *  *  *  a2feef97-ddd9-4be9-9f07-ac737fdb37f5-IGH  *
+2147  C  19     6  *  *  *  *  *  2586e815-51f4-4cd9-ab13-81781121bd5a-IGH  *
+2143  C  15     6  *  *  *  *  *  10c0dd2d-bb57-45d5-bdfe-5b8bee0b7ef8-IGH  *
+2139  C  11     6  *  *  *  *  *  0b386766-bc44-42c1-b184-291270f25128-IGH  *
+2144  C  16     5  *  *  *  *  *  11eac7ef-a039-496b-b000-7fa3688e821c-IGH  *
+2142  C  14     5  *  *  *  *  *  0f61b06d-e06d-4038-85e1-bd5a882302d5-IGH  *
+2149  C  21     4  *  *  *  *  *  2ebcced0-b8e5-4b99-8bfc-487030049552-IGH  *
+2167  C  39     4  *  *  *  *  *  c63f000e-5a3d-48a1-acbc-4fbd55f76c35-IGH  *
+Clusters Ordened By clusters lenght: 
+     0    1    2  3  4  5  6  7                                         8  9
+675  C   71  329  *  *  *  *  *  01248872-a257-4621-abab-e43ebcb2b22d-IGH  *
+735  C  131   42  *  *  *  *  *  026cd597-dda4-4464-97f3-832be5621337-IGH  *
+633  C   29   12  *  *  *  *  *  1a3ff0a7-beb3-46c6-be74-53056a6a0406-IGH  *
+724  C  120    9  *  *  *  *  *  02fb3805-1b9f-40c0-808a-2dc5b9bdc935-IGH  *
+630  C   26    8  *  *  *  *  *  0ab18dd8-beb9-4a34-9b8f-e1959bc7f9e6-IGH  *
+651  C   47    7  *  *  *  *  *  530a70fc-53f3-43c1-a655-b3cc456835e2-IGH  *
+699  C   95    6  *  *  *  *  *  02f99ef7-f98f-46e4-a732-23b28118509e-IGH  *
+607  C    3    5  *  *  *  *  *  0cda1e87-be64-471b-a5e0-42b819f9d9e6-IGH  *
+701  C   97    4  *  *  *  *  *  0b36ce8c-8e68-4344-8f8e-562284b79ecc-IGH  *
+680  C   76    4  *  *  *  *  *  0f2ec720-beb7-4d65-a7a6-a5838c6341cb-IGH  *
+731  C  127    4  *  *  *  *  *  7039ceb1-61da-4e5b-ae56-296d7dcb98fb-IGH  *
+736  C  132    4  *  *  *  *  *  0dcf78b8-e072-4f41-b851-7ba06d846792-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+35  C  8  4  *  *  *  *  *  0859fdb7-f542-4171-b43f-d24c412eb3f4-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+55  C   9  4  *  *  *  *  *  00b82ae2-9352-4cb7-b8a5-735f97a14c27-IGH  *
+57  C  11  4  *  *  *  *  *  6086b8f2-08cc-4dec-80b2-8c433f379d7b-IGH  *
+64  C  18  4  *  *  *  *  *  5ef0a551-f414-43e9-b0c6-503d574c51d8-IGH  *
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+532  C   1  439  *  *  *  *  *  02b70b92-9116-4a55-bcbf-85df5dc94cd2-IGH  *
+535  C   4    9  *  *  *  *  *  0a939872-5ec0-470a-8d8a-b54cee9e6227-IGH  *
+546  C  15    8  *  *  *  *  *  1e895620-62c0-484f-bb9f-e469abb410fc-IGH  *
+569  C  38    6  *  *  *  *  *  710a26d6-8738-4ea5-bc7c-dbd4c5a7c392-IGH  *
+533  C   2    5  *  *  *  *  *  02f68056-d030-461c-90ad-4c5bb2f66570-IGH  *
+558  C  27    5  *  *  *  *  *  48571ee7-91dc-4460-bf8b-56c5c80c2eef-IGH  *
+537  C   6    4  *  *  *  *  *  0d32e5ca-4fe1-425d-97fb-b848007e373e-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+7  C  0  7  *  *  *  *  *  15263f09-89c3-405d-871e-e219a9881511-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  0  7  *  *  *  *  *  15263f09-89c3-405d-871e-e219a9881511-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1465  C   29  760  *  *  *  *  *  02bd4d8f-10aa-4d32-9d2b-1a106f59c435-IGH  *
+1557  C  121  142  *  *  *  *  *  000e8076-6713-4bd4-ad88-cfb2b8310b7a-IGH  *
+1486  C   50   47  *  *  *  *  *  09e00522-d353-4d37-879b-a84c7cf7a46d-IGH  *
+1464  C   28   45  *  *  *  *  *  00226f85-b708-4363-bc20-85a7a7b9f585-IGH  *
+1511  C   75   45  *  *  *  *  *  12887efc-6cb3-49ac-86c5-ce1fe906b8f6-IGH  *
+1484  C   48   34  *  *  *  *  *  0033a339-a6ba-4baf-8761-d4d8644c4784-IGH  *
+1441  C    5   32  *  *  *  *  *  01825b95-82b3-4a8f-8f2f-2dc132e1b6d5-IGH  *
+1463  C   27   28  *  *  *  *  *  00210fd9-a13a-4ada-adb5-ea6e1c1ee564-IGH  *
+1467  C   31   23  *  *  *  *  *  12c259e9-4b81-47e0-b501-dfa2487ca761-IGH  *
+1514  C   78   21  *  *  *  *  *  00fb3c14-2ccd-4f6d-a776-4ff53c1ee07d-IGH  *
+1540  C  104   13  *  *  *  *  *  06052e38-3a83-472d-b6ff-9477c76a6530-IGH  *
+1452  C   16   12  *  *  *  *  *  30b0817a-8fb5-4e95-89d9-ec139dce4edc-IGH  *
+1544  C  108   11  *  *  *  *  *  1efa0ce9-435c-4e30-94ba-ae8e18291c09-IGH  *
+1543  C  107    9  *  *  *  *  *  1850bdc8-3baf-4642-b142-bc389d29f0f6-IGH  *
+1488  C   52    9  *  *  *  *  *  0c265c64-8cd1-43ae-95b5-e9295ff8afe8-IGH  *
+1459  C   23    9  *  *  *  *  *  8edea352-407c-4c81-9e3b-1bb75a61e8dd-IGH  *
+1559  C  123    8  *  *  *  *  *  07796066-71c9-4e11-9e86-645bd41c499d-IGH  *
+1516  C   80    7  *  *  *  *  *  0f22d64e-22fa-4b02-8244-a46b5cce69a9-IGH  *
+1542  C  106    7  *  *  *  *  *  0df88709-d0e0-45a9-a2fe-49c1688f4c95-IGH  *
+1538  C  102    6  *  *  *  *  *  0218adc3-228e-4123-a74b-c409dd553055-IGH  *
+1495  C   59    6  *  *  *  *  *  690385c3-efc8-4cfb-838e-569b21657b26-IGH  *
+1517  C   81    5  *  *  *  *  *  10a32f64-d25a-4b5e-9b9d-f3eb1515e1b2-IGH  *
+1539  C  103    5  *  *  *  *  *  0353ad56-f984-4cfe-8f57-eda77c19b882-IGH  *
+1478  C   42    4  *  *  *  *  *  a5f1f200-73b5-4015-b306-e940c8d501b7-IGH  *
+1454  C   18    4  *  *  *  *  *  1d1443dc-d9ac-4f49-8a94-079fbf2983c9-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+6787  C  126  2617  *  *  *  *  *  0056248a-076b-4c35-983b-030c36e9c1cf-IGH  *
+6715  C   54  2475  *  *  *  *  *  000bce23-ef09-4a54-a906-6c224f117e1c-IGH  *
+6899  C  238   699  *  *  *  *  *  00113d77-2fcb-4d66-9782-55504584952e-IGH  *
+6789  C  128   116  *  *  *  *  *  01614b10-3be8-4338-8ff7-dccf7c7223a0-IGH  *
+6661  C    0    92  *  *  *  *  *  02017de8-a236-49cb-a1ae-aab132030429-IGH  *
+6791  C  130    32  *  *  *  *  *  05b38c75-2e2b-49f8-8c22-fa34385c385d-IGH  *
+6796  C  135    31  *  *  *  *  *  0b5c7622-cad3-40af-a116-057ce7170643-IGH  *
+6897  C  236    26  *  *  *  *  *  d656b2cf-7dda-4d29-85ba-d3d52704b8c7-IGH  *
+6702  C   41    17  *  *  *  *  *  1c82bdbd-f802-41ff-8d0e-386034a4652a-IGH  *
+6900  C  239    16  *  *  *  *  *  00efe2c3-81c3-4c8e-9348-38c2fe0454f5-IGH  *
+6679  C   18    16  *  *  *  *  *  07b0ec40-7de3-4e70-9ada-e2112d311824-IGH  *
+6798  C  137    15  *  *  *  *  *  0d2ce3c0-eae1-4623-a3ce-e19dfe8a8362-IGH  *
+6800  C  139    14  *  *  *  *  *  1094316e-060f-464a-ae1e-adcaeb02ed48-IGH  *
+6802  C  141    11  *  *  *  *  *  18917e32-000f-4d1e-aa0b-6b4f5114c06a-IGH  *
+6834  C  173    10  *  *  *  *  *  62b08887-a73b-4450-b4e4-fd5a67ccc6cd-IGH  *
+6680  C   19     9  *  *  *  *  *  17c9d310-385e-4652-84ab-bf5df3c4e20d-IGH  *
+6801  C  140     8  *  *  *  *  *  12d523c6-a450-4e4f-91e3-74974536ca3b-IGH  *
+6797  C  136     7  *  *  *  *  *  0b684c31-66a5-431b-a759-d7e81cc52db3-IGH  *
+6786  C  125     7  *  *  *  *  *  0013e458-6750-40cc-835d-0703392f00ed-IGH  *
+6821  C  160     7  *  *  *  *  *  43f04570-a8ab-49b1-a9e4-910deab3a5e0-IGH  *
+6906  C  245     7  *  *  *  *  *  087737f2-aa72-47ac-a2ff-2e8a39fd6928-IGH  *
+6829  C  168     6  *  *  *  *  *  56f40537-cf1a-41c6-8ec0-4f54766afd13-IGH  *
+6675  C   14     6  *  *  *  *  *  28ef52e2-e5d1-4f59-8da3-ac2bb03b892d-IGH  *
+6805  C  144     6  *  *  *  *  *  1a0c400c-f66b-486b-a376-02b2155d78f7-IGH  *
+6808  C  147     6  *  *  *  *  *  21b770e2-6586-4295-8c69-f4600291d15b-IGH  *
+6736  C   75     5  *  *  *  *  *  46862af7-06e7-4528-89f9-2a47b73f78aa-IGH  *
+6826  C  165     5  *  *  *  *  *  504e7ad8-bb79-4492-87f9-99cb1d02527e-IGH  *
+6803  C  142     5  *  *  *  *  *  19e8e3af-a077-485d-b929-fdff7ffa931e-IGH  *
+6851  C  190     5  *  *  *  *  *  85367f5e-f0ea-492f-9357-5294879d32ea-IGH  *
+6725  C   64     5  *  *  *  *  *  2e616ff4-627c-4b72-a03f-44f0a24e9430-IGH  *
+6663  C    2     4  *  *  *  *  *  3ca31179-4d6c-431a-a932-8e339afdccbd-IGH  *
+6691  C   30     4  *  *  *  *  *  38b27e1e-3eaf-45ec-90e7-aeb2492177e0-IGH  *
+6682  C   21     4  *  *  *  *  *  4c1d0058-83ff-44d7-b497-5f327450a458-IGH  *
+6795  C  134     4  *  *  *  *  *  09fc3fe0-1af6-4f0d-9673-a4f9ec22150d-IGH  *
+6729  C   68     4  *  *  *  *  *  379918c4-5baa-4071-9380-ec44fde6e7cf-IGH  *
+6810  C  149     4  *  *  *  *  *  24e52103-6a7c-4c3c-8b30-5ac5f2518719-IGH  *
+6804  C  143     4  *  *  *  *  *  19f3e0c7-06ba-4ed3-9419-65f072531eda-IGH  *
+6917  C  256     4  *  *  *  *  *  1d2a3c20-dbe2-43a8-ad38-d2f857e215aa-IGH  *
+6922  C  261     4  *  *  *  *  *  2bc1aa90-047a-424e-bf73-d990bcc5385f-IGH  *
+Clusters Ordened By clusters lenght: 
+      0   1     2  3  4  5  6  7                                         8  9
+1805  C   0  1708  *  *  *  *  *  00a84185-9287-438a-922e-5d61127a753e-IGH  *
+1811  C   6    44  *  *  *  *  *  152c066a-2f54-4365-b650-f5f868c2dfb2-IGH  *
+1843  C  38     8  *  *  *  *  *  0a068efb-f452-4d11-9715-7b7d988310b0-IGH  *
+1813  C   8     4  *  *  *  *  *  3d1fcd96-65e5-40e9-b04d-ffb54f0bc846-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1   2  3  4  5  6  7                                         8  9
+65  C  15  13  *  *  *  *  *  05209684-c868-4c4d-82f4-21053f5ebf54-IGH  *
+56  C   6   5  *  *  *  *  *  3cb848f7-1262-4aca-97b7-21cb1409a35d-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1     2  3  4  5  6  7                                         8  9
+2602  C   25  1759  *  *  *  *  *  831ae3ba-4e71-47c5-8ec9-6a3b613d0be9-IGH  *
+2704  C  127   329  *  *  *  *  *  00a57156-ee03-4a7d-8d63-6aa8ec846406-IGH  *
+2607  C   30    44  *  *  *  *  *  061701b9-b267-48dd-a440-094968f164f5-IGH  *
+2617  C   40    42  *  *  *  *  *  1528f5d3-7240-47e9-9622-f97639b84415-IGH  *
+2577  C    0    35  *  *  *  *  *  125b2204-bf50-4f6a-b01f-60114ee0cda6-IGH  *
+2604  C   27    35  *  *  *  *  *  00a151da-1bfe-4c8d-bab0-3dd9f58f1a8d-IGH  *
+2593  C   16    30  *  *  *  *  *  00e2a0b4-ed27-4e84-a9ee-825addfd96d5-IGH  *
+2643  C   66    20  *  *  *  *  *  4550695c-bc77-44ea-82a9-e67cf7c04403-IGH  *
+2629  C   52    15  *  *  *  *  *  29a29f9e-2bc4-4bc9-8b9e-334666111d3e-IGH  *
+2635  C   58    12  *  *  *  *  *  35194b3c-e620-40fa-b3cc-dce129b3c0d3-IGH  *
+2620  C   43    12  *  *  *  *  *  1f04f006-8ae1-4bdb-81dd-44b6b3cda0b3-IGH  *
+2712  C  135    10  *  *  *  *  *  3e2eda9f-0728-4c24-9614-e2b5d87987af-IGH  *
+2610  C   33     9  *  *  *  *  *  09996170-821c-483d-b4ea-1eb8dd84b8c4-IGH  *
+2664  C   87     8  *  *  *  *  *  90ec7076-56b1-4ee3-b9f0-f8ccbf4fb51f-IGH  *
+2584  C    7     8  *  *  *  *  *  2de786f3-5fa9-4735-bdd1-eb6688477f65-IGH  *
+2605  C   28     8  *  *  *  *  *  00f87185-7df2-4a77-905d-642cd09d8e70-IGH  *
+2685  C  108     7  *  *  *  *  *  cba2307f-c152-4b67-9ee7-f02080f08382-IGH  *
+2589  C   12     6  *  *  *  *  *  27d9d622-ed1f-4c0e-9788-47644bbccedb-IGH  *
+2710  C  133     6  *  *  *  *  *  3aad1a54-b5c8-472c-837a-454636c8f101-IGH  *
+2622  C   45     5  *  *  *  *  *  22086334-e7f1-46db-8738-86e4db36b7f9-IGH  *
+2641  C   64     5  *  *  *  *  *  40260c45-c088-4020-9d85-76903c0e75f1-IGH  *
+2627  C   50     4  *  *  *  *  *  25b19b5f-2c9e-4ce7-95eb-f78a87269379-IGH  *
+2633  C   56     4  *  *  *  *  *  318fddac-4131-4214-bcec-4d4f0685e347-IGH  *
+2655  C   78     4  *  *  *  *  *  61382813-c82f-4c6e-93bb-7e311ed04f30-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+51  C  16  7  *  *  *  *  *  06402671-f339-45dc-b85f-7071f64f1222-IGH  *
+Clusters Ordened By clusters lenght: 
+     0    1    2  3  4  5  6  7                                         8  9
+693  C   57  346  *  *  *  *  *  00566f07-bae8-4f60-a920-7e42658b1cf2-IGH  *
+720  C   84   70  *  *  *  *  *  009134cf-a605-4da9-8879-b114e3eb77ae-IGH  *
+665  C   29   30  *  *  *  *  *  006446af-492c-4817-a3c8-3a33d024e5a4-IGH  *
+755  C  119   15  *  *  *  *  *  16821ee8-ff9e-486d-aa84-2b940f297dea-IGH  *
+646  C   10   11  *  *  *  *  *  11fb96fe-2cf9-4889-9dc3-6f2f4aa1cc8e-IGH  *
+667  C   31    5  *  *  *  *  *  083e8d33-b012-48ea-a234-6e025a9fa972-IGH  *
+678  C   42    4  *  *  *  *  *  4db3ced8-bac3-4870-8d56-4b4d59bcd880-IGH  *
+721  C   85    4  *  *  *  *  *  0608fa69-7c81-47ee-bb7c-985fd7c5ec81-IGH  *
+725  C   89    4  *  *  *  *  *  10df267a-9678-418c-be14-ffb3a5c056ce-IGH  *
+727  C   91    4  *  *  *  *  *  267f5b8b-7f4a-42a3-aedc-53031d9a1b02-IGH  *
+744  C  108    4  *  *  *  *  *  3f715eae-99e3-4aa2-97dd-b9adc8154621-IGH  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1395  C   12  852  *  *  *  *  *  00374ec4-2350-4688-ba72-52ee2c2f861c-IGH  *
+1394  C   11  329  *  *  *  *  *  001f6cfe-c56b-48e4-962c-155bc938d691-IGH  *
+1383  C    0   29  *  *  *  *  *  23302f69-c133-4e4d-8495-ea57f9afb46d-IGH  *
+1385  C    2   19  *  *  *  *  *  6e7d22e0-93e3-4306-8b76-df52b19f9cfe-IGH  *
+1412  C   29    6  *  *  *  *  *  1dbaee59-a5e9-4c39-ba47-ef9aad482760-IGH  *
+1429  C   46    6  *  *  *  *  *  3deca867-0f34-4d50-928e-3a149b0d344f-IGH  *
+1419  C   36    5  *  *  *  *  *  2af2100e-98af-4ce0-88fc-a5ba5565ec38-IGH  *
+1405  C   22    5  *  *  *  *  *  0f223c31-80fe-43b5-a385-e49dbb2e4983-IGH  *
+1401  C   18    5  *  *  *  *  *  088b5e9c-5a2e-47c8-9330-f5c182be5d9c-IGH  *
+1384  C    1    4  *  *  *  *  *  2c580665-d96b-4789-b26e-20e1e272b523-IGH  *
+1413  C   30    4  *  *  *  *  *  1fba2f5c-b1f1-4b56-980a-863c8b5a3622-IGH  *
+1442  C   59    4  *  *  *  *  *  67de5288-a8eb-46b9-8982-da48a54fc053-IGH  *
+1486  C  103    4  *  *  *  *  *  26dc95eb-e101-4c33-94cb-c579c05956c5-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+312  C   8  244  *  *  *  *  *  01521b54-8e7e-43ca-bc05-a33256e637a8-IGH  *
+310  C   6    9  *  *  *  *  *  3e3524cb-c96f-4894-a615-3502b8cb707c-IGH  *
+307  C   3    6  *  *  *  *  *  244b4d82-f4c3-400b-b9fd-26b6b6676229-IGH  *
+318  C  14    4  *  *  *  *  *  213511b8-544c-41cf-b087-8c1b7da03549-IGH  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+13  C  2  8  *  *  *  *  *  001bf009-e8cc-4d52-b3c1-1c741d282e7d-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1    2  3  4  5  6  7                                         8  9
+633  C   2  400  *  *  *  *  *  00b1738d-aab7-42d5-b673-ad51579f82a0-IGH  *
+632  C   1   73  *  *  *  *  *  0081614a-0c15-4282-92f7-9447277e8e56-IGH  *
+639  C   8   24  *  *  *  *  *  084399e7-2b5e-4fdb-a5f1-b4303068fac8-IGH  *
+638  C   7   12  *  *  *  *  *  06a534ec-c518-45bb-9ed4-6446103aadf1-IGH  *
+657  C  26   10  *  *  *  *  *  341a2b06-1ca6-4ae5-b606-e91e249cc3fc-IGH  *
+656  C  25    7  *  *  *  *  *  334f0d4d-2479-47eb-b907-9f287631f8ab-IGH  *
+640  C   9    5  *  *  *  *  *  08a9ca6a-0731-46dd-8f8b-eb4abc0f723c-IGH  *
+655  C  24    5  *  *  *  *  *  3323a270-8d51-47f3-a781-6b09658adac0-IGH  *
+691  C  60    4  *  *  *  *  *  ac08650a-0c47-4359-b7ce-3182eff82b70-IGH  *
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+8  C  2  4  *  *  *  *  *  61988d4d-f16c-425d-881a-523368c80fdd-IGH  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []

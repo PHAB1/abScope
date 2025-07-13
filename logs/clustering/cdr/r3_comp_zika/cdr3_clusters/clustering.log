@@ -1,0 +1,33 @@
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+843019  C  202485  1556  *  ...  *  *  038b6ff2-67ed-4a4c-87c9-4bf9d566f728-IGH  *
+773042  C  132508  1550  *  ...  *  *  0023fb61-aeab-4349-be07-a173f29e0e45-IGH  *
+865349  C  224815  1508  *  ...  *  *  7edd1596-3135-4194-8933-0de9d1bb90f0-IGH  *
+842248  C  201714  1219  *  ...  *  *  04db0440-1b0c-41bd-bd56-5d5c3a8e029c-IGH  *
+827073  C  186539  1142  *  ...  *  *  d9cff922-54d9-4f97-af1c-761b338c87dc-IGH  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+875012  C  234478     5  *  ...  *  *  1f915988-ac66-42f0-bd26-070137f03231-IGH  *
+874950  C  234416     5  *  ...  *  *  0c42b07c-951f-48fd-9b7a-30397c1f2170-IGH  *
+874871  C  234337     5  *  ...  *  *  e954f378-a61e-4e27-a49f-0377e425cd1c-IGH  *
+641042  C     508     5  *  ...  *  *  027b465f-4cc0-4269-a76e-83778855ea64-IGH  *
+875502  C  234968     5  *  ...  *  *  bbb1a7c7-aef2-42ca-890d-4d8362fe1caa-IGH  *
+
+[22501 rows x 10 columns]
+File 'results/clustering/cdr/r3_comp_zika/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/r3_comp_zika/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+822911  C  197800  7659  *  ...  *  *  3f1d7e41-a922-4ad1-a220-b9316778e3aa-IGK  *
+827721  C  202610  2505  *  ...  *  *  3dc95899-affa-4c16-b095-4271e253f54c-IGK  *
+823021  C  197910  2181  *  ...  *  *  79d89c31-080b-432a-a241-cc9852cd9202-IGK  *
+809450  C  184339  1992  *  ...  *  *  d097745a-51e3-49a8-b89f-4dea094cefc5-IGK  *
+821429  C  196318  1690  *  ...  *  *  3be5aa0f-2e24-471d-b17e-7e11d67f73b6-IGK  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+758853  C  133742     5  *  ...  *  *  8999814f-7b25-4856-a01d-203fc7411cb0-IGK  *
+758825  C  133714     5  *  ...  *  *  84a1d847-744c-4766-8b88-b2be8f70d3a5-IGK  *
+758975  C  133864     5  *  ...  *  *  9d01c33a-0282-45d1-97d0-f459eca59d27-IGK  *
+758947  C  133836     5  *  ...  *  *  98c6403a-eba9-4cc5-a2ad-ea260622cd6c-IGK  *
+758939  C  133828     5  *  ...  *  *  97fc1391-cad8-42cc-8610-fe0b965d3faa-IGK  *
+
+[19040 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/r3_comp_zika/cdr3_clusters/cluster_seq_id.json'

@@ -1,0 +1,56 @@
+First file Clusterized Ordened By clusters lenght: 
+        0     1      2  3  ...  6  7                                         8  9
+536209  C  2572  14357  *  ...  *  *  7e2611bb-df65-4341-bdfe-18d07887389d-IGH  *
+533794  C   157  11472  *  ...  *  *  7be34911-1d7e-41e2-a876-728895688bc1-IGH  *
+533680  C    43   7086  *  ...  *  *  0435858a-603b-454e-b258-8b00a33ada5d-IGH  *
+536761  C  3124   6131  *  ...  *  *  36b8139b-fdfa-4610-9acc-255e6e85e4d1-IGH  *
+534496  C   859   5655  *  ...  *  *  4570c33b-fd37-4d10-aae4-193485139eac-IGH  *
+...    ..   ...    ... ..  ... .. ..                                       ... ..
+537979  C  4342      5  *  ...  *  *  0c584f82-d1c3-43ea-a629-86b6e9c6f716-IGH  *
+535629  C  1992      5  *  ...  *  *  84029f91-cf48-4322-9456-c43c9b6a1b00-IGH  *
+534497  C   860      5  *  ...  *  *  47d174ab-0529-4876-9e0f-84afe0a40fbb-IGH  *
+539092  C  5455      5  *  ...  *  *  933d9711-f7a9-4f75-b5c8-9a4a19255450-IGH  *
+537994  C  4357      5  *  ...  *  *  4069ce81-eb24-40a3-81e0-2cf3486ebcf0-IGH  *
+
+[5596 rows x 10 columns]
+File 'results/clustering/cdr/cov_illu_first_R3_vh/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/cov_illu_first_R3_vh/cdr3_clusters/cluster_seq_id.json'
+/home/glicina/pbarros/abScope_done_imp/scripts/preProcess/mapClusters.py:52: DtypeWarning: Columns (3,5,6) have mixed types. Specify dtype option on import or set low_memory=False.
+  clusters = pd.read_csv(args.clusters,sep="\t",header=None)
+First file Clusterized Ordened By clusters lenght: 
+        0   1       2  3  ...  6  7                                         8  9
+404593  C  29  201899  *  ...  *  *  a791f4e7-fd4f-42ae-8fa4-b12a729634d0-IGK  *
+404594  C  30  186209  *  ...  *  *  dedbd533-5c6c-4122-a079-2cf2c3228bcf-IGK  *
+404584  C  20    6046  *  ...  *  *  cb78b3b7-b818-4b54-9f6e-2e877d556cba-IGK  *
+404598  C  34    3080  *  ...  *  *  48f7ae12-94a9-46d7-b15f-b07e9207dab8-IGK  *
+404612  C  48    1918  *  ...  *  *  055125be-f734-440f-9970-b81d7e110193-IGK  *
+404589  C  25     925  *  ...  *  *  c4882879-d15d-4b93-bcc3-c9d359eb7559-IGK  *
+404596  C  32     487  *  ...  *  *  3135bb22-ddee-41eb-95f0-416e582a7d2a-IGK  *
+404586  C  22     408  *  ...  *  *  534d7b1c-06f2-4e24-a307-c6fd6d43a35a-IGK  *
+404605  C  41     372  *  ...  *  *  444e3a08-64b0-42ef-ac93-118ddb5558d1-IGK  *
+404583  C  19     344  *  ...  *  *  ac8bdcbc-b771-4b70-ae46-3c82da10361b-IGK  *
+404597  C  33     326  *  ...  *  *  1ff968bb-ef10-428b-9b26-0c4ede1ac641-IGK  *
+404604  C  40     310  *  ...  *  *  39713198-1335-44e1-9d8e-8c86b69277fb-IGK  *
+404613  C  49     283  *  ...  *  *  06fc092e-43b4-48e7-988a-03e157bde088-IGK  *
+404602  C  38     262  *  ...  *  *  2c752b1e-8e69-4744-9288-58b494564fbe-IGK  *
+404611  C  47     256  *  ...  *  *  0469dc6b-7a64-4d8a-965b-80aa33f56bc9-IGK  *
+404595  C  31     252  *  ...  *  *  1d597d5c-cf95-4230-84c2-5c7d9aea5804-IGK  *
+404610  C  46     230  *  ...  *  *  ea8243c3-d1ac-4cc7-8f82-5176de85eb2b-IGK  *
+404600  C  36     140  *  ...  *  *  032cc477-ff35-46a7-a000-e3373abbabe3-IGK  *
+404603  C  39     136  *  ...  *  *  a28afe0b-f23a-4261-9146-ca2ab669041e-IGK  *
+404599  C  35     124  *  ...  *  *  dbab824f-c24f-4ceb-8ecb-b58f94e9f3da-IGK  *
+404609  C  45     120  *  ...  *  *  9628df05-249c-4275-a409-e58be9f66734-IGK  *
+404577  C  13     108  *  ...  *  *  31f62a37-8f67-4de5-a0f5-793cb1a54c3d-IGK  *
+404601  C  37     105  *  ...  *  *  144d1baf-e5d3-4b5c-8965-693ef43383e8-IGK  *
+404580  C  16      52  *  ...  *  *  c9109dc2-fcb6-4ef5-a619-7345ce8ea5ce-IGK  *
+404576  C  12      47  *  ...  *  *  568120d8-3129-4c85-8225-69d25f7f965e-IGK  *
+404606  C  42      31  *  ...  *  *  46024f7e-5993-4d7f-9dde-c5928d4c2ee6-IGK  *
+404614  C  50      14  *  ...  *  *  6a436e96-8dab-4d38-979c-827117b6d57a-IGK  *
+404608  C  44      11  *  ...  *  *  855c4e84-57cf-46d3-91e3-3ab98400c808-IGK  *
+404607  C  43       9  *  ...  *  *  737d7b43-f354-45a1-830b-80e63d9e75dd-IGK  *
+404587  C  23       5  *  ...  *  *  ec219cb2-f0f4-407c-a295-ee5112c692eb-IGK  *
+404566  C   2       5  *  ...  *  *  ecf7f5b2-5ddf-4cec-b76a-c24cdecf6c48-IGK  *
+404572  C   8       5  *  ...  *  *  a838e64c-becc-49a6-b3af-0c7ed2504725-IGK  *
+
+[32 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/cov_illu_first_R3_vh/cdr3_clusters/cluster_seq_id.json'

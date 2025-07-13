@@ -1,0 +1,2868 @@
+/home/glicina/pbarros/abScope_done_imp/scripts/preProcess/reGroupCdrCluster.py:23: DtypeWarning: Columns (12,28,29,30,31,58,94) have mixed types. Specify dtype option on import or set low_memory=False.
+  igblast=pd.read_csv(igcicle_out)
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+2292  C  159  90  *  *  *  *  *  054cdbd6-c09f-4655-9299-ffe820bff6e5-IGK  *
+2161  C   28  76  *  *  *  *  *  d5fda141-0b88-4bf1-b02a-e33913a26bde-IGK  *
+2306  C  173  76  *  *  *  *  *  09cd77aa-c61e-4cae-9798-673923f6fd13-IGK  *
+2256  C  123  57  *  *  *  *  *  4aa53007-55c9-4188-88b9-970a0722ad5b-IGK  *
+2192  C   59  50  *  *  *  *  *  35c2d22a-aaad-4d3b-9ec2-d198a11caa8d-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+2395  C  262   4  *  *  *  *  *  348528ce-fdd1-4049-9c9f-1c3e31c5f094-IGK  *
+2396  C  263   4  *  *  *  *  *  34d19f47-c385-41c3-815e-9fb768857818-IGK  *
+2384  C  251   4  *  *  *  *  *  311527e8-31dc-4d72-b79d-2275112d9508-IGK  *
+2453  C  320   4  *  *  *  *  *  55e6db32-dde9-48fd-a4cf-af9f092074ae-IGK  *
+2678  C  545   4  *  *  *  *  *  c7caf003-1699-40a3-8965-78d2fbc3266c-IGK  *
+
+[98 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+16  C  2  5  *  *  *  *  *  2a9fd76a-213c-474e-81ff-8f841007db75-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+70   C   3  14  *  *  *  *  *  051d6276-96da-4b19-aef9-12b6075adb17-IGK  *
+100  C  33   5  *  *  *  *  *  1082eb45-4a3a-44bc-8c92-4a5aed92c627-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+410  C   47  14  *  *  *  *  *  03dd92ee-fdce-45f3-bc6d-8c503eb0b1b6-IGK  *
+372  C    9  12  *  *  *  *  *  2d18e024-2010-47f6-aed6-62a4ee02a252-IGK  *
+446  C   83  11  *  *  *  *  *  2989ff9c-e93c-4576-bb47-5f74a1f97103-IGK  *
+425  C   62   9  *  *  *  *  *  123080e5-f3e8-4a26-94c8-02735d80eb62-IGK  *
+490  C  127   8  *  *  *  *  *  5d7347bd-1791-4a3c-a457-43ae50e544a2-IGK  *
+463  C  100   7  *  *  *  *  *  386c650b-8cd9-4a90-93fb-e1b4a1a91b54-IGK  *
+441  C   78   6  *  *  *  *  *  1cf39886-4397-4d1d-a8b9-02327f68cad1-IGK  *
+413  C   50   6  *  *  *  *  *  0569f4d7-dc93-400e-91ac-ba26c7b1c844-IGK  *
+389  C   26   5  *  *  *  *  *  896dee07-3599-4f3e-a1ce-92789b85af28-IGK  *
+386  C   23   4  *  *  *  *  *  7bbfa35d-7d0b-4e26-a428-bfc82f1c6702-IGK  *
+400  C   37   4  *  *  *  *  *  c4f2c98c-b193-419c-a5cd-f4fff017525f-IGK  *
+437  C   74   4  *  *  *  *  *  1a880f7b-15cd-4574-8e1b-15d3644b102e-IGK  *
+443  C   80   4  *  *  *  *  *  2646a0e9-b9ce-4034-852b-f64d0c891df6-IGK  *
+549  C  186   4  *  *  *  *  *  b5c0b24d-e3ef-48fb-98b6-6b0b738ddd40-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+258  C  40  8  *  *  *  *  *  2cdfe188-730e-4185-916a-4e17bd5e0c39-IGK  *
+228  C  10  7  *  *  *  *  *  470f3b55-2ed0-4ebc-adb3-8b8d4ca80763-IGK  *
+242  C  24  5  *  *  *  *  *  05f5b99a-d0f0-4d78-b8b9-5bdfa89ffdda-IGK  *
+244  C  26  4  *  *  *  *  *  0aaf20c5-00f8-4c99-83f8-507173fb3872-IGK  *
+255  C  37  4  *  *  *  *  *  1decf06a-ba0c-4069-8f6c-a516765fa4d8-IGK  *
+279  C  61  4  *  *  *  *  *  590db034-b014-4430-b5e5-7770d3809a15-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1898  C  258  48  *  *  *  *  *  0d90c268-eeed-4acd-a85f-d36cb5269fe4-IGK  *
+1867  C  227  29  *  *  *  *  *  067cf68a-000c-437e-b7de-1929123fdb6a-IGK  *
+1694  C   54  25  *  *  *  *  *  171037ad-e97a-404e-9e9a-77cb78b2be39-IGK  *
+1868  C  228  21  *  *  *  *  *  0692241c-44fd-49d9-9367-c710f26234dc-IGK  *
+1645  C    5  15  *  *  *  *  *  03af79cd-ecff-4d7e-9fc3-9bcb46e0e9c9-IGK  *
+1715  C   75  14  *  *  *  *  *  3623a573-91fe-4264-9ebe-9921a7131379-IGK  *
+1725  C   85  12  *  *  *  *  *  40cfcbb2-6687-4dfe-a486-df0dddcfeee3-IGK  *
+1943  C  303  12  *  *  *  *  *  1cbd51d0-e165-4d93-9420-b9b06b7f2f53-IGK  *
+1687  C   47  12  *  *  *  *  *  0d92273d-7d9f-49ae-9671-b4582c0acdcd-IGK  *
+1880  C  240  11  *  *  *  *  *  0923ae95-4e05-43da-b05a-6e6697b747d9-IGK  *
+1680  C   40  10  *  *  *  *  *  06e8bb5e-ced7-4edb-9c0a-05a629cd9d6e-IGK  *
+1851  C  211  10  *  *  *  *  *  009358fc-f05e-40fa-9fdc-70292aa68e39-IGK  *
+1888  C  248  10  *  *  *  *  *  0a4fc613-2fc1-4e71-95db-43d836123577-IGK  *
+1899  C  259  10  *  *  *  *  *  0da1fa59-82e3-42ca-bcba-4e17320bb5ad-IGK  *
+1695  C   55   9  *  *  *  *  *  18f20134-211f-47d2-abb9-fe9e3db53cc8-IGK  *
+2519  C  879   9  *  *  *  *  *  09c28377-e8ae-4339-9710-fa6e939c3841-IGK  *
+1704  C   64   8  *  *  *  *  *  2a28205e-a38e-4c03-8775-3b3c647beee6-IGK  *
+2062  C  422   8  *  *  *  *  *  4a80fd07-1da3-4720-bbd9-681ed1580ae4-IGK  *
+1668  C   28   8  *  *  *  *  *  cb4d6cbd-cbcf-4904-b5c7-7acd581635d0-IGK  *
+2067  C  427   7  *  *  *  *  *  4ce0129e-186c-4817-9641-e294b9ced061-IGK  *
+1723  C   83   6  *  *  *  *  *  3d6fd0f2-9aed-4e07-9ff5-2d305137ccfa-IGK  *
+1679  C   39   6  *  *  *  *  *  0540fba3-190b-40ca-9c53-446bfae23f66-IGK  *
+1900  C  260   6  *  *  *  *  *  0ddf3403-2403-4875-aacc-802532b494cc-IGK  *
+1990  C  350   6  *  *  *  *  *  2d3070b1-79be-4ce6-8bd4-b43d9a0cc202-IGK  *
+1849  C  209   6  *  *  *  *  *  e36b4b64-fbca-484c-b079-e9eab842e092-IGK  *
+1684  C   44   6  *  *  *  *  *  09087f1d-d6fa-4eb0-a6e8-ee97f73ba812-IGK  *
+1788  C  148   5  *  *  *  *  *  a7a0f354-f3e2-4124-a913-574b8c8565c1-IGK  *
+2568  C  928   5  *  *  *  *  *  50c335dd-9209-4200-8550-2b1fe7ac37fc-IGK  *
+2215  C  575   5  *  *  *  *  *  7df0efe1-b9c8-4975-9d7a-ac653eaa3b03-IGK  *
+2143  C  503   5  *  *  *  *  *  672f085a-f442-454a-a6f5-bf1438c31e90-IGK  *
+1997  C  357   5  *  *  *  *  *  319ed33e-2151-4f22-a45b-688f23f63d08-IGK  *
+2064  C  424   5  *  *  *  *  *  4ad42440-ab02-4f35-b788-11137d8d2cad-IGK  *
+1721  C   81   5  *  *  *  *  *  39f8a4e5-2cba-424a-8e44-00b25f859d7f-IGK  *
+1884  C  244   5  *  *  *  *  *  0963cbc2-f809-4f24-88fb-2aae9862edbd-IGK  *
+1950  C  310   5  *  *  *  *  *  1db08fa2-86e5-45d6-a1b3-258da288e38f-IGK  *
+2542  C  902   5  *  *  *  *  *  28ff1c8b-6153-4b6a-9243-6a6663dd328c-IGK  *
+1747  C  107   4  *  *  *  *  *  5aebedd5-4340-4488-9239-65ce29c1f9e3-IGK  *
+1682  C   42   4  *  *  *  *  *  082364e1-387a-457c-8de9-a65a18cb61b1-IGK  *
+1689  C   49   4  *  *  *  *  *  0fa85144-af52-4268-88c0-e60f61159706-IGK  *
+1655  C   15   4  *  *  *  *  *  4e54f315-b078-4548-9785-58595f0d9057-IGK  *
+1677  C   37   4  *  *  *  *  *  03090969-59aa-41c6-9322-16efaee7b27a-IGK  *
+1876  C  236   4  *  *  *  *  *  08d609ae-04ce-47ce-8343-5b45ecaf1ef0-IGK  *
+1883  C  243   4  *  *  *  *  *  0961978f-3ee9-43bb-85df-4f30e6e16246-IGK  *
+1958  C  318   4  *  *  *  *  *  211e3165-e67b-4d5a-8a71-c09a1749c705-IGK  *
+1921  C  281   4  *  *  *  *  *  15f1ced8-4ffa-44c8-955a-6bc690106408-IGK  *
+1982  C  342   4  *  *  *  *  *  2a7ae2ff-4b4e-4793-9dac-553fc5e02867-IGK  *
+1991  C  351   4  *  *  *  *  *  2d551811-c198-4b81-a238-553a2a0ea19e-IGK  *
+2056  C  416   4  *  *  *  *  *  48826b43-19da-4ba8-bd12-170e58a71ab7-IGK  *
+2267  C  627   4  *  *  *  *  *  9353d74b-05a7-4fda-9664-f692d95178fe-IGK  *
+2321  C  681   4  *  *  *  *  *  ae02ff6d-6e91-4166-90a8-b87c36e13704-IGK  *
+2547  C  907   4  *  *  *  *  *  2baa6c00-9c9b-45f0-aecd-fd3251b71eee-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+306  C   19  23  *  *  *  *  *  002808e9-d019-482e-b2a7-1db91808d854-IGK  *
+305  C   18  13  *  *  *  *  *  02abba6f-dc44-4e3b-ae20-4eea40c6a6f8-IGK  *
+309  C   22  11  *  *  *  *  *  0270db3b-56f3-45f2-879b-f3bf18e3329c-IGK  *
+327  C   40   9  *  *  *  *  *  1c81b0b6-c3a4-4b3c-a612-31e71039afcc-IGK  *
+335  C   48   8  *  *  *  *  *  32ada4fb-0886-48fd-b5ed-f6ba361b6c98-IGK  *
+312  C   25   7  *  *  *  *  *  07523484-9347-4246-9edf-4dd65eda3f37-IGK  *
+302  C   15   6  *  *  *  *  *  07d15e6c-fb6f-4e7a-846b-d04618f86202-IGK  *
+308  C   21   6  *  *  *  *  *  0130b7f9-4707-4e0c-ac65-ae64bc6a59d7-IGK  *
+350  C   63   5  *  *  *  *  *  48f3a17f-1df5-4ee4-b7bf-f9dc6580c735-IGK  *
+374  C   87   5  *  *  *  *  *  71b97a8c-fe94-4e5c-a9ec-778b141e5e60-IGK  *
+314  C   27   4  *  *  *  *  *  0a637777-d2f9-402b-9c85-1b46bccccba1-IGK  *
+316  C   29   4  *  *  *  *  *  0c8445e6-7be2-4c58-b1f9-212d6e8e036f-IGK  *
+429  C  142   4  *  *  *  *  *  29008719-1acf-41d0-ab7c-8bdad91966c1-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1815  C  651  27  *  *  *  *  *  0171e4dc-b61a-4669-a73a-b7dd6e553618-IGK  *
+1816  C  652  25  *  *  *  *  *  01b2743d-dc19-44af-ac76-1abc15cb56fa-IGK  *
+1233  C   69  20  *  *  *  *  *  9c333f3f-336e-4a20-bfbc-da79b22083ab-IGK  *
+1348  C  184  18  *  *  *  *  *  1971f9ab-6cd3-42a6-896c-cf322d779929-IGK  *
+1332  C  168  16  *  *  *  *  *  1530d1dd-d847-4128-898c-a6bf652fead3-IGK  *
+1269  C  105  11  *  *  *  *  *  0013298d-3432-4e21-93b8-fc1c4a448207-IGK  *
+1303  C  139  11  *  *  *  *  *  0c440c33-fd1e-4cc9-b976-0e5822cc1533-IGK  *
+1372  C  208   9  *  *  *  *  *  203f37f5-a866-468f-8963-05dfc2e895fb-IGK  *
+1394  C  230   9  *  *  *  *  *  2a0f5ecf-ce18-4d39-8a09-3109b15d8a25-IGK  *
+1432  C  268   9  *  *  *  *  *  3b8b78c3-46a3-457b-b0f4-b2fa9d2c848a-IGK  *
+1426  C  262   9  *  *  *  *  *  38dee102-4bf8-473f-af8d-e4406f79e590-IGK  *
+1558  C  394   8  *  *  *  *  *  7c9c4388-fedf-409f-9ad8-56e413bb7e83-IGK  *
+1835  C  671   8  *  *  *  *  *  21ebb27f-6ac8-4f20-b945-a9f593446635-IGK  *
+1295  C  131   7  *  *  *  *  *  07c28e8d-2448-46d1-ae30-4fc8a5e7891e-IGK  *
+1822  C  658   7  *  *  *  *  *  0b21b2c4-32ae-475d-b3b8-445e69a11d07-IGK  *
+1222  C   58   6  *  *  *  *  *  740698f5-2cab-49df-8c2a-c9738a7964bd-IGK  *
+1207  C   43   6  *  *  *  *  *  46656426-e79e-43e2-b6e4-1219f39d300a-IGK  *
+1427  C  263   6  *  *  *  *  *  38f0e759-11bb-497d-a5ea-c84f13c7b95b-IGK  *
+1321  C  157   6  *  *  *  *  *  130d3fe7-db1c-40d8-9804-c8dc604099a8-IGK  *
+1326  C  162   6  *  *  *  *  *  1469a0a2-0f22-4620-a07e-20cc477eea42-IGK  *
+1311  C  147   6  *  *  *  *  *  0ed02a7f-e199-4425-894c-4ca547473e5a-IGK  *
+1315  C  151   5  *  *  *  *  *  105c652c-8c33-472c-bdbd-57d372958044-IGK  *
+1850  C  686   5  *  *  *  *  *  3453aeab-8b7a-449d-abd0-25f907ea3bda-IGK  *
+1381  C  217   5  *  *  *  *  *  256a0858-6b6f-4968-bb96-e3b389ccabf4-IGK  *
+1832  C  668   5  *  *  *  *  *  1e6707e6-cb4b-490a-b3d1-8d59a88ce922-IGK  *
+1170  C    6   4  *  *  *  *  *  4ee7141b-5bdf-4d48-a142-92850da0c002-IGK  *
+1297  C  133   4  *  *  *  *  *  07efcef3-d532-42ef-a9ad-7310ca4589c4-IGK  *
+1301  C  137   4  *  *  *  *  *  0a5f8f76-5bbc-4139-8e06-f6a183a73e2b-IGK  *
+1316  C  152   4  *  *  *  *  *  109f6130-d640-4e36-b4c6-425cf3f17208-IGK  *
+1411  C  247   4  *  *  *  *  *  32789491-849c-4183-baf3-e57b897b6063-IGK  *
+1597  C  433   4  *  *  *  *  *  9193b1d2-9637-42c1-936b-312ecc21072e-IGK  *
+1824  C  660   4  *  *  *  *  *  14aaff91-e101-4e9c-a339-b869be0ab348-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+207  C  20  12  *  *  *  *  *  0681951d-429d-44bb-a88d-0f10fc535436-IGK  *
+225  C  38  11  *  *  *  *  *  1ffff820-3e01-4812-8752-de27b2b8fde2-IGK  *
+220  C  33   6  *  *  *  *  *  1b0eb363-609d-45d9-9f36-84b2bf69eed9-IGK  *
+240  C  53   6  *  *  *  *  *  4309e3a5-aaae-4a9e-a27a-b7f3172e9e29-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+66  C  21  6  *  *  *  *  *  0a4431aa-5d25-4d02-85e2-41350649db74-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+46  C  9  4  *  *  *  *  *  1bb7d575-f5ca-471d-9c22-41289221e390-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+94  C  7  4  *  *  *  *  *  74bcdbd7-71ae-4d8a-9da0-0637cf8b2e0e-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+870  C  286  20  *  *  *  *  *  00d2ce2c-e1cd-4a44-ad0a-0fd1a5936506-IGK  *
+882  C  298  15  *  *  *  *  *  1801c2c2-8a71-4e08-b26d-9ec5aee1d8ef-IGK  *
+603  C   19  10  *  *  *  *  *  07f0c68a-c9b3-414c-8275-ffbcfd708526-IGK  *
+600  C   16   9  *  *  *  *  *  025059ed-a160-4d56-8a8a-f441b848e12f-IGK  *
+622  C   38   8  *  *  *  *  *  1c1b5327-42d8-495d-a163-868c79df94b7-IGK  *
+674  C   90   8  *  *  *  *  *  3a7ba6c4-3262-4583-8fd5-c1a9df143739-IGK  *
+726  C  142   7  *  *  *  *  *  7048e956-4794-41a3-af57-78778e7ad0fa-IGK  *
+871  C  287   6  *  *  *  *  *  01078488-c0c6-4ea3-acfa-d24814d53ab0-IGK  *
+686  C  102   6  *  *  *  *  *  43fb6f59-7eba-475e-b209-b0e727a3eb4e-IGK  *
+676  C   92   6  *  *  *  *  *  3d057758-9f36-412f-90eb-d533f0660330-IGK  *
+690  C  106   6  *  *  *  *  *  478f2dbb-e7ba-4539-923e-8a8f68d87e5b-IGK  *
+678  C   94   6  *  *  *  *  *  3edecb1b-e925-469a-8d9a-1e5532a227f2-IGK  *
+615  C   31   5  *  *  *  *  *  18eff80a-5346-4b88-8d5d-2ed9217243c5-IGK  *
+619  C   35   5  *  *  *  *  *  19fe5533-7dd9-4ad4-b713-835619386795-IGK  *
+624  C   40   5  *  *  *  *  *  1cffe344-cb77-4e87-afa0-b4a77bf531de-IGK  *
+702  C  118   5  *  *  *  *  *  59753ffb-df77-4f19-88e4-7bffe496c67c-IGK  *
+652  C   68   5  *  *  *  *  *  2fa24c79-7cc0-4dec-bb0d-44aae285f266-IGK  *
+629  C   45   5  *  *  *  *  *  220e01f2-c022-4289-b0ed-340ad6006979-IGK  *
+748  C  164   4  *  *  *  *  *  87bc9d69-80d1-4452-9581-4a625db34595-IGK  *
+872  C  288   4  *  *  *  *  *  040b09aa-9b72-498a-bf16-0589f8337f06-IGK  *
+895  C  311   4  *  *  *  *  *  432efdda-441e-4b06-9d79-6d4a925530b0-IGK  *
+908  C  324   4  *  *  *  *  *  70bedaee-2f64-467c-baf0-8d2bb493f98f-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+82   C  10  7  *  *  *  *  *  2db36a79-b3ce-4b1f-b19f-8a7ea90479f6-IGK  *
+116  C  44  4  *  *  *  *  *  376c0764-cda1-4bfa-8f98-4c862ad1d988-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1470  C  119  49  *  *  *  *  *  00a5409b-2653-4429-b6cb-17f076161d45-IGK  *
+1412  C   61  24  *  *  *  *  *  8a0e6c16-7301-4ddb-920a-d8ed73acf66c-IGK  *
+1699  C  348  19  *  *  *  *  *  54cb1f61-ba07-4ab3-b9b6-85eec41512e3-IGK  *
+1489  C  138  17  *  *  *  *  *  0528a7e7-ce29-401a-ae4b-4f0d205d1766-IGK  *
+1481  C  130  16  *  *  *  *  *  040ca693-c838-4128-a3d2-9a833a319128-IGK  *
+2095  C  744  13  *  *  *  *  *  01ebd40c-562d-49b6-bc43-34157647cb0d-IGK  *
+1413  C   62  13  *  *  *  *  *  8fcd36a7-8a23-4a12-8b5e-982b3b051db3-IGK  *
+1405  C   54  13  *  *  *  *  *  650f4a55-86eb-48ee-a2fa-9919f0b6409c-IGK  *
+1497  C  146  10  *  *  *  *  *  06164220-50e5-42e0-b3f9-731c330fb09d-IGK  *
+1579  C  228   9  *  *  *  *  *  275bcf07-7f12-4bcb-b800-42ba2e7d2a5c-IGK  *
+1673  C  322   8  *  *  *  *  *  4d4af507-c0c6-4134-b148-1f14e07de8f4-IGK  *
+1506  C  155   8  *  *  *  *  *  088c5111-37da-4619-8e62-786fcbaa4d23-IGK  *
+1465  C  114   8  *  *  *  *  *  18892677-8984-48da-bdf0-152aada7b1a6-IGK  *
+1369  C   18   8  *  *  *  *  *  1f81b56f-d280-4240-bf29-137f4be90a00-IGK  *
+1484  C  133   8  *  *  *  *  *  048d899b-c8e1-4c6b-937d-578deddd1dc9-IGK  *
+1493  C  142   7  *  *  *  *  *  05973894-c289-40e1-ab3b-d049ae217ecb-IGK  *
+1609  C  258   6  *  *  *  *  *  34bdb856-88cf-4f7b-92b9-38a5214f7730-IGK  *
+1512  C  161   6  *  *  *  *  *  0ac12773-fc69-4420-8ce8-b24bc46ec524-IGK  *
+1604  C  253   6  *  *  *  *  *  32d58424-92d3-43dc-bbed-f6812e2587df-IGK  *
+1507  C  156   6  *  *  *  *  *  089aac6f-646c-466f-84af-0622d00ec3f2-IGK  *
+1845  C  494   6  *  *  *  *  *  8d92eb6d-bd52-48b7-9d3f-296d53bc3401-IGK  *
+1445  C   94   6  *  *  *  *  *  e4965f23-08ec-4bcb-90d9-414038a42105-IGK  *
+1378  C   27   6  *  *  *  *  *  26685259-47c1-446b-ab89-0427d8b8c038-IGK  *
+1364  C   13   5  *  *  *  *  *  1b10aea7-9e5c-4e64-97ff-56ab314536de-IGK  *
+2117  C  766   5  *  *  *  *  *  240c8c3b-0db0-43d2-97f2-2bd98ba45544-IGK  *
+2126  C  775   5  *  *  *  *  *  3d7df1f1-bd37-45db-9162-8f37053ee616-IGK  *
+2096  C  745   5  *  *  *  *  *  029b53fb-11dd-47fd-952b-b42d1ec5e76f-IGK  *
+1472  C  121   5  *  *  *  *  *  013d3580-0376-4146-b504-728ef425a7d3-IGK  *
+1402  C   51   5  *  *  *  *  *  612d0b6f-dce9-40b3-b5b8-61271ab66cc8-IGK  *
+1544  C  193   5  *  *  *  *  *  1924647d-a567-4731-bc7b-c671482dff44-IGK  *
+1574  C  223   5  *  *  *  *  *  26cbabef-4ba8-4a69-91c9-00915d706e53-IGK  *
+1755  C  404   5  *  *  *  *  *  6b361a2b-76b3-4651-9119-a0a607443c38-IGK  *
+1662  C  311   5  *  *  *  *  *  49163c39-fd47-4340-9385-faa37235b264-IGK  *
+1399  C   48   4  *  *  *  *  *  5a40b7e8-4641-48e0-b956-b5ee303948e3-IGK  *
+1410  C   59   4  *  *  *  *  *  7ac68723-ee17-4480-b628-7340e2e48e0c-IGK  *
+1377  C   26   4  *  *  *  *  *  2622f18f-32ed-44ff-9b8a-2a3b2c432bd9-IGK  *
+1500  C  149   4  *  *  *  *  *  06978003-bd1e-4845-93fd-470f99e07a97-IGK  *
+1616  C  265   4  *  *  *  *  *  3879fa42-9076-43a2-8497-6585e62ee0cb-IGK  *
+1541  C  190   4  *  *  *  *  *  18c4e539-c1a7-4c19-9fed-8dda6ce43fda-IGK  *
+1519  C  168   4  *  *  *  *  *  0ed7ef2c-3745-4a90-8c75-3e0de763109a-IGK  *
+1631  C  280   4  *  *  *  *  *  3c76be8a-abcf-4ea6-90cc-e040a84facae-IGK  *
+1796  C  445   4  *  *  *  *  *  7e48abdb-16f5-4a00-b60f-fe779081c19f-IGK  *
+1634  C  283   4  *  *  *  *  *  3e1101b1-de4e-4e4d-8734-510378171e01-IGK  *
+1730  C  379   4  *  *  *  *  *  604e4b26-b10c-4162-a936-20be802603a9-IGK  *
+2104  C  753   4  *  *  *  *  *  11a6ee5f-998d-4d97-b2f8-ff4d511e3b0f-IGK  *
+2102  C  751   4  *  *  *  *  *  10a10650-c826-4572-9c20-f10698b174f9-IGK  *
+2105  C  754   4  *  *  *  *  *  133d26b4-7385-43cb-9b7c-3aef0484729d-IGK  *
+2169  C  818   4  *  *  *  *  *  9b5fe6f5-0101-4e63-97ac-5a53bdff7596-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+129  C  20  17  *  *  *  *  *  2ede5d9a-b029-4c5f-b877-5e454723f9a2-IGK  *
+117  C   8  11  *  *  *  *  *  a7c9af8c-cf72-4567-aeb0-057a6e160050-IGK  *
+112  C   3   4  *  *  *  *  *  0386f098-81f6-4caa-969a-d26c032b14bb-IGK  *
+118  C   9   4  *  *  *  *  *  02e78b36-065c-405a-bc7b-7b3f63be74cf-IGK  *
+128  C  19   4  *  *  *  *  *  2d5aaa1b-840d-4393-9e67-277387a5f52f-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+89   C   1  7  *  *  *  *  *  2147a376-a26b-4a61-83c5-768c1f980bee-IGK  *
+103  C  15  7  *  *  *  *  *  4de3ecf5-6179-4e38-a8fc-64466426989c-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+18  C  4  5  *  *  *  *  *  45f2ca91-1b3b-4c33-ba5f-e485810729f4-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+25  C  4  4  *  *  *  *  *  2f017a42-8ece-4ef0-86e9-2a1193d89679-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+3540  C   350  70  *  *  *  *  *  0b684290-aa4c-4b02-a4b1-17e4c093764c-IGK  *
+3299  C   109  66  *  *  *  *  *  34e77a0e-49ea-41a2-891e-1593c8cf0a87-IGK  *
+3267  C    77  55  *  *  *  *  *  12489e08-3cdc-454b-830f-1ac3710c80bf-IGK  *
+3804  C   614  44  *  *  *  *  *  4e307512-da80-4916-80c1-25a36076b7be-IGK  *
+3544  C   354  39  *  *  *  *  *  0cc87075-01de-42a7-af02-d40f7458b2fa-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+4354  C  1164   4  *  *  *  *  *  0b15f28f-f6b6-4b50-9d5e-b3db71dda369-IGK  *
+4358  C  1168   4  *  *  *  *  *  0cfd76ed-dc1e-4cf2-be7b-ec6784e785b4-IGK  *
+4374  C  1184   4  *  *  *  *  *  1a69ce4e-d9c6-4a35-ba21-864f4a00fd4e-IGK  *
+4401  C  1211   4  *  *  *  *  *  2d1d2243-72ea-4f67-862e-6220faf92ac7-IGK  *
+4414  C  1224   4  *  *  *  *  *  3bdc20d2-a598-4772-ae0e-534aeeb6b1a2-IGK  *
+
+[158 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+23  C  3  4  *  *  *  *  *  1951d619-c6f5-491e-8d15-5ab227dcbf62-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+61  C  0  16  *  *  *  *  *  04d8b751-ad9c-484e-a87f-bc48576e92eb-IGK  *
+68  C  7   4  *  *  *  *  *  72372d09-4e63-4a97-a65f-5717e581e125-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+133  C  19  6  *  *  *  *  *  006c7c8c-65ab-4f7f-bdab-e6b47f31c125-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+32  C  4  10  *  *  *  *  *  128855ae-bb82-4043-90ca-0ed04cebf214-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+42  C  2  6  *  *  *  *  *  9f510a01-bf64-4087-bdfe-992e5fec7b3b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+21  C  1  9  *  *  *  *  *  2121f08f-fc03-46d3-a79a-66e92eff2364-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+924   C   79  71  *  *  *  *  *  0333a6d2-e9e2-43c7-a153-5e19214392f2-IGK  *
+921   C   76  39  *  *  *  *  *  0103eaa5-16ae-412a-a2db-63bbb70dd4c2-IGK  *
+926   C   81  31  *  *  *  *  *  035f82d5-f99b-4a83-975b-66ebc2e41ba4-IGK  *
+928   C   83  27  *  *  *  *  *  05aca88b-0509-4398-ae7b-c0d4bff628d7-IGK  *
+947   C  102  18  *  *  *  *  *  12fcd2b5-d2a5-4fab-89ef-646932d3af30-IGK  *
+858   C   13  16  *  *  *  *  *  05627890-e28c-4e0c-9e5a-dcf5cccf965a-IGK  *
+972   C  127  13  *  *  *  *  *  24c17806-e46a-4e19-8314-fb16e1e44a46-IGK  *
+934   C   89  11  *  *  *  *  *  09bc3345-6252-47dc-920f-bd2b186964f2-IGK  *
+931   C   86  10  *  *  *  *  *  06f3637d-2598-4dcd-84a1-9bd91d355ecb-IGK  *
+964   C  119  10  *  *  *  *  *  207cdc27-cd0f-4ccf-bf6f-806cb6b387d4-IGK  *
+925   C   80   9  *  *  *  *  *  0349fcc5-299f-4e09-8859-65e3bd8df832-IGK  *
+1033  C  188   8  *  *  *  *  *  55800dc8-65ae-4a82-aa03-50b4188c814d-IGK  *
+976   C  131   8  *  *  *  *  *  270edfa3-1f39-4e20-9563-64d57bab527e-IGK  *
+860   C   15   8  *  *  *  *  *  13f5b5ed-6361-4a26-af54-d096ec75dcc5-IGK  *
+847   C    2   7  *  *  *  *  *  174ff70d-7a5e-4c0b-9e76-07dd469ea8e1-IGK  *
+850   C    5   7  *  *  *  *  *  68ad49d1-9c89-4ca8-b4ca-536cb0a78529-IGK  *
+918   C   73   7  *  *  *  *  *  af5045a5-5ec4-414c-b87a-0fb30dc06163-IGK  *
+981   C  136   7  *  *  *  *  *  2ae7e8f8-41d4-4261-ad56-85e35ba5da20-IGK  *
+1023  C  178   6  *  *  *  *  *  492b645d-3966-4f87-a8d2-e80144105135-IGK  *
+872   C   27   6  *  *  *  *  *  3f014156-6100-4218-ad26-75a735ea4918-IGK  *
+852   C    7   6  *  *  *  *  *  a1079e0f-96bf-45c9-a819-13aeb8715be3-IGK  *
+851   C    6   5  *  *  *  *  *  8b612e1b-4fb4-45a6-9c05-db3b26cadcc5-IGK  *
+912   C   67   5  *  *  *  *  *  a244d6a4-2034-4d4a-908f-36fa785d5ab3-IGK  *
+958   C  113   5  *  *  *  *  *  1ced147e-b0f6-44d3-9f19-1e36ed0c530a-IGK  *
+1064  C  219   5  *  *  *  *  *  6d49c493-9ba5-4c05-8221-6239dcf7b6bd-IGK  *
+873   C   28   4  *  *  *  *  *  43952491-3b0f-4a88-bd69-909096fb5586-IGK  *
+863   C   18   4  *  *  *  *  *  1b0d09fd-24fe-4b0a-b1f2-d889c4c160a5-IGK  *
+870   C   25   4  *  *  *  *  *  33f41df5-be53-4cd0-91de-07750a1da4f9-IGK  *
+871   C   26   4  *  *  *  *  *  3bbf8fc8-6f6e-4d36-bfb5-5d597c83f802-IGK  *
+955   C  110   4  *  *  *  *  *  1709f74d-dda6-443d-a9fb-cb707dd40444-IGK  *
+935   C   90   4  *  *  *  *  *  0bfdfae2-3840-498d-bb84-3d27c5f31487-IGK  *
+986   C  141   4  *  *  *  *  *  2c68d77e-0d68-48e0-977f-c08e9f2d4a68-IGK  *
+996   C  151   4  *  *  *  *  *  32dd7d1d-4bb9-4902-83d7-1914d5fdc5a2-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+113  C  33  5  *  *  *  *  *  50a241d8-4099-401d-a9a9-222aab9bf0d2-IGK  *
+83   C   3  4  *  *  *  *  *  45bbd19c-0403-4795-8ca6-66f8f9d59e58-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+26  C  0  6  *  *  *  *  *  78a20146-b4c4-42c8-9f2a-1f30f791e8f5-IGK  *
+30  C  4  5  *  *  *  *  *  069a1694-81b0-4b0f-852f-97fc1566a38b-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+316  C   13  16  *  *  *  *  *  20b1d489-8cc9-4236-8d51-899a103d2d37-IGK  *
+349  C   46  14  *  *  *  *  *  07bee1a1-2773-4879-8dae-a015d1ee55ea-IGK  *
+342  C   39   8  *  *  *  *  *  be083df0-278a-4891-8c59-fcd63a1cf473-IGK  *
+343  C   40   5  *  *  *  *  *  e6da0330-6456-4b16-91c3-a5c5168b9d4b-IGK  *
+326  C   23   5  *  *  *  *  *  637f3391-6fe6-4e94-9fed-29c90e8d494b-IGK  *
+421  C  118   5  *  *  *  *  *  6ba5ad69-3f48-4504-b780-efc9581abfaf-IGK  *
+324  C   21   4  *  *  *  *  *  5614c7de-5b73-4ac0-b3ec-ab3ffbcbe1c2-IGK  *
+351  C   48   4  *  *  *  *  *  08418381-2992-4643-bba6-de7dd9be7fa3-IGK  *
+387  C   84   4  *  *  *  *  *  47c2b308-4990-462c-9ccf-e4ce9c221b2c-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+194  C  15  5  *  *  *  *  *  02b6ac17-f435-4ee8-afe1-ff332d055982-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+501  C   60  37  *  *  *  *  *  0528ab33-13c0-4915-9e89-e6ea6b1cd6db-IGK  *
+503  C   62   9  *  *  *  *  *  07b89afb-42c6-4fbf-a789-12eb8b6f46a2-IGK  *
+444  C    3   7  *  *  *  *  *  2352c954-1744-43ae-a087-cf52dc03ba8f-IGK  *
+548  C  107   7  *  *  *  *  *  321be738-4013-4720-a601-e88c883dd7e0-IGK  *
+450  C    9   5  *  *  *  *  *  03649419-a250-405a-8cc1-4de4622c0fe4-IGK  *
+524  C   83   5  *  *  *  *  *  18f8603f-3bd6-42ea-95b9-4a4a6cbb3583-IGK  *
+509  C   68   4  *  *  *  *  *  0bc2f1f0-0b3b-446e-b9fb-2682d8d4ed0c-IGK  *
+519  C   78   4  *  *  *  *  *  11ae9c7a-e994-4990-8d66-abeb51e81064-IGK  *
+518  C   77   4  *  *  *  *  *  114a1a13-5568-4772-83fb-3aec02679717-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+320  C  29  37  *  *  *  *  *  028ce6d0-66e6-46da-9c92-f227465c145e-IGK  *
+326  C  35  22  *  *  *  *  *  078964ba-dae4-4785-bada-ce65eca1894e-IGK  *
+329  C  38  13  *  *  *  *  *  103c722a-8ee6-4a04-ae89-9339743a33e9-IGK  *
+359  C  68  12  *  *  *  *  *  3b155e31-d23f-4aee-9c5f-6de99c62c8ac-IGK  *
+348  C  57   6  *  *  *  *  *  2f900638-40d7-4f3d-9c49-628d9b5f1744-IGK  *
+322  C  31   5  *  *  *  *  *  044caefa-291f-4bca-919c-fdf2a03ad441-IGK  *
+292  C   1   4  *  *  *  *  *  07ea60a5-9df5-4ab9-b7c0-1af35a499f0d-IGK  *
+341  C  50   4  *  *  *  *  *  22dc581a-ee81-4fe1-b121-5463f1e99db5-IGK  *
+334  C  43   4  *  *  *  *  *  171d14d5-8875-40f4-bcfb-bb737b481d75-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+45  C   2  8  *  *  *  *  *  15a07143-5449-4458-bdda-eec0fb8b9c73-IGK  *
+56  C  13  7  *  *  *  *  *  70037f0b-74d7-409b-b4bd-71f39a87e8bf-IGK  *
+43  C   0  5  *  *  *  *  *  0d10fcab-435e-422b-b341-0064472521f6-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+33  C  1  7  *  *  *  *  *  41444854-7c48-4ede-bea7-7ef208c030ab-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  0  5  *  *  *  *  *  33f19174-d94d-4a37-bb20-ce5ffb07e08c-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1650  C  130  156  *  *  *  *  *  0163fb1a-60fc-499d-9509-a36a8d18438a-IGK  *
+1657  C  137   93  *  *  *  *  *  083b78a8-f139-41cb-aa24-05f1d591a131-IGK  *
+1588  C   68   70  *  *  *  *  *  c4eda60d-23c9-4eff-a7a9-e00b381f0473-IGK  *
+1684  C  164   67  *  *  *  *  *  4992b420-bee0-4f60-ac37-0b4f9f343eaf-IGK  *
+1554  C   34   46  *  *  *  *  *  0f345c4a-732a-45c3-aea5-ab61cb23cba7-IGK  *
+...  ..  ...  ... .. .. .. .. ..                                       ... ..
+1646  C  126    4  *  *  *  *  *  d35efaaf-7c7f-4204-a4a0-6f2e2c542122-IGK  *
+1687  C  167    4  *  *  *  *  *  555672a5-2161-44c4-b494-d8d73dfa7ffe-IGK  *
+1689  C  169    4  *  *  *  *  *  624b388f-1088-4534-b96f-ad2a45ade927-IGK  *
+1814  C  294    4  *  *  *  *  *  03304cf0-4bff-444a-9b14-75843517769f-IGK  *
+1815  C  295    4  *  *  *  *  *  158b8a0b-8075-4b4c-b34b-5096356a275f-IGK  *
+
+[67 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+34  C  3  4  *  *  *  *  *  87553c99-d910-4a4e-9132-8c045b6791e5-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+16  C  0  9  *  *  *  *  *  37632076-fcca-4a89-b290-baa8d68b1d25-IGK  *
+17  C  1  6  *  *  *  *  *  3bbc8ac5-1593-4b09-8b39-28a01119614f-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+73  C  6  25  *  *  *  *  *  03b465ad-bbe5-4b43-8e0d-3f255219b2b6-IGK  *
+74  C  7  12  *  *  *  *  *  09d3e82a-035c-47aa-9143-6654dfdebb1e-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+7332  C   314  752  *  *  *  *  *  1fd83643-0622-4d55-acfa-afd5e0e55f1f-IGK  *
+7380  C   362  208  *  *  *  *  *  00505ed4-5862-4804-bbdf-a214272af054-IGK  *
+7491  C   473  158  *  *  *  *  *  07dcf97c-0485-448f-abe6-c67efeb2e9a7-IGK  *
+7402  C   384  122  *  *  *  *  *  01700f60-545f-4d00-aedf-bf122930ed02-IGK  *
+7370  C   352   90  *  *  *  *  *  9dc7d982-8914-45b2-a5cb-91d8a620743e-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+8540  C  1522    4  *  *  *  *  *  8e91fb46-caa6-4cfe-b9e6-36dd0b0446c4-IGK  *
+8595  C  1577    4  *  *  *  *  *  97be754d-181c-49d5-9636-1c92cc090040-IGK  *
+8608  C  1590    4  *  *  *  *  *  99a91680-f13b-4b54-9f55-b4776edc683a-IGK  *
+8650  C  1632    4  *  *  *  *  *  a289e4ed-b6de-42d7-a13b-e5c436732343-IGK  *
+9386  C  2368    4  *  *  *  *  *  c03b3d5a-9e00-4953-b88c-fd9d222e6988-IGK  *
+
+[305 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+527  C   77  7  *  *  *  *  *  246dbf7d-8bc3-4bf8-b82d-754f0515deb4-IGK  *
+529  C   79  7  *  *  *  *  *  24cf448c-3e1b-4d45-994f-cd6b13c60d71-IGK  *
+536  C   86  4  *  *  *  *  *  2a796f93-316e-4e8e-9a32-596e692a00c0-IGK  *
+581  C  131  4  *  *  *  *  *  5523426c-10ec-4d69-86b5-9165c89d9d94-IGK  *
+789  C  339  4  *  *  *  *  *  83459a74-d14b-45ef-8d13-90d0bbb02feb-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+558  C   88  18  *  *  *  *  *  20075f71-3cd5-4939-b455-851a14b58432-IGK  *
+480  C   10  16  *  *  *  *  *  259305ea-cd7f-4b38-874f-7cc5ad4141e7-IGK  *
+549  C   79  15  *  *  *  *  *  135a3626-a3bb-4a1c-8e7e-0f16c50dbb12-IGK  *
+542  C   72  13  *  *  *  *  *  0c5ee57c-36ee-4e2a-8af0-a1ac13a29dbc-IGK  *
+513  C   43  12  *  *  *  *  *  aa533404-440f-46b4-918c-4b30c5677723-IGK  *
+475  C    5  10  *  *  *  *  *  1962b20f-a8fc-41ae-88d7-af1ed9f22292-IGK  *
+565  C   95   8  *  *  *  *  *  2e405ebc-3ad3-4a66-bde8-f96fa52d4ca4-IGK  *
+587  C  117   8  *  *  *  *  *  4598cae9-e04f-4a5c-8eda-e3b719f8ae82-IGK  *
+536  C   66   7  *  *  *  *  *  060f6cea-eebf-4490-bd7c-161e3618610c-IGK  *
+566  C   96   6  *  *  *  *  *  2e8f4104-c0b7-435c-9bf0-fb9d15ad7d6f-IGK  *
+592  C  122   6  *  *  *  *  *  52d5604c-12f3-4822-b9a0-4d96b0be0e7e-IGK  *
+613  C  143   6  *  *  *  *  *  6f900288-a6e0-4ac8-bb43-2d81f21583b5-IGK  *
+713  C  243   6  *  *  *  *  *  16286cc2-aa27-41e8-a74d-d189d9748021-IGK  *
+505  C   35   5  *  *  *  *  *  8e4d4970-710c-456f-bd8b-f75bfd55af36-IGK  *
+481  C   11   5  *  *  *  *  *  3f3cf363-8ae8-4132-8820-bded1c88b677-IGK  *
+490  C   20   5  *  *  *  *  *  589407c5-3715-498c-b354-4f1517dccb90-IGK  *
+498  C   28   5  *  *  *  *  *  71217760-58f8-464d-a40c-1ccdd07b4993-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+10  C  0  5  *  *  *  *  *  7aeaa115-8f79-4e4c-b04c-ef1859ae1ddb-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+92  C  10  6  *  *  *  *  *  071ab5b3-b4e9-4869-a04a-556e40406e61-IGK  *
+94  C  12  6  *  *  *  *  *  14ccbfaa-4598-44fa-8a41-2359af1a16f3-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+148  C   3  37  *  *  *  *  *  0b4ea513-1fac-4ecf-a937-560ec6b8a9ca-IGK  *
+149  C   4  10  *  *  *  *  *  0c90f80c-d1af-4908-9d18-54cb478051a1-IGK  *
+160  C  15   5  *  *  *  *  *  32ace146-dbde-43cb-b683-61de3163a7bd-IGK  *
+145  C   0   4  *  *  *  *  *  037eb8b0-74a3-4129-84c6-9bb97fd0f623-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+2584  C   326  82  *  *  *  *  *  1a5dfbeb-27fa-42c9-ad7c-3490137b774d-IGK  *
+2457  C   199  31  *  *  *  *  *  ee0b0fc7-c24d-44e7-86c6-428fc2223516-IGK  *
+2339  C    81  28  *  *  *  *  *  3cd827f0-f5b5-4b68-925f-a84b25b357f4-IGK  *
+2459  C   201  24  *  *  *  *  *  fd5e84b9-fc3d-460a-85b0-043d3c779a1d-IGK  *
+2408  C   150  22  *  *  *  *  *  b9c4ef66-3829-47f8-bf1e-6408376f0a7b-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+2968  C   710   4  *  *  *  *  *  842c7001-7cea-4efa-af5f-d4e32d4feba3-IGK  *
+3132  C   874   4  *  *  *  *  *  bc377e8e-79c6-4f40-add8-bc2157fa9acf-IGK  *
+2909  C   651   4  *  *  *  *  *  73adba2c-7c08-4572-a3ee-91e84fcd1c2a-IGK  *
+3315  C  1057   4  *  *  *  *  *  07f25585-aac7-4c99-9be5-e3c231aa0235-IGK  *
+3339  C  1081   4  *  *  *  *  *  2bbfca9f-f9ac-4162-a8df-22c5a2b8edae-IGK  *
+
+[95 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1963  C  108  97  *  *  *  *  *  e3b22773-5614-479c-b24d-5897d5fbeac2-IGK  *
+1996  C  141  80  *  *  *  *  *  02eae4bf-3ccf-499d-96cb-61394648ef19-IGK  *
+1881  C   26  73  *  *  *  *  *  0998baf9-2701-49d9-bf20-bd400ed8594c-IGK  *
+1984  C  129  49  *  *  *  *  *  948b451d-a59f-450c-a0e8-733e2ba07bb0-IGK  *
+1949  C   94  41  *  *  *  *  *  bdedc1a4-2b49-4d02-b8b9-5d7d80a754d8-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+2174  C  319   4  *  *  *  *  *  3e26424b-2e38-48b8-94fc-9a308fe05792-IGK  *
+2471  C  616   4  *  *  *  *  *  d0111d9d-072d-4076-9b93-bd385aafa654-IGK  *
+2410  C  555   4  *  *  *  *  *  a908cf99-80c1-44b2-8664-643dbe5a91ae-IGK  *
+2396  C  541   4  *  *  *  *  *  9fd6f9eb-ce3a-4163-b4d3-2697fb4bd535-IGK  *
+2543  C  688   4  *  *  *  *  *  02c8cf1f-ca34-4cb9-8b06-0806a2dde373-IGK  *
+
+[80 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+294  C   45  12  *  *  *  *  *  2e7133f1-1c15-4e63-ae31-9bcad142f26b-IGK  *
+402  C  153   8  *  *  *  *  *  07ff64bb-354a-4a63-a921-1f8410551377-IGK  *
+280  C   31   6  *  *  *  *  *  19047d18-075b-48c0-9564-fe347ca6df30-IGK  *
+263  C   14   5  *  *  *  *  *  02ed64db-3141-44e0-b71e-b998a6756315-IGK  *
+311  C   62   5  *  *  *  *  *  46da8e60-f8e8-4c86-b03b-45deafb6d603-IGK  *
+272  C   23   5  *  *  *  *  *  0d35bdcc-4575-4847-8b27-a9a80caf86ac-IGK  *
+328  C   79   5  *  *  *  *  *  612e4ea7-1d36-41ba-9471-ae66ad929615-IGK  *
+307  C   58   5  *  *  *  *  *  4260821c-038e-41c9-a382-d45d7f31ffff-IGK  *
+268  C   19   4  *  *  *  *  *  0789d451-d888-439a-9416-2b6c3649f64d-IGK  *
+289  C   40   4  *  *  *  *  *  27dcca0e-2dc0-4af1-afca-98c27464f2c4-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+88   C   1  6  *  *  *  *  *  56671e0d-c716-4e4e-a242-d9a74b1741c7-IGK  *
+93   C   6  4  *  *  *  *  *  03ffa591-018d-4c43-b6a5-566f8d3a163c-IGK  *
+137  C  50  4  *  *  *  *  *  bc0ed7a0-ba80-4c27-8688-f6f39e9aade3-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+120  C   2  26  *  *  *  *  *  13284859-020b-4318-9d17-cc93ae1d5bf7-IGK  *
+135  C  17  14  *  *  *  *  *  64b0f792-c24b-4426-bd3f-34f4819f8f70-IGK  *
+168  C  50   6  *  *  *  *  *  209f0de0-01a0-497c-b539-4df201f77bc3-IGK  *
+126  C   8   4  *  *  *  *  *  408d8711-e78b-43b6-bee0-c9217d0ef0b5-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+96  C  2  6  *  *  *  *  *  6846a141-b47e-4c80-ba80-6346f0b275b5-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+176  C   4  7  *  *  *  *  *  0245195b-ae39-4e68-b26d-f14cffce4f6d-IGK  *
+230  C  58  5  *  *  *  *  *  567232f1-1abe-41fa-bbd2-f92a2fe539c0-IGK  *
+192  C  20  4  *  *  *  *  *  d510b0fc-7c14-4d51-83a6-74e6237ce9ce-IGK  *
+193  C  21  4  *  *  *  *  *  3a0e8058-5ed4-431e-afdd-18b2218d8d7f-IGK  *
+207  C  35  4  *  *  *  *  *  1abe599f-5a67-4bd5-b340-eb4d0862cfaf-IGK  *
+220  C  48  4  *  *  *  *  *  4ac187cc-87c5-42fa-b558-49ecafa7bf11-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+749  C   88  15  *  *  *  *  *  13afafef-b075-4ff0-9d65-7b4c971de39f-IGK  *
+718  C   57  12  *  *  *  *  *  3c7e7b31-51ce-48e3-92d3-98e1962d7b81-IGK  *
+847  C  186  12  *  *  *  *  *  52aabd92-c08d-4a1f-aba4-aad0bd637bb8-IGK  *
+722  C   61   8  *  *  *  *  *  002b8c46-1dc2-45e0-a669-6d605a4c8437-IGK  *
+778  C  117   8  *  *  *  *  *  26d40a79-de5e-47df-84d7-140688bd7f37-IGK  *
+825  C  164   8  *  *  *  *  *  438d8889-0f5e-4d9d-8fd6-55e752f959d6-IGK  *
+793  C  132   7  *  *  *  *  *  2f62f1ff-c61c-4e69-a8a5-a8c6349f0609-IGK  *
+675  C   14   6  *  *  *  *  *  2513b703-5be5-4138-a2a6-187cf0273f20-IGK  *
+713  C   52   6  *  *  *  *  *  d0c579f0-8a4b-4b48-ab1b-ec9002679fc5-IGK  *
+855  C  194   6  *  *  *  *  *  5710608a-197e-40a9-83ec-4df85c76dd22-IGK  *
+759  C   98   5  *  *  *  *  *  179635f6-1ffd-470e-9af7-3e12f5d0539e-IGK  *
+838  C  177   5  *  *  *  *  *  4d50d695-ae98-4d4d-97f3-18976f0f1cc9-IGK  *
+812  C  151   5  *  *  *  *  *  374f0682-89ac-493a-aa18-8d1d14dbbd32-IGK  *
+757  C   96   5  *  *  *  *  *  16ce5ed7-1628-436c-b70f-6a1c5be851e4-IGK  *
+780  C  119   5  *  *  *  *  *  2845bdaf-4d12-4dd2-ad6c-ce72452bde6f-IGK  *
+751  C   90   4  *  *  *  *  *  14c3f9d1-a92e-4f20-a767-145b6eaf883a-IGK  *
+721  C   60   4  *  *  *  *  *  a3eec45e-3752-407e-8f3e-3c38f6562ea3-IGK  *
+753  C   92   4  *  *  *  *  *  153d82f5-eaf7-450b-9db1-29c74b6434c3-IGK  *
+799  C  138   4  *  *  *  *  *  3175f2a3-8b95-4677-b431-a5983ff0dfcb-IGK  *
+792  C  131   4  *  *  *  *  *  2e028c31-d754-405c-85a4-02dc50f9be4b-IGK  *
+776  C  115   4  *  *  *  *  *  2410570e-dc15-4dd7-bd96-8581b943e629-IGK  *
+762  C  101   4  *  *  *  *  *  18383bb9-c526-41ca-bab3-0310c3897c10-IGK  *
+858  C  197   4  *  *  *  *  *  5a06006c-3686-415f-b5ec-52fececd901c-IGK  *
+891  C  230   4  *  *  *  *  *  6e317475-332c-4c58-a40e-d35405e204e0-IGK  *
+913  C  252   4  *  *  *  *  *  7fdebdbf-65f8-4b0c-8a75-11334301cda7-IGK  *
+931  C  270   4  *  *  *  *  *  8daa8c3e-c151-4c04-8009-e66f2beb6a2b-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+32  C  2  12  *  *  *  *  *  0e1af9c7-2e33-4523-9a39-6018102b94a7-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+200  C    1  5  *  *  *  *  *  30a8e19b-8811-4ff8-8b57-4de2f1b712f9-IGK  *
+205  C    6  5  *  *  *  *  *  10ce21f6-97e8-4a1b-b678-131cd21289b3-IGK  *
+238  C   39  5  *  *  *  *  *  1c1120e4-0621-4807-aabd-b59dcbf733b5-IGK  *
+245  C   46  5  *  *  *  *  *  2b99f282-0c13-4ff3-9d35-bbf1fe4a3d69-IGK  *
+263  C   64  5  *  *  *  *  *  582980d3-60dd-4849-ae69-6ff60a94012c-IGK  *
+266  C   67  4  *  *  *  *  *  62c78115-c596-4372-a45a-38dab5da0912-IGK  *
+337  C  138  4  *  *  *  *  *  0233d844-ffc1-42ab-94ee-44265febe67d-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  4  5  *  *  *  *  *  0ee5a641-f3f7-4edc-8001-691e6e2893f4-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+146  C  10  47  *  *  *  *  *  08a41436-30d9-4bd2-a4d8-416e588abb0d-IGK  *
+147  C  11   7  *  *  *  *  *  0a975e10-4151-4012-b2b6-ff6d97abadd4-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  0  4  *  *  *  *  *  0f94e316-476f-4e62-af54-45a32dc84b98-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+512  C   26  41  *  *  *  *  *  fc2f3908-f22e-430e-81e6-ea5f146c67f3-IGK  *
+513  C   27  24  *  *  *  *  *  005cfa04-9672-440d-8d5f-824c32a3085e-IGK  *
+594  C  108  18  *  *  *  *  *  12d528c7-7754-42f9-9d3c-933efff9bb03-IGK  *
+525  C   39  15  *  *  *  *  *  323afc2c-2ab1-4216-87dc-7f3a2df79e67-IGK  *
+543  C   57  15  *  *  *  *  *  72846dee-81a3-44cd-af4b-0fce418b7222-IGK  *
+523  C   37  15  *  *  *  *  *  27e5275e-7b7c-4085-aea4-39587486d431-IGK  *
+533  C   47  14  *  *  *  *  *  4b6c96da-a552-4522-a8a2-35be6741ac93-IGK  *
+551  C   65  13  *  *  *  *  *  97264258-2d01-4103-b144-b5977ffeab9e-IGK  *
+623  C  137  13  *  *  *  *  *  0685de83-fd59-4239-b6a1-1e719b6d3bcc-IGK  *
+499  C   13  13  *  *  *  *  *  16bb331d-1a3b-42f8-b44a-13c5d48ac902-IGK  *
+498  C   12  11  *  *  *  *  *  104728a8-3f4c-4bf4-9f30-3fa2116110e3-IGK  *
+489  C    3  10  *  *  *  *  *  9d4fa614-c1c5-4fb4-9838-f6d1ad0e27d8-IGK  *
+603  C  117  10  *  *  *  *  *  7168574d-0b84-49bc-b5f8-da5f19942471-IGK  *
+569  C   83   8  *  *  *  *  *  06c57f27-0a83-4adb-8d2f-36ba1b770525-IGK  *
+548  C   62   8  *  *  *  *  *  8ba48f01-ae42-4719-9ea5-782b2b53c650-IGK  *
+529  C   43   8  *  *  *  *  *  3d51521b-223d-4087-8e92-4d14a9d85579-IGK  *
+596  C  110   6  *  *  *  *  *  1f65c428-1fd4-4b0b-8833-1dad94c5dffb-IGK  *
+600  C  114   6  *  *  *  *  *  47c1325a-5f70-470d-ab99-9a4be0ea49e6-IGK  *
+500  C   14   5  *  *  *  *  *  2f2458d7-bd81-4636-96ee-4be964c923e0-IGK  *
+526  C   40   5  *  *  *  *  *  34ddd691-4146-4aee-8b3f-c800688a5a54-IGK  *
+516  C   30   4  *  *  *  *  *  06279e66-991f-44df-a5ed-faba40612524-IGK  *
+501  C   15   4  *  *  *  *  *  397881e9-27a7-428d-a5f2-ed4c1fd5aa24-IGK  *
+504  C   18   4  *  *  *  *  *  6b4ed699-ef5b-4347-b2a0-a4b1030978dd-IGK  *
+488  C    2   4  *  *  *  *  *  e8abb14e-60ec-437c-8a1c-96b5b4a3a5fc-IGK  *
+514  C   28   4  *  *  *  *  *  0290e737-1551-41d9-af39-cd6fc9852127-IGK  *
+537  C   51   4  *  *  *  *  *  5d66b3be-dea1-42ed-9ed8-0a94d1e40f07-IGK  *
+622  C  136   4  *  *  *  *  *  05f906cb-e48f-4251-bdd2-5c406d352ea6-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+5  C  0  5  *  *  *  *  *  1483be06-d85d-413d-8f5b-b47d99b767de-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+23  C  0  4  *  *  *  *  *  20d170c8-b5e7-40e4-bb6b-ec1242c7d098-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+73  C  11  5  *  *  *  *  *  2849c36f-7ecc-4c03-9223-7f1f13f796f0-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+15  C  0  9  *  *  *  *  *  06d296cb-d1f4-45cf-8450-f760f6e07324-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1558  C  202  86  *  *  *  *  *  217ceed2-c5e0-4dbd-ba11-26a90008898e-IGK  *
+1514  C  158  69  *  *  *  *  *  17cf92ba-572d-4fff-a8f7-88e82959a17f-IGK  *
+1540  C  184  57  *  *  *  *  *  02a918ad-df04-49b7-be75-dc211ec5256f-IGK  *
+1506  C  150  26  *  *  *  *  *  ef18ee39-934d-49a4-a097-2419541f3f75-IGK  *
+1551  C  195  25  *  *  *  *  *  14f45193-addd-4279-9b96-36586f97bf07-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+1597  C  241   4  *  *  *  *  *  70fd261a-c7c4-48a4-a061-3bbf78c495f4-IGK  *
+1628  C  272   4  *  *  *  *  *  afcdf9c8-c477-44ef-8e39-0af05e9b99b6-IGK  *
+1603  C  247   4  *  *  *  *  *  77069fcc-180f-428b-b6b4-9044fe2276bc-IGK  *
+1585  C  229   4  *  *  *  *  *  545eb661-13c8-41b7-aed1-f647c671e7c2-IGK  *
+1782  C  426   4  *  *  *  *  *  29d210f6-dfa1-461d-a05c-0e1d224e3059-IGK  *
+
+[76 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1472  C  103  53  *  *  *  *  *  0359baa3-df8e-4579-8018-c98dfdfb54b0-IGK  *
+1461  C   92  52  *  *  *  *  *  ebcfcce9-e623-4627-8291-3e53eb7c006f-IGK  *
+1846  C  477  33  *  *  *  *  *  06770ee1-c0fe-476b-a60b-ba81e83e3a8f-IGK  *
+1469  C  100  32  *  *  *  *  *  01d0386d-d0e6-4d49-b4c2-c2ef1616b3a9-IGK  *
+1723  C  354  32  *  *  *  *  *  92a43c8e-ec3f-41af-b045-7069dec505b2-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+1625  C  256   4  *  *  *  *  *  550c2b2c-2f2c-4810-8a90-d7ad6f2a5434-IGK  *
+1659  C  290   4  *  *  *  *  *  689dd6cf-58f7-4311-9ea0-9905c692bfec-IGK  *
+1736  C  367   4  *  *  *  *  *  a00b3798-4784-4467-a53e-de095afb6560-IGK  *
+1855  C  486   4  *  *  *  *  *  139dd462-51dd-440f-9c11-2c954c05cdaf-IGK  *
+1849  C  480   4  *  *  *  *  *  08c1353d-a70b-40ae-8239-f747eb17b094-IGK  *
+
+[76 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+60  C  16  6  *  *  *  *  *  673aa2cc-c083-414b-af9e-037e8ef91edd-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+20  C  5  4  *  *  *  *  *  91c03abd-35a3-4f44-89d1-8a483cceaeba-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1025  C   13  38  *  *  *  *  *  0d57c93f-9c2c-40d0-9398-d7d0e31b26f2-IGK  *
+1141  C  129  36  *  *  *  *  *  1b59a168-329a-4bb1-a259-357bda84abdf-IGK  *
+1506  C  494  33  *  *  *  *  *  04d16836-d437-4bda-9655-cbe7c98c8733-IGK  *
+1085  C   73  29  *  *  *  *  *  716e2fa5-204d-42c1-869d-ac85c0585a0f-IGK  *
+1099  C   87  25  *  *  *  *  *  04a7172a-6642-476e-92bc-0000a7a18c65-IGK  *
+1134  C  122  20  *  *  *  *  *  15a51d7c-0692-41c1-b4d3-ec1736e0f34f-IGK  *
+1172  C  160  12  *  *  *  *  *  32772665-4cb2-4849-a2f4-df957da3c859-IGK  *
+1243  C  231   9  *  *  *  *  *  586c22f5-9494-4772-9c5d-1634c55ebc48-IGK  *
+1030  C   18   8  *  *  *  *  *  222e503d-6383-4bce-899f-5bc223ab3f88-IGK  *
+1098  C   86   8  *  *  *  *  *  03f54555-35e3-4f24-acd5-7e75de523bd2-IGK  *
+1196  C  184   7  *  *  *  *  *  407e7c68-4d15-4890-bf81-4416cb338284-IGK  *
+1530  C  518   7  *  *  *  *  *  43ba4bc1-a6d3-4ed8-8ee5-81f49d87b714-IGK  *
+1114  C  102   7  *  *  *  *  *  0a296744-1885-4fe3-8904-cae08a0f88f2-IGK  *
+1096  C   84   6  *  *  *  *  *  022c6dac-6c82-4a2d-a287-261c534773d7-IGK  *
+1515  C  503   6  *  *  *  *  *  1c14a273-df59-45d4-b3f5-dcebf098dbcd-IGK  *
+1250  C  238   6  *  *  *  *  *  5ef0738a-052c-451f-9188-71a297725956-IGK  *
+1329  C  317   5  *  *  *  *  *  96953fc2-5fd9-4921-9363-922d2e158d68-IGK  *
+1130  C  118   5  *  *  *  *  *  111d5c0c-67fd-4f2a-bea1-f85c04f0580a-IGK  *
+1094  C   82   5  *  *  *  *  *  01bef4dd-de8a-49df-80e1-905d0be4ddcf-IGK  *
+1120  C  108   5  *  *  *  *  *  0d8db01e-63b4-47a7-aea6-eafe2315f9f9-IGK  *
+1225  C  213   5  *  *  *  *  *  51948ccb-6712-44e1-aa4b-48b8ef2c0fb3-IGK  *
+1164  C  152   5  *  *  *  *  *  2c429175-ea48-442b-b881-874635ffdebb-IGK  *
+1028  C   16   4  *  *  *  *  *  194aa7c7-e9f5-47a6-bea1-baa2be699a66-IGK  *
+1081  C   69   4  *  *  *  *  *  e8dbfdcc-6d26-42ed-9088-676d32929a77-IGK  *
+1082  C   70   4  *  *  *  *  *  04a8d5c8-bf68-4dfd-8bcd-b5d93c1fa899-IGK  *
+1112  C  100   4  *  *  *  *  *  09fa220d-273e-41f5-99ed-d28dea7c9299-IGK  *
+1097  C   85   4  *  *  *  *  *  0391e745-3d4d-4a84-96a1-657dc66befe2-IGK  *
+1129  C  117   4  *  *  *  *  *  10dc1558-237f-4949-ab74-f508ce8c61d0-IGK  *
+1122  C  110   4  *  *  *  *  *  0e32f918-5b77-417c-94c3-cd06bb668716-IGK  *
+1184  C  172   4  *  *  *  *  *  37c26915-5a21-4e56-bca1-5a19e7c22a27-IGK  *
+1195  C  183   4  *  *  *  *  *  3f5d76af-6222-4f4a-a090-9db4405f6ee8-IGK  *
+1198  C  186   4  *  *  *  *  *  43da1471-ef2a-4e2d-af64-a99cb09ffaf8-IGK  *
+1496  C  484   4  *  *  *  *  *  d0e0a972-6149-4da5-b760-84738ba8a54e-IGK  *
+1512  C  500   4  *  *  *  *  *  0f4e85d7-f9aa-4a81-96ca-f32a71683792-IGK  *
+1508  C  496   4  *  *  *  *  *  06ed46d1-ab66-409f-8efe-ac4d20047f43-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+217  C  21  7  *  *  *  *  *  1bd3e2a2-e52d-468d-ad7e-ac8532988abc-IGK  *
+222  C  26  6  *  *  *  *  *  2b8f1045-5346-4d6a-86ed-652a6208630a-IGK  *
+223  C  27  4  *  *  *  *  *  3b300b27-219f-4d7c-aeba-edafaee0bc43-IGK  *
+226  C  30  4  *  *  *  *  *  42c9790a-bb37-4257-9278-a973ce7ee14f-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1060  C   92  41  *  *  *  *  *  0377eb22-06a4-41c3-9588-46efcef5f3d7-IGK  *
+1091  C  123  30  *  *  *  *  *  10d8b4d7-151b-4036-aca5-6bbee3229255-IGK  *
+1407  C  439  14  *  *  *  *  *  09bb9766-2831-4d39-ab02-ca3c63574265-IGK  *
+1153  C  185  13  *  *  *  *  *  3c07a58a-aead-4060-b443-a49525e42595-IGK  *
+1076  C  108  13  *  *  *  *  *  0995f7bc-ad92-4ca4-a7ce-210abc7e4177-IGK  *
+1054  C   86  12  *  *  *  *  *  006dae1c-40d5-41de-b9e9-e68e6f226feb-IGK  *
+1079  C  111  12  *  *  *  *  *  0af34187-b008-4756-8c28-d5af5cd7f382-IGK  *
+1083  C  115  12  *  *  *  *  *  0cd4fb20-a029-4223-85f0-02e6d5cb6589-IGK  *
+1159  C  191  11  *  *  *  *  *  3e533f86-8beb-42d8-9440-6bf53ce7a225-IGK  *
+1071  C  103  10  *  *  *  *  *  0735742e-a3a5-4f88-8539-7be6b05a89e9-IGK  *
+1046  C   78   9  *  *  *  *  *  b43eea7f-512f-4aee-8fd9-11d91326f5bb-IGK  *
+1390  C  422   8  *  *  *  *  *  24095e0d-0c51-4b75-846b-122cf7326a98-IGK  *
+1111  C  143   8  *  *  *  *  *  1ff62a7b-7aaa-48b0-85a7-01cf27063ce5-IGK  *
+1154  C  186   8  *  *  *  *  *  3c3c12ed-f963-4cf3-9989-f2ff539f5e81-IGK  *
+1179  C  211   7  *  *  *  *  *  499a4eca-e7dc-453a-87ef-334fa940764a-IGK  *
+1283  C  315   7  *  *  *  *  *  93ab787e-deb1-4966-b025-1a858a4c1740-IGK  *
+1066  C   98   7  *  *  *  *  *  0470761d-1e0d-4bf5-87ce-1c9bba899045-IGK  *
+1392  C  424   7  *  *  *  *  *  3613b6cf-0b9d-42ae-b1a1-018a958f4e3e-IGK  *
+1098  C  130   7  *  *  *  *  *  1623a513-6182-43b5-b53f-c375a2506746-IGK  *
+1117  C  149   7  *  *  *  *  *  231a7c50-0138-49d0-8dda-6ae455e15a94-IGK  *
+1061  C   93   6  *  *  *  *  *  03967cba-de4d-4b45-a924-fd7eb5cc81c7-IGK  *
+1104  C  136   6  *  *  *  *  *  1b01f7c7-f8c9-42b2-adda-f128e3b9b99c-IGK  *
+1021  C   53   6  *  *  *  *  *  7344e887-47ac-4e30-a6a6-32cb48241b27-IGK  *
+974   C    6   6  *  *  *  *  *  5a4252c0-fa7f-41a4-b783-883607e6db8d-IGK  *
+1042  C   74   6  *  *  *  *  *  2e843b85-964d-404b-b376-5d239f516595-IGK  *
+1223  C  255   5  *  *  *  *  *  5fbb9745-dff7-443b-9315-335875ef1134-IGK  *
+1081  C  113   5  *  *  *  *  *  0bd89e18-435a-4f9c-9344-1b689610ace0-IGK  *
+979   C   11   5  *  *  *  *  *  8764d486-4188-4b18-b000-cfd3d5406ba6-IGK  *
+1058  C   90   5  *  *  *  *  *  032b0244-1a2d-457e-8915-3aa5464091de-IGK  *
+1057  C   89   5  *  *  *  *  *  02ba8892-7ad8-4d1f-820d-22ef9c2fc744-IGK  *
+1097  C  129   5  *  *  *  *  *  15f1328e-c459-492d-885e-815f6288e176-IGK  *
+1414  C  446   5  *  *  *  *  *  198af4bf-de20-47a6-84c0-b8610c1c9769-IGK  *
+1040  C   72   4  *  *  *  *  *  e84e50db-7e1f-4f61-9a1b-14eaccb2425f-IGK  *
+992   C   24   4  *  *  *  *  *  090d04da-7003-4a52-b74c-1b976153c753-IGK  *
+984   C   16   4  *  *  *  *  *  b4ba99c1-b822-4dba-923a-22eae5a1a1c8-IGK  *
+1051  C   83   4  *  *  *  *  *  0027868c-07a1-470b-8bba-ac23ad58f0d5-IGK  *
+991   C   23   4  *  *  *  *  *  03def6f7-a22d-4cae-ba14-d6d40f30bdc7-IGK  *
+1089  C  121   4  *  *  *  *  *  1040b69a-62a1-4077-be56-295fed022957-IGK  *
+1152  C  184   4  *  *  *  *  *  3b0075b7-eec9-4c88-9e37-b37d443a6a82-IGK  *
+1114  C  146   4  *  *  *  *  *  21329450-1ddf-4912-b883-0a3020949d01-IGK  *
+1175  C  207   4  *  *  *  *  *  4671c911-c56f-42d9-84f2-9e7e9e1265fc-IGK  *
+1156  C  188   4  *  *  *  *  *  3ca2865b-4f2d-420d-a72b-7aee2d2cd100-IGK  *
+1425  C  457   4  *  *  *  *  *  2f1c41c7-c1f7-4b16-9c94-fc798df57741-IGK  *
+1434  C  466   4  *  *  *  *  *  45146109-1ac5-4785-abb7-3bc3b84fb36c-IGK  *
+1448  C  480   4  *  *  *  *  *  76007191-a9fa-4c78-8386-6ffb9a7969e9-IGK  *
+1494  C  526   4  *  *  *  *  *  06c1c6eb-3e40-46df-9641-7ea803c82087-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+325  C    7  8  *  *  *  *  *  0d953530-6707-44dc-b5c8-169866ab7582-IGK  *
+355  C   37  7  *  *  *  *  *  029ba1e5-625c-4f23-aa23-205a334d218a-IGK  *
+375  C   57  6  *  *  *  *  *  16f04eb2-2840-4720-9d7d-f45a13c8ac7b-IGK  *
+378  C   60  5  *  *  *  *  *  1a86de04-3bb1-407b-a00b-06196d1cdb08-IGK  *
+436  C  118  5  *  *  *  *  *  6b7ec3d1-0f74-4bdf-b762-d0846fe9d3c8-IGK  *
+417  C   99  5  *  *  *  *  *  51a63782-b1dd-4061-8ddf-c0a56265df0b-IGK  *
+356  C   38  4  *  *  *  *  *  033d362e-0a95-43fb-bdca-1731ace94a5f-IGK  *
+351  C   33  4  *  *  *  *  *  005882ab-5e0d-46fc-a8a9-e3894fe3d910-IGK  *
+399  C   81  4  *  *  *  *  *  2dd8f264-4f4d-4c07-b93d-4a2ff634c878-IGK  *
+367  C   49  4  *  *  *  *  *  0dde3acf-e06c-47e6-9aa4-ed94223593b8-IGK  *
+420  C  102  4  *  *  *  *  *  55aceee6-acbf-43b4-8ad0-167122f6e662-IGK  *
+515  C  197  4  *  *  *  *  *  47ac86e7-41ba-426c-9ef9-567c3ce82823-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+402  C    8  15  *  *  *  *  *  12cb9036-ce16-4f8a-b237-a3615fc419c2-IGK  *
+399  C    5  11  *  *  *  *  *  00d0abbb-b58b-4bf6-9259-f4f3fc028ac8-IGK  *
+418  C   24  10  *  *  *  *  *  7983b917-1afa-41b5-8bc3-190ccdbc0a08-IGK  *
+437  C   43   8  *  *  *  *  *  6233ee65-c18c-44f2-8edc-84dcd3ba5ea2-IGK  *
+487  C   93   7  *  *  *  *  *  2d4a16bf-4c08-4e6c-81b9-01bfeeab0ee4-IGK  *
+400  C    6   6  *  *  *  *  *  04f0e48a-cc34-4458-be93-b44aa28566fb-IGK  *
+428  C   34   6  *  *  *  *  *  bb6e6c21-c852-4d80-8c34-ecf1a776d746-IGK  *
+417  C   23   5  *  *  *  *  *  72312dbe-0805-479c-a345-cf789282f4d7-IGK  *
+394  C    0   5  *  *  *  *  *  323937e3-7abf-48e4-b6fa-08b8d96eb3a9-IGK  *
+404  C   10   5  *  *  *  *  *  221a04f3-4024-4eb4-a45a-901c6d1c0e4a-IGK  *
+473  C   79   5  *  *  *  *  *  1d914a4c-a669-47f0-8238-53e2d513a647-IGK  *
+447  C   53   4  *  *  *  *  *  039adae9-8747-485f-8123-d1ff45b6f6e4-IGK  *
+465  C   71   4  *  *  *  *  *  165081d5-57c1-4bdf-9746-54773927ee79-IGK  *
+500  C  106   4  *  *  *  *  *  3a7aabce-7741-403d-9aca-116b6aa30318-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+454  C  183  13  *  *  *  *  *  049f0942-ac4b-4c5d-a033-44e08fe9a87d-IGK  *
+342  C   71   6  *  *  *  *  *  287fb013-1c91-4f12-908c-705a4de2a090-IGK  *
+316  C   45   5  *  *  *  *  *  0019ae34-364f-4502-9beb-a82dd1949a80-IGK  *
+322  C   51   5  *  *  *  *  *  04e84162-da7c-4889-82cd-7cce7d509178-IGK  *
+382  C  111   5  *  *  *  *  *  8addb96f-bddf-40e6-bed9-87062e8c357c-IGK  *
+315  C   44   4  *  *  *  *  *  00054ae4-2129-4c96-82dd-33db5e0a539b-IGK  *
+284  C   13   4  *  *  *  *  *  52875122-61cc-414f-aac3-ccd067585441-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+3985  C   371  67  *  *  *  *  *  0a82cebb-ccdc-47c7-b71a-35e0c79975cf-IGK  *
+3658  C    44  50  *  *  *  *  *  0145bb52-e0ec-4b95-8428-1f0c01b66e27-IGK  *
+3956  C   342  47  *  *  *  *  *  06fbae53-b2d7-4d6e-b5db-2f2e4fa42989-IGK  *
+3887  C   273  34  *  *  *  *  *  358f3df1-3e96-4062-aaf2-e0f9ed5af262-IGK  *
+4152  C   538  30  *  *  *  *  *  21f19b7d-123a-4d99-93fe-46212b7f94b2-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+4692  C  1078   4  *  *  *  *  *  86b4deb8-1dd8-4e37-a979-3c329f51f3fa-IGK  *
+4791  C  1177   4  *  *  *  *  *  9da8dbba-9428-4f68-ab03-94df99281d05-IGK  *
+5253  C  1639   4  *  *  *  *  *  11609c65-de35-4d93-994a-e745d3ac927c-IGK  *
+5323  C  1709   4  *  *  *  *  *  57d4caab-dff7-4268-90f9-dfe06763810d-IGK  *
+5255  C  1641   4  *  *  *  *  *  12ae1b34-9c36-4437-8ec1-17bacbe56f39-IGK  *
+
+[158 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+7427  C   523  181  *  *  *  *  *  03147a84-dd8d-4fe9-9f3a-b812eaf62ddd-IGK  *
+7098  C   194  151  *  *  *  *  *  3a6a3937-319c-4c51-8a6c-a7c01caccab5-IGK  *
+7526  C   622   93  *  *  *  *  *  09b2487f-5964-4abc-be98-2419384d7b04-IGK  *
+7621  C   717   51  *  *  *  *  *  13aa9f33-317b-4770-b415-fb2f6fe95f93-IGK  *
+7402  C   498   49  *  *  *  *  *  01d5ed2c-ddb1-4750-93ad-e7ce34dc79bc-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+8664  C  1760    4  *  *  *  *  *  9139de6b-b401-49d7-b688-4ccaa05de3bd-IGK  *
+8653  C  1749    4  *  *  *  *  *  8f6e23e6-e986-4414-b2dd-0d860105fa3b-IGK  *
+8568  C  1664    4  *  *  *  *  *  83bdb430-61f9-4b44-8d57-28785f519f52-IGK  *
+8993  C  2089    4  *  *  *  *  *  c3737459-324d-4ddb-8d0e-5ce82b3858c3-IGK  *
+8789  C  1885    4  *  *  *  *  *  a32e9ebd-3784-4ad4-a9c5-a0514200a025-IGK  *
+
+[338 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1362  C   28  31  *  *  *  *  *  277d3d84-1c1a-4551-a955-91badafd4f3f-IGK  *
+1568  C  234  24  *  *  *  *  *  3291e679-f910-45c1-b2b1-5ce66eb69426-IGK  *
+1459  C  125  22  *  *  *  *  *  0ab91285-abe2-4303-b3b3-f41806a8a4b3-IGK  *
+1461  C  127  21  *  *  *  *  *  0be52a2a-98e8-4abd-8116-1176d7a7b573-IGK  *
+1448  C  114  19  *  *  *  *  *  0707afd8-e29a-44fa-83bf-65c92319949c-IGK  *
+1440  C  106  19  *  *  *  *  *  0383e182-76cc-4c48-8558-d21e61e5e7ba-IGK  *
+1544  C  210  16  *  *  *  *  *  2971d74b-2da7-417a-bbe7-994b88457500-IGK  *
+1856  C  522  16  *  *  *  *  *  b0432eaf-87ef-4051-8960-02133d780852-IGK  *
+1532  C  198  13  *  *  *  *  *  2392154e-0829-476e-bcd1-fcbf2fee7f29-IGK  *
+1463  C  129  12  *  *  *  *  *  0c3d7590-5224-4791-86e7-6f8a17491d25-IGK  *
+1449  C  115  12  *  *  *  *  *  07604b63-9c76-4263-8743-961c700c0110-IGK  *
+1379  C   45  11  *  *  *  *  *  7b2a3927-789c-4dc8-95ca-2ce13d9fccbb-IGK  *
+1355  C   21  11  *  *  *  *  *  0e2ac5f5-6cf1-4191-8407-6d006a76eccf-IGK  *
+1814  C  480  10  *  *  *  *  *  9d1074a7-5ee0-457a-b7b9-d07e7f9da49c-IGK  *
+1640  C  306   9  *  *  *  *  *  4f6a0fc6-eee0-40fc-a18e-68f9589e1713-IGK  *
+1508  C  174   9  *  *  *  *  *  1b7a37ff-c857-4e03-8046-4285bdf8879d-IGK  *
+1523  C  189   9  *  *  *  *  *  1f885d3e-05d3-47da-82b6-0c76726c90aa-IGK  *
+1617  C  283   8  *  *  *  *  *  459a82ac-a98f-414e-9b77-d3fb48dd9f14-IGK  *
+1607  C  273   7  *  *  *  *  *  41eb153a-ce04-4e52-9e53-76faf4eee951-IGK  *
+2009  C  675   7  *  *  *  *  *  0a304429-72f0-4c1a-a5c0-cb301bc44f72-IGK  *
+1495  C  161   7  *  *  *  *  *  17468abd-57be-4e77-8139-5d0b29abb0c9-IGK  *
+1436  C  102   6  *  *  *  *  *  0250be9a-e393-48f3-bfc7-de0ea26510d9-IGK  *
+1365  C   31   6  *  *  *  *  *  2f755b92-1452-475f-a4c7-330d4c760dff-IGK  *
+1621  C  287   6  *  *  *  *  *  476d9d01-adb7-4b8b-a51b-70fd884c87b7-IGK  *
+1498  C  164   6  *  *  *  *  *  181043a0-7dcd-4b19-905f-ad239243bc9f-IGK  *
+1714  C  380   6  *  *  *  *  *  716cbadb-3e56-4855-86ee-b175614c352b-IGK  *
+1397  C   63   6  *  *  *  *  *  bc4d5cdd-e6b4-4db4-835e-4bf0e51f6e0b-IGK  *
+1536  C  202   6  *  *  *  *  *  261565cd-eec9-404d-ac0c-6c0c365ef678-IGK  *
+1492  C  158   6  *  *  *  *  *  16d7b2d7-d22d-4933-a09e-8c781157edf6-IGK  *
+1687  C  353   5  *  *  *  *  *  6554f0ac-e511-42a9-806d-15fdda41719a-IGK  *
+1600  C  266   5  *  *  *  *  *  404a9df5-8cef-418a-80d5-a00df1d26bd5-IGK  *
+1390  C   56   5  *  *  *  *  *  a2d3bd09-07d2-4470-ae9d-b22999ba8849-IGK  *
+1357  C   23   5  *  *  *  *  *  1d5754a1-8bfb-4cbe-ba7a-5787d12e3782-IGK  *
+1424  C   90   5  *  *  *  *  *  7df86ff3-96cd-4cd1-898f-c7b4ef3b79de-IGK  *
+1431  C   97   5  *  *  *  *  *  0080041e-a9d5-4f9b-93d8-fe2135220ff5-IGK  *
+1470  C  136   5  *  *  *  *  *  0f892c18-2735-445d-bad0-093d6854f302-IGK  *
+1375  C   41   4  *  *  *  *  *  6bcb9683-ae8a-412f-b955-3831dba67000-IGK  *
+1405  C   71   4  *  *  *  *  *  d8f7f9e9-2aa9-4a5b-a9e7-9ebefd832a84-IGK  *
+1435  C  101   4  *  *  *  *  *  01d7d00c-1cfd-413c-b655-41ed91157767-IGK  *
+1473  C  139   4  *  *  *  *  *  102b44ce-90a5-4d51-926d-340c9c2be126-IGK  *
+1456  C  122   4  *  *  *  *  *  09081c48-3ae9-4d87-8157-756c71c2831d-IGK  *
+1419  C   85   4  *  *  *  *  *  bc8ee84e-725f-43f4-978a-53d7329d38a7-IGK  *
+1582  C  248   4  *  *  *  *  *  392f93fe-ad43-4930-acc0-14631b33459c-IGK  *
+1485  C  151   4  *  *  *  *  *  131cfd9a-01b2-4b5d-ab7f-dfe5b375c98d-IGK  *
+1598  C  264   4  *  *  *  *  *  3fcbbad6-8fe0-4a4e-823c-964104a6347f-IGK  *
+1481  C  147   4  *  *  *  *  *  11fc8a7e-3c95-4b58-9234-e9d8f069bf7c-IGK  *
+1504  C  170   4  *  *  *  *  *  1b0b3db0-8bb0-48b8-b08c-0baa7652088e-IGK  *
+1664  C  330   4  *  *  *  *  *  5a4ccc73-7288-46f5-9fb4-f0eb429386eb-IGK  *
+1660  C  326   4  *  *  *  *  *  58f15bf8-bff2-454b-9bf7-98a2173c3bfe-IGK  *
+1646  C  312   4  *  *  *  *  *  5315806a-04f9-457a-a034-f0a22db91f83-IGK  *
+1620  C  286   4  *  *  *  *  *  4707cd9b-3ead-4a33-8c5f-c51ae11580de-IGK  *
+1780  C  446   4  *  *  *  *  *  8ef48a3a-f060-4ad4-aeca-5b7d470628b0-IGK  *
+1742  C  408   4  *  *  *  *  *  7dc2a13a-d274-43d3-ac2f-233b0023f2f4-IGK  *
+1690  C  356   4  *  *  *  *  *  675a2cd1-10f9-4696-9d00-4b915a5b7e5c-IGK  *
+1831  C  497   4  *  *  *  *  *  a40cfccb-9bc2-43a0-99fe-98daa05a4e53-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+7576  C  434  505  *  *  *  *  *  2add586e-628b-463d-abc2-27a8cc2316df-IGK  *
+7474  C  332  300  *  *  *  *  *  0509ec3f-bea0-4fba-9a13-5fd079d590ea-IGK  *
+7282  C  140  191  *  *  *  *  *  176ddb73-1d62-495f-8a83-1520f3756731-IGK  *
+7593  C  451  150  *  *  *  *  *  3ae9eb7a-481a-490e-b3b7-c01105ce701d-IGK  *
+7383  C  241  141  *  *  *  *  *  0c6829b5-d68e-4c0a-9676-fa0518412b31-IGK  *
+...  ..  ...  ... .. .. .. .. ..                                       ... ..
+7771  C  629    4  *  *  *  *  *  9ce66d82-0456-41fe-b03a-f8c6f61200ee-IGK  *
+7789  C  647    4  *  *  *  *  *  363dbb4e-0b40-4a06-bfac-e5ef0f801636-IGK  *
+7783  C  641    4  *  *  *  *  *  0da6381f-4e88-4481-8cbf-f528080007f4-IGK  *
+7816  C  674    4  *  *  *  *  *  1da07bcb-5c66-44de-89cc-6f2d299cf499-IGK  *
+7820  C  678    4  *  *  *  *  *  4381c46e-94d0-421e-beb5-5cd9c003e693-IGK  *
+
+[256 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  1  7  *  *  *  *  *  303b20ce-c002-4cd7-8cb3-ada425047f99-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+4576  C   415  374  *  *  *  *  *  002d2125-11c1-40dc-be3a-50bb778de19d-IGK  *
+4663  C   502  103  *  *  *  *  *  0c184659-d822-4c66-a040-15493b7446ec-IGK  *
+4979  C   818   67  *  *  *  *  *  40ce4e8b-8294-46d6-8575-46dbca382da5-IGK  *
+4606  C   445   61  *  *  *  *  *  048d3c87-7fc8-4b95-9091-c031433dd873-IGK  *
+4445  C   284   50  *  *  *  *  *  8b751160-0566-4360-a047-4cc5cdfe3bde-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+5159  C   998    4  *  *  *  *  *  64a67c48-9a71-4a1f-b8c6-acb44937acfa-IGK  *
+5257  C  1096    4  *  *  *  *  *  79df5770-c869-4943-a3ab-d77257165b22-IGK  *
+5886  C  1725    4  *  *  *  *  *  2009f5e4-94bd-4d17-b5f2-4a1d50bf55a5-IGK  *
+6176  C  2015    4  *  *  *  *  *  0e582cf6-30a0-4711-8481-e8c881bef81b-IGK  *
+6229  C  2068    4  *  *  *  *  *  759ab5ad-945e-4212-9ded-61385c70df0b-IGK  *
+
+[145 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+980   C  123  14  *  *  *  *  *  fba7af25-0e0c-4426-97cc-f3d3c3df3923-IGK  *
+1107  C  250  13  *  *  *  *  *  352fad6b-7b10-449b-9a6e-897184ac3db7-IGK  *
+950   C   93  11  *  *  *  *  *  b298495f-be60-40e6-b85d-1a4f9956e36f-IGK  *
+1036  C  179  11  *  *  *  *  *  111c10ce-93e7-436d-9660-f705a132f280-IGK  *
+881   C   24   9  *  *  *  *  *  034f49e3-a0c5-4da3-8da3-cbeb78f3ea13-IGK  *
+1047  C  190   8  *  *  *  *  *  166b21f5-b9de-40dc-84c6-53390da6f5e0-IGK  *
+1236  C  379   8  *  *  *  *  *  7b38c398-6842-410e-b53c-3aaea7d87df7-IGK  *
+1074  C  217   7  *  *  *  *  *  25d648bf-f968-4e8f-86f1-cc4f2eeae113-IGK  *
+1073  C  216   7  *  *  *  *  *  258eac5c-2969-448a-a3dc-0899d7d57f52-IGK  *
+1076  C  219   6  *  *  *  *  *  2697b0d5-d1f6-44fd-aeb1-38972be70b98-IGK  *
+1072  C  215   6  *  *  *  *  *  25023a1b-6cff-41fc-a035-4e5fd885e82d-IGK  *
+1009  C  152   6  *  *  *  *  *  0783adbe-0e3c-4698-ad98-b2100b2cb2ff-IGK  *
+1025  C  168   6  *  *  *  *  *  0cd32b13-2b35-485f-bcef-1d463bb92bcb-IGK  *
+1031  C  174   6  *  *  *  *  *  1017e68f-a775-40f3-8ecc-1ea648603c69-IGK  *
+883   C   26   5  *  *  *  *  *  07bfe2ce-359a-4be1-9711-4d3833e7644d-IGK  *
+1089  C  232   5  *  *  *  *  *  2c49dfc8-6452-4b57-81aa-5b6aedd5cb4a-IGK  *
+1021  C  164   5  *  *  *  *  *  0bde5a4b-7c8d-45d1-9f5f-bd43d21b3f5c-IGK  *
+931   C   74   5  *  *  *  *  *  85d6535a-2678-4a8f-8ecd-1ddde4d5aad3-IGK  *
+885   C   28   5  *  *  *  *  *  0b9e1c04-2d69-4e4a-ba01-a7658d4dc84e-IGK  *
+898   C   41   5  *  *  *  *  *  288a2f52-fa71-438b-9d2b-0764685d5817-IGK  *
+889   C   32   4  *  *  *  *  *  10d78ad8-a350-4888-bd3a-4e7392151391-IGK  *
+892   C   35   4  *  *  *  *  *  175427f7-00fd-46c0-99b5-4e71b1166418-IGK  *
+909   C   52   4  *  *  *  *  *  45873a2a-04d2-499c-8cb5-799810b000cd-IGK  *
+986   C  129   4  *  *  *  *  *  b9bdcd8d-b038-4e74-a42f-82860e0828d7-IGK  *
+1082  C  225   4  *  *  *  *  *  280f2278-c198-44c9-891a-4545e1c885a6-IGK  *
+1166  C  309   4  *  *  *  *  *  54f1647c-042a-452b-81d1-6ebaf6b95e7c-IGK  *
+1140  C  283   4  *  *  *  *  *  469583a3-ff89-4b18-81e6-75c2178c753c-IGK  *
+1169  C  312   4  *  *  *  *  *  564b23d6-a7ee-486d-8ac0-86d30535744b-IGK  *
+1206  C  349   4  *  *  *  *  *  68120115-58a2-4eec-be1c-6961c4c893d6-IGK  *
+1304  C  447   4  *  *  *  *  *  9cccb162-9296-4e21-8ef4-96465a8bea9c-IGK  *
+1316  C  459   4  *  *  *  *  *  a2649652-b891-4db3-bfc1-175e648a79ad-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1346  C  162  97  *  *  *  *  *  065b769c-6751-4922-a9e1-9a8d2503f26c-IGK  *
+1457  C  273  32  *  *  *  *  *  34de4a8a-e647-42a0-a68d-818528572bfd-IGK  *
+1395  C  211  18  *  *  *  *  *  16866c82-c0b9-41aa-9c65-385aa8acb8ae-IGK  *
+1211  C   27  16  *  *  *  *  *  032c8e27-7aad-4cd2-8336-f2dd3d18e752-IGK  *
+1257  C   73  14  *  *  *  *  *  6415c5fc-0aa7-48fd-a2e6-04a67479989b-IGK  *
+1324  C  140  14  *  *  *  *  *  0009894f-6719-41fe-8a0c-98bbf82452d7-IGK  *
+1253  C   69  14  *  *  *  *  *  5b299fa3-b471-4575-888d-445f67f87ff0-IGK  *
+1360  C  176  12  *  *  *  *  *  09ec0fea-f0fa-4b02-ac04-45d9f918d644-IGK  *
+1387  C  203  12  *  *  *  *  *  13a189fd-8b84-4646-b604-b77821d4730f-IGK  *
+1340  C  156  11  *  *  *  *  *  04d822ee-e950-4dbe-afa6-e56a53755b22-IGK  *
+1536  C  352   9  *  *  *  *  *  61faff9c-cec7-4e2f-b19e-c161ccbec2ac-IGK  *
+1212  C   28   9  *  *  *  *  *  03d6fc84-33e1-4643-8ae4-8233079c93bb-IGK  *
+1234  C   50   8  *  *  *  *  *  36b880cc-fbc1-4655-869a-a7f17cb3f998-IGK  *
+1511  C  327   8  *  *  *  *  *  5324d3ea-ba44-4676-9b98-2d948fc86ab1-IGK  *
+1404  C  220   7  *  *  *  *  *  1b925816-a4ce-44dd-8f55-948916918cf4-IGK  *
+1439  C  255   7  *  *  *  *  *  28d8c7e9-d3a9-41fa-bf2b-b7c99ad70d66-IGK  *
+1208  C   24   6  *  *  *  *  *  bfeb66f6-26f2-4644-b376-3de97d82fae4-IGK  *
+1223  C   39   6  *  *  *  *  *  1ac8e53a-f9b2-47f3-b44e-d140f7e08d58-IGK  *
+1389  C  205   6  *  *  *  *  *  13e98548-6ace-4b91-ac9c-632b90f13136-IGK  *
+1330  C  146   6  *  *  *  *  *  022efa42-2783-4aba-847b-6557fa83a316-IGK  *
+1344  C  160   6  *  *  *  *  *  057a32c1-4148-4d8a-ac9b-a002889280b5-IGK  *
+1468  C  284   6  *  *  *  *  *  3b8bab66-14bb-498b-ba17-0b6cd409727c-IGK  *
+1779  C  595   5  *  *  *  *  *  0f2e77f8-9c83-4738-95f5-48bdc94006c3-IGK  *
+1547  C  363   5  *  *  *  *  *  67a469c7-1bef-461d-939e-5f7eaa14fcfb-IGK  *
+1425  C  241   5  *  *  *  *  *  23f34d49-dd4f-423e-96f1-a16ae52a3786-IGK  *
+1283  C   99   5  *  *  *  *  *  ab8dd30f-8efc-4ae4-9ae5-7cde8522f721-IGK  *
+1353  C  169   4  *  *  *  *  *  0809429a-727f-4cd5-8c5d-52985705d1ff-IGK  *
+1247  C   63   4  *  *  *  *  *  4ea5695f-dda1-4d0d-8a7d-a5361f67ab73-IGK  *
+1251  C   67   4  *  *  *  *  *  59ad9176-1545-4bdf-b199-32d67cbf58d2-IGK  *
+1392  C  208   4  *  *  *  *  *  15f294ec-caf9-43df-9d54-58c94085368d-IGK  *
+1431  C  247   4  *  *  *  *  *  25f62966-39d5-472b-a3c1-358517259169-IGK  *
+1503  C  319   4  *  *  *  *  *  4e093b7c-0a48-4c3f-b22f-89e533f84f2b-IGK  *
+1514  C  330   4  *  *  *  *  *  55e6ccf9-d5c9-4c24-9d42-fda179215891-IGK  *
+1585  C  401   4  *  *  *  *  *  7f350fc5-7e56-4c9c-bb73-dfcab48cf39d-IGK  *
+1596  C  412   4  *  *  *  *  *  8b2111bd-645e-4a40-8cc8-dba55a2d6b7f-IGK  *
+1776  C  592   4  *  *  *  *  *  0aeb71a8-8f38-4fcd-b371-fbb1bf11c81e-IGK  *
+1783  C  599   4  *  *  *  *  *  13e56597-7cf3-48af-85e2-94f708904a5a-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1058  C  224  31  *  *  *  *  *  102b81e3-fea6-49b7-ab52-dde0606a5e37-IGK  *
+1046  C  212  27  *  *  *  *  *  093c2552-9acc-4141-aacf-e8333572941d-IGK  *
+847   C   13  18  *  *  *  *  *  48e28334-77eb-4f9c-8396-eeaa62f035b1-IGK  *
+872   C   38  15  *  *  *  *  *  c3f51292-de3b-4d12-b683-f99899ce9278-IGK  *
+1032  C  198  10  *  *  *  *  *  cfdcda30-ca5b-4676-b9d1-729fa1e34e3d-IGK  *
+840   C    6   9  *  *  *  *  *  126daf0d-4af6-4f00-b845-056f920a8f9d-IGK  *
+1088  C  254   9  *  *  *  *  *  21884539-1835-4577-9384-f2715702a984-IGK  *
+906   C   72   8  *  *  *  *  *  2c8019cc-2712-4bb5-a5fe-05d56638176f-IGK  *
+903   C   69   8  *  *  *  *  *  22289e10-ab25-414a-99a8-1047a77247b2-IGK  *
+888   C   54   8  *  *  *  *  *  12069d3b-a2cb-4d67-bc3e-00695908aa4c-IGK  *
+1059  C  225   8  *  *  *  *  *  10306c5f-7d4f-40a1-90bf-fd7ca34563b5-IGK  *
+886   C   52   7  *  *  *  *  *  0e3bee1d-74ab-47c5-9f64-7d938bd1915f-IGK  *
+1057  C  223   7  *  *  *  *  *  101d5a10-b9e6-4567-b567-7ac1946d9aa1-IGK  *
+1036  C  202   7  *  *  *  *  *  01284b14-485e-4d6f-b09d-56d28e3fc55a-IGK  *
+1181  C  347   6  *  *  *  *  *  6ecf92ad-1148-4a4e-a971-e0fc6a8b1862-IGK  *
+925   C   91   6  *  *  *  *  *  4b5e7bdb-88ce-466a-a249-131638e26954-IGK  *
+904   C   70   6  *  *  *  *  *  29770249-25d4-4459-ab7c-d5a9e1f12201-IGK  *
+849   C   15   6  *  *  *  *  *  4e2151b5-757d-45ca-bcb6-e98d95aa91fa-IGK  *
+910   C   76   6  *  *  *  *  *  314d25f6-2c0c-4bb1-a4b4-d191777a589c-IGK  *
+936   C  102   6  *  *  *  *  *  637a3e8f-2cf7-484d-8fc4-b8a74c4db0a0-IGK  *
+1049  C  215   6  *  *  *  *  *  0a2d4bfd-c8ea-4098-843d-062fdc810b6e-IGK  *
+1034  C  200   5  *  *  *  *  *  00e51368-afe4-4243-b176-d2c10d5ac098-IGK  *
+1122  C  288   5  *  *  *  *  *  3b947ca7-3f9e-4240-9a72-1a589d01c7c0-IGK  *
+1117  C  283   5  *  *  *  *  *  37c572c3-09c5-4eaa-8faf-6a531825ddc6-IGK  *
+843   C    9   4  *  *  *  *  *  37ac4055-140c-4354-b172-5b6f9a8add8b-IGK  *
+875   C   41   4  *  *  *  *  *  01523de9-5b3d-4dd6-ba4b-e7a9d539919f-IGK  *
+984   C  150   4  *  *  *  *  *  b912b638-ca02-423a-9c97-37fc2e8c0fb2-IGK  *
+964   C  130   4  *  *  *  *  *  9aaaab70-7b95-413d-88ba-c6a88bcee4f7-IGK  *
+932   C   98   4  *  *  *  *  *  5ea76329-0d7c-499e-9edf-10587aa835bf-IGK  *
+913   C   79   4  *  *  *  *  *  33534331-8127-4be4-9ca9-f3a761ca1001-IGK  *
+1041  C  207   4  *  *  *  *  *  056f9a8a-aafe-4f44-8afe-5a2d3c9d3860-IGK  *
+1016  C  182   4  *  *  *  *  *  ed3e61e2-3f55-4b28-b718-cb541e5dfe4f-IGK  *
+1134  C  300   4  *  *  *  *  *  40cb0249-13a8-46c2-a196-139481086579-IGK  *
+1189  C  355   4  *  *  *  *  *  746f9cb4-0cc5-4a1a-ad9f-77d6b1238359-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  2  4  *  *  *  *  *  4bc31e5c-16ca-4c21-a0e8-57b64803a12d-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+871  C  305  17  *  *  *  *  *  093e830b-88d5-4ee9-8a67-948c32f0b076-IGK  *
+614  C   48  12  *  *  *  *  *  01ff8e6f-8553-43a5-9506-e5cdb1161494-IGK  *
+888  C  322  11  *  *  *  *  *  35a23608-4ea3-427c-8497-a756f2f9de8f-IGK  *
+573  C    7   9  *  *  *  *  *  080270f6-2280-42e8-9f51-b4170299ee82-IGK  *
+651  C   85   7  *  *  *  *  *  2045a9fc-436c-48ab-bb3d-fbd769eaf545-IGK  *
+637  C   71   6  *  *  *  *  *  15b43ee5-5605-4acb-b051-e0158923ee58-IGK  *
+876  C  310   6  *  *  *  *  *  1572afe6-60f1-41fe-9f3b-1689c84b25a3-IGK  *
+628  C   62   5  *  *  *  *  *  0f70ae4d-2439-4cb5-96cc-421a411ba2fb-IGK  *
+640  C   74   5  *  *  *  *  *  172d1056-fd27-4490-a456-9ee5dbb48b0b-IGK  *
+584  C   18   5  *  *  *  *  *  6640da71-a147-4bc5-9f67-6a4a1f1eca32-IGK  *
+869  C  303   5  *  *  *  *  *  052ef3bd-9027-4331-8fd8-ebf4b253f4bd-IGK  *
+566  C    0   4  *  *  *  *  *  100e1fea-d965-41f0-b2f5-5f2c66f45731-IGK  *
+678  C  112   4  *  *  *  *  *  392aeee7-b64e-4484-a3a6-9ef9a1cff504-IGK  *
+629  C   63   4  *  *  *  *  *  1094fd86-1100-4f99-aa20-080f7be4cce1-IGK  *
+768  C  202   4  *  *  *  *  *  9523461b-5ce7-436e-8039-6aee8dcd4286-IGK  *
+686  C  120   4  *  *  *  *  *  4266fda0-4be5-4760-9b51-84f41426a9c7-IGK  *
+680  C  114   4  *  *  *  *  *  3b882d5b-5e2a-47e1-93a9-d5ae702391c3-IGK  *
+889  C  323   4  *  *  *  *  *  3b28ab0f-491e-49ac-bdb1-9286d615491b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  1  6  *  *  *  *  *  3b6e48bd-494e-473d-a7ad-b0c078142e51-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+440  C   10  16  *  *  *  *  *  4ee4b2c4-d555-4030-8a3f-88b72141dc14-IGK  *
+474  C   44  12  *  *  *  *  *  0f126482-53f5-4f3a-9999-41ec6d847b7f-IGK  *
+462  C   32  11  *  *  *  *  *  d6c96fd1-64f0-417c-9199-16227e0186b8-IGK  *
+507  C   77  10  *  *  *  *  *  404410bc-20bc-402b-be86-382388e18173-IGK  *
+482  C   52   5  *  *  *  *  *  1e3424c2-ef8c-4a8f-a2ec-be293c194b3b-IGK  *
+732  C  302   5  *  *  *  *  *  327eb3ac-a8d7-4c64-b07d-385427a606d5-IGK  *
+558  C  128   5  *  *  *  *  *  872581f4-a5a6-4acd-a5a9-35e0fc4fb7f9-IGK  *
+551  C  121   5  *  *  *  *  *  7f61d140-f007-4b99-945a-644eaa960ffd-IGK  *
+557  C  127   5  *  *  *  *  *  864349df-707f-44ba-8b22-6ea7cceafee6-IGK  *
+471  C   41   4  *  *  *  *  *  0d267e1d-ea5e-4760-b15d-2daad25b4212-IGK  *
+443  C   13   4  *  *  *  *  *  6337380f-a4c7-4db4-911c-d695a09aa765-IGK  *
+490  C   60   4  *  *  *  *  *  2c95ba8c-d39b-4049-90ae-b2ad628901d3-IGK  *
+599  C  169   4  *  *  *  *  *  cc25024d-00f6-4b04-96c9-9e97ba6e2933-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+172  C    6  5  *  *  *  *  *  199c17be-d938-4945-ad01-d893d400a5b5-IGK  *
+276  C  110  5  *  *  *  *  *  b60e5162-f6fd-4275-952f-3f74989f5883-IGK  *
+190  C   24  4  *  *  *  *  *  6f634417-c18d-463b-9dd8-9e0c1fb394bb-IGK  *
+191  C   25  4  *  *  *  *  *  742cdf0e-2c87-495e-bdfc-bf05bca2e577-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  2  7  *  *  *  *  *  184c7cca-06b8-4a39-89a3-486c8d8f7eda-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  3  4  *  *  *  *  *  08e8efdd-1a8a-4a2d-8abf-170ba45c20af-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+14  C  3  4  *  *  *  *  *  1a04164a-a9e2-40a3-bc5f-75c5a5ca9981-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+74  C   5  8  *  *  *  *  *  1a3d1aa5-08eb-454d-bc09-05747cf1393a-IGK  *
+77  C   8  5  *  *  *  *  *  def1f96b-a53e-40f6-b152-8b8704220800-IGK  *
+83  C  14  5  *  *  *  *  *  306fb677-d9ef-4dad-a84b-4f8026dc79da-IGK  *
+76  C   7  4  *  *  *  *  *  9d5f8577-2be3-4c24-922e-2a0a43c8532f-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+290  C   30  4  *  *  *  *  *  21417e70-ca28-482d-8e7f-17dc6f3051fb-IGK  *
+464  C  204  4  *  *  *  *  *  502e3d2e-75b4-4f77-860d-4eaf06aebdb4-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+63  C  4  26  *  *  *  *  *  0765f670-d21b-424e-b47a-5b59f0e46f4f-IGK  *
+64  C  5   6  *  *  *  *  *  0b953794-a854-4991-b854-b40ca1ae596b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+687  C  238  16  *  *  *  *  *  0c300cb7-5ff5-4a95-98ed-23184eeaaf40-IGK  *
+525  C   76  11  *  *  *  *  *  11d6fde6-bfe9-4362-8d8d-0022a4589204-IGK  *
+456  C    7  10  *  *  *  *  *  089d0017-4bc2-4516-830a-7494e17fdd81-IGK  *
+472  C   23   9  *  *  *  *  *  9ee5a0ab-f9f9-49f5-b349-3d0cf2f531f4-IGK  *
+616  C  167   9  *  *  *  *  *  812f53d2-e54a-4b81-94eb-c1993f4b272b-IGK  *
+729  C  280   9  *  *  *  *  *  24df5d3b-1560-4c8e-8e3f-c05113d66273-IGK  *
+496  C   47   6  *  *  *  *  *  2f09fa0a-7b06-46c3-8b5f-d4aa874b6d2a-IGK  *
+495  C   46   5  *  *  *  *  *  2e160fa9-67e0-426c-bd01-1089d2000478-IGK  *
+461  C   12   5  *  *  *  *  *  2dfadbda-eff1-4f8f-af43-e17710e99f3a-IGK  *
+517  C   68   5  *  *  *  *  *  0cca8b76-e418-4972-8930-b793412a3f0d-IGK  *
+531  C   82   5  *  *  *  *  *  15afd6ce-fa32-4370-9068-b4217dfa9013-IGK  *
+475  C   26   4  *  *  *  *  *  bf530ab2-e7e9-4a6e-9ccc-82fdbcdbc7d2-IGK  *
+493  C   44   4  *  *  *  *  *  ba9c6228-8cca-4468-a55e-18937e67e10c-IGK  *
+506  C   57   4  *  *  *  *  *  001e788d-5e41-4dbd-8f7e-e043d73cd314-IGK  *
+497  C   48   4  *  *  *  *  *  58595e8c-7404-492b-b444-caa2c82bebf6-IGK  *
+571  C  122   4  *  *  *  *  *  406566e7-ddc9-4d74-b7f1-166b59ed319d-IGK  *
+698  C  249   4  *  *  *  *  *  7d980b48-2350-4292-bfb5-a4570240b54e-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+11  C  0  4  *  *  *  *  *  17224e38-28ae-4d26-aac2-c5afbe5b9743-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+293  C  16  58  *  *  *  *  *  03feb3c3-7b17-459f-b6c0-e9454c8d8bd9-IGK  *
+289  C  12   9  *  *  *  *  *  dcd0d5d5-3527-4762-9610-34605ce741bc-IGK  *
+277  C   0   8  *  *  *  *  *  2b305450-a6c5-4d53-b301-e09cd9a04396-IGK  *
+328  C  51   7  *  *  *  *  *  3e315807-2d51-4c44-af46-d937abe7e75a-IGK  *
+326  C  49   7  *  *  *  *  *  3a094a4c-d700-4bd2-910e-85dd2d709b63-IGK  *
+324  C  47   5  *  *  *  *  *  3437b1db-2532-406c-a83d-32efee324778-IGK  *
+295  C  18   5  *  *  *  *  *  06bb9178-9045-4a19-bc47-8030d62a9ac1-IGK  *
+281  C   4   4  *  *  *  *  *  7b39e67c-6132-424b-892b-a3887a10aa82-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+7  C  0  4  *  *  *  *  *  2dc3cbb2-9cd9-442e-b19b-2073e582c343-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+/home/glicina/pbarros/abScope_done_imp/scripts/preProcess/reGroupCdrCluster.py:23: DtypeWarning: Columns (12,28,29,30,31,58,94) have mixed types. Specify dtype option on import or set low_memory=False.
+  igblast=pd.read_csv(igcicle_out)
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+2292  C  159  90  *  *  *  *  *  054cdbd6-c09f-4655-9299-ffe820bff6e5-IGK  *
+2161  C   28  76  *  *  *  *  *  d5fda141-0b88-4bf1-b02a-e33913a26bde-IGK  *
+2306  C  173  76  *  *  *  *  *  09cd77aa-c61e-4cae-9798-673923f6fd13-IGK  *
+2256  C  123  57  *  *  *  *  *  4aa53007-55c9-4188-88b9-970a0722ad5b-IGK  *
+2192  C   59  50  *  *  *  *  *  35c2d22a-aaad-4d3b-9ec2-d198a11caa8d-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+2395  C  262   4  *  *  *  *  *  348528ce-fdd1-4049-9c9f-1c3e31c5f094-IGK  *
+2396  C  263   4  *  *  *  *  *  34d19f47-c385-41c3-815e-9fb768857818-IGK  *
+2384  C  251   4  *  *  *  *  *  311527e8-31dc-4d72-b79d-2275112d9508-IGK  *
+2453  C  320   4  *  *  *  *  *  55e6db32-dde9-48fd-a4cf-af9f092074ae-IGK  *
+2678  C  545   4  *  *  *  *  *  c7caf003-1699-40a3-8965-78d2fbc3266c-IGK  *
+
+[98 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+16  C  2  5  *  *  *  *  *  2a9fd76a-213c-474e-81ff-8f841007db75-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+70   C   3  14  *  *  *  *  *  051d6276-96da-4b19-aef9-12b6075adb17-IGK  *
+100  C  33   5  *  *  *  *  *  1082eb45-4a3a-44bc-8c92-4a5aed92c627-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+410  C   47  14  *  *  *  *  *  03dd92ee-fdce-45f3-bc6d-8c503eb0b1b6-IGK  *
+372  C    9  12  *  *  *  *  *  2d18e024-2010-47f6-aed6-62a4ee02a252-IGK  *
+446  C   83  11  *  *  *  *  *  2989ff9c-e93c-4576-bb47-5f74a1f97103-IGK  *
+425  C   62   9  *  *  *  *  *  123080e5-f3e8-4a26-94c8-02735d80eb62-IGK  *
+490  C  127   8  *  *  *  *  *  5d7347bd-1791-4a3c-a457-43ae50e544a2-IGK  *
+463  C  100   7  *  *  *  *  *  386c650b-8cd9-4a90-93fb-e1b4a1a91b54-IGK  *
+441  C   78   6  *  *  *  *  *  1cf39886-4397-4d1d-a8b9-02327f68cad1-IGK  *
+413  C   50   6  *  *  *  *  *  0569f4d7-dc93-400e-91ac-ba26c7b1c844-IGK  *
+389  C   26   5  *  *  *  *  *  896dee07-3599-4f3e-a1ce-92789b85af28-IGK  *
+386  C   23   4  *  *  *  *  *  7bbfa35d-7d0b-4e26-a428-bfc82f1c6702-IGK  *
+400  C   37   4  *  *  *  *  *  c4f2c98c-b193-419c-a5cd-f4fff017525f-IGK  *
+437  C   74   4  *  *  *  *  *  1a880f7b-15cd-4574-8e1b-15d3644b102e-IGK  *
+443  C   80   4  *  *  *  *  *  2646a0e9-b9ce-4034-852b-f64d0c891df6-IGK  *
+549  C  186   4  *  *  *  *  *  b5c0b24d-e3ef-48fb-98b6-6b0b738ddd40-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+258  C  40  8  *  *  *  *  *  2cdfe188-730e-4185-916a-4e17bd5e0c39-IGK  *
+228  C  10  7  *  *  *  *  *  470f3b55-2ed0-4ebc-adb3-8b8d4ca80763-IGK  *
+242  C  24  5  *  *  *  *  *  05f5b99a-d0f0-4d78-b8b9-5bdfa89ffdda-IGK  *
+244  C  26  4  *  *  *  *  *  0aaf20c5-00f8-4c99-83f8-507173fb3872-IGK  *
+255  C  37  4  *  *  *  *  *  1decf06a-ba0c-4069-8f6c-a516765fa4d8-IGK  *
+279  C  61  4  *  *  *  *  *  590db034-b014-4430-b5e5-7770d3809a15-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1898  C  258  48  *  *  *  *  *  0d90c268-eeed-4acd-a85f-d36cb5269fe4-IGK  *
+1867  C  227  29  *  *  *  *  *  067cf68a-000c-437e-b7de-1929123fdb6a-IGK  *
+1694  C   54  25  *  *  *  *  *  171037ad-e97a-404e-9e9a-77cb78b2be39-IGK  *
+1868  C  228  21  *  *  *  *  *  0692241c-44fd-49d9-9367-c710f26234dc-IGK  *
+1645  C    5  15  *  *  *  *  *  03af79cd-ecff-4d7e-9fc3-9bcb46e0e9c9-IGK  *
+1715  C   75  14  *  *  *  *  *  3623a573-91fe-4264-9ebe-9921a7131379-IGK  *
+1725  C   85  12  *  *  *  *  *  40cfcbb2-6687-4dfe-a486-df0dddcfeee3-IGK  *
+1943  C  303  12  *  *  *  *  *  1cbd51d0-e165-4d93-9420-b9b06b7f2f53-IGK  *
+1687  C   47  12  *  *  *  *  *  0d92273d-7d9f-49ae-9671-b4582c0acdcd-IGK  *
+1880  C  240  11  *  *  *  *  *  0923ae95-4e05-43da-b05a-6e6697b747d9-IGK  *
+1680  C   40  10  *  *  *  *  *  06e8bb5e-ced7-4edb-9c0a-05a629cd9d6e-IGK  *
+1851  C  211  10  *  *  *  *  *  009358fc-f05e-40fa-9fdc-70292aa68e39-IGK  *
+1888  C  248  10  *  *  *  *  *  0a4fc613-2fc1-4e71-95db-43d836123577-IGK  *
+1899  C  259  10  *  *  *  *  *  0da1fa59-82e3-42ca-bcba-4e17320bb5ad-IGK  *
+1695  C   55   9  *  *  *  *  *  18f20134-211f-47d2-abb9-fe9e3db53cc8-IGK  *
+2519  C  879   9  *  *  *  *  *  09c28377-e8ae-4339-9710-fa6e939c3841-IGK  *
+1704  C   64   8  *  *  *  *  *  2a28205e-a38e-4c03-8775-3b3c647beee6-IGK  *
+2062  C  422   8  *  *  *  *  *  4a80fd07-1da3-4720-bbd9-681ed1580ae4-IGK  *
+1668  C   28   8  *  *  *  *  *  cb4d6cbd-cbcf-4904-b5c7-7acd581635d0-IGK  *
+2067  C  427   7  *  *  *  *  *  4ce0129e-186c-4817-9641-e294b9ced061-IGK  *
+1723  C   83   6  *  *  *  *  *  3d6fd0f2-9aed-4e07-9ff5-2d305137ccfa-IGK  *
+1679  C   39   6  *  *  *  *  *  0540fba3-190b-40ca-9c53-446bfae23f66-IGK  *
+1900  C  260   6  *  *  *  *  *  0ddf3403-2403-4875-aacc-802532b494cc-IGK  *
+1990  C  350   6  *  *  *  *  *  2d3070b1-79be-4ce6-8bd4-b43d9a0cc202-IGK  *
+1849  C  209   6  *  *  *  *  *  e36b4b64-fbca-484c-b079-e9eab842e092-IGK  *
+1684  C   44   6  *  *  *  *  *  09087f1d-d6fa-4eb0-a6e8-ee97f73ba812-IGK  *
+1788  C  148   5  *  *  *  *  *  a7a0f354-f3e2-4124-a913-574b8c8565c1-IGK  *
+2568  C  928   5  *  *  *  *  *  50c335dd-9209-4200-8550-2b1fe7ac37fc-IGK  *
+2215  C  575   5  *  *  *  *  *  7df0efe1-b9c8-4975-9d7a-ac653eaa3b03-IGK  *
+2143  C  503   5  *  *  *  *  *  672f085a-f442-454a-a6f5-bf1438c31e90-IGK  *
+1997  C  357   5  *  *  *  *  *  319ed33e-2151-4f22-a45b-688f23f63d08-IGK  *
+2064  C  424   5  *  *  *  *  *  4ad42440-ab02-4f35-b788-11137d8d2cad-IGK  *
+1721  C   81   5  *  *  *  *  *  39f8a4e5-2cba-424a-8e44-00b25f859d7f-IGK  *
+1884  C  244   5  *  *  *  *  *  0963cbc2-f809-4f24-88fb-2aae9862edbd-IGK  *
+1950  C  310   5  *  *  *  *  *  1db08fa2-86e5-45d6-a1b3-258da288e38f-IGK  *
+2542  C  902   5  *  *  *  *  *  28ff1c8b-6153-4b6a-9243-6a6663dd328c-IGK  *
+1747  C  107   4  *  *  *  *  *  5aebedd5-4340-4488-9239-65ce29c1f9e3-IGK  *
+1682  C   42   4  *  *  *  *  *  082364e1-387a-457c-8de9-a65a18cb61b1-IGK  *
+1689  C   49   4  *  *  *  *  *  0fa85144-af52-4268-88c0-e60f61159706-IGK  *
+1655  C   15   4  *  *  *  *  *  4e54f315-b078-4548-9785-58595f0d9057-IGK  *
+1677  C   37   4  *  *  *  *  *  03090969-59aa-41c6-9322-16efaee7b27a-IGK  *
+1876  C  236   4  *  *  *  *  *  08d609ae-04ce-47ce-8343-5b45ecaf1ef0-IGK  *
+1883  C  243   4  *  *  *  *  *  0961978f-3ee9-43bb-85df-4f30e6e16246-IGK  *
+1958  C  318   4  *  *  *  *  *  211e3165-e67b-4d5a-8a71-c09a1749c705-IGK  *
+1921  C  281   4  *  *  *  *  *  15f1ced8-4ffa-44c8-955a-6bc690106408-IGK  *
+1982  C  342   4  *  *  *  *  *  2a7ae2ff-4b4e-4793-9dac-553fc5e02867-IGK  *
+1991  C  351   4  *  *  *  *  *  2d551811-c198-4b81-a238-553a2a0ea19e-IGK  *
+2056  C  416   4  *  *  *  *  *  48826b43-19da-4ba8-bd12-170e58a71ab7-IGK  *
+2267  C  627   4  *  *  *  *  *  9353d74b-05a7-4fda-9664-f692d95178fe-IGK  *
+2321  C  681   4  *  *  *  *  *  ae02ff6d-6e91-4166-90a8-b87c36e13704-IGK  *
+2547  C  907   4  *  *  *  *  *  2baa6c00-9c9b-45f0-aecd-fd3251b71eee-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+306  C   19  23  *  *  *  *  *  002808e9-d019-482e-b2a7-1db91808d854-IGK  *
+305  C   18  13  *  *  *  *  *  02abba6f-dc44-4e3b-ae20-4eea40c6a6f8-IGK  *
+309  C   22  11  *  *  *  *  *  0270db3b-56f3-45f2-879b-f3bf18e3329c-IGK  *
+327  C   40   9  *  *  *  *  *  1c81b0b6-c3a4-4b3c-a612-31e71039afcc-IGK  *
+335  C   48   8  *  *  *  *  *  32ada4fb-0886-48fd-b5ed-f6ba361b6c98-IGK  *
+312  C   25   7  *  *  *  *  *  07523484-9347-4246-9edf-4dd65eda3f37-IGK  *
+302  C   15   6  *  *  *  *  *  07d15e6c-fb6f-4e7a-846b-d04618f86202-IGK  *
+308  C   21   6  *  *  *  *  *  0130b7f9-4707-4e0c-ac65-ae64bc6a59d7-IGK  *
+350  C   63   5  *  *  *  *  *  48f3a17f-1df5-4ee4-b7bf-f9dc6580c735-IGK  *
+374  C   87   5  *  *  *  *  *  71b97a8c-fe94-4e5c-a9ec-778b141e5e60-IGK  *
+314  C   27   4  *  *  *  *  *  0a637777-d2f9-402b-9c85-1b46bccccba1-IGK  *
+316  C   29   4  *  *  *  *  *  0c8445e6-7be2-4c58-b1f9-212d6e8e036f-IGK  *
+429  C  142   4  *  *  *  *  *  29008719-1acf-41d0-ab7c-8bdad91966c1-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1815  C  651  27  *  *  *  *  *  0171e4dc-b61a-4669-a73a-b7dd6e553618-IGK  *
+1816  C  652  25  *  *  *  *  *  01b2743d-dc19-44af-ac76-1abc15cb56fa-IGK  *
+1233  C   69  20  *  *  *  *  *  9c333f3f-336e-4a20-bfbc-da79b22083ab-IGK  *
+1348  C  184  18  *  *  *  *  *  1971f9ab-6cd3-42a6-896c-cf322d779929-IGK  *
+1332  C  168  16  *  *  *  *  *  1530d1dd-d847-4128-898c-a6bf652fead3-IGK  *
+1269  C  105  11  *  *  *  *  *  0013298d-3432-4e21-93b8-fc1c4a448207-IGK  *
+1303  C  139  11  *  *  *  *  *  0c440c33-fd1e-4cc9-b976-0e5822cc1533-IGK  *
+1372  C  208   9  *  *  *  *  *  203f37f5-a866-468f-8963-05dfc2e895fb-IGK  *
+1394  C  230   9  *  *  *  *  *  2a0f5ecf-ce18-4d39-8a09-3109b15d8a25-IGK  *
+1432  C  268   9  *  *  *  *  *  3b8b78c3-46a3-457b-b0f4-b2fa9d2c848a-IGK  *
+1426  C  262   9  *  *  *  *  *  38dee102-4bf8-473f-af8d-e4406f79e590-IGK  *
+1558  C  394   8  *  *  *  *  *  7c9c4388-fedf-409f-9ad8-56e413bb7e83-IGK  *
+1835  C  671   8  *  *  *  *  *  21ebb27f-6ac8-4f20-b945-a9f593446635-IGK  *
+1295  C  131   7  *  *  *  *  *  07c28e8d-2448-46d1-ae30-4fc8a5e7891e-IGK  *
+1822  C  658   7  *  *  *  *  *  0b21b2c4-32ae-475d-b3b8-445e69a11d07-IGK  *
+1222  C   58   6  *  *  *  *  *  740698f5-2cab-49df-8c2a-c9738a7964bd-IGK  *
+1207  C   43   6  *  *  *  *  *  46656426-e79e-43e2-b6e4-1219f39d300a-IGK  *
+1427  C  263   6  *  *  *  *  *  38f0e759-11bb-497d-a5ea-c84f13c7b95b-IGK  *
+1321  C  157   6  *  *  *  *  *  130d3fe7-db1c-40d8-9804-c8dc604099a8-IGK  *
+1326  C  162   6  *  *  *  *  *  1469a0a2-0f22-4620-a07e-20cc477eea42-IGK  *
+1311  C  147   6  *  *  *  *  *  0ed02a7f-e199-4425-894c-4ca547473e5a-IGK  *
+1315  C  151   5  *  *  *  *  *  105c652c-8c33-472c-bdbd-57d372958044-IGK  *
+1850  C  686   5  *  *  *  *  *  3453aeab-8b7a-449d-abd0-25f907ea3bda-IGK  *
+1381  C  217   5  *  *  *  *  *  256a0858-6b6f-4968-bb96-e3b389ccabf4-IGK  *
+1832  C  668   5  *  *  *  *  *  1e6707e6-cb4b-490a-b3d1-8d59a88ce922-IGK  *
+1170  C    6   4  *  *  *  *  *  4ee7141b-5bdf-4d48-a142-92850da0c002-IGK  *
+1297  C  133   4  *  *  *  *  *  07efcef3-d532-42ef-a9ad-7310ca4589c4-IGK  *
+1301  C  137   4  *  *  *  *  *  0a5f8f76-5bbc-4139-8e06-f6a183a73e2b-IGK  *
+1316  C  152   4  *  *  *  *  *  109f6130-d640-4e36-b4c6-425cf3f17208-IGK  *
+1411  C  247   4  *  *  *  *  *  32789491-849c-4183-baf3-e57b897b6063-IGK  *
+1597  C  433   4  *  *  *  *  *  9193b1d2-9637-42c1-936b-312ecc21072e-IGK  *
+1824  C  660   4  *  *  *  *  *  14aaff91-e101-4e9c-a339-b869be0ab348-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+207  C  20  12  *  *  *  *  *  0681951d-429d-44bb-a88d-0f10fc535436-IGK  *
+225  C  38  11  *  *  *  *  *  1ffff820-3e01-4812-8752-de27b2b8fde2-IGK  *
+220  C  33   6  *  *  *  *  *  1b0eb363-609d-45d9-9f36-84b2bf69eed9-IGK  *
+240  C  53   6  *  *  *  *  *  4309e3a5-aaae-4a9e-a27a-b7f3172e9e29-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+66  C  21  6  *  *  *  *  *  0a4431aa-5d25-4d02-85e2-41350649db74-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+46  C  9  4  *  *  *  *  *  1bb7d575-f5ca-471d-9c22-41289221e390-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+94  C  7  4  *  *  *  *  *  74bcdbd7-71ae-4d8a-9da0-0637cf8b2e0e-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+870  C  286  20  *  *  *  *  *  00d2ce2c-e1cd-4a44-ad0a-0fd1a5936506-IGK  *
+882  C  298  15  *  *  *  *  *  1801c2c2-8a71-4e08-b26d-9ec5aee1d8ef-IGK  *
+603  C   19  10  *  *  *  *  *  07f0c68a-c9b3-414c-8275-ffbcfd708526-IGK  *
+600  C   16   9  *  *  *  *  *  025059ed-a160-4d56-8a8a-f441b848e12f-IGK  *
+622  C   38   8  *  *  *  *  *  1c1b5327-42d8-495d-a163-868c79df94b7-IGK  *
+674  C   90   8  *  *  *  *  *  3a7ba6c4-3262-4583-8fd5-c1a9df143739-IGK  *
+726  C  142   7  *  *  *  *  *  7048e956-4794-41a3-af57-78778e7ad0fa-IGK  *
+871  C  287   6  *  *  *  *  *  01078488-c0c6-4ea3-acfa-d24814d53ab0-IGK  *
+686  C  102   6  *  *  *  *  *  43fb6f59-7eba-475e-b209-b0e727a3eb4e-IGK  *
+676  C   92   6  *  *  *  *  *  3d057758-9f36-412f-90eb-d533f0660330-IGK  *
+690  C  106   6  *  *  *  *  *  478f2dbb-e7ba-4539-923e-8a8f68d87e5b-IGK  *
+678  C   94   6  *  *  *  *  *  3edecb1b-e925-469a-8d9a-1e5532a227f2-IGK  *
+615  C   31   5  *  *  *  *  *  18eff80a-5346-4b88-8d5d-2ed9217243c5-IGK  *
+619  C   35   5  *  *  *  *  *  19fe5533-7dd9-4ad4-b713-835619386795-IGK  *
+624  C   40   5  *  *  *  *  *  1cffe344-cb77-4e87-afa0-b4a77bf531de-IGK  *
+702  C  118   5  *  *  *  *  *  59753ffb-df77-4f19-88e4-7bffe496c67c-IGK  *
+652  C   68   5  *  *  *  *  *  2fa24c79-7cc0-4dec-bb0d-44aae285f266-IGK  *
+629  C   45   5  *  *  *  *  *  220e01f2-c022-4289-b0ed-340ad6006979-IGK  *
+748  C  164   4  *  *  *  *  *  87bc9d69-80d1-4452-9581-4a625db34595-IGK  *
+872  C  288   4  *  *  *  *  *  040b09aa-9b72-498a-bf16-0589f8337f06-IGK  *
+895  C  311   4  *  *  *  *  *  432efdda-441e-4b06-9d79-6d4a925530b0-IGK  *
+908  C  324   4  *  *  *  *  *  70bedaee-2f64-467c-baf0-8d2bb493f98f-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+82   C  10  7  *  *  *  *  *  2db36a79-b3ce-4b1f-b19f-8a7ea90479f6-IGK  *
+116  C  44  4  *  *  *  *  *  376c0764-cda1-4bfa-8f98-4c862ad1d988-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1470  C  119  49  *  *  *  *  *  00a5409b-2653-4429-b6cb-17f076161d45-IGK  *
+1412  C   61  24  *  *  *  *  *  8a0e6c16-7301-4ddb-920a-d8ed73acf66c-IGK  *
+1699  C  348  19  *  *  *  *  *  54cb1f61-ba07-4ab3-b9b6-85eec41512e3-IGK  *
+1489  C  138  17  *  *  *  *  *  0528a7e7-ce29-401a-ae4b-4f0d205d1766-IGK  *
+1481  C  130  16  *  *  *  *  *  040ca693-c838-4128-a3d2-9a833a319128-IGK  *
+2095  C  744  13  *  *  *  *  *  01ebd40c-562d-49b6-bc43-34157647cb0d-IGK  *
+1413  C   62  13  *  *  *  *  *  8fcd36a7-8a23-4a12-8b5e-982b3b051db3-IGK  *
+1405  C   54  13  *  *  *  *  *  650f4a55-86eb-48ee-a2fa-9919f0b6409c-IGK  *
+1497  C  146  10  *  *  *  *  *  06164220-50e5-42e0-b3f9-731c330fb09d-IGK  *
+1579  C  228   9  *  *  *  *  *  275bcf07-7f12-4bcb-b800-42ba2e7d2a5c-IGK  *
+1673  C  322   8  *  *  *  *  *  4d4af507-c0c6-4134-b148-1f14e07de8f4-IGK  *
+1506  C  155   8  *  *  *  *  *  088c5111-37da-4619-8e62-786fcbaa4d23-IGK  *
+1465  C  114   8  *  *  *  *  *  18892677-8984-48da-bdf0-152aada7b1a6-IGK  *
+1369  C   18   8  *  *  *  *  *  1f81b56f-d280-4240-bf29-137f4be90a00-IGK  *
+1484  C  133   8  *  *  *  *  *  048d899b-c8e1-4c6b-937d-578deddd1dc9-IGK  *
+1493  C  142   7  *  *  *  *  *  05973894-c289-40e1-ab3b-d049ae217ecb-IGK  *
+1609  C  258   6  *  *  *  *  *  34bdb856-88cf-4f7b-92b9-38a5214f7730-IGK  *
+1512  C  161   6  *  *  *  *  *  0ac12773-fc69-4420-8ce8-b24bc46ec524-IGK  *
+1604  C  253   6  *  *  *  *  *  32d58424-92d3-43dc-bbed-f6812e2587df-IGK  *
+1507  C  156   6  *  *  *  *  *  089aac6f-646c-466f-84af-0622d00ec3f2-IGK  *
+1845  C  494   6  *  *  *  *  *  8d92eb6d-bd52-48b7-9d3f-296d53bc3401-IGK  *
+1445  C   94   6  *  *  *  *  *  e4965f23-08ec-4bcb-90d9-414038a42105-IGK  *
+1378  C   27   6  *  *  *  *  *  26685259-47c1-446b-ab89-0427d8b8c038-IGK  *
+1364  C   13   5  *  *  *  *  *  1b10aea7-9e5c-4e64-97ff-56ab314536de-IGK  *
+2117  C  766   5  *  *  *  *  *  240c8c3b-0db0-43d2-97f2-2bd98ba45544-IGK  *
+2126  C  775   5  *  *  *  *  *  3d7df1f1-bd37-45db-9162-8f37053ee616-IGK  *
+2096  C  745   5  *  *  *  *  *  029b53fb-11dd-47fd-952b-b42d1ec5e76f-IGK  *
+1472  C  121   5  *  *  *  *  *  013d3580-0376-4146-b504-728ef425a7d3-IGK  *
+1402  C   51   5  *  *  *  *  *  612d0b6f-dce9-40b3-b5b8-61271ab66cc8-IGK  *
+1544  C  193   5  *  *  *  *  *  1924647d-a567-4731-bc7b-c671482dff44-IGK  *
+1574  C  223   5  *  *  *  *  *  26cbabef-4ba8-4a69-91c9-00915d706e53-IGK  *
+1755  C  404   5  *  *  *  *  *  6b361a2b-76b3-4651-9119-a0a607443c38-IGK  *
+1662  C  311   5  *  *  *  *  *  49163c39-fd47-4340-9385-faa37235b264-IGK  *
+1399  C   48   4  *  *  *  *  *  5a40b7e8-4641-48e0-b956-b5ee303948e3-IGK  *
+1410  C   59   4  *  *  *  *  *  7ac68723-ee17-4480-b628-7340e2e48e0c-IGK  *
+1377  C   26   4  *  *  *  *  *  2622f18f-32ed-44ff-9b8a-2a3b2c432bd9-IGK  *
+1500  C  149   4  *  *  *  *  *  06978003-bd1e-4845-93fd-470f99e07a97-IGK  *
+1616  C  265   4  *  *  *  *  *  3879fa42-9076-43a2-8497-6585e62ee0cb-IGK  *
+1541  C  190   4  *  *  *  *  *  18c4e539-c1a7-4c19-9fed-8dda6ce43fda-IGK  *
+1519  C  168   4  *  *  *  *  *  0ed7ef2c-3745-4a90-8c75-3e0de763109a-IGK  *
+1631  C  280   4  *  *  *  *  *  3c76be8a-abcf-4ea6-90cc-e040a84facae-IGK  *
+1796  C  445   4  *  *  *  *  *  7e48abdb-16f5-4a00-b60f-fe779081c19f-IGK  *
+1634  C  283   4  *  *  *  *  *  3e1101b1-de4e-4e4d-8734-510378171e01-IGK  *
+1730  C  379   4  *  *  *  *  *  604e4b26-b10c-4162-a936-20be802603a9-IGK  *
+2104  C  753   4  *  *  *  *  *  11a6ee5f-998d-4d97-b2f8-ff4d511e3b0f-IGK  *
+2102  C  751   4  *  *  *  *  *  10a10650-c826-4572-9c20-f10698b174f9-IGK  *
+2105  C  754   4  *  *  *  *  *  133d26b4-7385-43cb-9b7c-3aef0484729d-IGK  *
+2169  C  818   4  *  *  *  *  *  9b5fe6f5-0101-4e63-97ac-5a53bdff7596-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+129  C  20  17  *  *  *  *  *  2ede5d9a-b029-4c5f-b877-5e454723f9a2-IGK  *
+117  C   8  11  *  *  *  *  *  a7c9af8c-cf72-4567-aeb0-057a6e160050-IGK  *
+112  C   3   4  *  *  *  *  *  0386f098-81f6-4caa-969a-d26c032b14bb-IGK  *
+118  C   9   4  *  *  *  *  *  02e78b36-065c-405a-bc7b-7b3f63be74cf-IGK  *
+128  C  19   4  *  *  *  *  *  2d5aaa1b-840d-4393-9e67-277387a5f52f-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+89   C   1  7  *  *  *  *  *  2147a376-a26b-4a61-83c5-768c1f980bee-IGK  *
+103  C  15  7  *  *  *  *  *  4de3ecf5-6179-4e38-a8fc-64466426989c-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+18  C  4  5  *  *  *  *  *  45f2ca91-1b3b-4c33-ba5f-e485810729f4-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+25  C  4  4  *  *  *  *  *  2f017a42-8ece-4ef0-86e9-2a1193d89679-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+3540  C   350  70  *  *  *  *  *  0b684290-aa4c-4b02-a4b1-17e4c093764c-IGK  *
+3299  C   109  66  *  *  *  *  *  34e77a0e-49ea-41a2-891e-1593c8cf0a87-IGK  *
+3267  C    77  55  *  *  *  *  *  12489e08-3cdc-454b-830f-1ac3710c80bf-IGK  *
+3804  C   614  44  *  *  *  *  *  4e307512-da80-4916-80c1-25a36076b7be-IGK  *
+3544  C   354  39  *  *  *  *  *  0cc87075-01de-42a7-af02-d40f7458b2fa-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+4354  C  1164   4  *  *  *  *  *  0b15f28f-f6b6-4b50-9d5e-b3db71dda369-IGK  *
+4358  C  1168   4  *  *  *  *  *  0cfd76ed-dc1e-4cf2-be7b-ec6784e785b4-IGK  *
+4374  C  1184   4  *  *  *  *  *  1a69ce4e-d9c6-4a35-ba21-864f4a00fd4e-IGK  *
+4401  C  1211   4  *  *  *  *  *  2d1d2243-72ea-4f67-862e-6220faf92ac7-IGK  *
+4414  C  1224   4  *  *  *  *  *  3bdc20d2-a598-4772-ae0e-534aeeb6b1a2-IGK  *
+
+[158 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+23  C  3  4  *  *  *  *  *  1951d619-c6f5-491e-8d15-5ab227dcbf62-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+61  C  0  16  *  *  *  *  *  04d8b751-ad9c-484e-a87f-bc48576e92eb-IGK  *
+68  C  7   4  *  *  *  *  *  72372d09-4e63-4a97-a65f-5717e581e125-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+133  C  19  6  *  *  *  *  *  006c7c8c-65ab-4f7f-bdab-e6b47f31c125-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+32  C  4  10  *  *  *  *  *  128855ae-bb82-4043-90ca-0ed04cebf214-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+42  C  2  6  *  *  *  *  *  9f510a01-bf64-4087-bdfe-992e5fec7b3b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+21  C  1  9  *  *  *  *  *  2121f08f-fc03-46d3-a79a-66e92eff2364-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+924   C   79  71  *  *  *  *  *  0333a6d2-e9e2-43c7-a153-5e19214392f2-IGK  *
+921   C   76  39  *  *  *  *  *  0103eaa5-16ae-412a-a2db-63bbb70dd4c2-IGK  *
+926   C   81  31  *  *  *  *  *  035f82d5-f99b-4a83-975b-66ebc2e41ba4-IGK  *
+928   C   83  27  *  *  *  *  *  05aca88b-0509-4398-ae7b-c0d4bff628d7-IGK  *
+947   C  102  18  *  *  *  *  *  12fcd2b5-d2a5-4fab-89ef-646932d3af30-IGK  *
+858   C   13  16  *  *  *  *  *  05627890-e28c-4e0c-9e5a-dcf5cccf965a-IGK  *
+972   C  127  13  *  *  *  *  *  24c17806-e46a-4e19-8314-fb16e1e44a46-IGK  *
+934   C   89  11  *  *  *  *  *  09bc3345-6252-47dc-920f-bd2b186964f2-IGK  *
+931   C   86  10  *  *  *  *  *  06f3637d-2598-4dcd-84a1-9bd91d355ecb-IGK  *
+964   C  119  10  *  *  *  *  *  207cdc27-cd0f-4ccf-bf6f-806cb6b387d4-IGK  *
+925   C   80   9  *  *  *  *  *  0349fcc5-299f-4e09-8859-65e3bd8df832-IGK  *
+1033  C  188   8  *  *  *  *  *  55800dc8-65ae-4a82-aa03-50b4188c814d-IGK  *
+976   C  131   8  *  *  *  *  *  270edfa3-1f39-4e20-9563-64d57bab527e-IGK  *
+860   C   15   8  *  *  *  *  *  13f5b5ed-6361-4a26-af54-d096ec75dcc5-IGK  *
+847   C    2   7  *  *  *  *  *  174ff70d-7a5e-4c0b-9e76-07dd469ea8e1-IGK  *
+850   C    5   7  *  *  *  *  *  68ad49d1-9c89-4ca8-b4ca-536cb0a78529-IGK  *
+918   C   73   7  *  *  *  *  *  af5045a5-5ec4-414c-b87a-0fb30dc06163-IGK  *
+981   C  136   7  *  *  *  *  *  2ae7e8f8-41d4-4261-ad56-85e35ba5da20-IGK  *
+1023  C  178   6  *  *  *  *  *  492b645d-3966-4f87-a8d2-e80144105135-IGK  *
+872   C   27   6  *  *  *  *  *  3f014156-6100-4218-ad26-75a735ea4918-IGK  *
+852   C    7   6  *  *  *  *  *  a1079e0f-96bf-45c9-a819-13aeb8715be3-IGK  *
+851   C    6   5  *  *  *  *  *  8b612e1b-4fb4-45a6-9c05-db3b26cadcc5-IGK  *
+912   C   67   5  *  *  *  *  *  a244d6a4-2034-4d4a-908f-36fa785d5ab3-IGK  *
+958   C  113   5  *  *  *  *  *  1ced147e-b0f6-44d3-9f19-1e36ed0c530a-IGK  *
+1064  C  219   5  *  *  *  *  *  6d49c493-9ba5-4c05-8221-6239dcf7b6bd-IGK  *
+873   C   28   4  *  *  *  *  *  43952491-3b0f-4a88-bd69-909096fb5586-IGK  *
+863   C   18   4  *  *  *  *  *  1b0d09fd-24fe-4b0a-b1f2-d889c4c160a5-IGK  *
+870   C   25   4  *  *  *  *  *  33f41df5-be53-4cd0-91de-07750a1da4f9-IGK  *
+871   C   26   4  *  *  *  *  *  3bbf8fc8-6f6e-4d36-bfb5-5d597c83f802-IGK  *
+955   C  110   4  *  *  *  *  *  1709f74d-dda6-443d-a9fb-cb707dd40444-IGK  *
+935   C   90   4  *  *  *  *  *  0bfdfae2-3840-498d-bb84-3d27c5f31487-IGK  *
+986   C  141   4  *  *  *  *  *  2c68d77e-0d68-48e0-977f-c08e9f2d4a68-IGK  *
+996   C  151   4  *  *  *  *  *  32dd7d1d-4bb9-4902-83d7-1914d5fdc5a2-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+113  C  33  5  *  *  *  *  *  50a241d8-4099-401d-a9a9-222aab9bf0d2-IGK  *
+83   C   3  4  *  *  *  *  *  45bbd19c-0403-4795-8ca6-66f8f9d59e58-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+26  C  0  6  *  *  *  *  *  78a20146-b4c4-42c8-9f2a-1f30f791e8f5-IGK  *
+30  C  4  5  *  *  *  *  *  069a1694-81b0-4b0f-852f-97fc1566a38b-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+316  C   13  16  *  *  *  *  *  20b1d489-8cc9-4236-8d51-899a103d2d37-IGK  *
+349  C   46  14  *  *  *  *  *  07bee1a1-2773-4879-8dae-a015d1ee55ea-IGK  *
+342  C   39   8  *  *  *  *  *  be083df0-278a-4891-8c59-fcd63a1cf473-IGK  *
+343  C   40   5  *  *  *  *  *  e6da0330-6456-4b16-91c3-a5c5168b9d4b-IGK  *
+326  C   23   5  *  *  *  *  *  637f3391-6fe6-4e94-9fed-29c90e8d494b-IGK  *
+421  C  118   5  *  *  *  *  *  6ba5ad69-3f48-4504-b780-efc9581abfaf-IGK  *
+324  C   21   4  *  *  *  *  *  5614c7de-5b73-4ac0-b3ec-ab3ffbcbe1c2-IGK  *
+351  C   48   4  *  *  *  *  *  08418381-2992-4643-bba6-de7dd9be7fa3-IGK  *
+387  C   84   4  *  *  *  *  *  47c2b308-4990-462c-9ccf-e4ce9c221b2c-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+194  C  15  5  *  *  *  *  *  02b6ac17-f435-4ee8-afe1-ff332d055982-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+501  C   60  37  *  *  *  *  *  0528ab33-13c0-4915-9e89-e6ea6b1cd6db-IGK  *
+503  C   62   9  *  *  *  *  *  07b89afb-42c6-4fbf-a789-12eb8b6f46a2-IGK  *
+444  C    3   7  *  *  *  *  *  2352c954-1744-43ae-a087-cf52dc03ba8f-IGK  *
+548  C  107   7  *  *  *  *  *  321be738-4013-4720-a601-e88c883dd7e0-IGK  *
+450  C    9   5  *  *  *  *  *  03649419-a250-405a-8cc1-4de4622c0fe4-IGK  *
+524  C   83   5  *  *  *  *  *  18f8603f-3bd6-42ea-95b9-4a4a6cbb3583-IGK  *
+509  C   68   4  *  *  *  *  *  0bc2f1f0-0b3b-446e-b9fb-2682d8d4ed0c-IGK  *
+519  C   78   4  *  *  *  *  *  11ae9c7a-e994-4990-8d66-abeb51e81064-IGK  *
+518  C   77   4  *  *  *  *  *  114a1a13-5568-4772-83fb-3aec02679717-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+320  C  29  37  *  *  *  *  *  028ce6d0-66e6-46da-9c92-f227465c145e-IGK  *
+326  C  35  22  *  *  *  *  *  078964ba-dae4-4785-bada-ce65eca1894e-IGK  *
+329  C  38  13  *  *  *  *  *  103c722a-8ee6-4a04-ae89-9339743a33e9-IGK  *
+359  C  68  12  *  *  *  *  *  3b155e31-d23f-4aee-9c5f-6de99c62c8ac-IGK  *
+348  C  57   6  *  *  *  *  *  2f900638-40d7-4f3d-9c49-628d9b5f1744-IGK  *
+322  C  31   5  *  *  *  *  *  044caefa-291f-4bca-919c-fdf2a03ad441-IGK  *
+292  C   1   4  *  *  *  *  *  07ea60a5-9df5-4ab9-b7c0-1af35a499f0d-IGK  *
+341  C  50   4  *  *  *  *  *  22dc581a-ee81-4fe1-b121-5463f1e99db5-IGK  *
+334  C  43   4  *  *  *  *  *  171d14d5-8875-40f4-bcfb-bb737b481d75-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+45  C   2  8  *  *  *  *  *  15a07143-5449-4458-bdda-eec0fb8b9c73-IGK  *
+56  C  13  7  *  *  *  *  *  70037f0b-74d7-409b-b4bd-71f39a87e8bf-IGK  *
+43  C   0  5  *  *  *  *  *  0d10fcab-435e-422b-b341-0064472521f6-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+33  C  1  7  *  *  *  *  *  41444854-7c48-4ede-bea7-7ef208c030ab-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  0  5  *  *  *  *  *  33f19174-d94d-4a37-bb20-ce5ffb07e08c-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+1650  C  130  156  *  *  *  *  *  0163fb1a-60fc-499d-9509-a36a8d18438a-IGK  *
+1657  C  137   93  *  *  *  *  *  083b78a8-f139-41cb-aa24-05f1d591a131-IGK  *
+1588  C   68   70  *  *  *  *  *  c4eda60d-23c9-4eff-a7a9-e00b381f0473-IGK  *
+1684  C  164   67  *  *  *  *  *  4992b420-bee0-4f60-ac37-0b4f9f343eaf-IGK  *
+1554  C   34   46  *  *  *  *  *  0f345c4a-732a-45c3-aea5-ab61cb23cba7-IGK  *
+...  ..  ...  ... .. .. .. .. ..                                       ... ..
+1646  C  126    4  *  *  *  *  *  d35efaaf-7c7f-4204-a4a0-6f2e2c542122-IGK  *
+1687  C  167    4  *  *  *  *  *  555672a5-2161-44c4-b494-d8d73dfa7ffe-IGK  *
+1689  C  169    4  *  *  *  *  *  624b388f-1088-4534-b96f-ad2a45ade927-IGK  *
+1814  C  294    4  *  *  *  *  *  03304cf0-4bff-444a-9b14-75843517769f-IGK  *
+1815  C  295    4  *  *  *  *  *  158b8a0b-8075-4b4c-b34b-5096356a275f-IGK  *
+
+[67 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+34  C  3  4  *  *  *  *  *  87553c99-d910-4a4e-9132-8c045b6791e5-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+16  C  0  9  *  *  *  *  *  37632076-fcca-4a89-b290-baa8d68b1d25-IGK  *
+17  C  1  6  *  *  *  *  *  3bbc8ac5-1593-4b09-8b39-28a01119614f-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+73  C  6  25  *  *  *  *  *  03b465ad-bbe5-4b43-8e0d-3f255219b2b6-IGK  *
+74  C  7  12  *  *  *  *  *  09d3e82a-035c-47aa-9143-6654dfdebb1e-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+7332  C   314  752  *  *  *  *  *  1fd83643-0622-4d55-acfa-afd5e0e55f1f-IGK  *
+7380  C   362  208  *  *  *  *  *  00505ed4-5862-4804-bbdf-a214272af054-IGK  *
+7491  C   473  158  *  *  *  *  *  07dcf97c-0485-448f-abe6-c67efeb2e9a7-IGK  *
+7402  C   384  122  *  *  *  *  *  01700f60-545f-4d00-aedf-bf122930ed02-IGK  *
+7370  C   352   90  *  *  *  *  *  9dc7d982-8914-45b2-a5cb-91d8a620743e-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+8540  C  1522    4  *  *  *  *  *  8e91fb46-caa6-4cfe-b9e6-36dd0b0446c4-IGK  *
+8595  C  1577    4  *  *  *  *  *  97be754d-181c-49d5-9636-1c92cc090040-IGK  *
+8608  C  1590    4  *  *  *  *  *  99a91680-f13b-4b54-9f55-b4776edc683a-IGK  *
+8650  C  1632    4  *  *  *  *  *  a289e4ed-b6de-42d7-a13b-e5c436732343-IGK  *
+9386  C  2368    4  *  *  *  *  *  c03b3d5a-9e00-4953-b88c-fd9d222e6988-IGK  *
+
+[305 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+527  C   77  7  *  *  *  *  *  246dbf7d-8bc3-4bf8-b82d-754f0515deb4-IGK  *
+529  C   79  7  *  *  *  *  *  24cf448c-3e1b-4d45-994f-cd6b13c60d71-IGK  *
+536  C   86  4  *  *  *  *  *  2a796f93-316e-4e8e-9a32-596e692a00c0-IGK  *
+581  C  131  4  *  *  *  *  *  5523426c-10ec-4d69-86b5-9165c89d9d94-IGK  *
+789  C  339  4  *  *  *  *  *  83459a74-d14b-45ef-8d13-90d0bbb02feb-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+558  C   88  18  *  *  *  *  *  20075f71-3cd5-4939-b455-851a14b58432-IGK  *
+480  C   10  16  *  *  *  *  *  259305ea-cd7f-4b38-874f-7cc5ad4141e7-IGK  *
+549  C   79  15  *  *  *  *  *  135a3626-a3bb-4a1c-8e7e-0f16c50dbb12-IGK  *
+542  C   72  13  *  *  *  *  *  0c5ee57c-36ee-4e2a-8af0-a1ac13a29dbc-IGK  *
+513  C   43  12  *  *  *  *  *  aa533404-440f-46b4-918c-4b30c5677723-IGK  *
+475  C    5  10  *  *  *  *  *  1962b20f-a8fc-41ae-88d7-af1ed9f22292-IGK  *
+565  C   95   8  *  *  *  *  *  2e405ebc-3ad3-4a66-bde8-f96fa52d4ca4-IGK  *
+587  C  117   8  *  *  *  *  *  4598cae9-e04f-4a5c-8eda-e3b719f8ae82-IGK  *
+536  C   66   7  *  *  *  *  *  060f6cea-eebf-4490-bd7c-161e3618610c-IGK  *
+566  C   96   6  *  *  *  *  *  2e8f4104-c0b7-435c-9bf0-fb9d15ad7d6f-IGK  *
+592  C  122   6  *  *  *  *  *  52d5604c-12f3-4822-b9a0-4d96b0be0e7e-IGK  *
+613  C  143   6  *  *  *  *  *  6f900288-a6e0-4ac8-bb43-2d81f21583b5-IGK  *
+713  C  243   6  *  *  *  *  *  16286cc2-aa27-41e8-a74d-d189d9748021-IGK  *
+505  C   35   5  *  *  *  *  *  8e4d4970-710c-456f-bd8b-f75bfd55af36-IGK  *
+481  C   11   5  *  *  *  *  *  3f3cf363-8ae8-4132-8820-bded1c88b677-IGK  *
+490  C   20   5  *  *  *  *  *  589407c5-3715-498c-b354-4f1517dccb90-IGK  *
+498  C   28   5  *  *  *  *  *  71217760-58f8-464d-a40c-1ccdd07b4993-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+10  C  0  5  *  *  *  *  *  7aeaa115-8f79-4e4c-b04c-ef1859ae1ddb-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+92  C  10  6  *  *  *  *  *  071ab5b3-b4e9-4869-a04a-556e40406e61-IGK  *
+94  C  12  6  *  *  *  *  *  14ccbfaa-4598-44fa-8a41-2359af1a16f3-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+148  C   3  37  *  *  *  *  *  0b4ea513-1fac-4ecf-a937-560ec6b8a9ca-IGK  *
+149  C   4  10  *  *  *  *  *  0c90f80c-d1af-4908-9d18-54cb478051a1-IGK  *
+160  C  15   5  *  *  *  *  *  32ace146-dbde-43cb-b683-61de3163a7bd-IGK  *
+145  C   0   4  *  *  *  *  *  037eb8b0-74a3-4129-84c6-9bb97fd0f623-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+2584  C   326  82  *  *  *  *  *  1a5dfbeb-27fa-42c9-ad7c-3490137b774d-IGK  *
+2457  C   199  31  *  *  *  *  *  ee0b0fc7-c24d-44e7-86c6-428fc2223516-IGK  *
+2339  C    81  28  *  *  *  *  *  3cd827f0-f5b5-4b68-925f-a84b25b357f4-IGK  *
+2459  C   201  24  *  *  *  *  *  fd5e84b9-fc3d-460a-85b0-043d3c779a1d-IGK  *
+2408  C   150  22  *  *  *  *  *  b9c4ef66-3829-47f8-bf1e-6408376f0a7b-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+2968  C   710   4  *  *  *  *  *  842c7001-7cea-4efa-af5f-d4e32d4feba3-IGK  *
+3132  C   874   4  *  *  *  *  *  bc377e8e-79c6-4f40-add8-bc2157fa9acf-IGK  *
+2909  C   651   4  *  *  *  *  *  73adba2c-7c08-4572-a3ee-91e84fcd1c2a-IGK  *
+3315  C  1057   4  *  *  *  *  *  07f25585-aac7-4c99-9be5-e3c231aa0235-IGK  *
+3339  C  1081   4  *  *  *  *  *  2bbfca9f-f9ac-4162-a8df-22c5a2b8edae-IGK  *
+
+[95 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1963  C  108  97  *  *  *  *  *  e3b22773-5614-479c-b24d-5897d5fbeac2-IGK  *
+1996  C  141  80  *  *  *  *  *  02eae4bf-3ccf-499d-96cb-61394648ef19-IGK  *
+1881  C   26  73  *  *  *  *  *  0998baf9-2701-49d9-bf20-bd400ed8594c-IGK  *
+1984  C  129  49  *  *  *  *  *  948b451d-a59f-450c-a0e8-733e2ba07bb0-IGK  *
+1949  C   94  41  *  *  *  *  *  bdedc1a4-2b49-4d02-b8b9-5d7d80a754d8-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+2174  C  319   4  *  *  *  *  *  3e26424b-2e38-48b8-94fc-9a308fe05792-IGK  *
+2471  C  616   4  *  *  *  *  *  d0111d9d-072d-4076-9b93-bd385aafa654-IGK  *
+2410  C  555   4  *  *  *  *  *  a908cf99-80c1-44b2-8664-643dbe5a91ae-IGK  *
+2396  C  541   4  *  *  *  *  *  9fd6f9eb-ce3a-4163-b4d3-2697fb4bd535-IGK  *
+2543  C  688   4  *  *  *  *  *  02c8cf1f-ca34-4cb9-8b06-0806a2dde373-IGK  *
+
+[80 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+294  C   45  12  *  *  *  *  *  2e7133f1-1c15-4e63-ae31-9bcad142f26b-IGK  *
+402  C  153   8  *  *  *  *  *  07ff64bb-354a-4a63-a921-1f8410551377-IGK  *
+280  C   31   6  *  *  *  *  *  19047d18-075b-48c0-9564-fe347ca6df30-IGK  *
+263  C   14   5  *  *  *  *  *  02ed64db-3141-44e0-b71e-b998a6756315-IGK  *
+311  C   62   5  *  *  *  *  *  46da8e60-f8e8-4c86-b03b-45deafb6d603-IGK  *
+272  C   23   5  *  *  *  *  *  0d35bdcc-4575-4847-8b27-a9a80caf86ac-IGK  *
+328  C   79   5  *  *  *  *  *  612e4ea7-1d36-41ba-9471-ae66ad929615-IGK  *
+307  C   58   5  *  *  *  *  *  4260821c-038e-41c9-a382-d45d7f31ffff-IGK  *
+268  C   19   4  *  *  *  *  *  0789d451-d888-439a-9416-2b6c3649f64d-IGK  *
+289  C   40   4  *  *  *  *  *  27dcca0e-2dc0-4af1-afca-98c27464f2c4-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+88   C   1  6  *  *  *  *  *  56671e0d-c716-4e4e-a242-d9a74b1741c7-IGK  *
+93   C   6  4  *  *  *  *  *  03ffa591-018d-4c43-b6a5-566f8d3a163c-IGK  *
+137  C  50  4  *  *  *  *  *  bc0ed7a0-ba80-4c27-8688-f6f39e9aade3-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+120  C   2  26  *  *  *  *  *  13284859-020b-4318-9d17-cc93ae1d5bf7-IGK  *
+135  C  17  14  *  *  *  *  *  64b0f792-c24b-4426-bd3f-34f4819f8f70-IGK  *
+168  C  50   6  *  *  *  *  *  209f0de0-01a0-497c-b539-4df201f77bc3-IGK  *
+126  C   8   4  *  *  *  *  *  408d8711-e78b-43b6-bee0-c9217d0ef0b5-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+96  C  2  6  *  *  *  *  *  6846a141-b47e-4c80-ba80-6346f0b275b5-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+176  C   4  7  *  *  *  *  *  0245195b-ae39-4e68-b26d-f14cffce4f6d-IGK  *
+230  C  58  5  *  *  *  *  *  567232f1-1abe-41fa-bbd2-f92a2fe539c0-IGK  *
+192  C  20  4  *  *  *  *  *  d510b0fc-7c14-4d51-83a6-74e6237ce9ce-IGK  *
+193  C  21  4  *  *  *  *  *  3a0e8058-5ed4-431e-afdd-18b2218d8d7f-IGK  *
+207  C  35  4  *  *  *  *  *  1abe599f-5a67-4bd5-b340-eb4d0862cfaf-IGK  *
+220  C  48  4  *  *  *  *  *  4ac187cc-87c5-42fa-b558-49ecafa7bf11-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+749  C   88  15  *  *  *  *  *  13afafef-b075-4ff0-9d65-7b4c971de39f-IGK  *
+718  C   57  12  *  *  *  *  *  3c7e7b31-51ce-48e3-92d3-98e1962d7b81-IGK  *
+847  C  186  12  *  *  *  *  *  52aabd92-c08d-4a1f-aba4-aad0bd637bb8-IGK  *
+722  C   61   8  *  *  *  *  *  002b8c46-1dc2-45e0-a669-6d605a4c8437-IGK  *
+778  C  117   8  *  *  *  *  *  26d40a79-de5e-47df-84d7-140688bd7f37-IGK  *
+825  C  164   8  *  *  *  *  *  438d8889-0f5e-4d9d-8fd6-55e752f959d6-IGK  *
+793  C  132   7  *  *  *  *  *  2f62f1ff-c61c-4e69-a8a5-a8c6349f0609-IGK  *
+675  C   14   6  *  *  *  *  *  2513b703-5be5-4138-a2a6-187cf0273f20-IGK  *
+713  C   52   6  *  *  *  *  *  d0c579f0-8a4b-4b48-ab1b-ec9002679fc5-IGK  *
+855  C  194   6  *  *  *  *  *  5710608a-197e-40a9-83ec-4df85c76dd22-IGK  *
+759  C   98   5  *  *  *  *  *  179635f6-1ffd-470e-9af7-3e12f5d0539e-IGK  *
+838  C  177   5  *  *  *  *  *  4d50d695-ae98-4d4d-97f3-18976f0f1cc9-IGK  *
+812  C  151   5  *  *  *  *  *  374f0682-89ac-493a-aa18-8d1d14dbbd32-IGK  *
+757  C   96   5  *  *  *  *  *  16ce5ed7-1628-436c-b70f-6a1c5be851e4-IGK  *
+780  C  119   5  *  *  *  *  *  2845bdaf-4d12-4dd2-ad6c-ce72452bde6f-IGK  *
+751  C   90   4  *  *  *  *  *  14c3f9d1-a92e-4f20-a767-145b6eaf883a-IGK  *
+721  C   60   4  *  *  *  *  *  a3eec45e-3752-407e-8f3e-3c38f6562ea3-IGK  *
+753  C   92   4  *  *  *  *  *  153d82f5-eaf7-450b-9db1-29c74b6434c3-IGK  *
+799  C  138   4  *  *  *  *  *  3175f2a3-8b95-4677-b431-a5983ff0dfcb-IGK  *
+792  C  131   4  *  *  *  *  *  2e028c31-d754-405c-85a4-02dc50f9be4b-IGK  *
+776  C  115   4  *  *  *  *  *  2410570e-dc15-4dd7-bd96-8581b943e629-IGK  *
+762  C  101   4  *  *  *  *  *  18383bb9-c526-41ca-bab3-0310c3897c10-IGK  *
+858  C  197   4  *  *  *  *  *  5a06006c-3686-415f-b5ec-52fececd901c-IGK  *
+891  C  230   4  *  *  *  *  *  6e317475-332c-4c58-a40e-d35405e204e0-IGK  *
+913  C  252   4  *  *  *  *  *  7fdebdbf-65f8-4b0c-8a75-11334301cda7-IGK  *
+931  C  270   4  *  *  *  *  *  8daa8c3e-c151-4c04-8009-e66f2beb6a2b-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+32  C  2  12  *  *  *  *  *  0e1af9c7-2e33-4523-9a39-6018102b94a7-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+200  C    1  5  *  *  *  *  *  30a8e19b-8811-4ff8-8b57-4de2f1b712f9-IGK  *
+205  C    6  5  *  *  *  *  *  10ce21f6-97e8-4a1b-b678-131cd21289b3-IGK  *
+238  C   39  5  *  *  *  *  *  1c1120e4-0621-4807-aabd-b59dcbf733b5-IGK  *
+245  C   46  5  *  *  *  *  *  2b99f282-0c13-4ff3-9d35-bbf1fe4a3d69-IGK  *
+263  C   64  5  *  *  *  *  *  582980d3-60dd-4849-ae69-6ff60a94012c-IGK  *
+266  C   67  4  *  *  *  *  *  62c78115-c596-4372-a45a-38dab5da0912-IGK  *
+337  C  138  4  *  *  *  *  *  0233d844-ffc1-42ab-94ee-44265febe67d-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  4  5  *  *  *  *  *  0ee5a641-f3f7-4edc-8001-691e6e2893f4-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+146  C  10  47  *  *  *  *  *  08a41436-30d9-4bd2-a4d8-416e588abb0d-IGK  *
+147  C  11   7  *  *  *  *  *  0a975e10-4151-4012-b2b6-ff6d97abadd4-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  0  4  *  *  *  *  *  0f94e316-476f-4e62-af54-45a32dc84b98-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+512  C   26  41  *  *  *  *  *  fc2f3908-f22e-430e-81e6-ea5f146c67f3-IGK  *
+513  C   27  24  *  *  *  *  *  005cfa04-9672-440d-8d5f-824c32a3085e-IGK  *
+594  C  108  18  *  *  *  *  *  12d528c7-7754-42f9-9d3c-933efff9bb03-IGK  *
+525  C   39  15  *  *  *  *  *  323afc2c-2ab1-4216-87dc-7f3a2df79e67-IGK  *
+543  C   57  15  *  *  *  *  *  72846dee-81a3-44cd-af4b-0fce418b7222-IGK  *
+523  C   37  15  *  *  *  *  *  27e5275e-7b7c-4085-aea4-39587486d431-IGK  *
+533  C   47  14  *  *  *  *  *  4b6c96da-a552-4522-a8a2-35be6741ac93-IGK  *
+551  C   65  13  *  *  *  *  *  97264258-2d01-4103-b144-b5977ffeab9e-IGK  *
+623  C  137  13  *  *  *  *  *  0685de83-fd59-4239-b6a1-1e719b6d3bcc-IGK  *
+499  C   13  13  *  *  *  *  *  16bb331d-1a3b-42f8-b44a-13c5d48ac902-IGK  *
+498  C   12  11  *  *  *  *  *  104728a8-3f4c-4bf4-9f30-3fa2116110e3-IGK  *
+489  C    3  10  *  *  *  *  *  9d4fa614-c1c5-4fb4-9838-f6d1ad0e27d8-IGK  *
+603  C  117  10  *  *  *  *  *  7168574d-0b84-49bc-b5f8-da5f19942471-IGK  *
+569  C   83   8  *  *  *  *  *  06c57f27-0a83-4adb-8d2f-36ba1b770525-IGK  *
+548  C   62   8  *  *  *  *  *  8ba48f01-ae42-4719-9ea5-782b2b53c650-IGK  *
+529  C   43   8  *  *  *  *  *  3d51521b-223d-4087-8e92-4d14a9d85579-IGK  *
+596  C  110   6  *  *  *  *  *  1f65c428-1fd4-4b0b-8833-1dad94c5dffb-IGK  *
+600  C  114   6  *  *  *  *  *  47c1325a-5f70-470d-ab99-9a4be0ea49e6-IGK  *
+500  C   14   5  *  *  *  *  *  2f2458d7-bd81-4636-96ee-4be964c923e0-IGK  *
+526  C   40   5  *  *  *  *  *  34ddd691-4146-4aee-8b3f-c800688a5a54-IGK  *
+516  C   30   4  *  *  *  *  *  06279e66-991f-44df-a5ed-faba40612524-IGK  *
+501  C   15   4  *  *  *  *  *  397881e9-27a7-428d-a5f2-ed4c1fd5aa24-IGK  *
+504  C   18   4  *  *  *  *  *  6b4ed699-ef5b-4347-b2a0-a4b1030978dd-IGK  *
+488  C    2   4  *  *  *  *  *  e8abb14e-60ec-437c-8a1c-96b5b4a3a5fc-IGK  *
+514  C   28   4  *  *  *  *  *  0290e737-1551-41d9-af39-cd6fc9852127-IGK  *
+537  C   51   4  *  *  *  *  *  5d66b3be-dea1-42ed-9ed8-0a94d1e40f07-IGK  *
+622  C  136   4  *  *  *  *  *  05f906cb-e48f-4251-bdd2-5c406d352ea6-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+5  C  0  5  *  *  *  *  *  1483be06-d85d-413d-8f5b-b47d99b767de-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+23  C  0  4  *  *  *  *  *  20d170c8-b5e7-40e4-bb6b-ec1242c7d098-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+73  C  11  5  *  *  *  *  *  2849c36f-7ecc-4c03-9223-7f1f13f796f0-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+15  C  0  9  *  *  *  *  *  06d296cb-d1f4-45cf-8450-f760f6e07324-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1558  C  202  86  *  *  *  *  *  217ceed2-c5e0-4dbd-ba11-26a90008898e-IGK  *
+1514  C  158  69  *  *  *  *  *  17cf92ba-572d-4fff-a8f7-88e82959a17f-IGK  *
+1540  C  184  57  *  *  *  *  *  02a918ad-df04-49b7-be75-dc211ec5256f-IGK  *
+1506  C  150  26  *  *  *  *  *  ef18ee39-934d-49a4-a097-2419541f3f75-IGK  *
+1551  C  195  25  *  *  *  *  *  14f45193-addd-4279-9b96-36586f97bf07-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+1597  C  241   4  *  *  *  *  *  70fd261a-c7c4-48a4-a061-3bbf78c495f4-IGK  *
+1628  C  272   4  *  *  *  *  *  afcdf9c8-c477-44ef-8e39-0af05e9b99b6-IGK  *
+1603  C  247   4  *  *  *  *  *  77069fcc-180f-428b-b6b4-9044fe2276bc-IGK  *
+1585  C  229   4  *  *  *  *  *  545eb661-13c8-41b7-aed1-f647c671e7c2-IGK  *
+1782  C  426   4  *  *  *  *  *  29d210f6-dfa1-461d-a05c-0e1d224e3059-IGK  *
+
+[76 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1472  C  103  53  *  *  *  *  *  0359baa3-df8e-4579-8018-c98dfdfb54b0-IGK  *
+1461  C   92  52  *  *  *  *  *  ebcfcce9-e623-4627-8291-3e53eb7c006f-IGK  *
+1846  C  477  33  *  *  *  *  *  06770ee1-c0fe-476b-a60b-ba81e83e3a8f-IGK  *
+1469  C  100  32  *  *  *  *  *  01d0386d-d0e6-4d49-b4c2-c2ef1616b3a9-IGK  *
+1723  C  354  32  *  *  *  *  *  92a43c8e-ec3f-41af-b045-7069dec505b2-IGK  *
+...  ..  ...  .. .. .. .. .. ..                                       ... ..
+1625  C  256   4  *  *  *  *  *  550c2b2c-2f2c-4810-8a90-d7ad6f2a5434-IGK  *
+1659  C  290   4  *  *  *  *  *  689dd6cf-58f7-4311-9ea0-9905c692bfec-IGK  *
+1736  C  367   4  *  *  *  *  *  a00b3798-4784-4467-a53e-de095afb6560-IGK  *
+1855  C  486   4  *  *  *  *  *  139dd462-51dd-440f-9c11-2c954c05cdaf-IGK  *
+1849  C  480   4  *  *  *  *  *  08c1353d-a70b-40ae-8239-f747eb17b094-IGK  *
+
+[76 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+60  C  16  6  *  *  *  *  *  673aa2cc-c083-414b-af9e-037e8ef91edd-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+20  C  5  4  *  *  *  *  *  91c03abd-35a3-4f44-89d1-8a483cceaeba-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1025  C   13  38  *  *  *  *  *  0d57c93f-9c2c-40d0-9398-d7d0e31b26f2-IGK  *
+1141  C  129  36  *  *  *  *  *  1b59a168-329a-4bb1-a259-357bda84abdf-IGK  *
+1506  C  494  33  *  *  *  *  *  04d16836-d437-4bda-9655-cbe7c98c8733-IGK  *
+1085  C   73  29  *  *  *  *  *  716e2fa5-204d-42c1-869d-ac85c0585a0f-IGK  *
+1099  C   87  25  *  *  *  *  *  04a7172a-6642-476e-92bc-0000a7a18c65-IGK  *
+1134  C  122  20  *  *  *  *  *  15a51d7c-0692-41c1-b4d3-ec1736e0f34f-IGK  *
+1172  C  160  12  *  *  *  *  *  32772665-4cb2-4849-a2f4-df957da3c859-IGK  *
+1243  C  231   9  *  *  *  *  *  586c22f5-9494-4772-9c5d-1634c55ebc48-IGK  *
+1030  C   18   8  *  *  *  *  *  222e503d-6383-4bce-899f-5bc223ab3f88-IGK  *
+1098  C   86   8  *  *  *  *  *  03f54555-35e3-4f24-acd5-7e75de523bd2-IGK  *
+1196  C  184   7  *  *  *  *  *  407e7c68-4d15-4890-bf81-4416cb338284-IGK  *
+1530  C  518   7  *  *  *  *  *  43ba4bc1-a6d3-4ed8-8ee5-81f49d87b714-IGK  *
+1114  C  102   7  *  *  *  *  *  0a296744-1885-4fe3-8904-cae08a0f88f2-IGK  *
+1096  C   84   6  *  *  *  *  *  022c6dac-6c82-4a2d-a287-261c534773d7-IGK  *
+1515  C  503   6  *  *  *  *  *  1c14a273-df59-45d4-b3f5-dcebf098dbcd-IGK  *
+1250  C  238   6  *  *  *  *  *  5ef0738a-052c-451f-9188-71a297725956-IGK  *
+1329  C  317   5  *  *  *  *  *  96953fc2-5fd9-4921-9363-922d2e158d68-IGK  *
+1130  C  118   5  *  *  *  *  *  111d5c0c-67fd-4f2a-bea1-f85c04f0580a-IGK  *
+1094  C   82   5  *  *  *  *  *  01bef4dd-de8a-49df-80e1-905d0be4ddcf-IGK  *
+1120  C  108   5  *  *  *  *  *  0d8db01e-63b4-47a7-aea6-eafe2315f9f9-IGK  *
+1225  C  213   5  *  *  *  *  *  51948ccb-6712-44e1-aa4b-48b8ef2c0fb3-IGK  *
+1164  C  152   5  *  *  *  *  *  2c429175-ea48-442b-b881-874635ffdebb-IGK  *
+1028  C   16   4  *  *  *  *  *  194aa7c7-e9f5-47a6-bea1-baa2be699a66-IGK  *
+1081  C   69   4  *  *  *  *  *  e8dbfdcc-6d26-42ed-9088-676d32929a77-IGK  *
+1082  C   70   4  *  *  *  *  *  04a8d5c8-bf68-4dfd-8bcd-b5d93c1fa899-IGK  *
+1112  C  100   4  *  *  *  *  *  09fa220d-273e-41f5-99ed-d28dea7c9299-IGK  *
+1097  C   85   4  *  *  *  *  *  0391e745-3d4d-4a84-96a1-657dc66befe2-IGK  *
+1129  C  117   4  *  *  *  *  *  10dc1558-237f-4949-ab74-f508ce8c61d0-IGK  *
+1122  C  110   4  *  *  *  *  *  0e32f918-5b77-417c-94c3-cd06bb668716-IGK  *
+1184  C  172   4  *  *  *  *  *  37c26915-5a21-4e56-bca1-5a19e7c22a27-IGK  *
+1195  C  183   4  *  *  *  *  *  3f5d76af-6222-4f4a-a090-9db4405f6ee8-IGK  *
+1198  C  186   4  *  *  *  *  *  43da1471-ef2a-4e2d-af64-a99cb09ffaf8-IGK  *
+1496  C  484   4  *  *  *  *  *  d0e0a972-6149-4da5-b760-84738ba8a54e-IGK  *
+1512  C  500   4  *  *  *  *  *  0f4e85d7-f9aa-4a81-96ca-f32a71683792-IGK  *
+1508  C  496   4  *  *  *  *  *  06ed46d1-ab66-409f-8efe-ac4d20047f43-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+217  C  21  7  *  *  *  *  *  1bd3e2a2-e52d-468d-ad7e-ac8532988abc-IGK  *
+222  C  26  6  *  *  *  *  *  2b8f1045-5346-4d6a-86ed-652a6208630a-IGK  *
+223  C  27  4  *  *  *  *  *  3b300b27-219f-4d7c-aeba-edafaee0bc43-IGK  *
+226  C  30  4  *  *  *  *  *  42c9790a-bb37-4257-9278-a973ce7ee14f-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1060  C   92  41  *  *  *  *  *  0377eb22-06a4-41c3-9588-46efcef5f3d7-IGK  *
+1091  C  123  30  *  *  *  *  *  10d8b4d7-151b-4036-aca5-6bbee3229255-IGK  *
+1407  C  439  14  *  *  *  *  *  09bb9766-2831-4d39-ab02-ca3c63574265-IGK  *
+1153  C  185  13  *  *  *  *  *  3c07a58a-aead-4060-b443-a49525e42595-IGK  *
+1076  C  108  13  *  *  *  *  *  0995f7bc-ad92-4ca4-a7ce-210abc7e4177-IGK  *
+1054  C   86  12  *  *  *  *  *  006dae1c-40d5-41de-b9e9-e68e6f226feb-IGK  *
+1079  C  111  12  *  *  *  *  *  0af34187-b008-4756-8c28-d5af5cd7f382-IGK  *
+1083  C  115  12  *  *  *  *  *  0cd4fb20-a029-4223-85f0-02e6d5cb6589-IGK  *
+1159  C  191  11  *  *  *  *  *  3e533f86-8beb-42d8-9440-6bf53ce7a225-IGK  *
+1071  C  103  10  *  *  *  *  *  0735742e-a3a5-4f88-8539-7be6b05a89e9-IGK  *
+1046  C   78   9  *  *  *  *  *  b43eea7f-512f-4aee-8fd9-11d91326f5bb-IGK  *
+1390  C  422   8  *  *  *  *  *  24095e0d-0c51-4b75-846b-122cf7326a98-IGK  *
+1111  C  143   8  *  *  *  *  *  1ff62a7b-7aaa-48b0-85a7-01cf27063ce5-IGK  *
+1154  C  186   8  *  *  *  *  *  3c3c12ed-f963-4cf3-9989-f2ff539f5e81-IGK  *
+1179  C  211   7  *  *  *  *  *  499a4eca-e7dc-453a-87ef-334fa940764a-IGK  *
+1283  C  315   7  *  *  *  *  *  93ab787e-deb1-4966-b025-1a858a4c1740-IGK  *
+1066  C   98   7  *  *  *  *  *  0470761d-1e0d-4bf5-87ce-1c9bba899045-IGK  *
+1392  C  424   7  *  *  *  *  *  3613b6cf-0b9d-42ae-b1a1-018a958f4e3e-IGK  *
+1098  C  130   7  *  *  *  *  *  1623a513-6182-43b5-b53f-c375a2506746-IGK  *
+1117  C  149   7  *  *  *  *  *  231a7c50-0138-49d0-8dda-6ae455e15a94-IGK  *
+1061  C   93   6  *  *  *  *  *  03967cba-de4d-4b45-a924-fd7eb5cc81c7-IGK  *
+1104  C  136   6  *  *  *  *  *  1b01f7c7-f8c9-42b2-adda-f128e3b9b99c-IGK  *
+1021  C   53   6  *  *  *  *  *  7344e887-47ac-4e30-a6a6-32cb48241b27-IGK  *
+974   C    6   6  *  *  *  *  *  5a4252c0-fa7f-41a4-b783-883607e6db8d-IGK  *
+1042  C   74   6  *  *  *  *  *  2e843b85-964d-404b-b376-5d239f516595-IGK  *
+1223  C  255   5  *  *  *  *  *  5fbb9745-dff7-443b-9315-335875ef1134-IGK  *
+1081  C  113   5  *  *  *  *  *  0bd89e18-435a-4f9c-9344-1b689610ace0-IGK  *
+979   C   11   5  *  *  *  *  *  8764d486-4188-4b18-b000-cfd3d5406ba6-IGK  *
+1058  C   90   5  *  *  *  *  *  032b0244-1a2d-457e-8915-3aa5464091de-IGK  *
+1057  C   89   5  *  *  *  *  *  02ba8892-7ad8-4d1f-820d-22ef9c2fc744-IGK  *
+1097  C  129   5  *  *  *  *  *  15f1328e-c459-492d-885e-815f6288e176-IGK  *
+1414  C  446   5  *  *  *  *  *  198af4bf-de20-47a6-84c0-b8610c1c9769-IGK  *
+1040  C   72   4  *  *  *  *  *  e84e50db-7e1f-4f61-9a1b-14eaccb2425f-IGK  *
+992   C   24   4  *  *  *  *  *  090d04da-7003-4a52-b74c-1b976153c753-IGK  *
+984   C   16   4  *  *  *  *  *  b4ba99c1-b822-4dba-923a-22eae5a1a1c8-IGK  *
+1051  C   83   4  *  *  *  *  *  0027868c-07a1-470b-8bba-ac23ad58f0d5-IGK  *
+991   C   23   4  *  *  *  *  *  03def6f7-a22d-4cae-ba14-d6d40f30bdc7-IGK  *
+1089  C  121   4  *  *  *  *  *  1040b69a-62a1-4077-be56-295fed022957-IGK  *
+1152  C  184   4  *  *  *  *  *  3b0075b7-eec9-4c88-9e37-b37d443a6a82-IGK  *
+1114  C  146   4  *  *  *  *  *  21329450-1ddf-4912-b883-0a3020949d01-IGK  *
+1175  C  207   4  *  *  *  *  *  4671c911-c56f-42d9-84f2-9e7e9e1265fc-IGK  *
+1156  C  188   4  *  *  *  *  *  3ca2865b-4f2d-420d-a72b-7aee2d2cd100-IGK  *
+1425  C  457   4  *  *  *  *  *  2f1c41c7-c1f7-4b16-9c94-fc798df57741-IGK  *
+1434  C  466   4  *  *  *  *  *  45146109-1ac5-4785-abb7-3bc3b84fb36c-IGK  *
+1448  C  480   4  *  *  *  *  *  76007191-a9fa-4c78-8386-6ffb9a7969e9-IGK  *
+1494  C  526   4  *  *  *  *  *  06c1c6eb-3e40-46df-9641-7ea803c82087-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+325  C    7  8  *  *  *  *  *  0d953530-6707-44dc-b5c8-169866ab7582-IGK  *
+355  C   37  7  *  *  *  *  *  029ba1e5-625c-4f23-aa23-205a334d218a-IGK  *
+375  C   57  6  *  *  *  *  *  16f04eb2-2840-4720-9d7d-f45a13c8ac7b-IGK  *
+378  C   60  5  *  *  *  *  *  1a86de04-3bb1-407b-a00b-06196d1cdb08-IGK  *
+436  C  118  5  *  *  *  *  *  6b7ec3d1-0f74-4bdf-b762-d0846fe9d3c8-IGK  *
+417  C   99  5  *  *  *  *  *  51a63782-b1dd-4061-8ddf-c0a56265df0b-IGK  *
+356  C   38  4  *  *  *  *  *  033d362e-0a95-43fb-bdca-1731ace94a5f-IGK  *
+351  C   33  4  *  *  *  *  *  005882ab-5e0d-46fc-a8a9-e3894fe3d910-IGK  *
+399  C   81  4  *  *  *  *  *  2dd8f264-4f4d-4c07-b93d-4a2ff634c878-IGK  *
+367  C   49  4  *  *  *  *  *  0dde3acf-e06c-47e6-9aa4-ed94223593b8-IGK  *
+420  C  102  4  *  *  *  *  *  55aceee6-acbf-43b4-8ad0-167122f6e662-IGK  *
+515  C  197  4  *  *  *  *  *  47ac86e7-41ba-426c-9ef9-567c3ce82823-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+402  C    8  15  *  *  *  *  *  12cb9036-ce16-4f8a-b237-a3615fc419c2-IGK  *
+399  C    5  11  *  *  *  *  *  00d0abbb-b58b-4bf6-9259-f4f3fc028ac8-IGK  *
+418  C   24  10  *  *  *  *  *  7983b917-1afa-41b5-8bc3-190ccdbc0a08-IGK  *
+437  C   43   8  *  *  *  *  *  6233ee65-c18c-44f2-8edc-84dcd3ba5ea2-IGK  *
+487  C   93   7  *  *  *  *  *  2d4a16bf-4c08-4e6c-81b9-01bfeeab0ee4-IGK  *
+400  C    6   6  *  *  *  *  *  04f0e48a-cc34-4458-be93-b44aa28566fb-IGK  *
+428  C   34   6  *  *  *  *  *  bb6e6c21-c852-4d80-8c34-ecf1a776d746-IGK  *
+417  C   23   5  *  *  *  *  *  72312dbe-0805-479c-a345-cf789282f4d7-IGK  *
+394  C    0   5  *  *  *  *  *  323937e3-7abf-48e4-b6fa-08b8d96eb3a9-IGK  *
+404  C   10   5  *  *  *  *  *  221a04f3-4024-4eb4-a45a-901c6d1c0e4a-IGK  *
+473  C   79   5  *  *  *  *  *  1d914a4c-a669-47f0-8238-53e2d513a647-IGK  *
+447  C   53   4  *  *  *  *  *  039adae9-8747-485f-8123-d1ff45b6f6e4-IGK  *
+465  C   71   4  *  *  *  *  *  165081d5-57c1-4bdf-9746-54773927ee79-IGK  *
+500  C  106   4  *  *  *  *  *  3a7aabce-7741-403d-9aca-116b6aa30318-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+454  C  183  13  *  *  *  *  *  049f0942-ac4b-4c5d-a033-44e08fe9a87d-IGK  *
+342  C   71   6  *  *  *  *  *  287fb013-1c91-4f12-908c-705a4de2a090-IGK  *
+316  C   45   5  *  *  *  *  *  0019ae34-364f-4502-9beb-a82dd1949a80-IGK  *
+322  C   51   5  *  *  *  *  *  04e84162-da7c-4889-82cd-7cce7d509178-IGK  *
+382  C  111   5  *  *  *  *  *  8addb96f-bddf-40e6-bed9-87062e8c357c-IGK  *
+315  C   44   4  *  *  *  *  *  00054ae4-2129-4c96-82dd-33db5e0a539b-IGK  *
+284  C   13   4  *  *  *  *  *  52875122-61cc-414f-aac3-ccd067585441-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1   2  3  4  5  6  7                                         8  9
+3985  C   371  67  *  *  *  *  *  0a82cebb-ccdc-47c7-b71a-35e0c79975cf-IGK  *
+3658  C    44  50  *  *  *  *  *  0145bb52-e0ec-4b95-8428-1f0c01b66e27-IGK  *
+3956  C   342  47  *  *  *  *  *  06fbae53-b2d7-4d6e-b5db-2f2e4fa42989-IGK  *
+3887  C   273  34  *  *  *  *  *  358f3df1-3e96-4062-aaf2-e0f9ed5af262-IGK  *
+4152  C   538  30  *  *  *  *  *  21f19b7d-123a-4d99-93fe-46212b7f94b2-IGK  *
+...  ..   ...  .. .. .. .. .. ..                                       ... ..
+4692  C  1078   4  *  *  *  *  *  86b4deb8-1dd8-4e37-a979-3c329f51f3fa-IGK  *
+4791  C  1177   4  *  *  *  *  *  9da8dbba-9428-4f68-ab03-94df99281d05-IGK  *
+5253  C  1639   4  *  *  *  *  *  11609c65-de35-4d93-994a-e745d3ac927c-IGK  *
+5323  C  1709   4  *  *  *  *  *  57d4caab-dff7-4268-90f9-dfe06763810d-IGK  *
+5255  C  1641   4  *  *  *  *  *  12ae1b34-9c36-4437-8ec1-17bacbe56f39-IGK  *
+
+[158 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+7427  C   523  181  *  *  *  *  *  03147a84-dd8d-4fe9-9f3a-b812eaf62ddd-IGK  *
+7098  C   194  151  *  *  *  *  *  3a6a3937-319c-4c51-8a6c-a7c01caccab5-IGK  *
+7526  C   622   93  *  *  *  *  *  09b2487f-5964-4abc-be98-2419384d7b04-IGK  *
+7621  C   717   51  *  *  *  *  *  13aa9f33-317b-4770-b415-fb2f6fe95f93-IGK  *
+7402  C   498   49  *  *  *  *  *  01d5ed2c-ddb1-4750-93ad-e7ce34dc79bc-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+8664  C  1760    4  *  *  *  *  *  9139de6b-b401-49d7-b688-4ccaa05de3bd-IGK  *
+8653  C  1749    4  *  *  *  *  *  8f6e23e6-e986-4414-b2dd-0d860105fa3b-IGK  *
+8568  C  1664    4  *  *  *  *  *  83bdb430-61f9-4b44-8d57-28785f519f52-IGK  *
+8993  C  2089    4  *  *  *  *  *  c3737459-324d-4ddb-8d0e-5ce82b3858c3-IGK  *
+8789  C  1885    4  *  *  *  *  *  a32e9ebd-3784-4ad4-a9c5-a0514200a025-IGK  *
+
+[338 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1362  C   28  31  *  *  *  *  *  277d3d84-1c1a-4551-a955-91badafd4f3f-IGK  *
+1568  C  234  24  *  *  *  *  *  3291e679-f910-45c1-b2b1-5ce66eb69426-IGK  *
+1459  C  125  22  *  *  *  *  *  0ab91285-abe2-4303-b3b3-f41806a8a4b3-IGK  *
+1461  C  127  21  *  *  *  *  *  0be52a2a-98e8-4abd-8116-1176d7a7b573-IGK  *
+1448  C  114  19  *  *  *  *  *  0707afd8-e29a-44fa-83bf-65c92319949c-IGK  *
+1440  C  106  19  *  *  *  *  *  0383e182-76cc-4c48-8558-d21e61e5e7ba-IGK  *
+1544  C  210  16  *  *  *  *  *  2971d74b-2da7-417a-bbe7-994b88457500-IGK  *
+1856  C  522  16  *  *  *  *  *  b0432eaf-87ef-4051-8960-02133d780852-IGK  *
+1532  C  198  13  *  *  *  *  *  2392154e-0829-476e-bcd1-fcbf2fee7f29-IGK  *
+1463  C  129  12  *  *  *  *  *  0c3d7590-5224-4791-86e7-6f8a17491d25-IGK  *
+1449  C  115  12  *  *  *  *  *  07604b63-9c76-4263-8743-961c700c0110-IGK  *
+1379  C   45  11  *  *  *  *  *  7b2a3927-789c-4dc8-95ca-2ce13d9fccbb-IGK  *
+1355  C   21  11  *  *  *  *  *  0e2ac5f5-6cf1-4191-8407-6d006a76eccf-IGK  *
+1814  C  480  10  *  *  *  *  *  9d1074a7-5ee0-457a-b7b9-d07e7f9da49c-IGK  *
+1640  C  306   9  *  *  *  *  *  4f6a0fc6-eee0-40fc-a18e-68f9589e1713-IGK  *
+1508  C  174   9  *  *  *  *  *  1b7a37ff-c857-4e03-8046-4285bdf8879d-IGK  *
+1523  C  189   9  *  *  *  *  *  1f885d3e-05d3-47da-82b6-0c76726c90aa-IGK  *
+1617  C  283   8  *  *  *  *  *  459a82ac-a98f-414e-9b77-d3fb48dd9f14-IGK  *
+1607  C  273   7  *  *  *  *  *  41eb153a-ce04-4e52-9e53-76faf4eee951-IGK  *
+2009  C  675   7  *  *  *  *  *  0a304429-72f0-4c1a-a5c0-cb301bc44f72-IGK  *
+1495  C  161   7  *  *  *  *  *  17468abd-57be-4e77-8139-5d0b29abb0c9-IGK  *
+1436  C  102   6  *  *  *  *  *  0250be9a-e393-48f3-bfc7-de0ea26510d9-IGK  *
+1365  C   31   6  *  *  *  *  *  2f755b92-1452-475f-a4c7-330d4c760dff-IGK  *
+1621  C  287   6  *  *  *  *  *  476d9d01-adb7-4b8b-a51b-70fd884c87b7-IGK  *
+1498  C  164   6  *  *  *  *  *  181043a0-7dcd-4b19-905f-ad239243bc9f-IGK  *
+1714  C  380   6  *  *  *  *  *  716cbadb-3e56-4855-86ee-b175614c352b-IGK  *
+1397  C   63   6  *  *  *  *  *  bc4d5cdd-e6b4-4db4-835e-4bf0e51f6e0b-IGK  *
+1536  C  202   6  *  *  *  *  *  261565cd-eec9-404d-ac0c-6c0c365ef678-IGK  *
+1492  C  158   6  *  *  *  *  *  16d7b2d7-d22d-4933-a09e-8c781157edf6-IGK  *
+1687  C  353   5  *  *  *  *  *  6554f0ac-e511-42a9-806d-15fdda41719a-IGK  *
+1600  C  266   5  *  *  *  *  *  404a9df5-8cef-418a-80d5-a00df1d26bd5-IGK  *
+1390  C   56   5  *  *  *  *  *  a2d3bd09-07d2-4470-ae9d-b22999ba8849-IGK  *
+1357  C   23   5  *  *  *  *  *  1d5754a1-8bfb-4cbe-ba7a-5787d12e3782-IGK  *
+1424  C   90   5  *  *  *  *  *  7df86ff3-96cd-4cd1-898f-c7b4ef3b79de-IGK  *
+1431  C   97   5  *  *  *  *  *  0080041e-a9d5-4f9b-93d8-fe2135220ff5-IGK  *
+1470  C  136   5  *  *  *  *  *  0f892c18-2735-445d-bad0-093d6854f302-IGK  *
+1375  C   41   4  *  *  *  *  *  6bcb9683-ae8a-412f-b955-3831dba67000-IGK  *
+1405  C   71   4  *  *  *  *  *  d8f7f9e9-2aa9-4a5b-a9e7-9ebefd832a84-IGK  *
+1435  C  101   4  *  *  *  *  *  01d7d00c-1cfd-413c-b655-41ed91157767-IGK  *
+1473  C  139   4  *  *  *  *  *  102b44ce-90a5-4d51-926d-340c9c2be126-IGK  *
+1456  C  122   4  *  *  *  *  *  09081c48-3ae9-4d87-8157-756c71c2831d-IGK  *
+1419  C   85   4  *  *  *  *  *  bc8ee84e-725f-43f4-978a-53d7329d38a7-IGK  *
+1582  C  248   4  *  *  *  *  *  392f93fe-ad43-4930-acc0-14631b33459c-IGK  *
+1485  C  151   4  *  *  *  *  *  131cfd9a-01b2-4b5d-ab7f-dfe5b375c98d-IGK  *
+1598  C  264   4  *  *  *  *  *  3fcbbad6-8fe0-4a4e-823c-964104a6347f-IGK  *
+1481  C  147   4  *  *  *  *  *  11fc8a7e-3c95-4b58-9234-e9d8f069bf7c-IGK  *
+1504  C  170   4  *  *  *  *  *  1b0b3db0-8bb0-48b8-b08c-0baa7652088e-IGK  *
+1664  C  330   4  *  *  *  *  *  5a4ccc73-7288-46f5-9fb4-f0eb429386eb-IGK  *
+1660  C  326   4  *  *  *  *  *  58f15bf8-bff2-454b-9bf7-98a2173c3bfe-IGK  *
+1646  C  312   4  *  *  *  *  *  5315806a-04f9-457a-a034-f0a22db91f83-IGK  *
+1620  C  286   4  *  *  *  *  *  4707cd9b-3ead-4a33-8c5f-c51ae11580de-IGK  *
+1780  C  446   4  *  *  *  *  *  8ef48a3a-f060-4ad4-aeca-5b7d470628b0-IGK  *
+1742  C  408   4  *  *  *  *  *  7dc2a13a-d274-43d3-ac2f-233b0023f2f4-IGK  *
+1690  C  356   4  *  *  *  *  *  675a2cd1-10f9-4696-9d00-4b915a5b7e5c-IGK  *
+1831  C  497   4  *  *  *  *  *  a40cfccb-9bc2-43a0-99fe-98daa05a4e53-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1    2  3  4  5  6  7                                         8  9
+7576  C  434  505  *  *  *  *  *  2add586e-628b-463d-abc2-27a8cc2316df-IGK  *
+7474  C  332  300  *  *  *  *  *  0509ec3f-bea0-4fba-9a13-5fd079d590ea-IGK  *
+7282  C  140  191  *  *  *  *  *  176ddb73-1d62-495f-8a83-1520f3756731-IGK  *
+7593  C  451  150  *  *  *  *  *  3ae9eb7a-481a-490e-b3b7-c01105ce701d-IGK  *
+7383  C  241  141  *  *  *  *  *  0c6829b5-d68e-4c0a-9676-fa0518412b31-IGK  *
+...  ..  ...  ... .. .. .. .. ..                                       ... ..
+7771  C  629    4  *  *  *  *  *  9ce66d82-0456-41fe-b03a-f8c6f61200ee-IGK  *
+7789  C  647    4  *  *  *  *  *  363dbb4e-0b40-4a06-bfac-e5ef0f801636-IGK  *
+7783  C  641    4  *  *  *  *  *  0da6381f-4e88-4481-8cbf-f528080007f4-IGK  *
+7816  C  674    4  *  *  *  *  *  1da07bcb-5c66-44de-89cc-6f2d299cf499-IGK  *
+7820  C  678    4  *  *  *  *  *  4381c46e-94d0-421e-beb5-5cd9c003e693-IGK  *
+
+[256 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+9  C  1  7  *  *  *  *  *  303b20ce-c002-4cd7-8cb3-ada425047f99-IGK  *
+Clusters Ordened By clusters lenght: 
+      0     1    2  3  4  5  6  7                                         8  9
+4576  C   415  374  *  *  *  *  *  002d2125-11c1-40dc-be3a-50bb778de19d-IGK  *
+4663  C   502  103  *  *  *  *  *  0c184659-d822-4c66-a040-15493b7446ec-IGK  *
+4979  C   818   67  *  *  *  *  *  40ce4e8b-8294-46d6-8575-46dbca382da5-IGK  *
+4606  C   445   61  *  *  *  *  *  048d3c87-7fc8-4b95-9091-c031433dd873-IGK  *
+4445  C   284   50  *  *  *  *  *  8b751160-0566-4360-a047-4cc5cdfe3bde-IGK  *
+...  ..   ...  ... .. .. .. .. ..                                       ... ..
+5159  C   998    4  *  *  *  *  *  64a67c48-9a71-4a1f-b8c6-acb44937acfa-IGK  *
+5257  C  1096    4  *  *  *  *  *  79df5770-c869-4943-a3ab-d77257165b22-IGK  *
+5886  C  1725    4  *  *  *  *  *  2009f5e4-94bd-4d17-b5f2-4a1d50bf55a5-IGK  *
+6176  C  2015    4  *  *  *  *  *  0e582cf6-30a0-4711-8481-e8c881bef81b-IGK  *
+6229  C  2068    4  *  *  *  *  *  759ab5ad-945e-4212-9ded-61385c70df0b-IGK  *
+
+[145 rows x 10 columns]
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+980   C  123  14  *  *  *  *  *  fba7af25-0e0c-4426-97cc-f3d3c3df3923-IGK  *
+1107  C  250  13  *  *  *  *  *  352fad6b-7b10-449b-9a6e-897184ac3db7-IGK  *
+950   C   93  11  *  *  *  *  *  b298495f-be60-40e6-b85d-1a4f9956e36f-IGK  *
+1036  C  179  11  *  *  *  *  *  111c10ce-93e7-436d-9660-f705a132f280-IGK  *
+881   C   24   9  *  *  *  *  *  034f49e3-a0c5-4da3-8da3-cbeb78f3ea13-IGK  *
+1047  C  190   8  *  *  *  *  *  166b21f5-b9de-40dc-84c6-53390da6f5e0-IGK  *
+1236  C  379   8  *  *  *  *  *  7b38c398-6842-410e-b53c-3aaea7d87df7-IGK  *
+1074  C  217   7  *  *  *  *  *  25d648bf-f968-4e8f-86f1-cc4f2eeae113-IGK  *
+1073  C  216   7  *  *  *  *  *  258eac5c-2969-448a-a3dc-0899d7d57f52-IGK  *
+1076  C  219   6  *  *  *  *  *  2697b0d5-d1f6-44fd-aeb1-38972be70b98-IGK  *
+1072  C  215   6  *  *  *  *  *  25023a1b-6cff-41fc-a035-4e5fd885e82d-IGK  *
+1009  C  152   6  *  *  *  *  *  0783adbe-0e3c-4698-ad98-b2100b2cb2ff-IGK  *
+1025  C  168   6  *  *  *  *  *  0cd32b13-2b35-485f-bcef-1d463bb92bcb-IGK  *
+1031  C  174   6  *  *  *  *  *  1017e68f-a775-40f3-8ecc-1ea648603c69-IGK  *
+883   C   26   5  *  *  *  *  *  07bfe2ce-359a-4be1-9711-4d3833e7644d-IGK  *
+1089  C  232   5  *  *  *  *  *  2c49dfc8-6452-4b57-81aa-5b6aedd5cb4a-IGK  *
+1021  C  164   5  *  *  *  *  *  0bde5a4b-7c8d-45d1-9f5f-bd43d21b3f5c-IGK  *
+931   C   74   5  *  *  *  *  *  85d6535a-2678-4a8f-8ecd-1ddde4d5aad3-IGK  *
+885   C   28   5  *  *  *  *  *  0b9e1c04-2d69-4e4a-ba01-a7658d4dc84e-IGK  *
+898   C   41   5  *  *  *  *  *  288a2f52-fa71-438b-9d2b-0764685d5817-IGK  *
+889   C   32   4  *  *  *  *  *  10d78ad8-a350-4888-bd3a-4e7392151391-IGK  *
+892   C   35   4  *  *  *  *  *  175427f7-00fd-46c0-99b5-4e71b1166418-IGK  *
+909   C   52   4  *  *  *  *  *  45873a2a-04d2-499c-8cb5-799810b000cd-IGK  *
+986   C  129   4  *  *  *  *  *  b9bdcd8d-b038-4e74-a42f-82860e0828d7-IGK  *
+1082  C  225   4  *  *  *  *  *  280f2278-c198-44c9-891a-4545e1c885a6-IGK  *
+1166  C  309   4  *  *  *  *  *  54f1647c-042a-452b-81d1-6ebaf6b95e7c-IGK  *
+1140  C  283   4  *  *  *  *  *  469583a3-ff89-4b18-81e6-75c2178c753c-IGK  *
+1169  C  312   4  *  *  *  *  *  564b23d6-a7ee-486d-8ac0-86d30535744b-IGK  *
+1206  C  349   4  *  *  *  *  *  68120115-58a2-4eec-be1c-6961c4c893d6-IGK  *
+1304  C  447   4  *  *  *  *  *  9cccb162-9296-4e21-8ef4-96465a8bea9c-IGK  *
+1316  C  459   4  *  *  *  *  *  a2649652-b891-4db3-bfc1-175e648a79ad-IGK  *
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1346  C  162  97  *  *  *  *  *  065b769c-6751-4922-a9e1-9a8d2503f26c-IGK  *
+1457  C  273  32  *  *  *  *  *  34de4a8a-e647-42a0-a68d-818528572bfd-IGK  *
+1395  C  211  18  *  *  *  *  *  16866c82-c0b9-41aa-9c65-385aa8acb8ae-IGK  *
+1211  C   27  16  *  *  *  *  *  032c8e27-7aad-4cd2-8336-f2dd3d18e752-IGK  *
+1257  C   73  14  *  *  *  *  *  6415c5fc-0aa7-48fd-a2e6-04a67479989b-IGK  *
+1324  C  140  14  *  *  *  *  *  0009894f-6719-41fe-8a0c-98bbf82452d7-IGK  *
+1253  C   69  14  *  *  *  *  *  5b299fa3-b471-4575-888d-445f67f87ff0-IGK  *
+1360  C  176  12  *  *  *  *  *  09ec0fea-f0fa-4b02-ac04-45d9f918d644-IGK  *
+1387  C  203  12  *  *  *  *  *  13a189fd-8b84-4646-b604-b77821d4730f-IGK  *
+1340  C  156  11  *  *  *  *  *  04d822ee-e950-4dbe-afa6-e56a53755b22-IGK  *
+1536  C  352   9  *  *  *  *  *  61faff9c-cec7-4e2f-b19e-c161ccbec2ac-IGK  *
+1212  C   28   9  *  *  *  *  *  03d6fc84-33e1-4643-8ae4-8233079c93bb-IGK  *
+1234  C   50   8  *  *  *  *  *  36b880cc-fbc1-4655-869a-a7f17cb3f998-IGK  *
+1511  C  327   8  *  *  *  *  *  5324d3ea-ba44-4676-9b98-2d948fc86ab1-IGK  *
+1404  C  220   7  *  *  *  *  *  1b925816-a4ce-44dd-8f55-948916918cf4-IGK  *
+1439  C  255   7  *  *  *  *  *  28d8c7e9-d3a9-41fa-bf2b-b7c99ad70d66-IGK  *
+1208  C   24   6  *  *  *  *  *  bfeb66f6-26f2-4644-b376-3de97d82fae4-IGK  *
+1223  C   39   6  *  *  *  *  *  1ac8e53a-f9b2-47f3-b44e-d140f7e08d58-IGK  *
+1389  C  205   6  *  *  *  *  *  13e98548-6ace-4b91-ac9c-632b90f13136-IGK  *
+1330  C  146   6  *  *  *  *  *  022efa42-2783-4aba-847b-6557fa83a316-IGK  *
+1344  C  160   6  *  *  *  *  *  057a32c1-4148-4d8a-ac9b-a002889280b5-IGK  *
+1468  C  284   6  *  *  *  *  *  3b8bab66-14bb-498b-ba17-0b6cd409727c-IGK  *
+1779  C  595   5  *  *  *  *  *  0f2e77f8-9c83-4738-95f5-48bdc94006c3-IGK  *
+1547  C  363   5  *  *  *  *  *  67a469c7-1bef-461d-939e-5f7eaa14fcfb-IGK  *
+1425  C  241   5  *  *  *  *  *  23f34d49-dd4f-423e-96f1-a16ae52a3786-IGK  *
+1283  C   99   5  *  *  *  *  *  ab8dd30f-8efc-4ae4-9ae5-7cde8522f721-IGK  *
+1353  C  169   4  *  *  *  *  *  0809429a-727f-4cd5-8c5d-52985705d1ff-IGK  *
+1247  C   63   4  *  *  *  *  *  4ea5695f-dda1-4d0d-8a7d-a5361f67ab73-IGK  *
+1251  C   67   4  *  *  *  *  *  59ad9176-1545-4bdf-b199-32d67cbf58d2-IGK  *
+1392  C  208   4  *  *  *  *  *  15f294ec-caf9-43df-9d54-58c94085368d-IGK  *
+1431  C  247   4  *  *  *  *  *  25f62966-39d5-472b-a3c1-358517259169-IGK  *
+1503  C  319   4  *  *  *  *  *  4e093b7c-0a48-4c3f-b22f-89e533f84f2b-IGK  *
+1514  C  330   4  *  *  *  *  *  55e6ccf9-d5c9-4c24-9d42-fda179215891-IGK  *
+1585  C  401   4  *  *  *  *  *  7f350fc5-7e56-4c9c-bb73-dfcab48cf39d-IGK  *
+1596  C  412   4  *  *  *  *  *  8b2111bd-645e-4a40-8cc8-dba55a2d6b7f-IGK  *
+1776  C  592   4  *  *  *  *  *  0aeb71a8-8f38-4fcd-b371-fbb1bf11c81e-IGK  *
+1783  C  599   4  *  *  *  *  *  13e56597-7cf3-48af-85e2-94f708904a5a-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+      0    1   2  3  4  5  6  7                                         8  9
+1058  C  224  31  *  *  *  *  *  102b81e3-fea6-49b7-ab52-dde0606a5e37-IGK  *
+1046  C  212  27  *  *  *  *  *  093c2552-9acc-4141-aacf-e8333572941d-IGK  *
+847   C   13  18  *  *  *  *  *  48e28334-77eb-4f9c-8396-eeaa62f035b1-IGK  *
+872   C   38  15  *  *  *  *  *  c3f51292-de3b-4d12-b683-f99899ce9278-IGK  *
+1032  C  198  10  *  *  *  *  *  cfdcda30-ca5b-4676-b9d1-729fa1e34e3d-IGK  *
+840   C    6   9  *  *  *  *  *  126daf0d-4af6-4f00-b845-056f920a8f9d-IGK  *
+1088  C  254   9  *  *  *  *  *  21884539-1835-4577-9384-f2715702a984-IGK  *
+906   C   72   8  *  *  *  *  *  2c8019cc-2712-4bb5-a5fe-05d56638176f-IGK  *
+903   C   69   8  *  *  *  *  *  22289e10-ab25-414a-99a8-1047a77247b2-IGK  *
+888   C   54   8  *  *  *  *  *  12069d3b-a2cb-4d67-bc3e-00695908aa4c-IGK  *
+1059  C  225   8  *  *  *  *  *  10306c5f-7d4f-40a1-90bf-fd7ca34563b5-IGK  *
+886   C   52   7  *  *  *  *  *  0e3bee1d-74ab-47c5-9f64-7d938bd1915f-IGK  *
+1057  C  223   7  *  *  *  *  *  101d5a10-b9e6-4567-b567-7ac1946d9aa1-IGK  *
+1036  C  202   7  *  *  *  *  *  01284b14-485e-4d6f-b09d-56d28e3fc55a-IGK  *
+1181  C  347   6  *  *  *  *  *  6ecf92ad-1148-4a4e-a971-e0fc6a8b1862-IGK  *
+925   C   91   6  *  *  *  *  *  4b5e7bdb-88ce-466a-a249-131638e26954-IGK  *
+904   C   70   6  *  *  *  *  *  29770249-25d4-4459-ab7c-d5a9e1f12201-IGK  *
+849   C   15   6  *  *  *  *  *  4e2151b5-757d-45ca-bcb6-e98d95aa91fa-IGK  *
+910   C   76   6  *  *  *  *  *  314d25f6-2c0c-4bb1-a4b4-d191777a589c-IGK  *
+936   C  102   6  *  *  *  *  *  637a3e8f-2cf7-484d-8fc4-b8a74c4db0a0-IGK  *
+1049  C  215   6  *  *  *  *  *  0a2d4bfd-c8ea-4098-843d-062fdc810b6e-IGK  *
+1034  C  200   5  *  *  *  *  *  00e51368-afe4-4243-b176-d2c10d5ac098-IGK  *
+1122  C  288   5  *  *  *  *  *  3b947ca7-3f9e-4240-9a72-1a589d01c7c0-IGK  *
+1117  C  283   5  *  *  *  *  *  37c572c3-09c5-4eaa-8faf-6a531825ddc6-IGK  *
+843   C    9   4  *  *  *  *  *  37ac4055-140c-4354-b172-5b6f9a8add8b-IGK  *
+875   C   41   4  *  *  *  *  *  01523de9-5b3d-4dd6-ba4b-e7a9d539919f-IGK  *
+984   C  150   4  *  *  *  *  *  b912b638-ca02-423a-9c97-37fc2e8c0fb2-IGK  *
+964   C  130   4  *  *  *  *  *  9aaaab70-7b95-413d-88ba-c6a88bcee4f7-IGK  *
+932   C   98   4  *  *  *  *  *  5ea76329-0d7c-499e-9edf-10587aa835bf-IGK  *
+913   C   79   4  *  *  *  *  *  33534331-8127-4be4-9ca9-f3a761ca1001-IGK  *
+1041  C  207   4  *  *  *  *  *  056f9a8a-aafe-4f44-8afe-5a2d3c9d3860-IGK  *
+1016  C  182   4  *  *  *  *  *  ed3e61e2-3f55-4b28-b718-cb541e5dfe4f-IGK  *
+1134  C  300   4  *  *  *  *  *  40cb0249-13a8-46c2-a196-139481086579-IGK  *
+1189  C  355   4  *  *  *  *  *  746f9cb4-0cc5-4a1a-ad9f-77d6b1238359-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  2  4  *  *  *  *  *  4bc31e5c-16ca-4c21-a0e8-57b64803a12d-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+871  C  305  17  *  *  *  *  *  093e830b-88d5-4ee9-8a67-948c32f0b076-IGK  *
+614  C   48  12  *  *  *  *  *  01ff8e6f-8553-43a5-9506-e5cdb1161494-IGK  *
+888  C  322  11  *  *  *  *  *  35a23608-4ea3-427c-8497-a756f2f9de8f-IGK  *
+573  C    7   9  *  *  *  *  *  080270f6-2280-42e8-9f51-b4170299ee82-IGK  *
+651  C   85   7  *  *  *  *  *  2045a9fc-436c-48ab-bb3d-fbd769eaf545-IGK  *
+637  C   71   6  *  *  *  *  *  15b43ee5-5605-4acb-b051-e0158923ee58-IGK  *
+876  C  310   6  *  *  *  *  *  1572afe6-60f1-41fe-9f3b-1689c84b25a3-IGK  *
+628  C   62   5  *  *  *  *  *  0f70ae4d-2439-4cb5-96cc-421a411ba2fb-IGK  *
+640  C   74   5  *  *  *  *  *  172d1056-fd27-4490-a456-9ee5dbb48b0b-IGK  *
+584  C   18   5  *  *  *  *  *  6640da71-a147-4bc5-9f67-6a4a1f1eca32-IGK  *
+869  C  303   5  *  *  *  *  *  052ef3bd-9027-4331-8fd8-ebf4b253f4bd-IGK  *
+566  C    0   4  *  *  *  *  *  100e1fea-d965-41f0-b2f5-5f2c66f45731-IGK  *
+678  C  112   4  *  *  *  *  *  392aeee7-b64e-4484-a3a6-9ef9a1cff504-IGK  *
+629  C   63   4  *  *  *  *  *  1094fd86-1100-4f99-aa20-080f7be4cce1-IGK  *
+768  C  202   4  *  *  *  *  *  9523461b-5ce7-436e-8039-6aee8dcd4286-IGK  *
+686  C  120   4  *  *  *  *  *  4266fda0-4be5-4760-9b51-84f41426a9c7-IGK  *
+680  C  114   4  *  *  *  *  *  3b882d5b-5e2a-47e1-93a9-d5ae702391c3-IGK  *
+889  C  323   4  *  *  *  *  *  3b28ab0f-491e-49ac-bdb1-9286d615491b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+12  C  1  6  *  *  *  *  *  3b6e48bd-494e-473d-a7ad-b0c078142e51-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+440  C   10  16  *  *  *  *  *  4ee4b2c4-d555-4030-8a3f-88b72141dc14-IGK  *
+474  C   44  12  *  *  *  *  *  0f126482-53f5-4f3a-9999-41ec6d847b7f-IGK  *
+462  C   32  11  *  *  *  *  *  d6c96fd1-64f0-417c-9199-16227e0186b8-IGK  *
+507  C   77  10  *  *  *  *  *  404410bc-20bc-402b-be86-382388e18173-IGK  *
+482  C   52   5  *  *  *  *  *  1e3424c2-ef8c-4a8f-a2ec-be293c194b3b-IGK  *
+732  C  302   5  *  *  *  *  *  327eb3ac-a8d7-4c64-b07d-385427a606d5-IGK  *
+558  C  128   5  *  *  *  *  *  872581f4-a5a6-4acd-a5a9-35e0fc4fb7f9-IGK  *
+551  C  121   5  *  *  *  *  *  7f61d140-f007-4b99-945a-644eaa960ffd-IGK  *
+557  C  127   5  *  *  *  *  *  864349df-707f-44ba-8b22-6ea7cceafee6-IGK  *
+471  C   41   4  *  *  *  *  *  0d267e1d-ea5e-4760-b15d-2daad25b4212-IGK  *
+443  C   13   4  *  *  *  *  *  6337380f-a4c7-4db4-911c-d695a09aa765-IGK  *
+490  C   60   4  *  *  *  *  *  2c95ba8c-d39b-4049-90ae-b2ad628901d3-IGK  *
+599  C  169   4  *  *  *  *  *  cc25024d-00f6-4b04-96c9-9e97ba6e2933-IGK  *
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+172  C    6  5  *  *  *  *  *  199c17be-d938-4945-ad01-d893d400a5b5-IGK  *
+276  C  110  5  *  *  *  *  *  b60e5162-f6fd-4275-952f-3f74989f5883-IGK  *
+190  C   24  4  *  *  *  *  *  6f634417-c18d-463b-9dd8-9e0c1fb394bb-IGK  *
+191  C   25  4  *  *  *  *  *  742cdf0e-2c87-495e-bdfc-bf05bca2e577-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  2  7  *  *  *  *  *  184c7cca-06b8-4a39-89a3-486c8d8f7eda-IGK  *
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+19  C  3  4  *  *  *  *  *  08e8efdd-1a8a-4a2d-8abf-170ba45c20af-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+14  C  3  4  *  *  *  *  *  1a04164a-a9e2-40a3-bc5f-75c5a5ca9981-IGK  *
+Clusters Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+74  C   5  8  *  *  *  *  *  1a3d1aa5-08eb-454d-bc09-05747cf1393a-IGK  *
+77  C   8  5  *  *  *  *  *  def1f96b-a53e-40f6-b152-8b8704220800-IGK  *
+83  C  14  5  *  *  *  *  *  306fb677-d9ef-4dad-a84b-4f8026dc79da-IGK  *
+76  C   7  4  *  *  *  *  *  9d5f8577-2be3-4c24-922e-2a0a43c8532f-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1  2  3  4  5  6  7                                         8  9
+290  C   30  4  *  *  *  *  *  21417e70-ca28-482d-8e7f-17dc6f3051fb-IGK  *
+464  C  204  4  *  *  *  *  *  502e3d2e-75b4-4f77-860d-4eaf06aebdb4-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1   2  3  4  5  6  7                                         8  9
+63  C  4  26  *  *  *  *  *  0765f670-d21b-424e-b47a-5b59f0e46f4f-IGK  *
+64  C  5   6  *  *  *  *  *  0b953794-a854-4991-b854-b40ca1ae596b-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+     0    1   2  3  4  5  6  7                                         8  9
+687  C  238  16  *  *  *  *  *  0c300cb7-5ff5-4a95-98ed-23184eeaaf40-IGK  *
+525  C   76  11  *  *  *  *  *  11d6fde6-bfe9-4362-8d8d-0022a4589204-IGK  *
+456  C    7  10  *  *  *  *  *  089d0017-4bc2-4516-830a-7494e17fdd81-IGK  *
+472  C   23   9  *  *  *  *  *  9ee5a0ab-f9f9-49f5-b349-3d0cf2f531f4-IGK  *
+616  C  167   9  *  *  *  *  *  812f53d2-e54a-4b81-94eb-c1993f4b272b-IGK  *
+729  C  280   9  *  *  *  *  *  24df5d3b-1560-4c8e-8e3f-c05113d66273-IGK  *
+496  C   47   6  *  *  *  *  *  2f09fa0a-7b06-46c3-8b5f-d4aa874b6d2a-IGK  *
+495  C   46   5  *  *  *  *  *  2e160fa9-67e0-426c-bd01-1089d2000478-IGK  *
+461  C   12   5  *  *  *  *  *  2dfadbda-eff1-4f8f-af43-e17710e99f3a-IGK  *
+517  C   68   5  *  *  *  *  *  0cca8b76-e418-4972-8930-b793412a3f0d-IGK  *
+531  C   82   5  *  *  *  *  *  15afd6ce-fa32-4370-9068-b4217dfa9013-IGK  *
+475  C   26   4  *  *  *  *  *  bf530ab2-e7e9-4a6e-9ccc-82fdbcdbc7d2-IGK  *
+493  C   44   4  *  *  *  *  *  ba9c6228-8cca-4468-a55e-18937e67e10c-IGK  *
+506  C   57   4  *  *  *  *  *  001e788d-5e41-4dbd-8f7e-e043d73cd314-IGK  *
+497  C   48   4  *  *  *  *  *  58595e8c-7404-492b-b444-caa2c82bebf6-IGK  *
+571  C  122   4  *  *  *  *  *  406566e7-ddc9-4d74-b7f1-166b59ed319d-IGK  *
+698  C  249   4  *  *  *  *  *  7d980b48-2350-4292-bfb5-a4570240b54e-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+    0  1  2  3  4  5  6  7                                         8  9
+11  C  0  4  *  *  *  *  *  17224e38-28ae-4d26-aac2-c5afbe5b9743-IGK  *
+Clusters Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+293  C  16  58  *  *  *  *  *  03feb3c3-7b17-459f-b6c0-e9454c8d8bd9-IGK  *
+289  C  12   9  *  *  *  *  *  dcd0d5d5-3527-4762-9610-34605ce741bc-IGK  *
+277  C   0   8  *  *  *  *  *  2b305450-a6c5-4d53-b301-e09cd9a04396-IGK  *
+328  C  51   7  *  *  *  *  *  3e315807-2d51-4c44-af46-d937abe7e75a-IGK  *
+326  C  49   7  *  *  *  *  *  3a094a4c-d700-4bd2-910e-85dd2d709b63-IGK  *
+324  C  47   5  *  *  *  *  *  3437b1db-2532-406c-a83d-32efee324778-IGK  *
+295  C  18   5  *  *  *  *  *  06bb9178-9045-4a19-bc47-8030d62a9ac1-IGK  *
+281  C   4   4  *  *  *  *  *  7b39e67c-6132-424b-892b-a3887a10aa82-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+   0  1  2  3  4  5  6  7                                         8  9
+7  C  0  4  *  *  *  *  *  2dc3cbb2-9cd9-442e-b19b-2073e582c343-IGK  *
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []
+Clusters Ordened By clusters lenght: 
+Empty DataFrame
+Columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Index: []

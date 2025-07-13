@@ -17,17 +17,11 @@ parser.add_argument('output', type=str, help="Processed output file")
 args = parser.parse_args()
 
 # Default Parameters
-min_seqs_cluster = 6
+min_seqs_cluster = 4
 cdr3_ident = 0.85
 output = args.output
 output_dir = "/".join(output.split("/")[0:-2])  # extract output directory or default to current directory
 output_cdr3_clusters_dir = "%s/cdr3_clusters"%output_dir
-
-#try:
-#    os.makedirs(output_cdr3_clusters_dir)
-#except FileExistsError:
-#    shutil.rmtree(output_cdr3_clusters_dir)
-#    os.makedirs(output_cdr3_clusters_dir)
 
 news_clusters_dir = "%s/new_clusters"%output_dir
 news_clusters_cdr3_dir = "%s/new_cdr3_clusters"%news_clusters_dir
@@ -68,17 +62,6 @@ except FileExistsError:
 for rec in SeqIO.parse(original_consensus_file, "fasta"):
     SeqIO.write(rec, "%s/clusters_consensus/%s.fasta"%(output_dir,rec.id.split(";")[0].split("=")[-1]), "fasta")
 
-# Create clusters directories 
-#try:
-#    os.makedirs(news_clusters_dir)
-#    os.makedirs(news_clusters_cdr3_dir)
-#    os.makedirs(news_final_clusters_dir)
-#except FileExistsError:
-#    shutil.rmtree(news_clusters_dir)
-#    os.makedirs(news_clusters_dir)
-#    os.makedirs(news_clusters_cdr3_dir)
-#    os.makedirs(news_final_clusters_dir)
-
 # Get clusters mapping using C for get each cluster respresentant sequence ID and H for the sequences in each cluster
 match_id_clusters = clusters[clusters.iloc[:, 0] == "H"].iloc[:,8:]
 filtered_clusters = clusters[clusters.iloc[:, 0] == "C"]
@@ -94,6 +77,9 @@ cluster_seq_id = {
 
 for clus_id in filtered_clusters[8]:
     seqs_clus = match_id_clusters[match_id_clusters[9] == clus_id][8]
+    clus_id_orig = str(clus_id) if isinstance(seqs_clus.iloc[0], str) else clus_id
+    clus_id_series = pd.Series([clus_id_orig], name=seqs_clus.name)
+    seqs_clus = pd.concat([seqs_clus, clus_id_series])
     merge_clus_ig = pd.merge(seqs_clus, igblast, left_on=8, right_on='sequence_id', how='inner')
     output_cdrs_file = open("%s/%s.fasta"%(output_cdr3_clusters_dir,clus_id),"w")
     for rec in merge_clus_ig.iloc:

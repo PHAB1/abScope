@@ -1,0 +1,27 @@
+First file Clusterized Ordened By clusters lenght: 
+       0     1      2  3  ...  6  7                                         8  9
+87120  C  3637  20563  *  ...  *  *  010e6383-a157-4cbb-8a74-1fbee3a21a68-IGH  *
+87132  C  3649  14196  *  ...  *  *  08116cc9-a1c4-4b79-9d48-3516eb92f3b5-IGH  *
+87115  C  3632   2274  *  ...  *  *  51704d64-aa55-488e-a5e2-188bf27263e6-IGH  *
+83492  C     9   1307  *  ...  *  *  a180fd83-629c-4f5c-a223-eb66e86fc2b6-IGH  *
+84058  C   575   1087  *  ...  *  *  3ccfe115-9b0f-4d3f-af8c-ac947a4297c2-IGH  *
+...   ..   ...    ... ..  ... .. ..                                       ... ..
+84435  C   952      5  *  ...  *  *  f8b22288-ac27-40aa-9022-ca8df3184d92-IGH  *
+84712  C  1229      5  *  ...  *  *  cc934076-f585-4a2c-b7da-59aa5f78efcd-IGH  *
+84738  C  1255      5  *  ...  *  *  07d0470a-ff09-49f1-b318-2c70c083bc8e-IGH  *
+84881  C  1398      5  *  ...  *  *  0d8f0461-ff42-409b-aead-5fc53f25afb4-IGH  *
+84894  C  1411      5  *  ...  *  *  244ee983-b9f2-422c-ae8f-29f282d82840-IGH  *
+
+[1084 rows x 10 columns]
+File 'results/clustering/cdr/pellet_VH_R3/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/pellet_VH_R3/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+      0   1     2  3  4  5  6  7                                         8  9
+1794  C  22  1611  *  *  *  *  *  987c373a-bb4f-4b86-a574-ac6d84a817ce-IGK  *
+1789  C  17    44  *  *  *  *  *  6d9d987e-2db3-4718-87fa-3b55a4d96218-IGK  *
+1796  C  24    37  *  *  *  *  *  8032cf9c-a0c5-4f21-b147-f77165f79a09-IGK  *
+1793  C  21    21  *  *  *  *  *  933a715b-923b-4bac-b53a-5f71b77390d7-IGK  *
+1774  C   2     9  *  *  *  *  *  e2d885a8-0c1c-41c1-a93e-fd2d7e3e62fb-IGK  *
+1783  C  11     7  *  *  *  *  *  3a28f611-3530-4bc6-860b-2fb73b943819-IGK  *
+1800  C  28     5  *  *  *  *  *  9d4a6ad4-da99-43b3-b1e8-1cc783f86c16-IGK  *
+Data successfully updated in 'results/clustering/cdr/pellet_VH_R3/cdr3_clusters/cluster_seq_id.json'

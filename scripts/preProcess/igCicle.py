@@ -48,7 +48,7 @@ while count_ab < 3:
         "-germline_db_J", "%s/IGHLKJ_edit.fasta"%ig_db_path, 
         "-germline_db_V", "%s/IGHLKV_edit.fasta"%ig_db_path, 
         "-germline_db_D", "%s/IGHD_edit.fasta"%ig_db_path,
-        "-domain_system", "kabat",
+        "-domain_system", "imgt",
         "-query", "%s"%input_fasta, 
         "-outfmt", "19", # outfmt 19 for default table 
         "-show_translation", 
@@ -59,6 +59,7 @@ while count_ab < 3:
     print("End of igblast: %s sec"%(time.time()-start_time))
 
     cicleAnnot = pd.read_csv("%s/%s_igCicle.tsv"%(output_dir,count_ab), delimiter='\t', low_memory=False)
+    #cicleAnnot = cicleAnnot[cicleAnnot['sequence'].astype(str).apply(len) >= 100]
 
     try:
         meta_Annot_table = pd.merge(meta_Annot_table, cicleAnnot, on='sequence_id', how='outer')
@@ -70,6 +71,8 @@ while count_ab < 3:
     
     print("Starting Cicle Annotation")
     for rec in SeqIO.parse(input_fasta, "fasta"):
+        if len(rec.seq) < 100:
+            continue
         try:
             Annot_seq = (cicleAnnot[cicleAnnot["sequence_id"] == "%s"%(rec.id)]) # add id plus cicle in header
         except KeyError:

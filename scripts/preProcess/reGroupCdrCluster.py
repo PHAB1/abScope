@@ -13,7 +13,7 @@ parser.add_argument('-i', '--igcicle_out')
 parser.add_argument('-jo', '--json_out')
 args = parser.parse_args()
 
-min_seqs_cluster = 6
+min_seqs_cluster = 3
 
 # import snakemake inputs
 jsonPath=args.json_path # get json file with id mapping

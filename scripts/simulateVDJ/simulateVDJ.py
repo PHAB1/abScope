@@ -159,15 +159,17 @@ def gen_lib(df,ch_types,replicates,clones,f_error_list,f_mut_list,n_mut_list,ig_
     #ab_generated = 
     #print("Thre will be generated %s sequences"%ab_generated)
 
-    regions_list = [
-        "sequence",
-        "fwr1",
-        "cdr1",
-        "fwr2",
-        "cdr2",
-        "fwr3",
-        "cdr3",
-        "fwr4"]
+    #regions_list = [
+    #    "sequence",
+    #    "fwr1",
+    #    "cdr1",
+    #    "fwr2",
+    #    "cdr2",
+    #    "fwr3",
+    #    "cdr3",
+    #    "fwr4"]
+
+    regions_list = ["sequence"]
 
     # Create here the recombined sequences
     control_rec=[recombine(df, ch_types) for i in range(replicates)]
@@ -285,8 +287,8 @@ def main():
     ig_db_path = sys.argv[1]
 
     # Lib generation parmeters
-    replicates = 600 # number of V-D-J recombinations
-    clones = 30 # number of clones for replicate (each replicate is V-D-J recombination, each clone is related to an error or mutation condition in their respective list)
+    replicates = 30 # number of V-D-J recombinations
+    clones = 100 # number of clones for replicate (each replicate is V-D-J recombination, each clone is related to an error or mutation condition in their respective list)
     f_error_list = [0.01,0.05,0.1,0.15,0.2]
     f_mut_list = [0.01,0.05,0.1,0.15,0.2]
     n_mut_list = [1,2,3,4,5]

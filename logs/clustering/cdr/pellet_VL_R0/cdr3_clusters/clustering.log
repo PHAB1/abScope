@@ -1,0 +1,21 @@
+First file Clusterized Ordened By clusters lenght: 
+    0   1  2  3  4  5  6  7                                         8  9
+54  C  18  5  *  *  *  *  *  19b67107-4c59-4c52-a972-251c602f4198-IGH  *
+File 'results/clustering/cdr/pellet_VL_R0/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/pellet_VL_R0/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+       0    1     2  3  4  5  6  7                                         8  9
+49955  C   27  9969  *  *  *  *  *  494b29b3-d997-4a13-99a3-9e9b7d96a7d4-IGK  *
+49944  C   16  7665  *  *  *  *  *  70a08fbf-4723-4f23-8487-68ec53847dc3-IGK  *
+49951  C   23  3968  *  *  *  *  *  53afe938-30ff-4f7d-bd66-980a0e46542a-IGK  *
+49962  C   34  2396  *  *  *  *  *  72df0377-8012-4814-8d13-3c25c301e4c1-IGK  *
+49966  C   38  2327  *  *  *  *  *  461b153c-3d6e-4c54-ad4b-36319b07f6bc-IGK  *
+...   ..  ...   ... .. .. .. .. ..                                       ... ..
+50024  C   96     5  *  *  *  *  *  cd056a35-9cd0-4736-9113-b84ef4fb0c8b-IGK  *
+50095  C  167     5  *  *  *  *  *  e9491b33-f10c-412f-ba7c-c2f5b8731aa9-IGK  *
+50051  C  123     5  *  *  *  *  *  73f53543-63db-4033-966d-0bc55f93904b-IGK  *
+50182  C  254     5  *  *  *  *  *  cca38203-2941-42f0-8d33-3b7b81ca7a6b-IGK  *
+50237  C  309     5  *  *  *  *  *  baf711b9-19cc-4322-b430-109684e321a1-IGK  *
+
+[121 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/pellet_VL_R0/cdr3_clusters/cluster_seq_id.json'

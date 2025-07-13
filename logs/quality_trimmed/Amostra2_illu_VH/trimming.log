@@ -1,0 +1,42 @@
+Read1 before filtering:
+total reads: 111125
+total bases: 26584651
+Q20 bases: 24965676(93.9101%)
+Q30 bases: 24232614(91.1527%)
+
+Read2 before filtering:
+total reads: 111125
+total bases: 26509365
+Q20 bases: 21804912(82.2536%)
+Q30 bases: 20138174(75.9663%)
+
+Merged and filtered:
+total reads: 88558
+total bases: 32724391
+Q20 bases: 31224822(95.4176%)
+Q30 bases: 30609749(93.538%)
+
+Filtering result:
+reads passed filter: 195428
+reads failed due to low quality: 26822
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 630
+bases trimmed due to adapters: 75976
+reads corrected by overlap analysis: 20755
+bases corrected by overlap analysis: 41646
+
+Duplication rate: 36.3051%
+
+Insert size peak (evaluated by paired-end reads): 387
+
+Read pairs merged: 88558
+% of original read pairs: 79.6922%
+% in reads after filtering: 100%
+
+
+JSON report: results/quality_trimmed/Amostra2_illu_VH/fp.json
+HTML report: results/quality_trimmed/Amostra2_illu_VH/fp.html
+
+fastp -i /home/glicina/pbarros/Myleus140818-90577500/FASTQ_Generation_2018-08-15_16_53_55Z-115659977/Amostra2_L001-ds.c1a63e3282bb400ebff41dd5d7c72a2e/Amostra2_S2_L001_R1_001.fastq -I /home/glicina/pbarros/Myleus140818-90577500/FASTQ_Generation_2018-08-15_16_53_55Z-115659977/Amostra2_L001-ds.c1a63e3282bb400ebff41dd5d7c72a2e/Amostra2_S2_L001_R2_001.fastq --merge --merged_out results/quality_trimmed/Amostra2_illu_VH/qc.fastq -q 15 --out1 results/quality_trimmed/Amostra2_illu_VH/NoOverlap_R1.fastq --out2 results/quality_trimmed/Amostra2_illu_VH/NoOverlap_R2.fastq --unpaired1 results/quality_trimmed/Amostra2_illu_VH/R2_lowQual.fastq --unpaired2 results/quality_trimmed/Amostra2_illu_VH/R1_lowQual.fastq --html results/quality_trimmed/Amostra2_illu_VH/fp.html --json results/quality_trimmed/Amostra2_illu_VH/fp.json 
+fastp v0.25.0, time used: 1 seconds

@@ -1,0 +1,30 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Read1 before filtering:
+total reads: 67304
+total bases: 26371142
+Q20 bases: 26371142(100%)
+Q30 bases: 26371142(100%)
+
+Read1 after filtering:
+total reads: 67304
+total bases: 26371142
+Q20 bases: 26371142(100%)
+Q30 bases: 26371142(100%)
+
+Filtering result:
+reads passed filter: 67304
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+
+Duplication rate (may be overestimated since this is SE data): 0.243671%
+
+JSON report: results/quality_trimmed/comp_VL_R3/fp.json
+HTML report: results/quality_trimmed/comp_VL_R3/fp.html
+
+fastp -i /mnt/ssd/seq_PhageDisplay_17_mar/attila_process/COV_comp/VL/R1/R1.before.fastq -q 15 -o results/quality_trimmed/comp_VL_R3/qc.fastq --html results/quality_trimmed/comp_VL_R3/fp.html --json results/quality_trimmed/comp_VL_R3/fp.json 
+fastp v0.26.0, time used: 52 seconds

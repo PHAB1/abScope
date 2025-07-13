@@ -1,0 +1,28 @@
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3001  C   2  496  *  *  *  *  *  02ec27c5-6bf8-4f56-9bcc-59bc904eaae9-IGH  *
+3007  C   8  344  *  *  *  *  *  0083d7fe-b01c-460f-a21b-e4f9f8259736-IGH  *
+3010  C  11  300  *  *  *  *  *  ab5bd8f5-cc13-4bbc-a209-e950687aaff2-IGH  *
+3000  C   1  300  *  *  *  *  *  0142c106-d932-4015-9fe6-3abc2f4aef26-IGH  *
+3005  C   6  224  *  *  *  *  *  022063cd-fc43-44fb-b9b3-aaa6957d5358-IGH  *
+3002  C   3  220  *  *  *  *  *  04d8c98a-3b09-4a00-aa1b-714e082b2d71-IGH  *
+2999  C   0  212  *  *  *  *  *  8cc662ac-2b6d-4038-8860-3f016faa01f9-IGH  *
+3012  C  13  200  *  *  *  *  *  ea55edfd-b554-4e7c-83d7-b4141e36d158-IGH  *
+3013  C  14  147  *  *  *  *  *  da4df01f-fb41-4f4c-8b0f-55f79ab9aba4-IGH  *
+3011  C  12  100  *  *  *  *  *  3aec428f-8452-4912-85f5-04696d58ee63-IGH  *
+3004  C   5  100  *  *  *  *  *  266bb104-75f4-481e-902c-c5a12348a4eb-IGH  *
+3006  C   7  100  *  *  *  *  *  01cbeb43-77c8-46b2-8cd3-397ab2785f1b-IGH  *
+3014  C  15  100  *  *  *  *  *  565baa6f-48de-429a-8e39-36ee8e387f8e-IGH  *
+3003  C   4   81  *  *  *  *  *  09a6c365-d968-49a7-8605-08c1c076640d-IGH  *
+3009  C  10   56  *  *  *  *  *  498c6be4-5846-48b2-898c-669b6e37895e-IGH  *
+3008  C   9   19  *  *  *  *  *  064478a5-b5bc-4308-aaa5-a8be0cf8e221-IGH  *
+File 'results/clustering/cdr/nano_error01/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/nano_error01/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+      0  1     2  3  4  5  6  7                                         8  9
+3004  C  3  1399  *  *  *  *  *  00d55b33-56f7-404a-a00e-40f1913a5f80-IGK  *
+3002  C  1   800  *  *  *  *  *  02f79b92-7819-4235-ba66-68934fedfee6-IGK  *
+3003  C  2   500  *  *  *  *  *  016eb378-5d24-4896-bb14-fc0f358c9bee-IGK  *
+3005  C  4   200  *  *  *  *  *  0161a19a-37e2-4cb3-bc2c-a53b25a1a2e4-IGK  *
+3006  C  5   101  *  *  *  *  *  02ec27c5-6bf8-4f56-9bcc-59bc904eaae9-IGK  *
+Data successfully updated in 'results/clustering/cdr/nano_error01/cdr3_clusters/cluster_seq_id.json'

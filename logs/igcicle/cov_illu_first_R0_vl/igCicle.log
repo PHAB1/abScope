@@ -1,0 +1,18 @@
+Starting Cicle 1
+Runing igblast
+End of igblast: 21798.781395196915 sec
+Starting Cicle Annotation
+Traceback (most recent call last):
+  File "scripts/preProcess/igCicle.py", line 77, in <module>
+    Annot_seq = (cicleAnnot[cicleAnnot["sequence_id"] == "%s"%(rec.id)]) # add id plus cicle in header
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/ops/common.py", line 81, in new_method
+    return method(self, other)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/arraylike.py", line 40, in __eq__
+    return self._cmp_method(other, operator.eq)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/series.py", line 6096, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/ops/array_ops.py", line 293, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+  File "/home/glicina/pbarros/abScope_done_imp/.snakemake/conda/d3e295a969cb2e95aa334181849981b9_/lib/python3.8/site-packages/pandas/core/ops/array_ops.py", line 82, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+KeyboardInterrupt

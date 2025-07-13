@@ -1,0 +1,30 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Read1 before filtering:
+total reads: 3000
+total bases: 1121600
+Q20 bases: 1121600(100%)
+Q30 bases: 1121600(100%)
+
+Read1 after filtering:
+total reads: 3000
+total bases: 1121600
+Q20 bases: 1121600(100%)
+Q30 bases: 1121600(100%)
+
+Filtering result:
+reads passed filter: 3000
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+
+Duplication rate (may be overestimated since this is SE data): 0%
+
+JSON report: results/quality_trimmed/vh_illu_error01/fp.json
+HTML report: results/quality_trimmed/vh_illu_error01/fp.html
+
+fastp -i /home/glicina/pbarros/abScope/scripts/simulateVDJ/samples/illumina/error/1/VH_illu_treat_error01.fastq -q 15 -o results/quality_trimmed/vh_illu_error01/qc.fastq --html results/quality_trimmed/vh_illu_error01/fp.html --json results/quality_trimmed/vh_illu_error01/fp.json 
+fastp v0.25.0, time used: 0 seconds

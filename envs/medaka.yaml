@@ -6,6 +6,7 @@ channels:
 dependencies:
   - vsearch
   - medaka
+  - spoa
   - samtools
   - python=3.10
   - pandas

@@ -1,0 +1,28 @@
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/Amostra3_illu_VH/VH_seqs.fasta 100%
+7550122 nt in 20109 seqs, min 100, max 437, avg 375
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 140 Size min 1, max 3419, avg 143.6
+Singletons: 52, 0.3% of seqs, 37.1% of clusters
+Multiple alignments 100%
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/Amostra3_illu_VH/VL_seqs.fasta 100%
+100889 nt in 338 seqs, min 99, max 363, avg 298
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 35 Size min 1, max 88, avg 9.7
+Singletons: 22, 6.5% of seqs, 62.9% of clusters
+Multiple alignments 100%

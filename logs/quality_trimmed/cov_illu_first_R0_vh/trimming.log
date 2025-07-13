@@ -1,0 +1,30 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Read1 before filtering:
+total reads: 36785
+total bases: 16967761
+Q20 bases: 16967761(100%)
+Q30 bases: 16967761(100%)
+
+Read1 after filtering:
+total reads: 36785
+total bases: 16967761
+Q20 bases: 16967761(100%)
+Q30 bases: 16967761(100%)
+
+Filtering result:
+reads passed filter: 36785
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+
+Duplication rate (may be overestimated since this is SE data): 0.005437%
+
+JSON report: results/quality_trimmed/cov_illu_first_R0_vh/fp.json
+HTML report: results/quality_trimmed/cov_illu_first_R0_vh/fp.html
+
+fastp -i /mnt/ssd/phage_COVID_first/attila_files_COVID_Renato/Covid_phage_NGS_Data_Atilla_comp_pellet/Renato_phage_covid_Imune_compet/VH/R0/R0.nt.fastq -q 15 -o results/quality_trimmed/cov_illu_first_R0_vh/qc.fastq --html results/quality_trimmed/cov_illu_first_R0_vh/fp.html --json results/quality_trimmed/cov_illu_first_R0_vh/fp.json 
+fastp v0.26.0, time used: 24 seconds

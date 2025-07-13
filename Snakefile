@@ -25,6 +25,9 @@ clusterCdr3_script = "scripts/preProcess/cluster_cdr3.bash"
 reGroupCdrCluster_script = "scripts/preProcess/reGroupCdrCluster.py"
 map_clusters_script = "scripts/preProcess/mapClusters.py"
 polish_script = "scripts/preProcess/polish.py"
+define_clones_script = "scripts/script_analysis/recursive_define_clones.sh"
+dupcount_script = "scripts/script_analysis/dupcount_col.sh"
+list_fasta_script = "scripts/preProcess/list_fasta.py"
 
 # envs
 pre_process_env = "envs/preProcess.yaml"
@@ -55,7 +58,8 @@ rule all:
         expand(f"{CLUSTERING_CDR}/{{sample}}/new_clusters/new_cdr3_clusters/new_final_clusters/done.txt", sample=samples), # pre Medaka done file
         expand(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus", sample=samples),
         expand(f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta", sample=samples),
-        expand(f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv", sample=samples)
+        expand(f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv", sample=samples),
+        expand(f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation_dup.tsv", sample=samples)
 
 rule qualityTrimming:
     conda:
@@ -121,14 +125,16 @@ rule igAnnotate:
 
 	# Cicle 1
 	igblastn -germline_db_J $ig_db_path/IGHLKJ_edit.fasta -germline_db_V $ig_db_path/IGHLKV_edit.fasta -germline_db_D $ig_db_path/IGHD_edit.fasta \
-	    -domain_system kabat -query {output.cicle1_passed} -auxiliary_data $ig_db_path/human_gl.aux \
+	    -domain_system imgt -query {output.cicle1_passed} -auxiliary_data $ig_db_path/human_gl.aux \
 	    -out {output.igcicle1} -num_threads 2 -outfmt 19 -show_translation
+
 	    
 	# Cicle 2 if exist
 	if [ -f {output.cicle2_passed} ] && [ -s {output.cicle2_passed} ]; then
 	    igblastn -germline_db_J $ig_db_path/IGHLKJ_edit.fasta -germline_db_V $ig_db_path/IGHLKV_edit.fasta -germline_db_D $ig_db_path/IGHD_edit.fasta \
-	    -domain_system kabat -query {output.cicle2_passed} -auxiliary_data $ig_db_path/human_gl.aux \
+	    -domain_system imgt -query {output.cicle2_passed} -auxiliary_data $ig_db_path/human_gl.aux \
 	    -out {output.igcicle2} -num_threads 2 -outfmt 19 -show_translation
+
 	else
 	    echo "cicle 2 doesn't produced annotation"
 	fi
@@ -151,7 +157,7 @@ rule rawClustering:
         """
 	n_lines_vh=$(wc -l < {input.vh})
 	if [ -f {input.vh} ] && [ -s {input.vh} ] && [ $n_lines_vh -gt 20 ]; then
-            vsearch --cluster_fast {input.vh} --id 0.75 --uc {output.vh_uc} \
+            vsearch --cluster_fast {input.vh} --id 0.78 --uc {output.vh_uc} \
                 --target_cov 0.9 --minqt 0.9 --consout {output.vh_cons} >> {log} 2>&1
 	else
 	    touch {output.vh_uc} {output.vh_cons}
@@ -159,7 +165,7 @@ rule rawClustering:
         
 	n_lines_vl=$(wc -l < {input.vl})
 	if [ -f {input.vl} ] && [ -s {input.vl} ] && [ $n_lines_vl -gt 20 ]; then
-            vsearch --cluster_fast {input.vl} --id 0.75 --uc {output.vl_uc} \
+            vsearch --cluster_fast {input.vl} --id 0.78 --uc {output.vl_uc} \
                 --target_cov 0.9 --minqt 0.9 --consout {output.vl_cons} >> {log} 2>&1
 	else
             touch {output.vl_uc} {output.vl_cons}
@@ -187,7 +193,7 @@ rule mapClusters:
         """
         # process VH ## Arrumar geração do meta_VH e meta_VL aqui ##
 	n_lines_vh=$(wc -l < {input.vh_fa})
-	if [ -f {input.vh_fa} ] && [ -s {input.vh_fa} ] && [ $n_lines_vh -gt 10 ]; then # depois substituir pelo n minimo de seqs p/ formar um cluster
+	if [ -f {input.vh_fa} ] && [ -s {input.vh_fa} ] && [ $n_lines_vh -gt 20 ]; then # depois substituir pelo n minimo de seqs p/ formar um cluster
             python3 {map_clusters_script} {input.vh_fa} {input.vh_uc} {input.igcicle_1} \
                 {input.igcicle_2} VH {output.done} >> {log} 2>&1 
 	else
@@ -196,7 +202,7 @@ rule mapClusters:
 
         # process VL
 	n_lines_vl=$(wc -l < {input.vl_fa})
-	if [ -f {input.vl_fa} ] && [ -s {input.vl_fa} ] && [ $n_lines_vl -gt 10 ]; then
+	if [ -f {input.vl_fa} ] && [ -s {input.vl_fa} ] && [ $n_lines_vl -gt 20 ]; then
             python3 {map_clusters_script} {input.vl_fa} {input.vl_uc} {input.igcicle_1} \
                 {input.igcicle_2} VL {output.done} >> {log} 2>&1
         else
@@ -204,7 +210,7 @@ rule mapClusters:
 	fi
 
         output_dir=$(dirname {output.done})
-        ls $output_dir/*.fasta > {output.done}
+	python3 {list_fasta_script} $output_dir {output.done}
         """
 
 rule cdrClustering:
@@ -245,7 +251,8 @@ rule prePolish:
 
         # create the done file
         output_dir=$(dirname {output.done})
-        ls $output_dir/*.fasta >> {output.done}
+        #ls $output_dir/*.fasta >> {output.done}
+	python3 {list_fasta_script} $output_dir {output.done}
         """
 
 # run medaka on selected groups
@@ -259,8 +266,6 @@ rule Polish:
     output:
         MEDAKA_OUTPUT_DIR=directory(f"{CLUSTERING_CDR}/{{sample}}/medaka_consensus"),
         FINAL_CONSENSUS=f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta"
-    log:
-        f"{LOG_DIR}/consensus/{{sample}}/cdr3_consensus.log"
     shell:
         """
 	python3 {polish_script} {input.CLUSTERS_CONSENSUS_DIR} {input.NEWS_FINAL_CLUSTERS} {input.json} 2 {output.FINAL_CONSENSUS} {output.MEDAKA_OUTPUT_DIR}
@@ -275,7 +280,9 @@ rule igAnnotateConsensus:
     input:
         consensus=f"{CONSENSUS_DIR}/{{sample}}/cdr3_consensus.fasta",
     output:
-        f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv"
+        annot=f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation.tsv",
+        clones=f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation_clone-pass.tsv",
+        dup_count=f"{ANNOTATION_DIR}/{{sample}}/igblastn_annotation_dup.tsv"
     log:
         f"{LOG_DIR}/annotation/{{sample}}/annotation.log"
     shell:
@@ -283,6 +290,13 @@ rule igAnnotateConsensus:
         igblastn -germline_db_J references/database/human/ig_db/IGHLKJ_edit.fasta -germline_db_V references/database/human/ig_db/IGHLKV_edit.fasta -germline_db_D references/database/human/ig_db/IGHD_edit.fasta \
          -query {input.consensus} -outfmt 19 \
          -show_translation -auxiliary_data references/database/human/ig_db/human_gl.aux \
-         -num_threads 8 -out {output} \
-         -domain_system kabat
+         -num_threads 8 -out {output.annot} \
+         -domain_system imgt
+        
+	# define clones script
+	output_dir=$(dirname {output.annot})
+	bash {define_clones_script} $output_dir $output_dir
+
+	# add duplicate count column 
+        {dupcount_script} {output.clones} {output.dup_count}
         """ 

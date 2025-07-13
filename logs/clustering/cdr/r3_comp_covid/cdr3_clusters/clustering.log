@@ -1,0 +1,33 @@
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+411736  C    4434  2777  *  ...  *  *  1394efaf-2560-4bba-8212-ae734c809577-IGH  *
+492547  C   85245  1834  *  ...  *  *  f8b69a91-0110-4156-8be4-14b7f51d37fc-IGH  *
+542588  C  135286  1305  *  ...  *  *  51d2529e-ef6a-4b32-9bed-71234d893f00-IGH  *
+559717  C  152415  1187  *  ...  *  *  223600cc-bf5d-45f9-90a7-6647778c857d-IGH  *
+561782  C  154480   983  *  ...  *  *  591573b7-d01b-4f9a-b3a7-d2f6a977c2f7-IGH  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+420669  C   13367     5  *  ...  *  *  bf38e802-8efc-482b-9c73-afa9ab9d0251-IGH  *
+499250  C   91948     5  *  ...  *  *  d68e4c95-731d-49e5-a4a5-91db5c08f8e5-IGH  *
+499199  C   91897     5  *  ...  *  *  c2d1bfd1-e78a-41e5-949e-f8225df33725-IGH  *
+567932  C  160630     5  *  ...  *  *  aa5259d2-5c82-483f-89f3-8a53ccbb5f5f-IGH  *
+407910  C     608     5  *  ...  *  *  4a647c3c-baf0-4435-88e6-760c0e4151ed-IGH  *
+
+[12900 rows x 10 columns]
+File 'results/clustering/cdr/r3_comp_covid/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/r3_comp_covid/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+573384  C  144575  4381  *  ...  *  *  cb7fb308-ebf5-4488-9d15-02538fc6f575-IGK  *
+587648  C  158839  3642  *  ...  *  *  23699479-772e-4114-a076-34d4173d8276-IGK  *
+583906  C  155097  2871  *  ...  *  *  6dddaf97-e6a1-4866-8800-fdc976f9c91f-IGK  *
+588898  C  160089  2303  *  ...  *  *  ec9c0734-9b95-4bca-80c4-ac66471e304f-IGK  *
+586361  C  157552  2267  *  ...  *  *  e2eeb42d-273b-45ca-8cf9-207b9946e1a5-IGK  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+433519  C    4710     5  *  ...  *  *  1819d085-d565-4f89-8225-47c29f5ea3d3-IGK  *
+433480  C    4671     5  *  ...  *  *  07470540-eadd-477d-ae37-691f9b70e62b-IGK  *
+542509  C  113700     5  *  ...  *  *  1a549c5c-d02b-43e2-a0b2-7bc74c75755b-IGK  *
+542842  C  114033     5  *  ...  *  *  47c0e03c-48c7-449c-8609-56c25342df79-IGK  *
+542822  C  114013     5  *  ...  *  *  457c2058-08d8-457c-aa88-560732a326fa-IGK  *
+
+[10355 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/r3_comp_covid/cdr3_clusters/cluster_seq_id.json'

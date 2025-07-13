@@ -1,0 +1,33 @@
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+435715  C  119885  2487  *  ...  *  *  dab8bad7-62fd-4103-ae96-7883c949d239-IGH  *
+385671  C   69841  1211  *  ...  *  *  a01f55d3-36e3-439a-9f4c-2206bffc19ff-IGH  *
+330966  C   15136   871  *  ...  *  *  a55e210e-c293-4a15-88e4-80ebf560f2b3-IGH  *
+322086  C    6256   846  *  ...  *  *  1d524cf3-b8c4-4f3d-81c2-5bf7b0c248e9-IGH  *
+436901  C  121071   825  *  ...  *  *  feeb451d-fa00-4f94-91a4-9eb67e7da556-IGH  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+316621  C     791     5  *  ...  *  *  c1b39a54-e5ed-4469-b3bf-37f2cc36c559-IGH  *
+316508  C     678     5  *  ...  *  *  6a0af543-1aee-4958-ba0e-7e513047b5d3-IGH  *
+447698  C  131868     5  *  ...  *  *  17f86abc-7873-4fd7-bc08-d4c5b87e2f96-IGH  *
+447680  C  131850     5  *  ...  *  *  1154563c-82a8-46c3-8bf5-b964d4ad36e6-IGH  *
+448131  C  132301     5  *  ...  *  *  a2fd0de6-00cd-4091-a3d5-842f356906c0-IGH  *
+
+[9626 rows x 10 columns]
+File 'results/clustering/cdr/r3_pellet_covid/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/r3_pellet_covid/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+447126  C  114980  3040  *  ...  *  *  0c0d345e-2c28-4d00-a448-6de2d5bd9399-IGK  *
+455788  C  123642  1663  *  ...  *  *  3b45f9b0-f4c4-425f-b2d7-119cb2dcf612-IGK  *
+456878  C  124732  1569  *  ...  *  *  18e8aa6b-5508-457e-bc72-e95619af518f-IGK  *
+461011  C  128865  1499  *  ...  *  *  6413d489-ef0e-4f60-ae64-20b047dbfa5e-IGK  *
+462049  C  129903  1319  *  ...  *  *  1d526871-7805-43b5-9d73-4c1d742d7d11-IGK  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+335057  C    2911     5  *  ...  *  *  aba341f0-787a-4ebd-8b1c-18c84eea03b1-IGK  *
+347856  C   15710     5  *  ...  *  *  86353d04-2092-43c7-b736-162a454f4e58-IGK  *
+424335  C   92189     5  *  ...  *  *  1e4babb6-90fa-4c77-a637-d20e2f196306-IGK  *
+424293  C   92147     5  *  ...  *  *  17c30b86-a2d1-4a35-aa63-c9dc08356cab-IGK  *
+424251  C   92105     5  *  ...  *  *  1249aa81-85a8-44a8-93df-b88499dcd6a4-IGK  *
+
+[7839 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/r3_pellet_covid/cdr3_clusters/cluster_seq_id.json'

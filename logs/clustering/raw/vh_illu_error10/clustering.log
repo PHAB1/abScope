@@ -1,0 +1,14 @@
+vsearch v2.30.0_linux_x86_64, 94.1GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file results/igcicle/vh_illu_error10/VH_seqs.fasta 100%
+1117430 nt in 3000 seqs, min 321, max 397, avg 372
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 30 Size min 49, max 151, avg 100.0
+Singletons: 0, 0.0% of seqs, 0.0% of clusters
+Multiple alignments 100%

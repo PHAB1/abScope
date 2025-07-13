@@ -1,4 +1,4 @@
-input: "samples2.csv"
+input: "samples_covid_illu_last.csv"
 output: "results"
 ## fastp config ##
 

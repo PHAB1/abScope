@@ -1,0 +1,43 @@
+First file Clusterized Ordened By clusters lenght: 
+       0     1     2  3  ...  6  7                                         8  9
+88541  C   568  5931  *  ...  *  *  14629a4a-acb1-441e-b12a-1b5490132072-IGH  *
+88010  C    37  4666  *  ...  *  *  61b0946d-8fdb-452b-ab8a-e54f9d6c289a-IGH  *
+88221  C   248  3522  *  ...  *  *  c34a79c6-9715-43fc-a67a-203b79471e74-IGH  *
+88216  C   243  3431  *  ...  *  *  855b7616-d4f8-4f48-89f8-7571205ab4ed-IGH  *
+88014  C    41  2897  *  ...  *  *  ac7167e3-519b-4f23-9647-75725adca1c5-IGH  *
+...   ..   ...   ... ..  ... .. ..                                       ... ..
+88155  C   182     5  *  ...  *  *  ea44bdcf-64a4-4d8b-a828-7c58a1f50fc8-IGH  *
+88617  C   644     5  *  ...  *  *  d885d45d-cce1-4a8c-bbe5-15103b63c931-IGH  *
+88612  C   639     5  *  ...  *  *  9d678d0c-d305-49a3-a7ef-de307273998b-IGH  *
+88008  C    35     5  *  ...  *  *  e1b56e7c-020e-4cc3-bfe7-5739b435bdfe-IGH  *
+89039  C  1066     5  *  ...  *  *  5ef4e31d-7218-4470-a660-6dac7abf8a29-IGH  *
+
+[426 rows x 10 columns]
+File 'results/clustering/cdr/Amostra1_illu_VH/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/Amostra1_illu_VH/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+     0    1    2  3  4  5  6  7                                         8  9
+781  C  108  145  *  *  *  *  *  20868026-fe18-45c5-a5fb-a3e977a8bddd-IGK  *
+794  C  121   72  *  *  *  *  *  536c2b54-ab8c-488e-b55e-6e85c7fe9e2f-IGK  *
+676  C    3   67  *  *  *  *  *  a4f84adc-b3b6-4d70-85d9-c9097f208ab9-IGK  *
+677  C    4   59  *  *  *  *  *  0e8b6c4f-f2b2-4283-a559-3b579b1a79b1-IGK  *
+674  C    1   21  *  *  *  *  *  2fb46222-961b-450c-9698-fc373d5fd0a7-IGK  *
+792  C  119   18  *  *  *  *  *  46ce664f-30a3-4272-8a35-bb6a8c48ee90-IGK  *
+693  C   20   13  *  *  *  *  *  eef1e054-a4bd-43b6-82c7-3e960195c050-IGK  *
+782  C  109   12  *  *  *  *  *  22bb92b1-038c-404f-a1b0-a6b34e3dca77-IGK  *
+751  C   78   10  *  *  *  *  *  92f6bb21-1965-4c2c-bb27-518734dddfd1-IGK  *
+777  C  104    9  *  *  *  *  *  4c202e99-e2cb-4fe1-b4e2-4c4c6ae8c890-IGK  *
+775  C  102    9  *  *  *  *  *  9ed7e1c2-fbe1-4905-a586-3845d6366bc5-IGK  *
+747  C   74    8  *  *  *  *  *  836b9708-4b41-4404-988f-7670b26a1853-IGK  *
+784  C  111    7  *  *  *  *  *  86e3221a-2603-454f-96e0-c5572447714c-IGK  *
+675  C    2    6  *  *  *  *  *  6b7cc6da-f168-4a46-aefa-4785c8007302-IGK  *
+762  C   89    6  *  *  *  *  *  addc1840-59f7-4b20-80e8-22b41c62c766-IGK  *
+738  C   65    6  *  *  *  *  *  2d5e54db-536c-4f4c-a933-1d20be1ec839-IGK  *
+778  C  105    6  *  *  *  *  *  8bbb06d9-a991-4a7b-9af1-163ae3e4e2b3-IGK  *
+723  C   50    5  *  *  *  *  *  477a0db9-696f-4bb8-b334-ec3eb3e98f65-IGK  *
+673  C    0    5  *  *  *  *  *  3b2e63bb-0fa8-459e-8812-623103875b27-IGK  *
+769  C   96    5  *  *  *  *  *  2b9dabce-facb-4d6c-93a4-335abee93bde-IGK  *
+763  C   90    5  *  *  *  *  *  ee098764-e9bd-4c01-b02b-64e9f8c9c7e4-IGK  *
+727  C   54    5  *  *  *  *  *  16c13e2d-0e85-4c6e-9621-663fd9b0be49-IGK  *
+748  C   75    5  *  *  *  *  *  bf404bc2-14c6-4f44-b5f2-9fe1a7aa831e-IGK  *
+Data successfully updated in 'results/clustering/cdr/Amostra1_illu_VH/cdr3_clusters/cluster_seq_id.json'

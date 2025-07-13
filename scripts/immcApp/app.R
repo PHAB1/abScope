@@ -25,6 +25,7 @@ suppressWarnings(library(plot3D))
 suppressWarnings(library(MHTdiscrete))
 suppressWarnings(library(shinycssloaders))
 suppressWarnings(library(shinyjs))
+#suppressWarnings(library(corrplot))
 
 # Function to summarize data, # http://sthda.com/english/wiki/ggplot2-error-bars-quick-start-guide-r-software-and-data-visualization
 data_summary <- function(data, varname, groupnames){
@@ -47,17 +48,34 @@ data_summary <- function(data, varname, groupnames){
 
 # colnames
 #used_cols <- c("locus", "v_call","c_call","d_call","j_call", "fwr1","cdr1","fwr2","cdr2","fwr3","cdr3","fwr4","v_score","v_identity","duplicate_count","clone_id","subject_id","cprimer","seq_len","sample_id","clone_size_count","clone_size_freq")
-used_cols <- c("junction_aa","locus", "v_call","j_call","duplicate_count","clone_id","subject_id","seq_len","sample_id","clone_size_count","clone_size_freq")
+used_cols <- c("junction_aa","locus", "v_call","c_call","d_call","j_call","duplicate_count","clone_id","subject_id","cprimer","seq_len","sample_id","clone_size_count","clone_size_freq")
 
 # Functions
 df2stat <- function(df, colSamples, colValues, colType, controlPattern, TratPattern, colSubType=FALSE) {
-  df <- select(df, colSamples, colValues, colType)
-  df$copy_freq <- df$copy_freq*10000
-  df <- df %>% 
-    spread(key=colSamples, value=colValues) %>%
-    mutate_all(~ifelse(is.na(.), 1, .))
+  if ("total_n" %in% names(df)) {
+      df <- select(df, colSamples, colValues, colType, total_n)
+  } else {
+      r0_count_seq <- sum(df$seq_count)
+      df <- select(df, colSamples, colValues, colType)
+  }
+  
+  df$copy_freq <- df$copy_freq*1000000
+  
+  if(colSubType) {
+    total_n_r0 <- as.numeric(filter(df,sample_id==controlPattern)$total_n[1])
+    total_n_r3 <- as.numeric(filter(df,sample_id==TratPattern)$total_n[1])
+    df$total_n <- NULL
+    df <- df %>% 
+      spread(key=colSamples, value=colValues)
+    df[[controlPattern]][is.na(df[[controlPattern]])] <- 1000000/total_n_r0
+    df[[controlPattern]][df[[controlPattern]] == 0] <- 1000000/total_n_r0
+    df[[TratPattern]][is.na(df[[TratPattern]])] <- 1000000/total_n_r3
+    df[[TratPattern]][df[[TratPattern]] == 0] <- 1000000/total_n_r3
+  } else {
+    df <- df %>% spread(key=colSamples, value=colValues) %>% mutate_all(~ifelse(is.na(.), 1000000/r0_count_seq, .))
+  }
 
-  df$log2FoldChange <- log2((meanByPatter(df,TratPattern) / (meanByPatter(df,controlPattern))))
+  df$FoldChange <- ((meanByPatter(df,TratPattern) / (meanByPatter(df,controlPattern))))
   
   #print(shapiro.test(c_across(contains(TratPattern))))
   #print(shapiro.test(c_across(contains(controlPattern))))
@@ -72,17 +90,17 @@ df2stat <- function(df, colSamples, colValues, colType, controlPattern, TratPatt
 
   # Após os cálculos, reverter os valores reais das frequências:
   # As colunas de frequência são aquelas que não são nem o tipo nem os valores calculados.
-  computed_cols <- c(colType, "log2FoldChange", "p_value", "p_adjusted")
+  computed_cols <- c(colType, "FoldChange", "p_value", "p_adjusted")
   sample_cols <- setdiff(names(df), computed_cols)
   #df <- df %>% mutate(across(all_of(sample_cols), ~ ifelse(. == 1, 0, . / 1000000)))
 
   # Arredondar os valores dos cálculos para 2 casas decimais
-  df <- df %>% mutate_if(is.numeric, ~ round(., 2))
+  df <- df %>% mutate_if(is.numeric, ~ round(., 2)) %>% arrange(desc(FoldChange))
 
   tryCatch({ 
-    df <- select(df, colType, log2FoldChange, p_value, p_adjusted, everything())
+    df <- select(df, colType, FoldChange, p_value, p_adjusted, everything())
   }, error = function(e) {
-    df <- select(df, colType, log2FoldChange, everything())
+    df <- select(df, colType, FoldChange, everything())
   })
 }
 
@@ -228,6 +246,11 @@ ui <- fluidPage(
         sliderInput("perMaxSample", "Sampling by the largest group:",
           min = 0, max = 100,
           value = 100),
+	
+	# Input: Sampling samples by locus ----
+	checkboxGroupInput("igh_igk_choice", "IGH or IGK:",
+	  choices = c("IGH", "IGK"),
+	  selected = c("IGH","IGK")),
 
         uiOutput("checkboxes_subject"),
         uiOutput("checkboxes_sample"),
@@ -283,9 +306,10 @@ ui <- fluidPage(
         radioButtons("CVDJ_type", "Choose C, V, D or J Type:",
           choices = c(c_call = "c_call",
           v_call = "v_call",
-          d_call = "d_call",
           j_call = "j_call",
-          CDR3 = "junction_aa"),
+          CDR3 = "junction_aa",
+          CDRs = "CDRs",
+	  Sequence = "sequence_aa"),
           selected = "v_call"), 
 
         # Input: Mode Family or Gene ----
@@ -300,7 +324,6 @@ ui <- fluidPage(
           radioButtons("CVDJ_type_usage", "Choose C, V, D or J Type:",
             choices = c(c_call = "c_call",
             v_call = "v_call",
-            d_call = "d_call",
             j_call = "j_call"),
             selected = "v_call"),
 
@@ -375,7 +398,7 @@ ui <- fluidPage(
 	      id = 'cluster_plots',
 	  
 	      tabPanel("PCA",
-              rglwidgetOutput("PCA", width = "auto", height = "auto"),
+              rglwidgetOutput("PCA", width = "800px", height = "600px"),
 	
 	      # Horizontal line ----
 	      #tags$hr(),
@@ -602,19 +625,22 @@ server <- function(input, output, session) {
 
     # check if columns cprimers and c_call are presents
     if (!('cprimer' %in% names(df))) {
-        df$cprimer <- NA  # Create 'cprimer' column and fill with NA
+        df$cprimer <- ""  # Create 'cprimer' column and fill with NA
     }
 
     if (!('c_call' %in% names(df))) {
-        df$cprimer <- NA  # Create 'c_call' column and fill with NA
+        df$c_call <- ""  # Create 'c_call' column and fill with NA
     }
 
     df <- df %>%
-      filter(!is.na(v_call), !is.na(j_call), !is.na(junction_length)) %>%
+      filter(!is.na(c_call), !is.na(v_call), !is.na(j_call), !is.na(junction_length)) %>%
       mutate(v_call = sub(",.*","",v_call)) %>%
       mutate(j_call = sub(",.*","",j_call)) %>%
+      mutate(c_call = sub(",.*","",c_call)) %>%
       mutate(v_call = sub("\\*.*","",v_call)) %>%   
       mutate(j_call = sub("\\*.*","",j_call)) %>%
+      mutate(c_call = sub("\\*.*","",c_call)) %>%
+      mutate(cprimer = sub("_.*","",cprimer)) %>%
       mutate(across(c(duplicate_count, seq_len, clone_size_count, clone_size_freq), as.numeric))
 
     # Calcular o número de amostras baseado no maior grupo
@@ -626,15 +652,33 @@ server <- function(input, output, session) {
     n_amostras <- round(n_amostras)  # Arredondar para número inteiro
     
     # Aplicar a amostragem para todos os grupos, com peso para duplicated count column
-    df <- df %>%
-      group_by(sample_id) %>%
-      group_modify(~ {
-        n_group <- nrow(.x)
-        .x %>% slice_sample(n = min(n_group, n_amostras), weight_by = duplicate_count)
-      }) %>%
-      ungroup()
+    #df <- df %>%
+    #  group_by(sample_id) %>%
+    #  group_modify(~ {
+    #    n_group <- nrow(.x)
+    #    .x %>% slice_sample(n = min(n_group, n_amostras), weight_by = duplicate_count)
+    #  }) %>%
+    #  ungroup()
 
-  }) %>% bindCache(input$file1, input$perMaxSample)
+  #}) %>% bindCache(input$file1, input$perMaxSample)
+
+    df <- df %>%
+        { # Usamos chaves para permitir múltiplas operações condicionais
+            if ("IGH" %in% input$igh_igk_choice && !("IGK" %in% input$igh_igk_choice)) {
+                filter(., locus == "IGH")
+            } else if ("IGK" %in% input$igh_igk_choice && !("IGH" %in% input$igh_igk_choice)) {
+                filter(., locus == "IGK")
+            } else {
+                . # Se nenhum, ou ambos estiverem marcados, retorna o dataframe sem filtro
+            }
+        } %>%
+        group_by(sample_id) %>%
+        group_modify(~ {
+            n_group <- nrow(.x)
+            .x %>% slice_sample(n = min(n_group, n_amostras), weight_by = duplicate_count)
+        }) %>%
+        ungroup()
+    }) %>% bindCache(input$file1, input$perMaxSample, input$igh_igk_choice) # Adicionado input$igh_igk_choice aqui também
 
   output$contents <- DT::renderDataTable(DT::datatable({
     selected_junctions <- strsplit(input$junction_aa_input, " ")[[1]]
@@ -691,8 +735,8 @@ server <- function(input, output, session) {
 
       # PCA samples plot
       df <- df %>%
-        select(sample_id, j_call, v_call) %>% 
-        mutate(cjdv_call = paste0(j_call, v_call)) %>% 
+        select(sample_id, c_call, j_call, v_call) %>% 
+        mutate(cjdv_call = paste0(c_call, j_call, v_call)) %>% 
         select(sample_id, cjdv_call) %>% 
         table(.) %>% 
         as.data.frame(.) %>% 
@@ -711,56 +755,120 @@ server <- function(input, output, session) {
       fviz_eig(pca_res) 
   })
 
-  output$PCA <- renderRglwidget({
-    selected_junctions <- strsplit(input$junction_aa_input, " ")[[1]]
-    selected_junctions <- trimws(selected_junctions)
-    
-    df <- df()[ df()$subject_id %in% input$subjects & df()$sample_id %in% input$samples & !(df()$junction_aa %in% selected_junctions), ]
-
-    df_tags <- df %>%
-      select(sample_id,subject_id)
-    df_tags <- as.data.frame(unique(df_tags))
-
-    # PCA samples plot
-    df <- df %>%
-      select(sample_id, j_call, v_call) %>% 
-      mutate(cjdv_call = paste0(j_call, v_call)) %>% 
-      select(sample_id, cjdv_call) %>% 
-      table(.) %>% 
-      as.data.frame(.) %>% 
-      mutate(Freq = Freq * 1000000 / sum(.$sample_id == sample_id)) %>%
-      spread(key="sample_id",value="Freq")
-
-    df <- as.data.frame(df)
-    rownames(df) <- df$cjdv_call
-    df$cjdv_call <- NULL
-    df <- t(df)
-
-    #plot
-    df<-df[ , which(apply(df, 2, var) != 0)]
-    t <- as.data.frame(df)
-    t <- t[order(rownames(t)),]
-
-    pca_res <- prcomp(df, scale. = FALSE)
-    
-    colorBy <- input$colorByCluster
-    colors_names <- coll_names(df_tags$subject_id)
-    df_tags <- unique(merge(df_tags,colors_names,by="subject_id"))
-    df_tags <- df_tags[order(df_tags$sample_id),]
-    #eig_perc <- (get_eig(pca_res))$variance.percent %>% round(digits=2)
-    eig_perc <- (pca_res$sdev^2 / sum(pca_res$sdev^2) * 100) %>% round(2)
-    
-    open3d(useNULL=T)
-    plot3d(as.data.frame(pca_res$x[,1:3]),size=8,radius=100,type="s",col=df_tags$collors, box = FALSE, xlab=paste0("PC1 ",eig_perc[1]),ylab=paste0("PC2 ",eig_perc[2]),zlab=paste0("PC3 ",eig_perc[3]))
-    if(colorBy == "subject_id") {
-      text3d(as.data.frame(pca_res$x[,1:3]),texts=c(df_tags$subject_id),cex= 0.7, pos=3)
-    } else {
-      text3d(as.data.frame(pca_res$x[,1:3]),texts=c(df_tags$sample_id),cex= 0.7, pos=3)
-    }
-    rglwidget()
-
-  }) 
   
+output$PCA <- renderRglwidget({
+  # --- Bibliotecas ---
+  library(dplyr)
+  library(tidyr)
+  library(rgl)
+
+  # --- 1. Inputs e Filtro Inicial ---
+  selected_junctions <- strsplit(input$junction_aa_input, " ")[[1]]
+  selected_junctions <- trimws(selected_junctions)
+  
+  df_filtered <- df()[df()$subject_id %in% input$subjects & 
+                      df()$sample_id %in% input$samples & 
+                      !(df()$junction_aa %in% selected_junctions), ]
+  
+  if (nrow(df_filtered) == 0 || length(unique(df_filtered$sample_id)) < 2) {
+    showNotification("Não há dados suficientes para a PCA com os filtros selecionados.", type = "warning")
+    return(NULL)
+  }
+  
+  df_tags <- df_filtered %>%
+    select(sample_id, subject_id) %>%
+    distinct()
+
+  # --- 2. Criação da Matriz de Contagem ---
+  count_matrix <- df_filtered %>%
+    mutate(cjdv_call = paste0(c_call, j_call, v_call)) %>%
+    count(sample_id, cjdv_call, name = "Freq") %>%
+    pivot_wider(names_from = cjdv_call, values_from = Freq, values_fill = 0)
+  
+  count_matrix <- as.data.frame(count_matrix)
+  rownames(count_matrix) <- count_matrix$sample_id
+  count_matrix$sample_id <- NULL
+
+  # --- 3. Filtro de Features Raras ---
+  min_samples_present <- 2 
+  features_to_keep <- colSums(count_matrix > 0) >= min_samples_present
+  count_matrix_filtered <- count_matrix[, features_to_keep]
+  
+  if (ncol(count_matrix_filtered) < 2 || nrow(count_matrix_filtered) < 2) {
+    showNotification("Não restaram features/amostras para a PCA após a filtragem.", type = "error")
+    return(NULL)
+  }
+
+  # --- 4. Transformação Centered Log-Ratio (CLR) ---
+  clr_transform <- function(data_matrix) {
+    data_matrix <- data_matrix + 1
+    geometric_mean <- exp(rowMeans(log(data_matrix)))
+    clr_data <- log(data_matrix / geometric_mean)
+    return(clr_data)
+  }
+  df_transformed <- clr_transform(count_matrix_filtered)
+
+  # --- 5. Análise de Componentes Principais (PCA) ---
+  pca_res <- prcomp(df_transformed, scale. = TRUE)
+
+  # --- 6. Preparação para o Plot ---
+  colorBy <- input$colorByCluster
+  colors_names <- coll_names(df_tags$subject_id)
+  df_tags <- unique(merge(df_tags, colors_names, by = "subject_id"))
+  df_tags <- df_tags[match(rownames(pca_res$x), df_tags$sample_id), ]
+  
+  eig_perc <- (pca_res$sdev^2 / sum(pca_res$sdev^2) * 100) %>% round(2)
+  
+  if (ncol(pca_res$x) < 3) {
+      showNotification("A PCA resultou em menos de 3 componentes. Plot 3D não é possível.", type = "warning")
+      return(NULL)
+  }
+
+  # --- 7. Geração do Plot 3D Científico ---
+  open3d(useNULL = TRUE)
+  
+  # Define um material com menos brilho para um look mais limpo
+  material3d(color = "black", specular = "gray50", shininess = 30)
+  
+  # Plota os pontos (esferas) com tamanho reduzido
+  plot3d(
+    pca_res$x[, 1:3], 
+    type = "s", # "s" para esferas
+    size = 3,
+    col = df_tags$collors, 
+    xlab = paste0("PC1 (", eig_perc[1], "%)"), 
+    ylab = paste0("PC2 (", eig_perc[2], "%)"), 
+    zlab = paste0("PC3 (", eig_perc[3], "%)"),
+    box = TRUE, # Adiciona a caixa de contorno
+    axes = TRUE # Garante que os eixos sejam desenhados
+  )
+  
+  # Adiciona os rótulos de texto de forma sutil
+  if (colorBy == "subject_id") {
+    text3d(pca_res$x[, 1:3], texts = df_tags$subject_id, cex = 0.7, pos = 4, offset = 0.8)
+  } else {
+    text3d(pca_res$x[, 1:3], texts = df_tags$sample_id, cex = 0.7, pos = 4, offset = 0.8)
+  }
+  
+  # Adiciona uma legenda se a coloração for por 'subject_id'
+  if (colorBy == "subject_id") {
+    legend_data <- df_tags %>% distinct(subject_id, collors)
+    legend3d(
+      "topright", # Posição da legenda
+      legend = legend_data$subject_id, 
+      pch = 16, # Círculo sólido
+      col = legend_data$collors, 
+      cex = 1, 
+      inset = c(0.02) # Pequeno espaçamento da borda
+    )
+  }
+  
+  # Melhora a visualização da caixa de contorno
+  grid3d(c("x", "y+", "z"))
+  
+  rglwidget()
+  })
+
   output$tSNE_subject <- renderPlotly({
     selected_junctions <- strsplit(input$junction_aa_input, " ")[[1]]
     selected_junctions <- trimws(selected_junctions)
@@ -987,6 +1095,8 @@ server <- function(input, output, session) {
 
     # combinatory analysis for C-V-D-J calls -> n!/(n-p)!p! = 4!/(4-2)!2! = 6 -> VD, VJ, VC, DJ, DC, JC
     combinatory_list <- list(
+      list("c_call","v_call"),
+      list("c_call","j_call"),
       list("j_call","v_call"),
     )
 
@@ -998,7 +1108,7 @@ server <- function(input, output, session) {
       col_up <- unlist(combinatory_list[[i]][1])
       col_down <- unlist(combinatory_list[[i]][2])
       subset_vdj <- countGenes(df,gene=col_up, groups=c("sample_id",col_down),copy="duplicate_count", mode="gene")
-  
+      
       teste <- df2stat(subset_vdj, "sample_id", "copy_freq", "gene", controlSamples, tratSamples, col_down)
 
       colnames(teste)[1] <- "upStream"
@@ -1020,17 +1130,40 @@ server <- function(input, output, session) {
   
   # Statistics DataFrames V, D or J ----
   output$vdj_stat <- DT::renderDataTable(DT::datatable({
+    normalize <- FALSE
     selected_junctions <- strsplit(input$junction_aa_input, " ")[[1]]
     selected_junctions <- trimws(selected_junctions)
     
     df <- df()[ df()$subject_id %in% input$subjects & df()$sample_id %in% input$samples & !(df()$junction_aa %in% selected_junctions), ]
     df <- filter(df, subject_id %in% c(input$trat, input$ctrl))
+    if ("total_n" %in% names(df)) {
+        df$dup_freq <- df$duplicate_count / as.numeric(df$total_n)
+    }
 
     tratSamples <- unique(filter(df, subject_id==input$trat)$sample_id)
     controlSamples <- unique(filter(df, subject_id==input$ctrl)$sample_id)
 
+    cvdj_type <- input$CVDJ_type
+    if(cvdj_type=="CDRs") {
+        df$CDRs <- paste0(df$cdr1_aa,"|",df$cdr2_aa,"|",df$cdr3_aa)
+    }
     family_gene <- countGenes(df, gene=input$CVDJ_type, groups=c("sample_id"), mode=input$modeFG,copy="duplicate_count")
-    finalSt_df <- df2stat(family_gene, "sample_id", "copy_freq", "gene", controlSamples, tratSamples)
+    if((cvdj_type=="CDRs" | cvdj_type=="cdr3_aa" | cvdj_type=="junction_aa") & ("total_n" %in% names(df))) {
+	normalize <- TRUE
+	family_gene <- data.frame(sample_id=df$sample_id, gene=df[[cvdj_type]], seq_count=df$duplicate_count, ntotal=df$total_n) %>%
+          group_by(sample_id, gene) %>%
+          summarise(
+            duplicate_count = sum(seq_count),
+            total_n = first(ntotal) # Pega o total_n original para cada sample_id
+          ) %>%
+            mutate(
+              copy_freq = duplicate_count / as.numeric(total_n)
+            )
+    }
+        
+	
+    print(family_gene)
+    finalSt_df <- df2stat(family_gene, "sample_id", "copy_freq", "gene", controlSamples, tratSamples, normalize)
 
     finalSt_df
   }))
@@ -1139,7 +1272,9 @@ server <- function(input, output, session) {
     df <- df()[ df()$subject_id %in% input$subjects & df()$sample_id %in% input$samples & !(df()$junction_aa %in% selected_junctions), ]
 
     for(i in selected_cvdj) {
-      if(any(grepl(i, df$v_call))) {
+      if(any(grepl(i, df$c_call))) {
+        df <- subset(df, grepl(i, c_call))
+      } else if(any(grepl(i, df$v_call))) {
         df <- subset(df, grepl(i, v_call))
       } else if(any(grepl(i, df$j_call))) {
         df <- subset(df, grepl(i, j_call))
@@ -1179,14 +1314,14 @@ server <- function(input, output, session) {
     db_props <- aminoAcidProperties(df, seq="junction", trim=TRUE, label="cdr3")
     
     pros_rm <- db_props %>% 
-	        count(subject_id,sample_id) %>%
+	        count(subject_id,sample_id,c_call) %>%
 	        group_by(sample_id) %>%
 		mutate(c_freq = n/sum(n)) %>%
 		ungroup() %>%
 		filter(c_freq > as.numeric(input$min_group_perCent/100))
 	            
     pros_rm <- arrange(pros_rm, c_freq)
-    db_props <- semi_join(db_props, pros_rm, by=c("sample_id"))
+    db_props <- semi_join(db_props, pros_rm, by=c("sample_id", "c_call"))
     print(pros_rm)
 
     # The full set of properties are calculated by default

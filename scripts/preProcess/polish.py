@@ -40,7 +40,6 @@ final_consensus = args.final_consensus
 output_dir = os.path.dirname(medaka_output)
 final_consensus = open(final_consensus, "w")
 
-#cluster_seq_id = pd.DataFrame(cluster_seq_id)
 with open(args.jsonPath, 'r', encoding='utf-8') as f:
     cluster_seq_id = pd.DataFrame(json.load(f)) 
 
@@ -54,19 +53,34 @@ except FileExistsError:
 def process_file(file):
     seq_id = file.split(".")[0].split("/")[-1].split("_")[0]
 
-    try:
-        cluster_id = cluster_seq_id[cluster_seq_id["seq"] == seq_id].iloc[0]["cluster"]
-    except IndexError:
-        return f">{seq_id}|DUPCOUNT=0\n\n"
+    #try:
+    #    cluster_id = cluster_seq_id[cluster_seq_id["seq"] == seq_id].iloc[0]["cluster"]
+    #except IndexError:
+    #    return f">{seq_id}|DUPCOUNT=0\n\n"
 
-    cluster_id = cluster_id.split("_")[0]
+    #cluster_id = cluster_id.split("_")[0]
+    cluster_id = seq_id
+
+    cluster_cons = f"{output_dir}/clusters_consensus/{cluster_id}.fasta"
+    with open(cluster_cons, 'w') as f_out:
+        subprocess.run(
+            [
+                "spoa",
+                "-l", 
+                "1",
+                "-s",
+                file
+            ], stdout=f_out, stderr=subprocess.PIPE, text=True 
+        )
+        f_out.flush()
+        os.fsync(f_out.fileno())
 
     subprocess.run(
         [
             "medaka_consensus",
             "-g",
             "-d",
-            f"{output_dir}/clusters_consensus/{cluster_id}.fasta",
+            cluster_cons,
             "-i",
             file,
             "-t",
@@ -77,7 +91,6 @@ def process_file(file):
     )
 
     try:
-        #dup_count = len(SeqIO.to_dict(SeqIO.parse(file, "fasta")))
         dup_count = sum(1 for record in SeqIO.parse(file, "fasta") if "_1" not in record.id)
     except ValueError as e:
         print(e)

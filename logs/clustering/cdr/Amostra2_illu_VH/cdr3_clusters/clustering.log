@@ -1,0 +1,73 @@
+First file Clusterized Ordened By clusters lenght: 
+       0    1      2  3  ...  6  7                                         8  9
+81829  C    1  26281  *  ...  *  *  76f1a4c6-2ea7-4b25-863d-460c2ab6aa4f-IGH  *
+81885  C   57  20593  *  ...  *  *  e362e482-d1d7-4937-a3bc-9997d1a8a3d6-IGH  *
+81847  C   19   6667  *  ...  *  *  8231efec-1fcd-4938-bb6f-accd01e9c422-IGH  *
+81844  C   16   4949  *  ...  *  *  3ac49501-85ad-4818-804a-095e1532a716-IGH  *
+81856  C   28   4085  *  ...  *  *  3c75d31f-b34e-4960-aad0-7c200d52ad0d-IGH  *
+81848  C   20   2624  *  ...  *  *  185a1e29-5421-49ce-89c5-87bdcc685e90-IGH  *
+81849  C   21   2579  *  ...  *  *  7480a950-3d66-44ea-ab37-3d087e41add2-IGH  *
+81882  C   54   2129  *  ...  *  *  649e27ab-b29e-45d0-9029-faee70201b41-IGH  *
+81881  C   53   1806  *  ...  *  *  0482dfc4-5556-4e64-9065-58dbe4f4500a-IGH  *
+81863  C   35   1447  *  ...  *  *  78b61729-a8b3-4bb5-999b-ded78163eb19-IGH  *
+81900  C   72   1388  *  ...  *  *  c46fb42b-8832-49e8-96b2-a8384e9d40bc-IGH  *
+81835  C    7   1107  *  ...  *  *  d2359cce-7b04-4305-b437-e4c801e59853-IGH  *
+81902  C   74    669  *  ...  *  *  04455658-fda0-4e9d-b45e-58e3040278b5-IGH  *
+81828  C    0    636  *  ...  *  *  86a7931f-4237-42b3-98c3-db34d707632a-IGH  *
+81832  C    4    604  *  ...  *  *  4579f676-ed98-47c9-8ddd-e65d12baa2db-IGH  *
+81906  C   78    531  *  ...  *  *  02b70b92-9116-4a55-bcbf-85df5dc94cd2-IGH  *
+81869  C   41    482  *  ...  *  *  19dc5582-5cc2-4555-9a26-f9254f57c70e-IGH  *
+81830  C    2    428  *  ...  *  *  d45fd19b-0b28-4831-9ffe-1023747d5e57-IGH  *
+81831  C    3    387  *  ...  *  *  6130640c-d8f8-4c05-a9d9-55b1cfc0dfcb-IGH  *
+81880  C   52    304  *  ...  *  *  eb876aed-cecb-4d48-96ac-f705fbc5b43a-IGH  *
+81855  C   27    295  *  ...  *  *  9b1a07a4-d345-48ef-9d6b-d1173f254ffa-IGH  *
+81838  C   10    274  *  ...  *  *  5b291ddd-d559-430f-bd54-bc916dbe3439-IGH  *
+81872  C   44    264  *  ...  *  *  7fbb3654-7e3c-4f81-9b75-0f47dc121b85-IGH  *
+81905  C   77    178  *  ...  *  *  65496068-df26-40fb-a8ad-861b8b2ab23c-IGH  *
+81868  C   40    127  *  ...  *  *  01ae5490-d23e-4ddf-95c9-24cc9b35b67b-IGH  *
+81833  C    5    104  *  ...  *  *  32e13b74-5aa2-47ed-b510-9237649f37f2-IGH  *
+81895  C   67     86  *  ...  *  *  41d4bd8d-ddb7-428a-9e0d-cababf883190-IGH  *
+81851  C   23     73  *  ...  *  *  db64b06b-f83b-46aa-8f86-5c8a419635f2-IGH  *
+81841  C   13     64  *  ...  *  *  96aaafbc-59f3-4dc4-aa7c-2463b85e8e01-IGH  *
+81889  C   61     54  *  ...  *  *  6f41b1ce-ed9d-4b26-97ae-ef3370c184cc-IGH  *
+81890  C   62     53  *  ...  *  *  b319599c-1459-4930-8625-49449aa5d979-IGH  *
+81892  C   64     49  *  ...  *  *  f89d2c9d-c136-40f7-b6ba-bcf641de8e69-IGH  *
+81904  C   76     49  *  ...  *  *  3fcc8a10-0789-4ebd-8266-c6d69c403f64-IGH  *
+81866  C   38     46  *  ...  *  *  d8108180-f862-4fdb-b4e4-f84edb09e28a-IGH  *
+81839  C   11     35  *  ...  *  *  5498136e-a506-42ca-8ea7-61ffb7faa175-IGH  *
+81840  C   12     28  *  ...  *  *  fe1e384a-3912-44ec-8f97-4e8231759a53-IGH  *
+81837  C    9     27  *  ...  *  *  37eafad8-58ec-4ebc-8247-b70feb26ea3c-IGH  *
+81901  C   73     24  *  ...  *  *  c5cd9239-901d-46bf-bb05-8f27bb5f407a-IGH  *
+81886  C   58     22  *  ...  *  *  1c22dff8-804f-4e4f-87e2-99d359365566-IGH  *
+81884  C   56     20  *  ...  *  *  cf87d031-37f6-4d8b-8012-b096d2a8ad0f-IGH  *
+81896  C   68     15  *  ...  *  *  7a059c2b-5cd4-4b1f-977a-2e6317b93a61-IGH  *
+81853  C   25     14  *  ...  *  *  1cc72772-a36b-4d1d-a752-7ddbe8b7ee75-IGH  *
+81842  C   14     13  *  ...  *  *  7942a83e-f433-4865-8815-c6bb69f1378d-IGH  *
+81850  C   22     11  *  ...  *  *  c7fabae3-0aed-42c1-836b-f2298e6f7280-IGH  *
+81887  C   59     11  *  ...  *  *  9f282ce8-1268-474f-ba7f-819e420d91ad-IGH  *
+81864  C   36      9  *  ...  *  *  fc2f36ef-f003-4ee0-bc8d-ed63a61405c9-IGH  *
+81903  C   75      9  *  ...  *  *  77852b52-c21a-42e9-8bcf-be70020f22bc-IGH  *
+81859  C   31      8  *  ...  *  *  5ae69093-3cca-41eb-83d5-e4ca53c546ba-IGH  *
+81949  C  121      8  *  ...  *  *  e9b9a481-e78d-482d-a169-5b3304b98598-IGH  *
+81932  C  104      7  *  ...  *  *  15263f09-89c3-405d-871e-e219a9881511-IGH  *
+81897  C   69      7  *  ...  *  *  ef28a6aa-b8e8-404d-8b3d-1bce86b5e910-IGH  *
+81846  C   18      6  *  ...  *  *  647bd13a-b34e-4764-8e03-2ecf4cf013ca-IGH  *
+81877  C   49      6  *  ...  *  *  684fb43b-88a5-4b09-bcf1-27a06782adf0-IGH  *
+81879  C   51      6  *  ...  *  *  3a4d3e1a-ba1b-4c0c-846c-2adb5e455b21-IGH  *
+81893  C   65      6  *  ...  *  *  8a790e6b-029e-4c5e-a039-31752bfcfa7a-IGH  *
+81860  C   32      5  *  ...  *  *  a2790c00-b1af-4646-930a-26895ccae41c-IGH  *
+
+[56 rows x 10 columns]
+File 'results/clustering/cdr/Amostra2_illu_VH/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/Amostra2_illu_VH/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+     0   1   2  3  4  5  6  7                                         8  9
+346  C  18  85  *  *  *  *  *  01b985cb-2d99-4429-97cf-c9811de1f2ce-IGK  *
+332  C   4  75  *  *  *  *  *  2b39a7ad-80d8-4f0f-8467-3d87fe30c790-IGK  *
+331  C   3  68  *  *  *  *  *  8e78af9d-6329-4bb5-af7f-f3e2e266acfd-IGK  *
+328  C   0  25  *  *  *  *  *  722738fb-e3b6-4ccf-894f-a2345f930b8b-IGK  *
+354  C  26  20  *  *  *  *  *  1119f7db-68e4-4288-9af3-bea7e535772a-IGK  *
+329  C   1   8  *  *  *  *  *  09fae79e-df71-4744-8180-212f82ab8f7a-IGK  *
+333  C   5   8  *  *  *  *  *  485a7af3-e327-4ecf-8255-ee106c57edbe-IGK  *
+352  C  24   5  *  *  *  *  *  481faf6f-a43f-4bee-8f4b-2226c2059893-IGK  *
+Data successfully updated in 'results/clustering/cdr/Amostra2_illu_VH/cdr3_clusters/cluster_seq_id.json'

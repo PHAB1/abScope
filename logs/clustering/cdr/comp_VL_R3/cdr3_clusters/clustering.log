@@ -1,0 +1,25 @@
+First file Clusterized Ordened By clusters lenght: 
+     0   1  2  3  4  5  6  7                                         8  9
+99   C  29  9  *  *  *  *  *  44b91ca7-84df-4d32-b2d4-552b655cb190-IGH  *
+81   C  11  5  *  *  *  *  *  9cc7c871-2935-4724-b80d-9a61b80a4f45-IGH  *
+91   C  21  5  *  *  *  *  *  1d25c268-875b-413f-a186-d78953cfe570-IGH  *
+96   C  26  5  *  *  *  *  *  646f423a-fe62-4e03-a3d7-f121dcf59ecb-IGH  *
+101  C  31  5  *  *  *  *  *  1145e118-5999-4573-a6bf-88bdaafd38ef-IGH  *
+File 'results/clustering/cdr/comp_VL_R3/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/comp_VL_R3/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+       0    1     2  3  4  5  6  7                                         8  9
+68110  C   25  7240  *  *  *  *  *  3d78a109-1ecd-450a-9faf-988fbf86c143-IGK  *
+68109  C   24  7045  *  *  *  *  *  11df6a5c-9e4b-4c2a-a874-83e8ba3df07d-IGK  *
+68134  C   49  6930  *  *  *  *  *  6a375eab-261f-4d8d-a168-291fa79f64d5-IGK  *
+68125  C   40  4174  *  *  *  *  *  7551f751-c368-4f08-ba39-1f5494f2c84c-IGK  *
+68119  C   34  3625  *  *  *  *  *  b0832ee9-22e3-4a09-b3a0-4a447577b224-IGK  *
+...   ..  ...   ... .. .. .. .. ..                                       ... ..
+68563  C  478     5  *  *  *  *  *  149c6ab8-bd87-43f1-8371-764c1a909bcb-IGK  *
+68570  C  485     5  *  *  *  *  *  94e2773f-796c-46a5-8768-9b2bb9615ba1-IGK  *
+68602  C  517     5  *  *  *  *  *  395e8793-6cb0-4817-94a2-b653d869f69d-IGK  *
+68625  C  540     5  *  *  *  *  *  c9c696f4-44e7-4911-8cab-f7c0971bb6f3-IGK  *
+68628  C  543     5  *  *  *  *  *  15e5ccc7-b0d6-4f0e-803a-94e3ab57003d-IGK  *
+
+[204 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/comp_VL_R3/cdr3_clusters/cluster_seq_id.json'

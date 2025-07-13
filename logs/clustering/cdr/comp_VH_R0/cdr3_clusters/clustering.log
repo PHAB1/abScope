@@ -1,0 +1,31 @@
+First file Clusterized Ordened By clusters lenght: 
+       0     1      2  3  ...  6  7                                         8  9
+95557  C  2637  23398  *  ...  *  *  0f6120d2-3579-4f1c-b17d-2adb18b9b1ef-IGH  *
+95561  C  2641   9198  *  ...  *  *  e41c8611-ce5a-48dd-916a-90b5d50b9687-IGH  *
+95539  C  2619   6745  *  ...  *  *  0781fcc1-a3aa-4d64-9e63-3ebcd5abc6c7-IGH  *
+95579  C  2659   2797  *  ...  *  *  7b18bca0-6f1d-4bc7-a2d8-822811995dbc-IGH  *
+92937  C    17   1964  *  ...  *  *  dfd1eba4-4485-4d77-8a7f-50ee34b4da04-IGH  *
+...   ..   ...    ... ..  ... .. ..                                       ... ..
+92963  C    43      5  *  ...  *  *  087cc5d1-973b-407a-9c16-f9b7b09cf60b-IGH  *
+95357  C  2437      5  *  ...  *  *  475e851f-b504-4bfa-822f-c3bb6878aa0e-IGH  *
+95356  C  2436      5  *  ...  *  *  475e851f-b504-4bfa-822f-c3bb6878aa0e-IGH  *
+95338  C  2418      5  *  ...  *  *  2d467628-3ec7-4bc5-9e22-6841176e260e-IGH  *
+95508  C  2588      5  *  ...  *  *  ee1c9fe3-7a82-4f98-91ad-22718ec12e07-IGH  *
+
+[831 rows x 10 columns]
+File 'results/clustering/cdr/comp_VH_R0/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/comp_VH_R0/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+1068  C  27  785  *  *  *  *  *  b93047ab-2053-4eb0-b117-5606eb0be67a-IGK  *
+1073  C  32   64  *  *  *  *  *  e78247ac-9cb2-4f46-8f4a-0adc5bd9013d-IGK  *
+1083  C  42   60  *  *  *  *  *  7ebf6b4a-1985-43c9-bd8f-3ebbceedfc8f-IGK  *
+1076  C  35   20  *  *  *  *  *  9df84117-8577-417b-95bc-902bf70d2ff5-IGK  *
+1062  C  21   15  *  *  *  *  *  7c0f1591-0c03-4b16-ad4d-3722e5b13260-IGK  *
+1045  C   4    9  *  *  *  *  *  a7c982c7-a87a-468b-a509-b119b4c10ef7-IGK  *
+1055  C  14    8  *  *  *  *  *  c92e5d2f-9014-4be9-8336-e91e4035d729-IGK  *
+1082  C  41    8  *  *  *  *  *  ec295d0b-82ac-4d09-a654-2f18e825815c-IGK  *
+1043  C   2    7  *  *  *  *  *  9c5aeaa7-fd75-4314-85f1-bf018b9552f4-IGK  *
+1059  C  18    7  *  *  *  *  *  14bcfa57-10a9-4e0c-82ca-7b552fa60c42-IGK  *
+1070  C  29    6  *  *  *  *  *  73df2135-eca9-498a-af62-277fb0bce477-IGK  *
+Data successfully updated in 'results/clustering/cdr/comp_VH_R0/cdr3_clusters/cluster_seq_id.json'

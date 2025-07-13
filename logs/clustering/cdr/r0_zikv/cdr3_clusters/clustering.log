@@ -1,0 +1,33 @@
+First file Clusterized Ordened By clusters lenght: 
+       0      1     2  3  ...  6  7                                         8  9
+35039  C     82  1231  *  ...  *  *  cfd1efc7-7053-41a9-a314-3fcf87eab0e8-IGH  *
+45792  C  10835   700  *  ...  *  *  7739bec7-56bd-4c6d-a66f-d42278220109-IGH  *
+35026  C     69   536  *  ...  *  *  44b16b0f-0f3b-49c7-b001-523cc9dbd011-IGH  *
+43022  C   8065   497  *  ...  *  *  1e3e6ae1-63c1-40c6-9d34-8675329920a7-IGH  *
+35157  C    200   363  *  ...  *  *  8c235163-8f6f-42ff-9a06-ebe3413b7618-IGH  *
+...   ..    ...   ... ..  ... .. ..                                       ... ..
+38586  C   3629     5  *  ...  *  *  0437d056-0b6c-4c41-8800-ec6b82152126-IGH  *
+46224  C  11267     5  *  ...  *  *  151e5fba-0f79-44d1-bb99-8b9cb21b46c3-IGH  *
+35177  C    220     5  *  ...  *  *  3d3751db-8ce3-47f0-a6c2-dc35321e87d5-IGH  *
+34983  C     26     5  *  ...  *  *  d047e9a6-d9e5-4c07-a118-1a76cca65e91-IGH  *
+35043  C     86     5  *  ...  *  *  96fb717b-33a1-48e7-8099-8d6d651cccd8-IGH  *
+
+[918 rows x 10 columns]
+File 'results/clustering/cdr/r0_zikv/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/r0_zikv/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+       0     1     2  3  ...  6  7                                         8  9
+63415  C  6631  4805  *  ...  *  *  ebcfdf9e-96b5-4c10-b2c4-55087850039e-IGK  *
+63648  C  6864  3737  *  ...  *  *  3d14fce9-42c5-4d11-8179-635713b5c923-IGK  *
+62722  C  5938  2843  *  ...  *  *  12313df3-c3e8-4061-8f10-027da9271d76-IGK  *
+63016  C  6232  2364  *  ...  *  *  262f40e4-7fdf-40a6-b35e-986fc98909d5-IGK  *
+63250  C  6466  1650  *  ...  *  *  8e832641-eb5e-4e08-93ea-9f8d375da140-IGK  *
+...   ..   ...   ... ..  ... .. ..                                       ... ..
+59417  C  2633     5  *  ...  *  *  34f81f24-5eec-4759-a95a-e0bc993e793f-IGK  *
+59659  C  2875     5  *  ...  *  *  40300482-3bfb-4a38-9c89-7d95e3f633e1-IGK  *
+59784  C  3000     5  *  ...  *  *  8c4f66b3-3a43-4fa7-8fd8-61223586258a-IGK  *
+59823  C  3039     5  *  ...  *  *  4df5f9a9-5051-4d0c-9c36-a82b20ab940d-IGK  *
+59837  C  3053     5  *  ...  *  *  fa21fbd7-88d2-40ca-a2f2-b2589d806410-IGK  *
+
+[1040 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/r0_zikv/cdr3_clusters/cluster_seq_id.json'

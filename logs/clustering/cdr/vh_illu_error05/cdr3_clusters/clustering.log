@@ -1,0 +1,23 @@
+First file Clusterized Ordened By clusters lenght: 
+      0   1    2  3  4  5  6  7                                         8  9
+3011  C  11  300  *  *  *  *  *  0382af04-4529-4a5e-b7f2-fb694e8fe173-IGH  *
+3006  C   6  299  *  *  *  *  *  0add60ee-9d4d-41cd-bbe4-89d56d3c5872-IGH  *
+3001  C   1  287  *  *  *  *  *  0108f1af-5d7f-4f3d-ba5e-1ccfa44bac72-IGH  *
+3010  C  10  215  *  *  *  *  *  00706856-0fd5-459c-9582-eab93392cfa4-IGH  *
+3002  C   2  201  *  *  *  *  *  026f2f1d-2d76-41f3-98e6-92fd7ece3730-IGH  *
+3007  C   7  200  *  *  *  *  *  00c16e23-3e6f-44c3-ba7e-671d176d0276-IGH  *
+3005  C   5  200  *  *  *  *  *  0773197e-9559-4007-989f-002f6c3e5cdd-IGH  *
+3003  C   3  200  *  *  *  *  *  00a6029d-b777-427f-a33b-778feffbdcd7-IGH  *
+3000  C   0  100  *  *  *  *  *  0652927f-9c9c-4ec6-900c-d83efd014af1-IGH  *
+3008  C   8  100  *  *  *  *  *  0208b116-adf9-471b-9669-9b4bf2c68e1e-IGH  *
+3004  C   4  100  *  *  *  *  *  028f2d1a-ffa9-4ae7-b474-23000df09ea3-IGH  *
+3009  C   9  100  *  *  *  *  *  040c63b7-2190-48d9-879b-8748be74a8be-IGH  *
+3012  C  12  100  *  *  *  *  *  052c21bb-63bd-485a-9724-d378b942ed52-IGH  *
+3014  C  14  100  *  *  *  *  *  02b3639f-7a58-4c73-a4ac-d09fbba15b29-IGH  *
+3015  C  15  100  *  *  *  *  *  017f6229-0925-4e1c-aa6a-d284cfa13fcc-IGH  *
+3017  C  17  100  *  *  *  *  *  00cb4b2f-b190-4edf-a8cc-3fde18225e11-IGH  *
+3016  C  16  100  *  *  *  *  *  045a9d0a-824a-46c2-8261-7ae67af51aa3-IGH  *
+3018  C  18  100  *  *  *  *  *  03e14c23-d326-4ffa-a3b9-efa77e96237f-IGH  *
+3013  C  13   98  *  *  *  *  *  088970b0-46a7-4d8e-98b9-478229ff77cc-IGH  *
+File 'results/clustering/cdr/vh_illu_error05/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/vh_illu_error05/cdr3_clusters/cluster_seq_id.json'

@@ -1,0 +1,33 @@
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+903950  C  231076  2049  *  ...  *  *  1d33aedd-7e06-4b1c-9469-95f053d22f6b-IGH  *
+797190  C  124316  1617  *  ...  *  *  80a6b040-e53d-4e02-97bd-9488567e74cc-IGH  *
+906541  C  233667  1317  *  ...  *  *  6a281693-6766-4456-bb99-90281b120204-IGH  *
+934584  C  261710  1275  *  ...  *  *  be119160-0d6f-4320-9934-65829659ab10-IGH  *
+930313  C  257439  1255  *  ...  *  *  15f666bc-428b-4620-bef5-70ab642d20c4-IGH  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+828352  C  155478     5  *  ...  *  *  7d489aa2-32ce-415a-8348-8b5ee6837f92-IGH  *
+828347  C  155473     5  *  ...  *  *  7ba55f90-b5dd-43bf-b464-cd0881ea85af-IGH  *
+828572  C  155698     5  *  ...  *  *  da9f7c1f-5b1a-4066-bd2e-3782b097cd3f-IGH  *
+828528  C  155654     5  *  ...  *  *  c87e4458-b074-4982-a5cb-1a0ee14c48cc-IGH  *
+828641  C  155767     5  *  ...  *  *  fb06b379-05ff-45dd-9bec-401d2de0e3d5-IGH  *
+
+[21034 rows x 10 columns]
+File 'results/clustering/cdr/r3_pellet_zika/cdr3_clusters/cluster_seq_id.json' not found. Creating a new one.
+Data successfully updated in 'results/clustering/cdr/r3_pellet_zika/cdr3_clusters/cluster_seq_id.json'
+First file Clusterized Ordened By clusters lenght: 
+        0       1     2  3  ...  6  7                                         8  9
+889130  C  221189  3008  *  ...  *  *  b56c8134-e4d3-4aa1-b9e4-e541f5a82d7e-IGK  *
+874942  C  207001  1987  *  ...  *  *  a727e7a5-52cf-445c-811b-adee09966cbc-IGK  *
+869423  C  201482  1829  *  ...  *  *  cf7602e5-a679-4c3c-9c7a-16c471977021-IGK  *
+680261  C   12320  1639  *  ...  *  *  a6567212-0481-4fd2-995a-e1d6b4f43d6d-IGK  *
+873171  C  205230  1448  *  ...  *  *  91f50df8-e6fb-443b-80db-8bff604d8345-IGK  *
+...    ..     ...   ... ..  ... .. ..                                       ... ..
+897318  C  229377     5  *  ...  *  *  8ea36cf7-0e1c-4d52-9434-1dd191f29a08-IGK  *
+896596  C  228655     5  *  ...  *  *  5ff7b0ac-ee31-4933-b3fd-963cac06f81c-IGK  *
+726814  C   58873     5  *  ...  *  *  45e0a24f-354a-4c5c-b678-98413a0a9ac1-IGK  *
+726808  C   58867     5  *  ...  *  *  45807bd4-ca8d-46d7-978c-6f8fd661fed7-IGK  *
+726800  C   58859     5  *  ...  *  *  44ded1d5-e494-4836-828b-6c27a7da85c8-IGK  *
+
+[18348 rows x 10 columns]
+Data successfully updated in 'results/clustering/cdr/r3_pellet_zika/cdr3_clusters/cluster_seq_id.json'

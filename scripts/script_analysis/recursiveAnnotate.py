@@ -12,7 +12,7 @@ parser.add_argument('-o','--output_dir',required=True, help='Output directory pa
 # Parse arguments
 args = parser.parse_args()
 
-airr_files = glob.glob("%s/*_clone-pass.tsv"%args.input_dir)
+airr_files = glob.glob("%s/*.tsv"%args.input_dir)
 
 add_columns = {
     'sequence_id':[],
@@ -25,7 +25,7 @@ add_columns = {
 
 for airr in airr_files:
     #subject_id = airr.split("/")[-1].split("_atleast-2_clone-pass.tsv")[0]
-    subject_id = airr.split("/")[-1].split("_clone-pass.tsv")[0]
+    subject_id = airr.split("/")[-1].split(".tsv")[0]
     sample_id = subject_id
     airr = pd.read_csv(airr, sep="\t", low_memory=False)
     for clone in airr.iloc:
