@@ -1,83 +1,59 @@
-# vsearch for clustering 
-vsearch --cluster_fast ../../nanopore/minIONLinear_Data/barcode10_VL_quality-pass.fasta --id 0.9 --centroids quality-passbarcode10_VL_quality_vsearch.fasta --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout quality-passbarcode10_VL_quality_consensus.fasta
+# `abScope`: Analysis Pipeline for Immune Repertoire and Phage Display
 
-# verify if sequences in each cluster has at least 98% identity (to do, use igblastn for this task)
+`abScope` is a Snakemake-based computational pipeline for processing and analyzing antibody repertoire and phage display library data. It is designed to handle both short-read (e.g., Illumina) and long-read (e.g., Nanopore) sequencing data.
 
+## Core Features
+* **Immune Repertoire Processing**: Analyzes diversity, clonal expansion, and VDJ gene usage from B-cell data.
+* **Long-Read Error Correction**: Includes a dedicated module to correct high-error rate sequences from technologies like Oxford Nanopore, producing high-quality consensus sequences.
+* **VH/VL Pair Recovery**: Identifies and pairs heavy (VH) and light (VL) chains from scFv fragments sequenced with long reads.
+* **Interactive Analysis**: An R/Shiny app for visual exploration and filtering of the processed repertoire data.
 
-# verify Snps frequencies between each cluster and split cluster if frequence > value [val. to discover] (to do, use bcftools for this task)
+## Prerequisites
+1.  **Snakemake**: To execute the pipeline.
+2.  **Conda**: For automatic management of software environments and dependencies.
+3.  **R & Shiny**: Required to run the interactive analysis interface.
+    ```r
+    # In an R console
+    install.packages("shiny")
+    ```
 
+## How to Use
 
-# Best consensus with medaka
+### 1. Prepare the Input File (`samples.csv`)
 
+The main input is a CSV file that specifies the location and metadata for each sequencing file. It must contain the header: `file_1,file_2,samples,group,generation,ch_type`.
 
-# presto + igblastn rescursive pipelines, with dup_counts and cprimer=None included
+* **`file_1`**: Path to the primary FASTQ file (R1 for paired-end, or the single file for single-end/long-reads).
+* **`file_2`**: Path to the R2 FASTQ file for paired-end data. **Leave this column blank for single-end or long-read data.**
+* **`samples`**: A unique name/identifier for the sample.
+* **`group`**: The experimental group (e.g., `R0`, `R3`, `vaccinated`).
+* **`generation`**: Sequencing technology. Use `second` for short-reads or `third` for long-reads.
+* **`ch_type`**: The antibody chain type being analyzed (e.g., `VH`, `VL`).
 
+**Example `samples.csv`:**
+```csv
+file_1,file_2,samples,group,generation,ch_type
+/path/to/Amostra1_S1_L001_R1_001.fastq,/path/to/Amostra1_S1_L001_R2_001.fastq,Amostra1_illu_VH,R0,second,VH
+/path/to/Amostra2_S2_L001_R1_001.fastq,/path/to/Amostra2_S2_L001_R2_001.fastq,Amostra2_illu_VH,R0,second,VH
+/path/to/Amostra4_S4_L001_R1_001.fastq,,Amostra4_illu_VL,R0,second,VL
+/path/to/nanopore_reads.fastq,,Sample_long_read,R3,third,VH
+```
 
-## nanopore processing -> Old bash
+### 2. Configure and Run the Pipeline
 
-#!/bin/bash
+**Configuration**: Edit the `config.yaml` file to point to your `samples.csv` and adjust other analysis parameters.
 
-# vsearch for clustering 
-#vsearch --cluster_fast ../../nanopore/minIONLinear_Data/barcode06_VL_quality-pass.fasta --id 0.9 --centroids quality-passbarcode06_VL_quality_vsearch.fasta --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout quality-passbarcode06_VL_quality_consensus.fasta
+**Execution**: From the project's main directory, run the following command. The pipeline will use Conda to create isolated software environments for each step, ensuring reproducibility.
+```bash
+snakemake --use-conda --cores <number_of_cores>
+```
 
-# verify if sequences in each cluster has at least 98% identity (to do, use igblastn for this task)
+### 3. Run the Interactive Analysis (Shiny App)
 
+After processing your data, use the Shiny app for interactive analysis of the results.
 
-# verify Snps frequencies between each cluster and split cluster if frequence > value [val. to discover] (to do, use bcftools for this task)
-
-
-# Best consensus with medaka
-
-
-# presto + igblastn rescursive pipelines, with dup_counts and cprimer=None included
-
-
-## New steps ##
-# use samtools fastq input.bam > output.fastq ; to transform bam to fastq
-
-# Quality
-NanoFilt barcode06.fastq -q 8 -l 2800 > barcode06_testeFiltered.fastq
-
-# Fastq to Fasta
-awk 'NR%4==1 {printf(">%s\n", substr($0, 2)); next} NR%4==2 {print}' barcode06_testeFiltered.fastq > barcode06_Filtered.fasta
-
-# Rename sequences ids 
-python scripts/fasta_rename_id.py barcode06_Filtered.fasta barcode06_Filtered_renamed.fasta
-
-# igCicle for recursively retain ig regions
-python scripts/igCicle.py barcode06_Filtered_renamed.fasta
-
-# VH and VL igCicle files
-# VH
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VH_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VH_seqs.tsv -domain_system kabat # nao to vendo necessidade
-
-# VL
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query igCicle/VL_seqs.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out igCicle/VL_seqs.tsv -domain_system kabat # nao to vendo necessidade
-
-# vsearch VH
-#vsearch --cluster_fast ../../nanopore/minIONLinear_Data/barcode06_VL_quality-pass.fasta --id 0.9 --centroids quality-passbarcode06_VL_quality_vsearch.fasta --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout quality-passbarcode06_VL_quality_consensus.fasta
-#vsearch --cluster_fast igCicle/VH_seqs.fasta --id 0.9 --centroids barcode14_vsearch.fasta --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout barcode06_vsearch_consensus.fasta
-vsearch --cluster_size igCicle/VH_seqs.fasta --id 0.75 --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout barcode06_vsearch_consensus.fasta
-
-# cluster by CDR3
-python scripts/createCDR3Clusters.py "barcode06" "VH"
-
-# medaka consensus using consensus as draft for cicle 2
-#medaka_consensus -i igCicle/VH_seqs.fasta -d barcode06_processed.fasta -o medaka_cicle2_VH -f -x
-medaka_consensus -i igCicle/VH_seqs.fasta -d barcode06_processed.fasta -o medaka_cicle2_VH -f -x -g -t 8
-
-# igblastn on final consensus file
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query barcode06_processed.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out barcode06_procesed_VH.tsv -domain_system kabat 
-
-# vsearch VL
-vsearch --cluster_size igCicle/VL_seqs.fasta --id 0.75 --uc clusters.uc --target_cov 0.9 --minqt 0.9 --consout barcode06_vsearch_consensus.fasta
-
-# cluster by CDR3
-python scripts/createCDR3Clusters.py "barcode06" "VL"
-
-# medaka consensus using consensus as draft for cicle 2
-#medaka_consensus -i igCicle/VL_seqs.fasta -d barcode06_processed.fasta -o medaka_cicle2_VL -f -x
-medaka_consensus -i igCicle/VL_seqs.fasta -d barcode06_processed.fasta -o medaka_cicle2_VL -f -x -g -t 8
-
-# igblastn on final consensus file
-igblastn -germline_db_J ig_db/IGHLKJ_edit.fasta -germline_db_V ig_db/IGHLKV_edit.fasta -germline_db_D ig_db/IGHD_edit.fasta -query barcode06_processed.fasta -outfmt 19 -show_translation -auxiliary_data ig_db/human_gl.aux -num_threads 8 -out barcode06_procesed_VL.tsv -domain_system kabat
+1.  Open R or RStudio.
+2.  Run the following command to launch the application:
+    ```r
+    shiny::runApp('scripts/immcApp')
+    ```
